@@ -56,45 +56,25 @@ customElements.define("my-header", MyHeader);
 class MyFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-          <footer>
-          <span>
-            <div class="social-link">
-              <ul>
-                <li>FACEBOOK</li>
-                <li>TWITTER</li>
-                <li>INSTAGRAM</li>
-              </ul>
-              <ul>
-                <li>
-                  <h5>Subscribe to Our Newsletter</h5>
-                </li>
-                <li>
-                  <input
-                    type="email"
-                    id="email"
-                    name=""
-                    id=""
-                    aria-describedby="emailHelpId"
-                    placeholder="Enter your email here*"
-                  />
-                  <a id="submit" href="">Subscribe Now</a>
-                </li>
-              </ul>
+    <footer class="page-footer">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
+                <img src="assets/imgs/logo.svg" alt="" class="logo">
             </div>
-            <div class="form">
-              <ul>
-                <li>CONTACT &gt;</li>
-                <li>Phone : +91XXXXXXXXXX</li>
-                <li>Email : contact@salbwf.com</li>
-              </ul>
-              <ul>
-                <li>© 2023 by SALBWF</li>
-                <li>Proudly coded by mrahulrahi</li>
-              </ul>
-            </div>
-          </span>
-        </footer>
-          `;
+            <div class="col-md-9 text-center text-md-right">
+                <div class="socials">
+                    <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="fab fa-facebook"></i> 123,345</a>
+                    <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="fab fa-twitter"></i> 321,534</a>
+                    <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="fab fa-instagram"></i> 123,023</a>
+                    <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="fab fa-youtube"></i> 231,043</a>
+                </div>
+            </div>  
+        </div>
+        <p class="border-top mb-0 mt-4 pt-3 small">&copy; <script>document.write(new Date().getFullYear())</script>, JoeBlog Created By <a href="https://www.devcrud.com" class="text-muted font-weight-bold" target="_blank">DevCrud.</a>  All rights reserved </p> 
+    </div>      
+  </footer>
+  `;
   }
 }
 customElements.define("my-footer", MyFooter);
