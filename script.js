@@ -7,11 +7,10 @@ class MyHeader extends HTMLElement {
                   <img src="assets/imgs/logo.png" alt="">
               </a>
               <div class="socials">
-                  <a href="javascript:void(0)"><i class="ti-facebook"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-twitter"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-pinterest-alt"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-instagram"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-youtube"></i></a>
+                  <a href="javascript:void(0)"><i class="fab fa-facebook"></i></a>
+                  <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                  <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+                  <a href="javascript:void(0)"><i class="fab fa-youtube"></i></a>
               </div>
           </div>
       </nav>
