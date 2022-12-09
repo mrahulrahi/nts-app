@@ -59,7 +59,7 @@ class MyFooter extends HTMLElement {
     <footer class="page-footer">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
+            <div class="">
                 <img src="assets/imgs/logo.svg" alt="" class="logo">
             </div>
             <div class="col-md-9 text-center text-md-right">
