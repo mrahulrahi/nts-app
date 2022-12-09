@@ -35,6 +35,8 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -53,21 +55,7 @@ body {
   background-color: #fff;
 }
 
-
-/* Accordion */
-.templatemo-accordion a { color: #000;}
-.templatemo-accordion a:hover { color: #333d4a;}
-/* Shop */
-.shop-top-menu a:hover { color: #69bb7e !important;}
-/* Product */
-.product-wap { box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);}
-.product-wap .product-color-dot.color-dot-red { background:#f71515;}
-.product-wap .product-color-dot.color-dot-blue { background:#6db4fe;}
-.product-wap .product-color-dot.color-dot-black { background:#000000;}
-.product-wap .product-color-dot.color-dot-light { background:#e0e0e0;}
-.product-wap .product-color-dot.color-dot-green { background:#0bff7e;}
 .navbar {
-  padding: 10px 10px;
 }
 .navbar-first { 
   display: flex;
@@ -88,10 +76,17 @@ body {
   color: #000;
   padding: 5px;
 }
-
+.navbar-second {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--success);
+}
 .navbar-nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  list-style: none;
 }
