@@ -66,3 +66,32 @@ body {
 .product-wap .product-color-dot.color-dot-black { background:#000000;}
 .product-wap .product-color-dot.color-dot-light { background:#e0e0e0;}
 .product-wap .product-color-dot.color-dot-green { background:#0bff7e;}
+.navbar {
+  padding: 10px 10px;
+}
+.navbar-first { 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar a {
+  text-decoration: none;
+}
+.navbar-brand img {
+  width: 100px;
+}
+.navbar-title {
+  color: #000;
+}
+.fab {
+  color: #000;
+  padding: 5px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}

@@ -2,10 +2,14 @@ class MyHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <nav class="navbar">
-          <div class="container">
+          <div class="navbar-first">
               <a class="navbar-brand" href="#">
                   <img src="assets/imgs/logo.png" alt="">
               </a>
+              <a class="navbar-title" href="#">
+                  <h1>IMAGINE GROUP</h1>
+              </a>
+
               <div class="socials">
                   <a href="javascript:void(0)"><i class="fab fa-facebook"></i></a>
                   <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
@@ -16,37 +20,30 @@ class MyHeader extends HTMLElement {
       </nav>
       
       <nav class="navbar">
-          <div class="container">
-              <button class="navbar-toggler" type="button">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav">                     
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="about.html">About Us</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="car.html">Car Rental</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="property.html">
-                              Properties
-                          </a>    
-                      </li>
-                  </ul>
-                  <div class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                          <a href="components.html" class="btn">Signup</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="components.html" class="btn">Login</a>
-                      </li>
-                  </div>
-              </div>
-          </div>
+          <div class="navbar-second">
+            <ul class="navbar-nav">                     
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="car.html">Car Rental</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="property.html">Properties</a>    
+                </li>
+            </ul>
+            <div class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="components.html" class="btn">Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a href="components.html" class="btn">Login</a>
+                </li>
+            </div>
+        </div>
       </nav>
       `;
   }
