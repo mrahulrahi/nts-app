@@ -1,7 +1,7 @@
 class MyHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar">
           <div class="container">
               <a class="navbar-brand" href="#">
                   <img src="assets/imgs/logo.png" alt="">
@@ -15,9 +15,9 @@ class MyHeader extends HTMLElement {
           </div>
       </nav>
       
-      <nav class="navbar custom-navbar navbar-expand-md navbar-light bg-primary sticky-top">
+      <nav class="navbar">
           <div class="container">
-              <button class="navbar-toggler ml-auto" type="button">
+              <button class="navbar-toggler" type="button">
                   <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,10 +39,10 @@ class MyHeader extends HTMLElement {
                   </ul>
                   <div class="navbar-nav ml-auto">
                       <li class="nav-item">
-                          <a href="components.html" class="ml-4 btn btn-dark mt-1 btn-sm">Signup</a>
+                          <a href="components.html" class="btn">Signup</a>
                       </li>
                       <li class="nav-item">
-                          <a href="components.html" class="ml-4 btn btn-dark mt-1 btn-sm">Login</a>
+                          <a href="components.html" class="btn">Login</a>
                       </li>
                   </div>
               </div>
@@ -58,7 +58,7 @@ class MyFooter extends HTMLElement {
     this.innerHTML = `
     <footer class="page-footer">
     <div class="container">
-        <div class="row align-items-center justify-content-between">
+        <div class="row align-items-center">
             <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
                 <img src="assets/imgs/logo.svg" alt="" class="logo">
             </div>
