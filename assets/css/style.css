@@ -115,4 +115,11 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #adb5bd;
+  height: 400px;
 }
