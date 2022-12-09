@@ -34,6 +34,9 @@ class MyHeader extends HTMLElement {
                 <li class="nav-item">
                     <a class="nav-link" href="property.html">Properties</a>    
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>    
+                </li>
             </ul>
             <div class="navbar-nav ml-auto">
                 <li class="nav-item">
