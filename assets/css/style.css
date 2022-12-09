@@ -120,6 +120,21 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #adb5bd;
+  background-color: var(--gray);
   height: 400px;
+}
+.banner-item {
+  background-color: var(--yellow);
+  height: 100%;
+  width: 600px;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.text-block {
+  line-height: 3em;
+}
+.text-block b {
+  color: var(--green);
+
 }
