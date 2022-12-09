@@ -64,10 +64,10 @@ class MyFooter extends HTMLElement {
             </div>
             <div class="col-md-9 text-center text-md-right">
                 <div class="socials">
-                    <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="fab fa-facebook"></i> 123,345</a>
-                    <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="fab fa-twitter"></i> 321,534</a>
-                    <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="fab fa-instagram"></i> 123,023</a>
-                    <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="fab fa-youtube"></i> 231,043</a>
+                    <a href="javascript:void(0)" class="font-weight-bold "><i class="fab fa-facebook"></i> 123,345</a>
+                    <a href="javascript:void(0)" class="font-weight-bold "><i class="fab fa-twitter"></i> 321,534</a>
+                    <a href="javascript:void(0)" class="font-weight-bold "><i class="fab fa-instagram"></i> 123,023</a>
+                    <a href="javascript:void(0)" class="font-weight-bold "><i class="fab fa-youtube"></i> 231,043</a>
                 </div>
             </div>  
         </div>
