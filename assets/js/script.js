@@ -58,11 +58,11 @@ class MyFooter extends HTMLElement {
     this.innerHTML = `
     <footer class="page-footer">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="">
                 <img src="assets/imgs/logo.svg" alt="" class="logo">
             </div>
-            <div class="col-md-9 text-center text-md-right">
+            <div class="">
                 <div class="socials">
                     <a href="javascript:void(0)" class="font-weight-bold "><i class="fab fa-facebook"></i> 123,345</a>
                     <a href="javascript:void(0)" class="font-weight-bold "><i class="fab fa-twitter"></i> 321,534</a>
