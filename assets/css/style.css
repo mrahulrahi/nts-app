@@ -145,3 +145,29 @@ align-items: center;
   text-align: center;
   vertical-align: middle;
 }
+.page-footer {
+  padding : 20px 100px;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+}
+.row-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #6c757d !important;
+  font-weight: 700 !important;
+  margin-right: 1.5rem !important;
+}
+.container-footer p {
+  font-size: 80%;
+  font-weight: 400;
+  opacity: .8;
+  line-height: 1.5;
+  border-top: 1px solid #dee2e6 !important;
+}
