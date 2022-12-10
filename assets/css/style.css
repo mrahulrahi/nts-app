@@ -190,7 +190,24 @@ body {
   top: 0;
   background: rgba(255, 255, 255, 0.2);
 }
-.container {
+.container-feature {
+  background-color: var(--teal);
+}
+.feature-posts {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  padding: 2.5% 10%;
+}
+
+.feature-post-item {
+  text-decoration: none;
+  width: 100% !important;
+  height: 10em;
+  background-color: wheat;
+  padding: 2.5% 5%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
