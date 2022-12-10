@@ -15,8 +15,6 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --secondary: #adb5bd;
-  --light: #f8f9fa;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -34,10 +32,6 @@
   box-sizing: border-box;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
-}
-
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -48,6 +42,8 @@ body {
   text-align: left;
   background-color: #fff;
 }
+
+/* Navigation menu */
 
 .navbar {
   position: relative;
@@ -111,6 +107,9 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+
+/* Home Section */
+
 .banner {
   display: flex;
   flex-direction: row;
@@ -266,7 +265,7 @@ body {
 .contact-info {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 5%;
   background-color: var(--gray-dark);
@@ -346,4 +345,11 @@ input:focus {
 #form-submit:hover {
   background-color: black;
   color: white;
+}
+
+.gmap-canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 500px;
 }
