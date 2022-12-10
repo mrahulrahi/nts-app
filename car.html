@@ -12,12 +12,7 @@
     />
     <meta name="author" content="Devcrud" />
     <title>JoeBLog | Free Bootstrap 4.3.x template</title>
-    <!-- font icons -->
-    <link
-      rel="stylesheet"
-      href="assets/vendors/themify-icons/css/themify-icons.css"
-    />
-    <!-- Bootstrap + JoeBLog main styles -->
+    <!-- styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -26,8 +21,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script type="module" src="./assets/js/script.js" defer></script>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+  <body>
     <!-- page Navigation -->
     <my-header></my-header>
     <!-- End Of Page Navigation -->
@@ -43,22 +39,26 @@
     <section class="container-feature">
       <div class="feature-posts">
         <a href="single-post.html" class="feature-post-item">
-          <span>Featured Posts</span>
+          <div class="feature-post-title">Cars Types</div>
         </a>
         <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/mpv.svg" class="w-100" alt="" />
+          <img src="assets/imgs/mpv.svg" class="feature-post-img" alt="" />
           <div class="feature-post-caption">MPV</div>
         </a>
         <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/suv.svg" class="w-100" alt="" />
+          <img src="assets/imgs/suv.svg" class="feature-post-img" alt="" />
           <div class="feature-post-caption">SUV</div>
         </a>
         <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/sedan.svg" class="w-100" alt="" />
+          <img src="assets/imgs/sedan.svg" class="feature-post-img" alt="" />
           <div class="feature-post-caption">Sedan</div>
         </a>
         <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/hatchback.svg" class="w-100" alt="" />
+          <img
+            src="assets/imgs/hatchback.svg"
+            class="feature-post-img"
+            alt=""
+          />
           <div class="feature-post-caption">Hatchback</div>
         </a>
       </div>
@@ -129,13 +129,5 @@
     <!-- Page Footer -->
     <my-footer></my-footer>
     <!-- End of Page Footer -->
-
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- JoeBLog js -->
-    <script src="assets/js/joeblog.js"></script>
-    <script src="assets/js/script.js"></script>
   </body>
 </html>
