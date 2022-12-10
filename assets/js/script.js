@@ -58,7 +58,6 @@ class MyFooter extends HTMLElement {
     this.innerHTML = `
     <footer class="page-footer">
     <div class="container-footer">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57006.05879135503!2d80.9744585325986!3d26.748247508265365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfcccdbecff0f%3A0x305a04e692868308!2sJaneshwar%20Mishra%20Park!5e0!3m2!1sen!2sin!4v1670616737544!5m2!1sen!2sin" width="full" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="row-footer">
             <div class="navbar-brand">
                 <img src="assets/imgs/logo.png" alt="" class="logo">
