@@ -190,6 +190,15 @@ body {
   top: 0;
   background: rgba(255, 255, 255, 0.2);
 }
+.header-title {
+  font-size: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+
+}
 .container-feature {
   background-color: var(--teal);
 }
