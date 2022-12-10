@@ -59,8 +59,8 @@ class MyFooter extends HTMLElement {
     <footer class="page-footer">
     <div class="container-footer">
         <div class="row-footer">
-            <div class="navbar-brand">
-                <img src="assets/imgs/logo.png" alt="" class="logo">
+            <div class="navbar-title">
+                <h1>IMAGINE GROUP</h1>
             </div>
             <div class="socials">
                 <a href="javascript:void(0)"><i class="fab fa-twitter"></i> 321,534</a>
