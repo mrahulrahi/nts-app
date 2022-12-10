@@ -248,10 +248,9 @@ body {
 
 .feature-post-item {
   text-decoration: none;
-  width: 100% !important;
+  width: 20em !important;
   height: 10em;
   background-color: antiquewhite;
-  padding: 2.5% 5%;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -265,12 +264,14 @@ body {
   color: var(--gray-dark);
 }
 .feature-post-img {
-  width: 8em;
+  width: 7em;
   height: auto;
 }
 .feature-post-caption {
+  width: 7.5em;
   font-size: 1.25em;
   font-weight: bold;
+  text-align: center;
   padding: 10px;
   color: var(--gray-dark);
   background-color: var(--white);
