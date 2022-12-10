@@ -12,13 +12,16 @@
     />
     <meta name="author" content="Devcrud" />
     <title>About Us | IMAGINE GROUP</title>
-    <!-- font icons -->
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
-      href="assets/vendors/themify-icons/css/themify-icons.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <!-- Bootstrap + JoeBLog main styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js"></script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <!-- Page Navigation -->
@@ -26,14 +29,11 @@
     <!-- End Of Page Navigation -->
 
     <!-- Page Header -->
-    <header class="page-header page-header-mini">
-      <h1 class="title">Voluptates Corporis Placeat</h1>
-      <ol class="breadcrumb pb-0">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">
-          Voluptates Corporis Placeat
-        </li>
-      </ol>
+    <header class="page-header">
+      <div class="header-title">
+        <h1 class="h1">About Us</h1>
+        <h3 class="h2">Know more about us</h3>
+      </div>
     </header>
     <!-- End Of Page Header -->
 
@@ -364,66 +364,7 @@
     </div>
 
     <!-- Page Footer -->
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
-            <img src="assets/imgs/logo.svg" alt="" class="logo" />
-          </div>
-          <div class="col-md-9 text-center text-md-right">
-            <div class="socials">
-              <a
-                href="javascript:void(0)"
-                class="font-weight-bold text-muted mr-4"
-                ><i class="ti-facebook pr-1"></i> 123,345</a
-              >
-              <a
-                href="javascript:void(0)"
-                class="font-weight-bold text-muted mr-4"
-                ><i class="ti-twitter pr-1"></i> 321,534</a
-              >
-              <a
-                href="javascript:void(0)"
-                class="font-weight-bold text-muted mr-4"
-                ><i class="ti-pinterest-alt pr-1"></i> 543,312</a
-              >
-              <a
-                href="javascript:void(0)"
-                class="font-weight-bold text-muted mr-4"
-                ><i class="ti-instagram pr-1"></i> 123,023</a
-              >
-              <a
-                href="javascript:void(0)"
-                class="font-weight-bold text-muted mr-4"
-                ><i class="ti-youtube pr-1"></i> 231,043</a
-              >
-            </div>
-          </div>
-        </div>
-        <p class="border-top mb-0 mt-4 pt-3 small">
-          &copy;
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          , JoeBlog Created By
-          <a
-            href="https://www.devcrud.com"
-            class="text-muted font-weight-bold"
-            target="_blank"
-            >DevCrud.</a
-          >
-          All rights reserved
-        </p>
-      </div>
-    </footer>
+    <my-footer></my-footer>
     <!-- End of Page Footer -->
-
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- JoeBLog js -->
-    <script src="assets/js/joeblog.js"></script>
-    <script src="assets/js/script.js"></script>
   </body>
 </html>
