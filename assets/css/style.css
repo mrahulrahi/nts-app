@@ -179,7 +179,7 @@ body {
 /* Car Page */
 .page-header {
   position: relative;
-  background: url(../imgs/header.jpg) no-repeat center top fixed;
+  background: url(../imgs/header.jpg  ) no-repeat center bottom fixed;
   background-size: cover;
   height: 450px;
 }
@@ -220,7 +220,7 @@ body {
   margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: ;
+  justify-content: center;
   align-items: center;
 }
 .feature-post-title {
@@ -230,14 +230,13 @@ body {
   color: var(--gray-dark);
 }
 .feature-post-img {
-  width: 6em;
+  width: 8em;
   height: auto;
 }
 .feature-post-caption {
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: bold;
-  padding: 5px 10px;
-  height: auto;
+  padding: 10px;
   color: var(--gray-dark);
   background-color: var(--white);
 }
@@ -256,17 +255,10 @@ body {
 }
 /* Contact Page */
 
-.contact {
-  font-family: 'Readex Pro', sans-serif;
-  background-color: antiquewhite;
-  display: flex;
-  flex-direction: column;
-  padding: 5%;
-}
-
 .contact-title {
   padding: 5% 10%;
 }
+
 .contact-title h3 {
   color: var(--gray-dark);
   font-size: 1.75vw;
@@ -277,13 +269,21 @@ body {
   font-size: 6vw;
 }
 
+.contact {
+  font-family: 'Readex Pro', sans-serif;
+  background-color: var(--teal);
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
 .contact-info {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   padding: 5%;
-  background-color: var(--gray-dark);
+  background-color: antiquewhite;
 }
 
 .contact span {
@@ -304,8 +304,8 @@ li {
 }
 
 #form-name, #form-email,#form-subject,#form-message {
-  background-color: antiquewhite;
-  color: var(--gray-dark);
+  background-color: var(--gray-dark);
+  color: antiquewhite;
   border-bottom: 1px solid white;
   width: 407px;
   height: 42px;
@@ -331,7 +331,7 @@ li {
 }
 
 input::placeholder {
-  color: var(--gray-dark);
+  color: antiquewhite;
   font-size: 1rem;
   font-weight: 200;
   padding-left: 1rem;
@@ -344,22 +344,12 @@ input:focus {
 }
 
 #form-name:hover, #form-email:hover, #form-subject:hover, #form-message:hover {
-  border-bottom: 3px solid var(--cyan);
-}
-
-#donate-btn {
-  background-color: #EADE71;
-  padding: 10px 15px;
-  text-decoration: none;
-}
-
-#donate-btn:hover {
-  opacity: 80%;
+  border-bottom: 3px solid var(--blue);
 }
 
 #form-submit:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--gray-dark);
+  color: antiquewhite;
 }
 
 .gmap-canvas {
@@ -367,5 +357,5 @@ input:focus {
   background: none !important;
   height: 300px;
   width: 500px;
-  border: 10px solid antiquewhite;
+  border: 10px solid var(--gray-dark);
 }
