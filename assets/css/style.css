@@ -174,6 +174,43 @@ body {
   text-decoration: none;
   color: var(--gray-dark);
 }
+/* About Page */
+.container {
+  width: 100%;
+  background-color: var(--teal);
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  width: 80%;
+}
+
+.mission-info, .story-info {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.mission-info p, .story-info p {
+  padding: 50px;
+}
+.story-info {
+  flex-direction: row-reverse;
+}
+.img img {
+  width: 500px;
+  padding: 50px;
+}
 /* Car Page */
 .page-header {
   position: relative;
