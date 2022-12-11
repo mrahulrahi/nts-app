@@ -243,11 +243,18 @@ body {
 }
 .container-feature {
   background-color: var(--teal);
+  width: 100%;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .feature-posts {
+  width: 80%;
+  height: auto;
   display: flex;
   justify-content: space-around;
-  padding: 2.5% 10%;
 }
 
 .feature-post-item {
@@ -258,27 +265,30 @@ body {
   margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .feature-post-title {
+  width: 5em;
+  margin: 10px;
+  padding: 30px;
   font-size: 2em;
   font-weight: bold;
-  height: auto;
   color: var(--gray-dark);
+  background-color: antiquewhite;
 }
 .feature-post-img {
   width: 7em;
   height: auto;
 }
 .feature-post-caption {
-  width: 7.5em;
-  font-size: 1.25em;
+  width: 100%;
+  font-size: 1.12em;
   font-weight: bold;
   text-align: center;
   padding: 10px;
   color: var(--gray-dark);
-  background-color: var(--white);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .container-book {
   background-color: antiquewhite;
@@ -288,6 +298,11 @@ body {
   align-items: center;
   width: 100% !important;
   height: 15em;
+}
+.container-title {
+  margin: 10px;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 .book-form {
   display: flex;
@@ -322,18 +337,29 @@ body {
   width: 80%;
 }
 .service-card-item {
-  width: 20%;
+  width: 16%;
   height: 250px;
-  margin: 1em;
+  margin: 10px;
   background-color: antiquewhite;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   
 }
 .service-card-img {
-  width: 7em;
+  width: 8em;
+  height: auto;
+  padding-top: 2em;
+}
+.service-card-caption {
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  color: var(--gray-dark);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /* Contact Page */
 
