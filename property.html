@@ -11,20 +11,16 @@
       content="Start your development with JoeBLog landing page."
     />
     <meta name="author" content="Devcrud" />
-    <title>Buy & Sell Properties | IMAGINE GROUP</title>
-    <!-- font icons -->
-    <link
-      rel="stylesheet"
-      href="assets/vendors/themify-icons/css/themify-icons.css"
-    />
-    <!-- Bootstrap + JoeBLog main styles -->
+    <title>Car Rental | IMAGINE GROUP</title>
+    <!-- styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
     />
+    <script type="module" src="./assets/js/script.js" defer></script>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+  <body>
     <!-- page Navigation -->
     <my-header></my-header>
     <!-- End Of Page Navigation -->
@@ -39,98 +35,152 @@
     <!-- end of page header -->
     <section class="container-feature">
       <div class="feature-posts">
+        <div class="feature-post-title">Cars Types</div>
         <a href="single-post.html" class="feature-post-item">
-          <div class="feature-post-title">Featured Posts</div>
+          <img src="assets/imgs/luxury.png" class="feature-post-img" alt="" />
+          <div class="feature-post-caption">Luxury</div>
         </a>
         <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/mpv.svg" class="w-100" alt="" />
+          <img src="assets/imgs/mpv.png" class="feature-post-img" alt="" />
           <div class="feature-post-caption">MPV</div>
         </a>
         <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/suv.svg" class="w-100" alt="" />
+          <img src="assets/imgs/suv.png" class="feature-post-img" alt="" />
           <div class="feature-post-caption">SUV</div>
         </a>
         <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/sedan.svg" class="w-100" alt="" />
+          <img src="assets/imgs/sedan.png" class="feature-post-img" alt="" />
           <div class="feature-post-caption">Sedan</div>
         </a>
         <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/hatchback.svg" class="w-100" alt="" />
+          <img
+            src="assets/imgs/hatchback.png"
+            class="feature-post-img"
+            alt=""
+          />
           <div class="feature-post-caption">Hatchback</div>
         </a>
       </div>
     </section>
 
-    <!-- Search Start -->
-    <div class="container-search">
-      <div class="field">
-        <select class="custom-select px-4 mb-3" style="height: 50px">
-          <option selected>Pickup Location</option>
-          <option value="1">Location 1</option>
-          <option value="2">Location 2</option>
-          <option value="3">Location 3</option>
-        </select>
-      </div>
-      <div class="field">
-        <select class="custom-select px-4 mb-3" style="height: 50px">
-          <option selected>Drop Location</option>
-          <option value="1">Location 1</option>
-          <option value="2">Location 2</option>
-          <option value="3">Location 3</option>
-        </select>
-      </div>
-      <div class="field">
-        <div class="date mb-3" id="date" data-target-input="nearest">
+    <!-- Booking Start -->
+    <section class="container-book">
+      <div class="container-title">Book Your Car</div>
+      <div class="book-form">
+        <div class="field">
           <input
             type="text"
-            class="form-control p-4 datetimepicker-input"
-            placeholder="Pickup Date"
-            data-target="#date"
-            data-toggle="datetimepicker"
+            style="height: 50px"
+            placeholder="Full Name"
+            name=""
+            id=""
           />
         </div>
-      </div>
-      <div class="field">
-        <div class="time mb-3" id="time" data-target-input="nearest">
+        <div class="field">
+          <input
+            type="tel"
+            style="height: 50px"
+            placeholder="Phone No."
+            name=""
+            id=""
+          />
+        </div>
+        <div class="field">
           <input
             type="text"
-            class="form-control p-4 datetimepicker-input"
-            placeholder="Pickup Time"
-            data-target="#time"
-            data-toggle="datetimepicker"
+            style="height: 50px"
+            placeholder="Pickup Location"
+            name=""
+            id=""
           />
         </div>
+        <div class="field">
+          <input
+            type="text"
+            style="height: 50px"
+            placeholder="Drop Location"
+            name=""
+            id=""
+          />
+        </div>
+        <div class="field">
+          <div class="date mb-3" id="date" data-target-input="nearest">
+            <input
+              type="date"
+              style="height: 50px"
+              class="form-control p-4 datetimepicker-input"
+              placeholder="Pickup Date"
+              data-target="#date"
+              data-toggle="datetimepicker"
+            />
+          </div>
+        </div>
+        <div class="field">
+          <div class="time mb-3" id="time" data-target-input="nearest">
+            <input
+              type="time"
+              style="height: 50px"
+              class="form-control p-4 datetimepicker-input"
+              placeholder="Pickup Time"
+              data-target="#time"
+              data-toggle="datetimepicker"
+            />
+          </div>
+        </div>
+        <div class="field">
+          <select class="custom-select px-4 mb-3" style="height: 50px">
+            <option selected>Select Car type</option>
+            <option value="1">Luxury</option>
+            <option value="2">Suv</option>
+            <option value="3">Sedan</option>
+            <option value="3">Hatchback</option>
+          </select>
+        </div>
+        <div class="field">
+          <button
+            class="btn btn-primary btn-block mb-3"
+            type="submit"
+            style="height: 50px"
+          >
+            Book Now
+          </button>
+        </div>
       </div>
-      <div class="field">
-        <select class="custom-select px-4 mb-3" style="height: 50px">
-          <option selected>Select A Car</option>
-          <option value="1">Car 1</option>
-          <option value="2">Car 1</option>
-          <option value="3">Car 1</option>
-        </select>
-      </div>
-      <div class="field">
-        <button
-          class="btn btn-primary btn-block mb-3"
-          type="submit"
-          style="height: 50px"
-        >
-          Search
-        </button>
-      </div>
-    </div>
+    </section>
     <!-- Search End -->
+    <!-- Sevices Section -->
+    <section class="container-service">
+      <div class="container-title">Our Services</div>
+      <div class="service-card">
+        <div class="service-card-item">
+          <img src="assets/imgs/local.png" class="service-card-img" alt="" />
+          <div class="service-card-caption">Local Pickup & Drop</div>
+        </div>
+        <div class="service-card-item">
+          <img src="assets/imgs/oneway.png" class="service-card-img" alt="" />
+          <div class="service-card-caption">One Way Trip</div>
+        </div>
+        <div class="service-card-item">
+          <img src="assets/imgs/twoway.png" class="service-card-img" alt="" />
+          <div class="service-card-caption">Two Way Trip</div>
+        </div>
+        <div class="service-card-item">
+          <img src="assets/imgs/airport.png" class="service-card-img" alt="" />
+          <div class="service-card-caption">Airport Pickup & Drop</div>
+        </div>
+        <div class="service-card-item">
+          <img src="assets/imgs/event.png" class="service-card-img" alt="" />
+          <div class="service-card-caption">Event Booking</div>
+        </div>
+        <div class="service-card-item">
+          <img src="assets/imgs/office.png" class="service-card-img" alt="" />
+          <div class="service-card-caption">For Office Use</div>
+        </div>
+      </div>
+    </section>
 
     <!-- Page Footer -->
     <my-footer></my-footer>
     <!-- End of Page Footer -->
-
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- JoeBLog js -->
-    <script src="assets/js/joeblog.js"></script>
-    <script src="assets/js/script.js"></script>
   </body>
 </html>

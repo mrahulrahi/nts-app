@@ -361,6 +361,49 @@ body {
   color: var(--gray-dark);
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.container-car {
+  width: 100%;
+  height: 100%;
+  background-color: var(--teal);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+.car-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.car-card-item {
+  width: 30%;
+  height: 100%;
+  margin: 10px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.car-card-img {
+  width: 8em;
+  height: auto;
+}
+.car-card-caption {
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  color: var(--gray-dark);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 /* Contact Page */
 
 .contact-title {
