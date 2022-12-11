@@ -1,223 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="Start your development with JoeBLog landing page."
-    />
-    <meta name="author" content="Devcrud" />
-    <title>Car Rental | IMAGINE GROUP</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <script type="module" src="./assets/js/script.js" defer></script>
-  </head>
-  <body>
-    <!-- page Navigation -->
-    <my-header></my-header>
-    <!-- End Of Page Navigation -->
 
-    <!-- page-header -->
-    <header class="page-header">
-      <div class="header-title">
-        <h1 class="h1"><b>Car</b> Rental</h1>
-        <h3 class="h2">Book Your Car</h3>
-      </div>
-    </header>
-    <!-- end of page header -->
-    <section class="container-feature">
-      <div class="feature-posts">
-        <div class="feature-post-title">Cars Types</div>
-        <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/luxury.png" class="feature-post-img" alt="" />
-          <div class="feature-post-caption">Luxury</div>
-        </a>
-        <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/mpv.png" class="feature-post-img" alt="" />
-          <div class="feature-post-caption">MPV</div>
-        </a>
-        <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/suv.png" class="feature-post-img" alt="" />
-          <div class="feature-post-caption">SUV</div>
-        </a>
-        <a href="single-post.html" class="feature-post-item">
-          <img src="assets/imgs/sedan.png" class="feature-post-img" alt="" />
-          <div class="feature-post-caption">Sedan</div>
-        </a>
-        <a href="single-post.html" class="feature-post-item">
-          <img
-            src="assets/imgs/hatchback.png"
-            class="feature-post-img"
-            alt=""
-          />
-          <div class="feature-post-caption">Hatchback</div>
-        </a>
-      </div>
-    </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Start your development with JoeBLog landing page." />
+  <meta name="author" content="Devcrud" />
+  <title>Car Rental | IMAGINE GROUP</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+  <script type="module" src="./assets/js/script.js" defer></script>
+</head>
 
-    <!-- Booking Start -->
-    <section class="container-book">
-      <div class="container-title">Book Your Car</div>
-      <div class="book-form">
-        <div class="field">
-          <input
-            type="text"
-            style="height: 50px"
-            placeholder="Full Name"
-            name=""
-            id=""
-          />
-        </div>
-        <div class="field">
-          <input
-            type="tel"
-            style="height: 50px"
-            placeholder="Phone No."
-            name=""
-            id=""
-          />
-        </div>
-        <div class="field">
-          <input
-            type="text"
-            style="height: 50px"
-            placeholder="Pickup Location"
-            name=""
-            id=""
-          />
-        </div>
-        <div class="field">
-          <input
-            type="text"
-            style="height: 50px"
-            placeholder="Drop Location"
-            name=""
-            id=""
-          />
-        </div>
-        <div class="field">
-          <div class="date mb-3" id="date" data-target-input="nearest">
-            <input
-              type="datetime-local"
-              style="height: 50px"
-              class="form-control p-4 datetimepicker-input"
-              placeholder="Pickup Date & Time"
-              data-target="#date"
-              data-toggle="datetimepicker"
-            />
-          </div>
-        </div>
-        <div class="field">
-          <select class="custom-select px-4 mb-3" style="height: 50px">
-            <option selected>Select Car type</option>
-            <option value="1">Luxury</option>
-            <option value="2">Suv</option>
-            <option value="3">Sedan</option>
-            <option value="3">Hatchback</option>
-          </select>
-        </div>
-        <div class="field">
-          <button
-            class="btn btn-primary btn-block mb-3"
-            type="submit"
-            style="height: 50px"
-          >
-            Book Now
-          </button>
+<body>
+  <!-- page Navigation -->
+  <my-header></my-header>
+  <!-- End Of Page Navigation -->
+
+  <!-- page-header -->
+  <header class="page-header">
+    <div class="header-title">
+      <h1 class="h1"><b>Car</b> Rental</h1>
+      <h3 class="h2">Book Your Car</h3>
+    </div>
+  </header>
+  <!-- end of page header -->
+  <section class="container-feature">
+    <div class="feature-posts">
+      <div class="feature-post-title">Cars Types</div>
+      <a href="single-post.html" class="feature-post-item">
+        <img src="assets/imgs/luxury.png" class="feature-post-img" alt="" />
+        <div class="feature-post-caption">Luxury</div>
+      </a>
+      <a href="single-post.html" class="feature-post-item">
+        <img src="assets/imgs/mpv.png" class="feature-post-img" alt="" />
+        <div class="feature-post-caption">MPV</div>
+      </a>
+      <a href="single-post.html" class="feature-post-item">
+        <img src="assets/imgs/suv.png" class="feature-post-img" alt="" />
+        <div class="feature-post-caption">SUV</div>
+      </a>
+      <a href="single-post.html" class="feature-post-item">
+        <img src="assets/imgs/sedan.png" class="feature-post-img" alt="" />
+        <div class="feature-post-caption">Sedan</div>
+      </a>
+      <a href="single-post.html" class="feature-post-item">
+        <img src="assets/imgs/hatchback.png" class="feature-post-img" alt="" />
+        <div class="feature-post-caption">Hatchback</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Booking Start -->
+  <section class="container-book">
+    <div class="container-title">Book Your Car</div>
+    <div class="book-form">
+      <div class="field">
+        <input type="text" style="height: 50px" placeholder="Full Name" name="" id="" />
+      </div>
+      <div class="field">
+        <input type="tel" style="height: 50px" placeholder="Phone No." name="" id="" />
+      </div>
+      <div class="field">
+        <input type="text" style="height: 50px" placeholder="Pickup Location" name="" id="" />
+      </div>
+      <div class="field">
+        <input type="text" style="height: 50px" placeholder="Drop Location" name="" id="" />
+      </div>
+      <div class="field">
+        <div class="date mb-3" id="date" data-target-input="nearest">
+          <input type="datetime-local" style="height: 50px" class="form-control p-4 datetimepicker-input"
+            placeholder="Pickup Date & Time" data-target="#date" data-toggle="datetimepicker" />
         </div>
       </div>
-    </section>
-    <!-- Search End -->
-    <!-- Sevices Section -->
-    <section class="container-service">
-      <div class="container-title">Our Services</div>
-      <div class="service-card">
-        <div class="service-card-item">
-          <img src="assets/imgs/local.png" class="service-card-img" alt="" />
-          <div class="service-card-caption">Local Rentals</div>
-        </div>
-        <div class="service-card-item">
-          <img src="assets/imgs/oneway.png" class="service-card-img" alt="" />
-          <div class="service-card-caption">OneWay Drops</div>
-        </div>
-        <div class="service-card-item">
-          <img src="assets/imgs/twoway.png" class="service-card-img" alt="" />
-          <div class="service-card-caption">Round Trips</div>
-        </div>
-        <div class="service-card-item">
-          <img src="assets/imgs/airport.png" class="service-card-img" alt="" />
-          <div class="service-card-caption">Airport Transfers</div>
-        </div>
-        <div class="service-card-item">
-          <img src="assets/imgs/event.png" class="service-card-img" alt="" />
-          <div class="service-card-caption">Event Booking</div>
-        </div>
-        <div class="service-card-item">
-          <img src="assets/imgs/office.png" class="service-card-img" alt="" />
-          <div class="service-card-caption">For Office Use</div>
-        </div>
+      <div class="field">
+        <select class="custom-select px-4 mb-3" style="height: 50px">
+          <option selected>Select Car type</option>
+          <option value="1">Luxury</option>
+          <option value="2">Suv</option>
+          <option value="3">Sedan</option>
+          <option value="3">Hatchback</option>
+        </select>
       </div>
-    </section>
-    <!-- Service Section end -->
-    <!-- Car Section start -->
-    <section class="container-car">
-      <div class="container-title">Available Cars</div>
-      <div class="car-card">
-        <div class="car-card-item">
-          <img src="assets/imgs/xuv300.webp" class="car-card-img" alt="" />
-          <div class="car-card-caption">
-            <span>
-              <h3>SUV</h3>
-              <h4>XUV 300</h4>
-            </span>
-            <span>
-              <i class="fa fa-solid fa-users"></i>4 + 1
-              <i class="fa fa-regular fa-snowflake"></i>AC
-              <i class="fa fa-user"></i>&#x20B9<span>250/Night</span>
-            </span>
+      <div class="field">
+        <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px">
+          Book Now
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Search End -->
+  <!-- Sevices Section -->
+  <section class="container-service">
+    <div class="container-title">Our Services</div>
+    <div class="service-card">
+      <div class="service-card-item">
+        <img src="assets/imgs/local.png" class="service-card-img" alt="" />
+        <div class="service-card-caption">Local Rentals</div>
+      </div>
+      <div class="service-card-item">
+        <img src="assets/imgs/oneway.png" class="service-card-img" alt="" />
+        <div class="service-card-caption">OneWay Drops</div>
+      </div>
+      <div class="service-card-item">
+        <img src="assets/imgs/twoway.png" class="service-card-img" alt="" />
+        <div class="service-card-caption">Round Trips</div>
+      </div>
+      <div class="service-card-item">
+        <img src="assets/imgs/airport.png" class="service-card-img" alt="" />
+        <div class="service-card-caption">Airport Transfers</div>
+      </div>
+      <div class="service-card-item">
+        <img src="assets/imgs/event.png" class="service-card-img" alt="" />
+        <div class="service-card-caption">Event Booking</div>
+      </div>
+      <div class="service-card-item">
+        <img src="assets/imgs/office.png" class="service-card-img" alt="" />
+        <div class="service-card-caption">For Office Use</div>
+      </div>
+    </div>
+  </section>
+  <!-- Service Section end -->
+  <!-- Car Section start -->
+  <section class="container-car">
+    <div class="container-title">Available Cars</div>
+    <div class="car-card">
+      <div class="car-card-item">
+        <img src="assets/imgs/xuv300.webp" class="car-card-img" alt="" />
+        <div class="car-card-caption">
+          <div class="cc-caption-top">
+            <p>XUV 300</p>
             <span><b>Note :</b>Toll Charge and Parking Charge (if any) Extra</span>
+          </div>
+          <div class="cc-caption-med">
             <span>
-              <i class="fa fa-solid fa-rupee-sign">10/Km</i>
-              <button class="btn">Book Now</button>
+              <p><i class="fas fa-car"></i>SUV</p>
+              <p>
+                <i class="fa fa-solid fa-users"></i>4 + 1
+              </p>
+            </span>
+            <span>
+              <p>
+                <i class="fa fa-regular fa-snowflake"></i>AC
+              </p>
+              <p>
+                <i class="fa fa-user"></i>&#x20B9 250/Night
+              </p>
             </span>
           </div>
-          <div class="car-card-caption">
-            <i class="fa fa-inr" aria-hidden="true"></i>
+          <div class="cc-caption-bot">
+            <p><i class="fas fa-money-bill-alt"></i>&#x20B9 10/Km</p>
+            <button class="btn-2">Book Now</button>
           </div>
         </div>
-        <div class="car-card-item">
-          <img src="assets/imgs/dzire.webp" class="car-card-img" alt="" />
-          <div class="car-card-caption">OneWay Drops</div>
-        </div>
-        <div class="car-card-item">
-          <img src="assets/imgs/twoway.png" class="car-card-img" alt="" />
-          <div class="car-card-caption">Round Trips</div>
-        </div>
-        <div class="car-card-item">
-          <img src="assets/imgs/airport.png" class="car-card-img" alt="" />
-          <div class="car-card-caption">Airport Transfers</div>
-        </div>
-        <div class="car-card-item">
-          <img src="assets/imgs/event.png" class="car-card-img" alt="" />
-          <div class="car-card-caption">Event Booking</div>
-        </div>
-        <div class="car-card-item">
-          <img src="assets/imgs/office.png" class="car-card-img" alt="" />
-          <div class="car-card-caption">Office Use</div>
+      </div>
+
+      <div class="car-card-item">
+        <img src="assets/imgs/dzire.webp" class="car-card-img" alt="" />
+        <div class="car-card-caption">
+          <div class="cc-caption-top">
+            <p>Dzire</p>
+            <span><b>Note :</b>Toll Charge and Parking Charge (if any) Extra</span>
+          </div>
+          <div class="cc-caption-med">
+            <span>
+              <p><i class="fas fa-car"></i>SUV</p>
+              <p>
+                <i class="fa fa-solid fa-users"></i>4 + 1
+              </p>
+            </span>
+            <span>
+              <p>
+                <i class="fa fa-regular fa-snowflake"></i>AC
+              </p>
+              <p>
+                <i class="fa fa-user"></i>&#x20B9 250/Night
+              </p>
+            </span>
+          </div>
+          <div class="cc-caption-bot">
+            <p><i class="fas fa-money-bill-alt"></i>&#x20B9 10/Km</p>
+            <button class="btn-2">Book Now</button>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- Car Section end -->
-    <!-- Page Footer -->
-    <my-footer></my-footer>
-    <!-- End of Page Footer -->
-  </body>
+
+      <div class="car-card-item">
+        <img src="assets/imgs/xuv300.webp" class="car-card-img" alt="" />
+        <div class="car-card-caption">
+          <div class="cc-caption-top">
+            <p>XUV 300</p>
+            <span><b>Note :</b>Toll Charge and Parking Charge (if any) Extra</span>
+          </div>
+          <div class="cc-caption-med">
+            <span>
+              <p><i class="fas fa-car"></i>SUV</p>
+              <p>
+                <i class="fa fa-solid fa-users"></i>4 + 1
+              </p>
+            </span>
+            <span>
+              <p>
+                <i class="fa fa-regular fa-snowflake"></i>AC
+              </p>
+              <p>
+                <i class="fa fa-user"></i>&#x20B9 250/Night
+              </p>
+            </span>
+          </div>
+          <div class="cc-caption-bot">
+            <p><i class="fas fa-money-bill-alt"></i>&#x20B9 10/Km</p>
+            <button class="btn-2">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card-item">
+        <img src="assets/imgs/xuv300.webp" class="car-card-img" alt="" />
+        <div class="car-card-caption">
+          <div class="cc-caption-top">
+            <p>XUV 300</p>
+            <span><b>Note :</b>Toll Charge and Parking Charge (if any) Extra</span>
+          </div>
+          <div class="cc-caption-med">
+            <span>
+              <p><i class="fas fa-car"></i>SUV</p>
+              <p>
+                <i class="fa fa-solid fa-users"></i>4 + 1
+              </p>
+            </span>
+            <span>
+              <p>
+                <i class="fa fa-regular fa-snowflake"></i>AC
+              </p>
+              <p>
+                <i class="fa fa-user"></i>&#x20B9 250/Night
+              </p>
+            </span>
+          </div>
+          <div class="cc-caption-bot">
+            <p><i class="fas fa-money-bill-alt"></i>&#x20B9 10/Km</p>
+            <button class="btn-2">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card-item">
+        <img src="assets/imgs/xuv300.webp" class="car-card-img" alt="" />
+        <div class="car-card-caption">
+          <div class="cc-caption-top">
+            <p>XUV 300</p>
+            <span><b>Note :</b>Toll Charge and Parking Charge (if any) Extra</span>
+          </div>
+          <div class="cc-caption-med">
+            <span>
+              <p><i class="fas fa-car"></i>SUV</p>
+              <p>
+                <i class="fa fa-solid fa-users"></i>4 + 1
+              </p>
+            </span>
+            <span>
+              <p>
+                <i class="fa fa-regular fa-snowflake"></i>AC
+              </p>
+              <p>
+                <i class="fa fa-user"></i>&#x20B9 250/Night
+              </p>
+            </span>
+          </div>
+          <div class="cc-caption-bot">
+            <p><i class="fas fa-money-bill-alt"></i>&#x20B9 10/Km</p>
+            <button class="btn-2">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card-item">
+        <img src="assets/imgs/xuv300.webp" class="car-card-img" alt="" />
+        <div class="car-card-caption">
+          <div class="cc-caption-top">
+            <p>XUV 300</p>
+            <span><b>Note :</b>Toll Charge and Parking Charge (if any) Extra</span>
+          </div>
+          <div class="cc-caption-med">
+            <span>
+              <p><i class="fas fa-car"></i>SUV</p>
+              <p>
+                <i class="fa fa-solid fa-users"></i>4 + 1
+              </p>
+            </span>
+            <span>
+              <p>
+                <i class="fa fa-regular fa-snowflake"></i>AC
+              </p>
+              <p>
+                <i class="fa fa-user"></i>&#x20B9 250/Night
+              </p>
+            </span>
+          </div>
+          <div class="cc-caption-bot">
+            <p><i class="fas fa-money-bill-alt"></i>&#x20B9 10/Km</p>
+            <button class="btn-2">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Car Section end -->
+  <!-- Page Footer -->
+  <my-footer></my-footer>
+  <!-- End of Page Footer -->
+</body>
+
 </html>

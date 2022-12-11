@@ -2,8 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 :root {
-  --indigo: #6610f2;
-  --purple: #6f42c1;
   --orange: #fd7e14;
   --teal: #c2f6ea;
   --white: #fff;
@@ -127,7 +125,7 @@ body {
   line-height: 3em;
 }
 .text-block b {
-  color: var(--cyan);
+  color: var(--orange);
 
 }
 .btn-1 {
@@ -136,8 +134,8 @@ body {
   line-height: 1.5;
   border-radius: 0rem;
   color: var(--antiquewhite);
-  background-color: var(--indigo);
-  border-color: var(--indigo);
+  background-color: var(--orange);
+  border-color: var(--orange);
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -362,7 +360,7 @@ body {
 .container-car {
   width: 100%;
   height: 100%;
-  background-color: var(--teal);
+  background-color: var(--antiquewhite);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -375,12 +373,14 @@ body {
   justify-content: center;
   align-items: center;
   width: 80%;
+  background-color: var(--teal);
+  padding: 3em;
 }
 .car-card-item {
   width: 30%;
   height: 100%;
-  margin: 10px;
-  background-color: var(--antiquewhite);
+  margin: 30px;
+  background-color: var(--gray);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -390,22 +390,73 @@ body {
 .car-card-img {
   width: 20em;
   height: auto;
+  background-color: var(--gray);
+  margin: 20px;
 }
-.car-card-caption > span {
+.car-card-caption {
+  color: var(--gray-dark);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.cc-caption-top, .cc-caption-med, .cc-caption-bot {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   font-size: 10px;
   text-align: center;
-  padding: 10px;
-  color: var(--gray-dark);
-  background-color: rgba(0, 0, 0, 0.2);
-}
-.car-card-caption > span i {
-  color: var(--cyan);
-  font-size: 2em;
   
+}
+.cc-caption-top p {
+  background-color: var(--antiquewhite);
+  font-size: 3em;
+  font-weight: bold;
+  width: 50%;
+  padding: 10px;
+}
+.cc-caption-top span {
+  font-size: 1em;
+  width: 50%;
+  padding: 10px;
+}
+.cc-caption-med {
+  background-color: var(--gray);
+}
+.cc-caption-med span {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
+  font-size: 10px;
+  text-align: center;
+}
+.cc-caption-med p {
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  margin: 5px;
+
+}
+.cc-caption-bot p {
+  width: 70%;
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bolder;
+  background-color: var(--orange);
+}
+.btn-2 {
+  width: 30%;
+  padding: 10px 20px;
+  background-color: var(--gray-dark);
+  color: var(--antiquewhite);
+  border: 1px solid var(--gray-dark);
+}
+.cc-caption-top i, .cc-caption-med i, .cc-caption-bot i {
+  color: var(--gray-dark);
+  font-size: 2em;
+  font-weight: 600; 
 }
 
 /* Contact Page */
