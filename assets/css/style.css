@@ -378,7 +378,7 @@ body {
 }
 .car-card-item {
   width: 30%;
-  height: 100%;
+  height: 465px;
   margin: 30px;
   background-color: var(--gray);
   display: flex;
@@ -395,7 +395,7 @@ body {
 }
 .car-card-caption {
   color: var(--gray-dark);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .cc-caption-top, .cc-caption-med, .cc-caption-bot {
   display: inline-flex;
