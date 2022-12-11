@@ -40,10 +40,7 @@ class MyHeader extends HTMLElement {
             </ul>
             <div class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="components.html" class="btn">Signup</a>
-                </li>
-                <li class="nav-item">
-                    <a href="components.html" class="btn">Login</a>
+                    <a href="tel:123-456-7890" class="btn"><i class="fa fa-phone"></i>Call Us +91XXXXXXXX</a>
                 </li>
             </div>
         </div>

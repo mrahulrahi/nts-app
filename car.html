@@ -15,11 +15,8 @@
     <!-- styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <script type="module" src="./assets/js/script.js" defer></script>
   </head>
@@ -64,65 +61,117 @@
       </div>
     </section>
 
-    <!-- Search Start -->
-    <div class="container-search">
-      <div class="field">
-        <select class="custom-select" style="height: 50px">
-          <option selected>Pickup Location</option>
-          <option value="1">Location 1</option>
-          <option value="2">Location 2</option>
-          <option value="3">Location 3</option>
-        </select>
-      </div>
-      <div class="field">
-        <select class="custom-select px-4 mb-3" style="height: 50px">
-          <option selected>Drop Location</option>
-          <option value="1">Location 1</option>
-          <option value="2">Location 2</option>
-          <option value="3">Location 3</option>
-        </select>
-      </div>
-      <div class="field">
-        <div class="date mb-3" id="date" data-target-input="nearest">
+    <!-- Booking Start -->
+    <section class="container-book">
+      <div class="feature-post-title">Book Your Car</div>
+      <div class="book-form">
+        <div class="field">
           <input
-            type="date"
-            class="form-control p-4 datetimepicker-input"
-            placeholder="Pickup Date"
-            data-target="#date"
-            data-toggle="datetimepicker"
+            type="text"
+            style="height: 50px"
+            placeholder="Full Name"
+            name=""
+            id=""
           />
         </div>
-      </div>
-      <div class="field">
-        <div class="time mb-3" id="time" data-target-input="nearest">
+        <div class="field">
           <input
-            type="time"
-            class="form-control p-4 datetimepicker-input"
-            placeholder="Pickup Time"
-            data-target="#time"
-            data-toggle="datetimepicker"
+            type="tel"
+            style="height: 50px"
+            placeholder="Phone No."
+            name=""
+            id=""
           />
         </div>
+        <div class="field">
+          <input
+            type="text"
+            style="height: 50px"
+            placeholder="Pickup Location"
+            name=""
+            id=""
+          />
+        </div>
+        <div class="field">
+          <input
+            type="text"
+            style="height: 50px"
+            placeholder="Drop Location"
+            name=""
+            id=""
+          />
+        </div>
+        <div class="field">
+          <div class="date mb-3" id="date" data-target-input="nearest">
+            <input
+              type="date"
+              style="height: 50px"
+              class="form-control p-4 datetimepicker-input"
+              placeholder="Pickup Date"
+              data-target="#date"
+              data-toggle="datetimepicker"
+            />
+          </div>
+        </div>
+        <div class="field">
+          <div class="time mb-3" id="time" data-target-input="nearest">
+            <input
+              type="time"
+              style="height: 50px"
+              class="form-control p-4 datetimepicker-input"
+              placeholder="Pickup Time"
+              data-target="#time"
+              data-toggle="datetimepicker"
+            />
+          </div>
+        </div>
+        <div class="field">
+          <select class="custom-select px-4 mb-3" style="height: 50px">
+            <option selected>Select Car type</option>
+            <option value="1">Luxury</option>
+            <option value="2">Suv</option>
+            <option value="3">Sedan</option>
+            <option value="3">Hatchback</option>
+          </select>
+        </div>
+        <div class="field">
+          <button
+            class="btn btn-primary btn-block mb-3"
+            type="submit"
+            style="height: 50px"
+          >
+            Book Now
+          </button>
+        </div>
       </div>
-      <div class="field">
-        <select class="custom-select px-4 mb-3" style="height: 50px">
-          <option selected>Select A Car</option>
-          <option value="1">Car 1</option>
-          <option value="2">Car 1</option>
-          <option value="3">Car 1</option>
-        </select>
-      </div>
-      <div class="field">
-        <button
-          class="btn btn-primary btn-block mb-3"
-          type="submit"
-          style="height: 50px"
-        >
-          Search
-        </button>
-      </div>
-    </div>
+    </section>
     <!-- Search End -->
+    <!-- Sevices Section -->
+    <section class="container-service">
+      <div class="feature-post-title">Our Services</div>
+      <div class="service-card">
+        <div class="service-card-item">
+          <img src="assets/imgs/local.png" class="service-card-img" alt="" />
+          <div class="feature-post-caption">Local</div>
+        </div>
+        <div class="service-card-item">
+          <img src="assets/imgs/oneway.png" class="service-card-img" alt="" />
+          <div class="feature-post-caption">One Way</div>
+        </div>
+        <div class="service-card-item">
+          <img
+            src="assets/imgs/outstation.png"
+            class="service-card-img"
+            alt=""
+          />
+          <div class="feature-post-caption">OutStation</div>
+        </div>
+        <div class="service-card-item">
+          <img src="assets/imgs/airport.png" class="service-card-img" alt="" />
+          <div class="feature-post-caption">Airport</div>
+        </div>
+      </div>
+    </section>
 
     <!-- Page Footer -->
     <my-footer></my-footer>
