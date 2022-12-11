@@ -2,17 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 :root {
-  --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #f9948d;
   --orange: #fd7e14;
-  --yellow: #ffd54f;
-  --green: #9ccc65;
   --teal: #c2f6ea;
-  --cyan: #81d4fa;
   --white: #fff;
+  --antiquewhite: antiquewhite;
   --gray: #6c757d;
   --gray-dark: #343a40;
   --breakpoint-xs: 0;
@@ -100,14 +95,14 @@ body {
   line-height: 1.5;
   border-radius: 0rem;
   color: #fff;
-  background-color: #343a40;
-  border-color: #343a40;
+  background-color: var(--gray-dark);
+  border-color: var(--gray-dark);
   display: inline-block;
   font-weight: 400;
   text-align: center;
   vertical-align: middle;
 }
-.fa {
+.fa-phone {
   transform: rotate(90deg);
   margin-right: 5px;
 }
@@ -122,7 +117,7 @@ body {
   height: 400px;
 }
 .banner-item {
-  background-color: antiquewhite;
+  background-color: var(--antiquewhite);
   height: 80%;
   width: 500px;
   padding: 4em;
@@ -132,7 +127,7 @@ body {
   line-height: 3em;
 }
 .text-block b {
-  color: var(--indigo);
+  color: var(--cyan);
 
 }
 .btn-1 {
@@ -140,7 +135,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0rem;
-  color: antiquewhite;
+  color: var(--antiquewhite);
   background-color: var(--indigo);
   border-color: var(--indigo);
   display: inline-block;
@@ -195,7 +190,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
+  background-color: var(--antiquewhite);
   width: 80%;
   height: auto;
 }
@@ -263,7 +258,7 @@ body {
   text-decoration: none;
   width: 20em !important;
   height: 10em;
-  background-color: antiquewhite;
+  background-color: var(--antiquewhite);
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -277,7 +272,7 @@ body {
   font-size: 2em;
   font-weight: bold;
   color: var(--gray-dark);
-  background-color: antiquewhite;
+  background-color: var(--antiquewhite);
 }
 .feature-post-img {
   width: 7em;
@@ -293,7 +288,7 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .container-book {
-  background-color: antiquewhite;
+  background-color: var(--antiquewhite);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -342,7 +337,7 @@ body {
   width: 16%;
   height: 250px;
   margin: 10px;
-  background-color: antiquewhite;
+  background-color:var(--antiquewhite);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -385,7 +380,7 @@ body {
   width: 30%;
   height: 100%;
   margin: 10px;
-  background-color: antiquewhite;
+  background-color: var(--antiquewhite);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -393,17 +388,24 @@ body {
   
 }
 .car-card-img {
-  width: 8em;
+  width: 20em;
   height: auto;
 }
-.car-card-caption {
+.car-card-caption > span {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 10px;
   text-align: center;
   padding: 10px;
   color: var(--gray-dark);
   background-color: rgba(0, 0, 0, 0.2);
+}
+.car-card-caption > span i {
+  color: var(--cyan);
+  font-size: 2em;
+  
 }
 
 /* Contact Page */
@@ -436,14 +438,14 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 5%;
-  background-color: antiquewhite;
+  background-color: var(--antiquewhite);
 }
 
 .contact span {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  color: antiquewhite;
+  color: var(--antiquewhite);
 }
 
 .contact-form span {
@@ -458,7 +460,7 @@ li {
 
 #form-name, #form-email,#form-subject,#form-message {
   background-color: var(--gray-dark);
-  color: antiquewhite;
+  color: var(--antiquewhite);
   border-bottom: 1px solid white;
   width: 407px;
   height: 42px;
@@ -484,7 +486,7 @@ li {
 }
 
 input::placeholder {
-  color: antiquewhite;
+  color: var(--antiquewhite);
   font-size: 1rem;
   font-weight: 200;
   padding-left: 1rem;
@@ -502,7 +504,7 @@ input:focus {
 
 #form-submit:hover {
   background-color: var(--gray-dark);
-  color: antiquewhite;
+  color: var(--antiquewhite);
 }
 
 .gmap-canvas {
