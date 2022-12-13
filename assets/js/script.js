@@ -60,13 +60,13 @@ class MyFooter extends HTMLElement {
                 <h1>IMAGINE GROUP</h1>
             </div>
             <div class="socials">
-                <a href="javascript:void(0)"><i class="fab fa-twitter"></i> 321,534</a>
-                <a href="javascript:void(0)"><i class="fab fa-facebook"></i> 123,345</a>
-                <a href="javascript:void(0)"><i class="fab fa-youtube"></i> 231,043</a>
-                <a href="javascript:void(0)"><i class="fab fa-instagram"></i> 123,023</a>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="javascript:void(0)"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="javascript:void(0)"><i class="fab fa-youtube"></i>Youtube</a>
+                <a href="javascript:void(0)"><i class="fab fa-instagram"></i>Instagram</a>
             </div>  
         </div>
-        <p class="border">&copy; <script>document.write(new Date().getFullYear())</script>, Imagine Group Created By <a href="https://www.devcrud.com" class="" target="_blank">mrahulrahi.</a>  All rights reserved </p> 
+        <p class="border">&copy;Imagine Group Created By <a href="https://www.devcrud.com" class="" target="_blank">mrahulrahi.</a>  All rights reserved </p> 
     </div>      
   </footer>
   `;
