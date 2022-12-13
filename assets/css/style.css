@@ -254,8 +254,8 @@ body {
 
 .feature-post-item {
   text-decoration: none;
-  width: 20em;
-  height: 10em;
+  width: 10em;
+  height: auto;
   background-color: var(--antiquewhite);
   margin: 10px;
   display: flex;
@@ -273,7 +273,7 @@ body {
   background-color: var(--antiquewhite);
 }
 .feature-post-img {
-  width: calc(7em - 10px);
+  width: calc(9em - 10px);
   height: auto;
   object-fit: cover;
   padding: 10px;
