@@ -108,6 +108,34 @@ body {
   margin-right: 5px;
 }
 
+/* Header Section */
+
+.page-header {
+  position: relative;
+  background: url(../imgs/header.jpg  ) no-repeat center bottom fixed;
+  background-size: cover;
+  height: 450px;
+}
+.page-header::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+.header-title {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+  
+}
+
 /* Home Section */
 
 .container {
@@ -128,7 +156,8 @@ body {
   width: 100%;
   height: auto;
   padding: 50px;
-  background-color: #646464;
+  padding-bottom: 100px;
+  background-color: rgba(100, 100, 100, 0.5);
 }
 .banner-item {
   background-color: var(--antiquewhite);
@@ -139,7 +168,6 @@ body {
 }
 .text-block {
   line-height: 3em;
-  width: auto;
 }
 .text-block b {
   color: var(--orange);
@@ -190,9 +218,16 @@ body {
 /* footer section */
 
 .page-footer {
-  padding : 75px 100px 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-footer {
+  width: 80%;
+  height: auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -201,12 +236,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+}
 .socials a {
   text-decoration: none;
   background-color: transparent;
   color: #6c757d;
   font-weight: 700;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 .container-footer p {
   font-size: 80%;
@@ -219,32 +258,9 @@ body {
   text-decoration: none;
   color: var(--gray-dark);
 }
-/* Car Page */
-.page-header {
-  position: relative;
-  background: url(../imgs/header.jpg  ) no-repeat center bottom fixed;
-  background-size: cover;
-  height: 450px;
-}
-.page-header::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(255, 255, 255, 0.2);
-}
-.header-title {
-  font-size: 3vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2em;
 
-}
+/* Car Page */
+
 .container-feature {
   background-color: var(--teal);
   width: 100%;
@@ -324,6 +340,18 @@ body {
 .field {
   margin: 5px;
 }
+.field input, .field select, .btn-book {
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+}
+.btn-book {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: var(--gray-dark);
+  border-color: var(--gray-dark);
+}
 .field input::placeholder {
   color: var(--gray-dark);
   font-size: 1rem;
@@ -350,7 +378,7 @@ body {
   height: auto;
 }
 .service-card-item {
-  width: 25vw;
+  width: 300px;
   height: auto;
   margin: 10px;
   background-color:var(--antiquewhite);
@@ -361,7 +389,7 @@ body {
   
 }
 .service-card-img {
-  width: calc(10em - 1em);
+  width: 10em;
   height: auto;
   padding: 1em;
 }
@@ -396,7 +424,7 @@ body {
   padding: 3em;
 }
 .car-card-item {
-  width: 350px;
+  width: 300px;
   height: 465px;
   margin: 30px;
   background-color: var(--gray);
@@ -407,7 +435,7 @@ body {
   
 }
 .car-card-img {
-  width: 20em;
+  width: 280px;
   height: auto;
   background-color: var(--gray);
   margin: 20px;
@@ -504,18 +532,16 @@ body {
 
 .contact-info {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 5%;
+  padding: 50px 50px 100px;
   background-color: var(--antiquewhite);
 }
 
-.contact span {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: var(--antiquewhite);
+.contact-form {
+  margin-top: 50px;
 }
 
 .contact-form span {
@@ -555,7 +581,7 @@ li {
   cursor: pointer;
 }
 
-input::placeholder {
+.contact-form input::placeholder {
   color: var(--antiquewhite);
   font-size: 1rem;
   font-weight: 200;
@@ -563,7 +589,7 @@ input::placeholder {
   border-style: none;
 } 
 
-input:focus {
+.contact-form input:focus {
   outline: none;
   border-style: none;
 }
@@ -578,6 +604,7 @@ input:focus {
 }
 
 .gmap-canvas {
+  margin-top: 50px;
   overflow: hidden;
   background: none !important;
   height: 300px;
