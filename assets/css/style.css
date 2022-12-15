@@ -115,6 +115,7 @@ body {
   background: url(../imgs/header.jpg  ) no-repeat center bottom fixed;
   background-size: cover;
   height: 450px;
+  text-align: center;
 }
 .page-header::after {
   content: '';
@@ -558,7 +559,7 @@ li {
   background-color: var(--gray-dark);
   color: var(--antiquewhite);
   border-bottom: 1px solid white;
-  width: 407px;
+  width: 400px;
   height: 42px;
   margin-bottom: 1rem;
 }
@@ -574,7 +575,7 @@ li {
 #form-submit {
   background-color: var(--teal);
   color: var(--gray-dark);
-  width: 407px;
+  width: 400px;
   height: 46px;
   font-size: 1rem;
   font-weight: bold;
