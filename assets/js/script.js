@@ -66,7 +66,7 @@ class MyFooter extends HTMLElement {
                 <a href="javascript:void(0)"><i class="fab fa-instagram"></i>Instagram</a>
             </div>  
         </div>
-        <p class="border">&copy;Imagine Group Created By <a href="https://www.devcrud.com" class="" target="_blank">mrahulrahi.</a>  All rights reserved </p> 
+        <p class="border">&copy;Imagine Group Created By <a href="https://mrahulrahi.github.io/mrahulrahi/" class="" target="_blank">mrahulrahi.</a>  All rights reserved </p> 
     </div>      
   </footer>
   `;
