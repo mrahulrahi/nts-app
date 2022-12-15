@@ -276,6 +276,7 @@ body {
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-around;
 }
 
@@ -284,7 +285,6 @@ body {
   width: 10em;
   height: auto;
   background-color: var(--antiquewhite);
-  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
