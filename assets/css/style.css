@@ -435,10 +435,10 @@ body {
   
 }
 .car-card-img {
-  width: 280px;
+  width: 300px;
   height: auto;
+  aspect-ratio: 16/9;
   background-color: var(--gray);
-  margin: 20px;
 }
 .car-card-caption {
   color: var(--gray-dark);
