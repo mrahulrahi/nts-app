@@ -26,7 +26,7 @@ class MyHeader extends HTMLElement {
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
+                    <a class="nav-link" href="index.html#about">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="car.html">Car Rental</a>
@@ -35,7 +35,7 @@ class MyHeader extends HTMLElement {
                     <a class="nav-link" href="property.html">Properties</a>    
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>    
+                    <a class="nav-link" href="index.html#contact">Contact Us</a>    
                 </li>
             </ul>
             <div class="navbar-nav ml-auto">
