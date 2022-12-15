@@ -376,11 +376,11 @@ body {
   align-items: center;
   width: 80%;
   height: auto;
+  gap: 20px;
 }
 .service-card-item {
   width: 300px;
   height: auto;
-  margin: 10px;
   background-color:var(--antiquewhite);
   display: flex;
   flex-direction: column;
@@ -420,13 +420,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 80%;
+  gap: 30px;
   background-color: var(--teal);
-  padding: 3em;
+  padding: 50px;
 }
 .car-card-item {
-  width: 300px;
+  width: 325px;
   height: 465px;
-  margin: 30px;
   background-color: var(--gray);
   display: flex;
   flex-direction: column;
@@ -435,8 +435,9 @@ body {
   
 }
 .car-card-img {
-  width: 300px;
+  width: 250px;
   height: auto;
+  margin: 30px;
   aspect-ratio: 16/9;
   background-color: var(--gray);
 }
