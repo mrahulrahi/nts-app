@@ -87,6 +87,7 @@ body {
   top: 0;
   z-index: 100;
 }
+
 .navbar-nav {
   display: flex;
   flex-wrap: wrap;
