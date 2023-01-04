@@ -636,6 +636,105 @@ li {
   border: 10px solid var(--gray-dark);
 }
 
+/* Property page */
+
+.container-property {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  background-color: var(--antiquewhite);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.property-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  gap: 30px;
+  background-color: var(--teal);
+  padding: 50px;
+}
+.property-card-item {
+  width: 500px;
+  height: 465px;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.property-card-caption {
+  color: var(--gray-dark);
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: row;
+}
+.pc-caption {
+}
+.pc-caption-top,
+.pc-caption-med,
+.pc-caption-bot {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+}
+.pc-caption-top p {
+  background-color: var(--antiquewhite);
+  font-size: 3em;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+}
+.pc-caption-med {
+  background-color: var(--gray);
+}
+.pc-caption-med span {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 50%;
+  font-size: 10px;
+  text-align: center;
+}
+.pc-caption-med p {
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  margin: 5px;
+}
+.pc-caption-bot p {
+  width: 70%;
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bolder;
+  background-color: var(--orange);
+}
+.btn-2 {
+  width: 30%;
+  padding: 10px 20px;
+  background-color: var(--gray-dark);
+  color: var(--antiquewhite);
+  border: 1px solid var(--gray-dark);
+}
+.pc-caption-top i,
+.pc-caption-med i,
+.pc-caption-bot i {
+  color: var(--gray-dark);
+  font-size: 2em;
+  font-weight: 600;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
