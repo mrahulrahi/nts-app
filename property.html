@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <script type="module" src="./assets/js/script.js" defer></script>
+    <script type="module" src="./assets/js/carousel.js" defer></script>
   </head>
   <body>
     <!-- page Navigation -->
@@ -165,6 +166,66 @@
         </div>
       </div>
     </section>
+
+    <section class="container-car">
+      <div class="container-title">Available Cars</div>
+      <div class="car-card">
+        <div class="car-card-item">
+          <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="assets/imgs/house-1.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="assets/imgs/house-2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="assets/imgs/house-3.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="assets/imgs/house-4.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="assets/imgs/house-5.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+          <div class="car-card-caption">
+            <div class="cc-caption-top">
+              <p>XUV 300</p>
+              <span><b>Note :</b>Toll Charge and Parking Charge (if any) Extra</span>
+            </div>
+            <div class="cc-caption-med">
+              <span>
+                <p><i class="fas fa-car"></i>SUV</p>
+                <p>
+                  <i class="fa fa-solid fa-users"></i>4 + 1
+                </p>
+              </span>
+              <span>
+                <p>
+                  <i class="fa fa-regular fa-snowflake"></i>AC
+                </p>
+                <p>
+                  <i class="fa fa-user"></i>&#x20B9 250/Night
+                </p>
+              </span>
+            </div>
+            <div class="cc-caption-bot">
+              <p><i class="fas fa-money-bill-alt"></i>&#x20B9 10/Km</p>
+              <button class="btn-2">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </section>
+
 
     <!-- Page Footer -->
     <my-footer></my-footer>
