@@ -26,13 +26,10 @@ class MyHeader extends HTMLElement {
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#about">About Us</a>
+                    <a class="nav-link" href="index.html#services">Our Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="car.html">Car Rental</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="property.html">Properties</a>    
+                    <a class="nav-link" href="index.html#cars">Available Cars</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html#contact">Contact Us</a>    
@@ -40,7 +37,10 @@ class MyHeader extends HTMLElement {
             </ul>
             <div class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="tel:888-188-8339" class="btn"><i class="fa fa-phone"></i> +918881888339</a>
+                    <a href="tel:888-188-8339" class="btn"><i class="fa fa-phone"></i> Call Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="wh" class="btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
                 </li>
             </div>
         </div>

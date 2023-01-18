@@ -117,8 +117,16 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+.btn i {
+  color: #fff;
+}
 
 .fa-phone {
+  transform: rotate(90deg);
+  margin-right: 5px;
+}
+.fab-whatsapp {
+  color: #fff;
   transform: rotate(90deg);
   margin-right: 5px;
 }
@@ -453,15 +461,15 @@ body {
   height: auto;
   margin: 10px;
   aspect-ratio: 16/9;
-  background-color: var(--gray);
 }
 .car-card-caption {
   color: var(--gray-dark);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--gray-dark);
 }
 .cc-caption-top {
   display: inline-flex;
   width: 100%;
+  margin-bottom: 10px;
   background-color: var(--gray-dark);
 }
 .cc-caption-top i {
@@ -478,18 +486,22 @@ body {
   width: 33.33%;
   padding: 10px;
   font-size: 1em;
-  margin: 1px;
+  margin: 0 1px;
 }
 .car-card-caption span {
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
-  text-align: center;
-  padding: 10px;
+  padding: 5px;
+  padding-right: 40px;
+  margin: 10px 0;
 }
 .cc-caption-bot {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .cc-caption-bot p {
@@ -498,7 +510,7 @@ body {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
-  padding: 10px;
+  padding: 5px;
 }
 .btn-2 {
   width: 30%;
