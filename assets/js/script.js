@@ -40,7 +40,7 @@ class MyHeader extends HTMLElement {
                     <a href="tel:888-188-8339" class="btn"><i class="fa fa-phone"></i> Call Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="wh" class="btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                    <a href="https://wa.me/+91-(888)1888339" class="btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
                 </li>
             </div>
         </div>
