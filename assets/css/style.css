@@ -460,7 +460,6 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .cc-caption-top,
-.cc-caption-med,
 .cc-caption-bot {
   display: inline-flex;
   flex-direction: row;
@@ -469,11 +468,11 @@ body {
   font-size: 10px;
   text-align: center;
 }
-.cc-caption-top p {
+.cc-caption-bot p {
   background-color: var(--antiquewhite);
   font-size: 3em;
   font-weight: bold;
-  width: 50%;
+  width: 30%;
   padding: 10px;
 }
 .cc-caption-top span {
@@ -481,10 +480,10 @@ body {
   width: 50%;
   padding: 10px;
 }
-.cc-caption-med {
+.cc-caption-top {
   background-color: var(--gray);
 }
-.cc-caption-med span {
+.cc-caption-top span {
   display: inline-flex;
   flex-direction: column;
   padding: 20px;
@@ -492,7 +491,7 @@ body {
   font-size: 10px;
   text-align: center;
 }
-.cc-caption-med p {
+.cc-caption-top p {
   display: inline-flex;
   justify-content: space-between;
   font-size: 1.5em;
@@ -501,6 +500,7 @@ body {
 .cc-caption-bot p {
   width: 70%;
   display: inline-flex;
+  flex-direction: row;
   justify-content: space-around;
   padding: 10px;
   align-items: center;
@@ -515,9 +515,7 @@ body {
   color: var(--antiquewhite);
   border: 1px solid var(--gray-dark);
 }
-.cc-caption-top i,
-.cc-caption-med i,
-.cc-caption-bot i {
+.cc-caption-top i {
   color: var(--gray-dark);
   font-size: 2em;
   font-weight: 600;
