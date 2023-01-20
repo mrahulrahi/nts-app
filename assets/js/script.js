@@ -56,7 +56,7 @@ class MyFooter extends HTMLElement {
     <footer class="page-footer">
     <div class="container-footer">
         <div class="row-footer">
-            <div class="navbar-title">
+            <div class="footer-title">
                 <h1>IMAGINE GROUP</h1>
             </div>
             <div class="socials">

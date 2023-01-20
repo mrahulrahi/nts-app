@@ -220,13 +220,11 @@ body {
 }
 .row-footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.socials {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .socials a {
   text-decoration: none;
   background-color: transparent;
@@ -520,6 +518,7 @@ body {
 
 .contact-form {
   margin-top: 50px;
+  width: 50%;
   padding: 45px;
   background-color: var(--antiquewhite);
   border: 10px solid var(--gray-dark);
@@ -542,14 +541,14 @@ li {
   background-color: var(--gray-dark);
   color: var(--antiquewhite);
   border-bottom: 1px solid white;
-  width: 400px;
+  width: 100%;
   height: 42px;
   margin-bottom: 1rem;
 }
 
 #form-name,
 #form-email {
-  width: 190px;
+  width: 45%;
 }
 
 #form-message {
@@ -559,7 +558,7 @@ li {
 #form-submit {
   background-color: var(--teal);
   color: var(--gray-dark);
-  width: 400px;
+  width: 100%;
   height: 46px;
   font-size: 1rem;
   font-weight: bold;
@@ -596,6 +595,6 @@ li {
   overflow: hidden;
   background: none !important;
   height: 400px;
-  width: 500px;
+  width: 40%;
   border: 10px solid var(--gray-dark);
 }
