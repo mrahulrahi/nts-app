@@ -60,7 +60,7 @@ body {
 }
 
 .navbar-brand {
-  width: 30;
+  width: 15%;
 }
 
 .navbar-brand img {
@@ -70,8 +70,8 @@ body {
 
 .navbar-title {
   color: #000;
-  font-size: 3vw;
-  width: 50%;
+  font-size: 20px;
+  width: 65%;
   text-align: center;
 }
 
