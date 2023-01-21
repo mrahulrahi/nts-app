@@ -57,11 +57,11 @@ class MyFooter extends HTMLElement {
                 <h1>IMAGINE GROUP</h1>
             </div>
             <div class="socials">
-                <a href="javascript:void(0)"><i class="fab fa-twitter"></i>Twitter</a>
-                <a href="javascript:void(0)"><i class="fab fa-facebook"></i>Facebook</a>
-                <a href="javascript:void(0)"><i class="fab fa-whatsapp"></i>WhatsApp</a>
-                <a href="javascript:void(0)"><i class="fab fa-instagram"></i>Instagram</a>
-            </div>  
+                  <a href="https://facebook.com/imaginegrouplko"><i class="fab fa-facebook"></i></a>
+                  <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                  <a href="https://instagram.com/imaginegroupig"><i class="fab fa-instagram"></i></a>
+                  <a href="https://wa.me/+918881888339"><i class="fab fa-whatsapp"></i></a>
+              </div> 
         </div>
         <p class="border">&copy;Imagine Group Created By <a href="https://mrahulrahi.github.io/mrahulrahi/" class="" target="_blank">mrahulrahi.</a>  All rights reserved </p> 
     </div>      
