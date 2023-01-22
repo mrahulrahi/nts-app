@@ -19,7 +19,6 @@
       rel="stylesheet"
     />
     <script type="module" src="./assets/js/script.js" defer></script>
-    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
   </head>
 
   <body>
@@ -267,26 +266,6 @@
           <button type="submit" value="Submit" id="form-submit">Send</button>
         </form>
 
-        <script>
-          function sendEmail() {
-            Email.send({
-              SecureToken: "cec43f2c-744e-48b9-b098-30706fc9a212",
-              To: "rahul4s55m1@gmail.com",
-              From: document.getElementById("form-email"),
-              Subject: "New Contact Form Enquiry",
-              Body:
-                "Name :" +
-                document.getElementById("form-name").value +
-                "<br> Email :" +
-                document.getElementById("form-email").value +
-                "<br> Subject :" +
-                document.getElementById("form-subject").value +
-                "<br> Message :" +
-                document.getElementById("form-message").value,
-            }).then((message) => alert("Message sent Succesfully"));
-          }
-        </script>
-
         <div class="gmap-canvas">
           <iframe
             width="500"
@@ -306,5 +285,28 @@
     <!-- Page Footer -->
     <my-footer></my-footer>
     <!-- End of Page Footer -->
+
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "mrahulrahi@gmail.com",
+          Password: "B743D2C05EAF9D677902AD3C0DDFE0E1F673",
+          To: "rahul4s55m1@gmail.com",
+          From: "mrahulrahi@gmail.com",
+          Subject: "New Contact Form Enquiry",
+          Body:
+            "Name :" +
+            document.getElementById("form-name").value +
+            "<br> Email :" +
+            document.getElementById("form-email").value +
+            "<br> Subject :" +
+            document.getElementById("form-subject").value +
+            "<br> Message :" +
+            document.getElementById("form-message").value,
+        }).then((message) => alert("Message sent Succesfully"));
+      }
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
