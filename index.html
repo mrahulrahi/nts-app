@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <script type="module" src="./assets/js/script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
   </head>
 
   <body>
@@ -227,7 +228,10 @@
 
     <div class="contact">
       <div class="contact-info">
-        <div class="contact-form">
+        <form
+          onsubmit="sendEmail(); reset(); return false;"
+          class="contact-form"
+        >
           <span>
             <input
               type="text"
@@ -260,8 +264,28 @@
             required
           />
           <br />
-          <input type="button" value="Submit" id="form-submit" />
-        </div>
+          <button type="submit" value="Submit" id="form-submit">Send</button>
+        </form>
+
+        <script>
+          function sendEmail() {
+            Email.send({
+              SecureToken: "cec43f2c-744e-48b9-b098-30706fc9a212",
+              To: "rahul4s55m1@gmail.com",
+              From: document.getElementById("form-email"),
+              Subject: "New Contact Form Enquiry",
+              Body:
+                "Name :" +
+                document.getElementById("form-name").value +
+                "<br> Email :" +
+                document.getElementById("form-email").value +
+                "<br> Subject :" +
+                document.getElementById("form-subject").value +
+                "<br> Message :" +
+                document.getElementById("form-message").value,
+            }).then((message) => alert("Message sent Succesfully"));
+          }
+        </script>
 
         <div class="gmap-canvas">
           <iframe
