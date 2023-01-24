@@ -227,43 +227,40 @@
 
     <div class="contact">
       <div class="contact-info">
-        <form
-          onsubmit="sendEmail(); reset(); return false;"
-          class="contact-form"
-        >
+        <form class="contact-form">
           <span>
             <input
               type="text"
-              name="Name"
+              name="form_name"
               placeholder="Name"
-              id="form-name"
+              id="form_name"
               required
             />
             <input
               type="email"
-              name="Email"
+              name="form_email"
               placeholder="Email"
-              id="form-email"
+              id="form_email"
               required
             />
           </span>
           <input
             type="text"
-            name="Subject"
+            name="form_subject"
             placeholder="Subject"
-            id="form-subject"
+            id="form_subject"
             required
           />
           <br />
           <input
             type="text"
-            name="Message"
+            name="form_message"
             placeholder="Message"
-            id="form-message"
+            id="form_message"
             required
           />
           <br />
-          <button type="submit" value="Submit" id="form-submit">Send</button>
+          <input type="submit" id="button" value="Send Email" />
         </form>
 
         <div class="gmap-canvas">
@@ -287,26 +284,37 @@
     <!-- End of Page Footer -->
 
     <script>
-      function sendEmail() {
-        Email.send({
-          Host: "smtp.elasticemail.com",
-          Username: "mrahulrahi@gmail.com",
-          Password: "B743D2C05EAF9D677902AD3C0DDFE0E1F673",
-          To: "rahul4s55m1@gmail.com",
-          From: "mrahulrahi@gmail.com",
-          Subject: "New Contact Form Enquiry",
-          Body:
-            "Name :" +
-            document.getElementById("form-name").value +
-            "<br> Email :" +
-            document.getElementById("form-email").value +
-            "<br> Subject :" +
-            document.getElementById("form-subject").value +
-            "<br> Message :" +
-            document.getElementById("form-message").value,
-        }).then((message) => alert("Message sent Succesfully"));
-      }
+      const btn = document.getElementById("button");
+
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          btn.value = "Sending...";
+
+          const serviceID = "default_service";
+          const templateID = "template_fg4x4p7";
+
+          emailjs.sendForm(serviceID, templateID, this).then(
+            () => {
+              btn.value = "Send Email";
+              alert("Sent!");
+            },
+            (err) => {
+              btn.value = "Send Email";
+              alert(JSON.stringify(err));
+            }
+          );
+        });
     </script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("i3xy6tBlSjmaB8XCJ");
+    </script>
   </body>
 </html>
