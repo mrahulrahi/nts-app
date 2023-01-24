@@ -19,6 +19,6 @@ function sendEmail() {
   const templateId = "template_contact";
 
   emailjs.send(serviceId, templateId, params).then(function (res) {
-    alert("Sent Successfully");
+    alert("Sent Successfully", window.location.reload());
   });
 }
