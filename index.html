@@ -18,17 +18,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
     />
-    <script type="module" src="./assets/js/script.js" defer></script>
-    <script type="text/javascript" src="./assets/js/contact.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("i3xy6tBlSjmaB8XCJ");
-      })();
-    </script>
+    <script type="text/javascript" src="./assets/js/contact.js"></script>
   </head>
 
   <body>
@@ -237,7 +232,7 @@
 
     <div class="contact">
       <div class="contact-info">
-        <form class="contact-form">
+        <form id="myForm" class="contact-form">
           <span>
             <input
               type="text"
@@ -257,7 +252,7 @@
           <input
             type="email"
             name="form_email"
-            placeholder="Subject"
+            placeholder="Email ID"
             id="form_email"
             required
           />
@@ -270,7 +265,9 @@
             required
           />
           <br />
-          <button onclick="sendMail()" id="button">Send Email</button>
+          <button onclick="sendEmail()" type="button" id="button">
+            Send Email
+          </button>
         </form>
 
         <div class="gmap-canvas">
