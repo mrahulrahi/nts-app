@@ -543,8 +543,8 @@ li {
 }
 
 #form_name,
+#form_phone,
 #form_email,
-#form_subject,
 #form_message {
   background-color: var(--gray-dark);
   color: var(--antiquewhite);
@@ -555,7 +555,7 @@ li {
 }
 
 #form_name,
-#form_email {
+#form_phone {
   width: 45%;
 }
 
@@ -587,8 +587,8 @@ li {
 }
 
 #form_name:hover,
+#form_phone:hover,
 #form_email:hover,
-#form_subject:hover,
 #form_message:hover {
   border-bottom: 3px solid var(--blue);
 }
