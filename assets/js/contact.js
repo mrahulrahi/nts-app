@@ -1,21 +1,13 @@
-const btn = document.getElementById("button");
-
-document.getElementById("form").addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  btn.value = "Sending...";
-
-  const serviceID = "default_service";
-  const templateID = "template_fg4x4p7";
-
-  emailjs.sendForm(serviceID, templateID, this).then(
-    () => {
-      btn.value = "Send Email";
-      alert("Sent!");
-    },
-    (err) => {
-      btn.value = "Send Email";
-      alert(JSON.stringify(err));
-    }
-  );
-});
+function sendMail() {
+  var params = {
+    form_name: document.getElementById("form_name").value,
+    form_email: document.getElementById("form_email").value,
+    form_subject: document.getElementById("form_subject").value,
+    form_message: document.getElementById("form_message").value,
+  };
+  emailjs
+    .send("service_o3uij72", "template_fg4x4p7", params)
+    .then(function (res) {
+      alert("Success! " + res.status);
+    });
+}
