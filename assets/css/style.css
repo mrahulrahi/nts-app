@@ -542,10 +542,10 @@ li {
   list-style: none;
 }
 
-#form-name,
-#form-email,
-#form-subject,
-#form-message {
+#form_name,
+#form_email,
+#form_subject,
+#form_message {
   background-color: var(--gray-dark);
   color: var(--antiquewhite);
   border-bottom: 1px solid white;
@@ -554,12 +554,12 @@ li {
   margin-bottom: 1rem;
 }
 
-#form-name,
-#form-email {
+#form_name,
+#form_email {
   width: 45%;
 }
 
-#form-message {
+#form_message {
   height: 114px;
 }
 
@@ -586,10 +586,10 @@ li {
   border-style: none;
 }
 
-#form-name:hover,
-#form-email:hover,
-#form-subject:hover,
-#form-message:hover {
+#form_name:hover,
+#form_email:hover,
+#form_subject:hover,
+#form_message:hover {
   border-bottom: 3px solid var(--blue);
 }
 
