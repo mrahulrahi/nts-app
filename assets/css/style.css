@@ -563,7 +563,7 @@ li {
   height: 114px;
 }
 
-#form-submit {
+#button {
   background-color: var(--teal);
   color: var(--gray-dark);
   width: 100%;
@@ -593,7 +593,7 @@ li {
   border-bottom: 3px solid var(--blue);
 }
 
-#form-submit:hover {
+#button:hover {
   background-color: var(--gray-dark);
   color: var(--antiquewhite);
 }
