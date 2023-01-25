@@ -23,6 +23,6 @@ function bookCar() {
   const templateId = "template_book";
 
   emailjs.send(serviceId, templateId, params).then(function (res) {
-    alert("Sent Successfully", window.location.reload());
+    alert("Booking Sent Successfully", window.location.reload());
   });
 }

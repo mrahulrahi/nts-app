@@ -348,6 +348,11 @@ body {
   background-color: var(--gray-dark);
   border-color: var(--gray-dark);
 }
+.btn-book:hover {
+  cursor: pointer;
+  background-color: var(--gray);
+  color: var(--gray-dark);
+}
 .field input::placeholder {
   color: var(--gray-dark);
   font-size: 1rem;
