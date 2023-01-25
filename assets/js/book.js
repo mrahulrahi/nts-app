@@ -2,7 +2,7 @@
   emailjs.init("i3xy6tBlSjmaB8XCJ");
 })();
 
-function sendEmail() {
+function bookCar() {
   let name = document.getElementById("form_name").value;
   let phone = document.getElementById("form_phone").value;
   let email = document.getElementById("form_email").value;

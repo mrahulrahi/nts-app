@@ -70,13 +70,16 @@
           <select class="custom-select">
             <option selected>Select Car type</option>
             <option value="1">Luxury</option>
-            <option value="2">Suv</option>
-            <option value="3">Sedan</option>
-            <option value="3">Hatchback</option>
+            <option value="2">MPV</option>
+            <option value="3">SUV</option>
+            <option value="4">Sedan</option>
+            <option value="5">Hatchback</option>
           </select>
         </div>
         <div class="field">
-          <button class="btn-book" type="submit">Book Now</button>
+          <button onclick="bookCar()" class="btn-book" type="button">
+            Book Now
+          </button>
         </div>
       </div>
     </section>
@@ -242,7 +245,7 @@
               required
             />
             <input
-              type="number"
+              type="tel"
               name="form_phone"
               placeholder="Phone No."
               id="form_phone"
