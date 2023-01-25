@@ -3,20 +3,20 @@
 })();
 
 function bookCar() {
-  let name = document.getElementById("form_name").value;
-  let phone = document.getElementById("form_phone").value;
-  let email = document.getElementById("form_email").value;
-  let message = document.getElementById("form_message").value;
-  let email = document.getElementById("form_email").value;
-  let message = document.getElementById("form_message").value;
+  let fullName = document.getElementById("book_name").value;
+  let phoneNo = document.getElementById("book_phone").value;
+  let pickupLocation = document.getElementById("book_pickup").value;
+  let dropLocation = document.getElementById("book_drop").value;
+  let dateTime = document.getElementById("book_datetime").value;
+  let carType = document.getElementById("book_cartype").value;
 
   var params = {
-    form_name: name,
-    form_phone: phone,
-    form_email: email,
-    form_message: message,
-    form_email: email,
-    form_message: message,
+    book_name: fullName,
+    book_phone: phoneNo,
+    book_pickup: pickupLocation,
+    book_drop: dropLocation,
+    book_datetime: dateTime,
+    book_cartype: carType,
   };
 
   const serviceId = "service_gmail";

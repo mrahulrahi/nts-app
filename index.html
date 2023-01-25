@@ -44,30 +44,37 @@
       <div class="container-title">Book Your Car</div>
       <div class="book-form">
         <div class="field">
-          <input type="text" placeholder="Full Name" name="" id="" />
+          <input type="text" placeholder="Full Name" name="" id="book_name" />
         </div>
         <div class="field">
-          <input type="tel" placeholder="Phone No." name="" id="" />
+          <input type="tel" placeholder="Phone No." name="" id="book_phone" />
         </div>
         <div class="field">
-          <input type="text" placeholder="Pickup Location" name="" id="" />
+          <input
+            type="text"
+            placeholder="Pickup Location"
+            name=""
+            id="book_pickup"
+          />
         </div>
         <div class="field">
-          <input type="text" placeholder="Drop Location" name="" id="" />
+          <input
+            type="text"
+            placeholder="Drop Location"
+            name=""
+            id="book_drop"
+          />
         </div>
         <div class="field">
-          <div class="date mb-3" id="date" data-target-input="nearest">
-            <input
-              type="datetime-local"
-              class="form-control p-4 datetimepicker-input"
-              placeholder="Pickup Date & Time"
-              data-target="#date"
-              data-toggle="datetimepicker"
-            />
-          </div>
+          <input
+            type="datetime-local"
+            placeholder="Pickup Date & Time"
+            name=""
+            id="book_datetime"
+          />
         </div>
         <div class="field">
-          <select class="custom-select">
+          <select class="custom-select" id="book_cartype">
             <option selected>Select Car type</option>
             <option value="1">Luxury</option>
             <option value="2">MPV</option>
