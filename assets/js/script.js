@@ -16,15 +16,15 @@ class MyHeader extends HTMLElement {
               <span class="bar"></span>
               <span class="bar"></span>
             </div>
-
+            <div class="socials">
+            <a href="https://facebook.com/imaginegrouplko"><i class="fab fa-facebook"></i></a>
+            <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/imaginegroupig"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+918881888339"><i class="fab fa-whatsapp"></i></a>
+            </div>
              
           </div>
-          <div class="socials">
-          <a href="https://facebook.com/imaginegrouplko"><i class="fab fa-facebook"></i></a>
-          <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
-          <a href="https://instagram.com/imaginegroupig"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/+918881888339"><i class="fab fa-whatsapp"></i></a>
-          </div>
+          
          
 
         <div class="navbar-second">
