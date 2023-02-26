@@ -3,29 +3,26 @@
 class MyHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <nav class="navbar">
-          <div class="navbar-first">
-              <a class="navbar-brand" href="#">
-                  <img src="assets/imgs/logo.png" alt="">
-              </a>
-              <a class="navbar-title" href="#">
-                  <h1>IMAGINE GROUP</h1>
-              </a>
-              <div class="hamburger">
+    <nav class="navbar">
+        <div class="navbar-first">
+            <a class="navbar-brand" href="#">
+              <img src="assets/imgs/logo.png" alt="">
+            </a>
+            <a class="navbar-title" href="#">
+                <h1>IMAGINE GROUP</h1>
+            </a>
+            <div class="hamburger">
               <span class="bar"></span>
               <span class="bar"></span>
               <span class="bar"></span>
             </div>
             <div class="socials">
-            <a href="https://facebook.com/imaginegrouplko"><i class="fab fa-facebook"></i></a>
-            <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com/imaginegroupig"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/+918881888339"><i class="fab fa-whatsapp"></i></a>
-            </div>
-             
-          </div>
-          
-         
+                <a href="https://facebook.com/imaginegrouplko"><i class="fab fa-facebook"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/imaginegroupig"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/+918881888339"><i class="fab fa-whatsapp"></i></a>
+            </div>     
+        </div>
 
         <div class="navbar-second">
             <ul class="nav-menu">                     
@@ -42,13 +39,11 @@ class MyHeader extends HTMLElement {
                     <a class="nav-link" href="index.html#contact">Contact Us</a>    
                 </li>
                 <li class="nav-item">
-                <a href="tel:888-188-8339" class="btn"><i class="fa fa-phone"></i> Call Us</a>
-            </li>
+                    <a href="tel:888-188-8339" class="btn"><i class="fa fa-phone"></i> Call Us</a>
+                </li>
             </ul>
-            
         </div>
-        
-      </nav>
+    </nav>
       
       `;
   }
@@ -59,6 +54,7 @@ customElements.define("my-header", MyHeader);
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const socials = document.querySelector(".socials");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
