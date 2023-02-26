@@ -24,7 +24,7 @@ class MyHeader extends HTMLElement {
           <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
           <a href="https://instagram.com/imaginegroupig"><i class="fab fa-instagram"></i></a>
           <a href="https://wa.me/+918881888339"><i class="fab fa-whatsapp"></i></a>
-      </div>
+          </div>
          
 
         <div class="navbar-second">
