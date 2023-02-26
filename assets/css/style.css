@@ -33,6 +33,7 @@ body {
   text-align: left;
   background-color: #fff;
   width: 100%;
+  margin-top: 125px;
 }
 
 /* Navigation menu */
@@ -43,6 +44,7 @@ body {
   min-height: 60px;
   justify-content: space-between;
   position: fixed;
+  top: 0;
   z-index: 99;
   background-color: #fff;
 }
@@ -52,7 +54,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  height: 60px;
+  height: 70px;
   padding: 0 30px;
 }
 
@@ -114,8 +116,8 @@ body {
 .nav-link {
   color: rgba(0, 0, 0, 0.5);
   margin: 5px;
-  padding: 0.5rem 1rem;
-  font-size: 1em;
+  padding: 0.5rem;
+  font-size: 14px;
   font-weight: 600;
   text-align: center;
   transition: background-color ease-in 0.5s;
@@ -128,9 +130,9 @@ body {
 }
 
 .btn {
-  margin-left: 20rem;
-  padding: 0.5rem 1rem;
-  font-size: 1em;
+  margin-left: 35rem;
+  padding: 0.5rem;
+  font-size: 14px;
   font-weight: 600;
   color: #fff;
   background-color: var(--gray-dark);
@@ -160,7 +162,7 @@ body {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--teal);
+  background-color: var(--gray-dark);
 }
 
 /* Header Section */
@@ -171,7 +173,6 @@ body {
   background-size: cover;
   height: 450px;
   text-align: center;
-  padding-top: 100px;
 }
 .page-header::after {
   content: "";
@@ -184,12 +185,12 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 .header-title {
-  font-size: 2rem;
+  font-size: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 3em;
+  padding: 2em;
 }
 
 /* Home Section */
@@ -246,43 +247,37 @@ body {
 .page-footer {
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container-footer {
-  width: 85%;
-  height: auto;
-  padding: 5% 0;
+  padding: 5em 7em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
-.row-footer {
+.container-footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 10px;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+}
+
+.page-footer a {
+  text-decoration: none;
+  color: var(--gray-dark);
 }
 
 .socials a {
-  text-decoration: none;
   background-color: transparent;
-  color: #6c757d;
   font-weight: 700;
   margin-right: 1rem;
 }
-.container-footer p {
+.page-footer p {
+  width: 100%;
   font-size: 80%;
   font-weight: 500;
   opacity: 0.8;
-  line-height: 1.5;
   border-top: 1px solid #dee2e6;
   padding-top: 10px;
-}
-.container-footer p a {
-  text-decoration: none;
-  color: var(--gray-dark);
 }
 
 /* Car Page */
@@ -644,10 +639,12 @@ li {
   border: 10px solid var(--gray-dark);
 }
 
-@media screen and (max-width: 1024px) {
-}
+/* Responsiveness code */
 
 @media screen and (max-width: 768px) {
+  body {
+    margin-top: 100px;
+  }
   /* NAVBAR */
   .hamburger {
     display: block;
@@ -694,7 +691,8 @@ li {
   }
 
   .navbar-brand img {
-    width: 60px;
+    width: 40px;
+    padding: 0px;
   }
 
   .navbar-title {
@@ -711,6 +709,29 @@ li {
   }
 
   .page-header {
-    padding-top: 30px;
+    background: url(../imgs/header.jpg) repeat center bottom fixed;
+    background-size: cover;
+    height: 300px;
+  }
+
+  .header-title {
+    padding: 2em 0.5em;
+  }
+
+  .header-title h1 {
+    font-size: 0.9em;
+  }
+  .header-title h3 {
+    font-size: 0.5em;
+  }
+
+  .page-footer {
+    padding: 5%;
+    align-items: center;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    padding-bottom: 5%;
   }
 }
