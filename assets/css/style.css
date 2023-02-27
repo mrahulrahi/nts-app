@@ -643,7 +643,7 @@ li {
 
 /* Responsiveness code */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
   body {
     margin-top: 100px;
   }
@@ -665,7 +665,7 @@ li {
   }
   .nav-menu {
     position: fixed;
-    left: -700px;
+    left: -800px;
     top: 100px;
     gap: 0;
     flex-direction: column;
@@ -739,5 +739,13 @@ li {
   .container-footer {
     flex-direction: column;
     padding-bottom: 5%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header-title h1 {
+    font-size: 1.5em;
+  }
+  .header-title h3 {
+    font-size: 0.75em;
   }
 }
