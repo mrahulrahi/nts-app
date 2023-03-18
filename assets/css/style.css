@@ -283,6 +283,25 @@ body {
   padding-top: 10px;
 }
 
+/*function of IG*/
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first {
+  background-color: antiquewhite;
+}
+
+.second {
+  background-color: #c2f6ea;
+}
+
+.img-container {
+  background-color: antiquewhite;
+}
+
 /* Car Page */
 
 .container-feature {
