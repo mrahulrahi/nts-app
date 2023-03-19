@@ -292,6 +292,11 @@ body {
 
 .first {
   background-color: antiquewhite;
+  padding: 10em;
+}
+
+.container-1 {
+  width: 30%;
 }
 
 .second {
