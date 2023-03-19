@@ -288,6 +288,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .first {
@@ -297,6 +298,10 @@ body {
 
 .container-1 {
   width: 30%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
 }
 
 .second {
