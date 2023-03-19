@@ -300,7 +300,7 @@ body {
 .container-1 {
   width: 30%;
   min-width: 300px;
-  height: 300px;
+  height: auto;
   color: #fff;
   background-color: var(--gray-dark);
   flex-direction: column;
