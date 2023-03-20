@@ -364,7 +364,7 @@ body {
   text-decoration: none;
   width: 10em;
   height: auto;
-  background-color: var(--antiquewhite);
+  background-color: var(--gray-dark);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -376,8 +376,8 @@ body {
   padding: 30px;
   font-size: 2em;
   font-weight: bold;
-  color: var(--gray-dark);
-  background-color: var(--antiquewhite);
+  color: var(--antiquewhite);
+  background-color: var(--gray-dark);
 }
 .feature-post-img {
   width: calc(9em - 10px);
@@ -391,7 +391,7 @@ body {
   font-weight: bold;
   text-align: center;
   padding: 10px;
-  color: var(--gray-dark);
+  color: var(--antiquewhite);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .container-book {
