@@ -468,7 +468,7 @@ body {
 .service-card-item {
   width: 300px;
   height: auto;
-  background-color: var(--antiquewhite);
+  background-color: var(--gray-dark);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -485,7 +485,7 @@ body {
   font-weight: bold;
   text-align: center;
   padding: 10px;
-  color: var(--gray-dark);
+  color: var(--antiquewhite);
   background-color: rgba(0, 0, 0, 0.2);
 }
 
