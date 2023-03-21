@@ -346,13 +346,15 @@ body {
 }
 
 .img-container {
+  width: 25%;
   padding: 0.5em;
   background-color: antiquewhite;
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
 }
 
-.info-title {
+.info-container {
+  width: 75%;
   font-size: 1.25em;
   font-weight: bold;
 }
