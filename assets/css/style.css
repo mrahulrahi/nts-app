@@ -651,7 +651,7 @@ body {
 .contact-form {
   width: 500px;
   padding: 3%;
-  background-color: var(--antiquewhite);
+  background-color: var(--gray-dark);
   border: 10px solid var(--gray-dark);
   border-radius: 1em;
 }
@@ -670,8 +670,8 @@ li {
 #form_phone,
 #form_email,
 #form_message {
-  background-color: var(--gray-dark);
-  color: var(--antiquewhite);
+  background-color: var(--antiquewhite);
+  color: var(--gray-dark);
   border-bottom: 1px solid white;
   width: 100%;
   height: 42px;
@@ -700,7 +700,7 @@ li {
 }
 
 .contact-form input::placeholder {
-  color: var(--antiquewhite);
+  color: var(--gray-dark);
   font-size: 1rem;
   font-weight: 200;
   padding-left: 1rem;
