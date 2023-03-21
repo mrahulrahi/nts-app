@@ -317,6 +317,7 @@ body {
   padding: 5px 10px;
   color: var(--gray-dark);
   background-color: antiquewhite;
+  border-radius: 0.5em;
 }
 
 .second {
@@ -338,9 +339,22 @@ body {
   border-radius: 1em;
 }
 
+.img-container-first {
+  padding: 0.5em;
+  background-color: antiquewhite;
+  border-radius: 1em;
+}
+
 .img-container {
   padding: 0.5em;
   background-color: antiquewhite;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.info-title {
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 /* Car Page */
@@ -383,6 +397,7 @@ body {
   font-weight: bold;
   color: var(--antiquewhite);
   background-color: var(--gray-dark);
+  border-radius: 1em;
 }
 .feature-post-img {
   width: calc(9em - 10px);
