@@ -298,8 +298,8 @@ body {
 
 .first {
   flex-direction: column;
-  background-color: antiquewhite;
-  padding: 7em 5em;
+  background-color: var(--antiquewhite);
+  padding: 5em;
 }
 
 .container-1 {
@@ -319,14 +319,14 @@ body {
   margin: 2px;
   padding: 5px 10px;
   color: var(--gray-dark);
-  background-color: antiquewhite;
+  background-color: var(--antiquewhite);
   border-radius: 0.5em;
 }
 
 .second {
   flex-direction: column;
-  background-color: #c2f6ea;
-  padding: 7em 5em;
+  background-color: var(--teal);
+  padding: 5em;
 }
 
 .main-container {
@@ -490,11 +490,8 @@ body {
   width: 100%;
   height: auto;
   padding: 50px 0;
-  background-color: var(--teal);
-  display: flex;
+  background-color: var(--antiquewhite);
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .service-card {
