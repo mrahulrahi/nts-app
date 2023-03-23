@@ -118,6 +118,7 @@ body {
 
 .nav-item {
   list-style: none;
+  padding: 0.25rem 0;
 }
 
 .nav-link {
@@ -127,14 +128,15 @@ body {
   font-size: 14px;
   font-weight: 600;
   text-align: center;
-  transition: background-color ease-in 0.5s;
+  border-radius: 0.5em;
+  transition: background-color ease-in-out 0.25s;
 }
 
 .nav-link:hover,
 .nav-link:active {
-  color: #fff;
+  color: var(--antiquewhite);
   background-color: var(--gray-dark);
-  border-radius: 0.5em;
+  border: 2px solid var(--gray-dark);
 }
 
 .btn {
@@ -142,21 +144,23 @@ body {
   padding: 0.5rem;
   font-size: 14px;
   font-weight: 600;
-  color: #fff;
-  background-color: var(--gray-dark);
-  border-color: var(--gray-dark);
-  display: inline-block;
+  color: var(--gray-dark);
+  background-color: var(--teal);
+  border: 2px solid var(--gray-dark);
   text-align: center;
-  vertical-align: middle;
   border-radius: 0.5em;
 }
-.btn i {
-  color: #fff;
+
+.btn:hover {
+  color: var(--antiquewhite);
+  background-color: var(--gray-dark);
+  text-align: center;
+  border-radius: 0.5em;
 }
 
 .fa-phone {
   transform: rotate(90deg);
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .hamburger {
@@ -391,6 +395,7 @@ body {
   align-items: center;
   border-radius: 1em;
 }
+
 .feature-post-title {
   width: 5em;
   margin: 10px;
