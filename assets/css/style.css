@@ -668,7 +668,14 @@ body {
 
 .contact {
   font-family: "Readex Pro", sans-serif;
-  background-color: var(--teal);
+  background-image: linear-gradient(
+    to bottom,
+    #faebd7,
+    #f0eed4,
+    #e2f1d5,
+    #d2f4dd,
+    #c2f6ea
+  );
   display: flex;
   flex-direction: column;
 }

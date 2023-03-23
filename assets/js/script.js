@@ -35,7 +35,6 @@ class MyHeader extends HTMLElement {
             <a href="tel:888-188-8339" class="btn"><i class="fa fa-phone"></i> Call Us</a>
           </div>
         </div>
-        
     </nav>
       
       `;
