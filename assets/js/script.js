@@ -27,14 +27,8 @@ class MyHeader extends HTMLElement {
         <div class="nav-menu">                     
           <div class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
-          </div>
-          <div class="nav-item">
             <a class="nav-link" href="index.html#services">Our Services</a>
-          </div>
-          <div class="nav-item">
             <a class="nav-link" href="index.html#cars">Available Cars</a>
-          </div>
-          <div class="nav-item">
             <a class="nav-link" href="index.html#contact">Contact Us</a>    
           </div>
           <div class="nav-item">
