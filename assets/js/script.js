@@ -24,25 +24,24 @@ class MyHeader extends HTMLElement {
             </div>     
         </div>
 
-        <div class="navbar-second">
-            <ul class="nav-menu">                     
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#services">Our Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#cars">Available Cars</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#contact">Contact Us</a>    
-                </li>
-                <li class="nav-item">
-                    <a href="tel:888-188-8339" class="btn"><i class="fa fa-phone"></i> Call Us</a>
-                </li>
-            </ul>
+        <div class="nav-menu">                     
+            <div class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="index.html#services">Our Services</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="index.html#cars">Available Cars</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="index.html#contact">Contact Us</a>    
+            </div>
+            <div class="nav-item">
+                <a href="tel:888-188-8339" class="btn"><i class="fa fa-phone"></i> Call Us</a>
+            </div>
         </div>
+        
     </nav>
       
       `;
