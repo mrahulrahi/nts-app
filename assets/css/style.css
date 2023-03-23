@@ -344,7 +344,9 @@ body {
 }
 
 .img-container-first {
-  padding: 0.5em;
+  width: 125px;
+  height: auto;
+  padding: 1em;
   background-color: antiquewhite;
   border-radius: 1em;
 }
@@ -357,10 +359,17 @@ body {
   border-bottom-left-radius: 1em;
 }
 
+.img-container img {
+  width: 75px;
+  height: auto;
+}
+
 .info-container {
   width: 75%;
   font-size: 1.25em;
   font-weight: bold;
+  text-align: center;
+  padding: 0 1em;
 }
 
 /* Car Page */
