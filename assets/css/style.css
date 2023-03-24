@@ -807,11 +807,13 @@ li {
     text-align: center;
     transition: 0.3s;
     z-index: 99;
-    padding: 10px;
+    padding: 20px;
   }
   .nav-item {
     flex-direction: column;
+    gap: 5px;
   }
+
   .nav-menu.active {
     left: 0;
   }
@@ -841,6 +843,7 @@ li {
 
   .btn {
     margin: 0;
+    margin-top: 10px;
   }
 
   .page-header {
