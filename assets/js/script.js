@@ -4,7 +4,7 @@ class MyHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <nav class="navbar">
-        <div class="navbar-first">
+        <div class="navbar-first flex">
             <a class="navbar-brand" href="#">
               <img src="assets/imgs/logo.png" alt="">
             </a>
@@ -24,8 +24,8 @@ class MyHeader extends HTMLElement {
             </div>     
         </div>
 
-        <div class="nav-menu">                     
-          <div class="nav-item">
+        <div class="nav-menu flex">                     
+          <div class="nav-item flex">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="index.html#services">Our Services</a>
             <a class="nav-link" href="index.html#cars">Available Cars</a>
