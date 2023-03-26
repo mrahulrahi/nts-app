@@ -759,7 +759,7 @@ li {
 
   .navbar-title {
     font-size: 18px;
-    width: 60%;
+    width: 70%;
   }
 
   .btn {
@@ -832,7 +832,11 @@ li {
     padding-bottom: 5%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar-title {
+    width: 50%;
+  }
+
   .header-title h1 {
     font-size: 1.5em;
   }
