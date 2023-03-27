@@ -245,6 +245,10 @@ body {
   padding: 2em;
 }
 
+.header-title h3 {
+  font-size: 1.75em;
+}
+
 /* Home Section */
 
 .container {
