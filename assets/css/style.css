@@ -304,10 +304,12 @@ body {
 
 .container-2 {
   width: 400px;
+  min-width: 350px;
   height: auto;
   color: #fff;
   background-color: var(--gray-dark);
   border-radius: 1em;
+  gap: 0px;
 }
 
 .img-container-first {
