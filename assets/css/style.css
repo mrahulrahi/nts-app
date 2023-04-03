@@ -275,6 +275,7 @@ body {
 .container-1 {
   width: 30%;
   min-width: 300px;
+  min-height: 325px;
   height: auto;
   color: #fff;
   background-color: var(--gray-dark);
