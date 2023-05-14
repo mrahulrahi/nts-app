@@ -111,7 +111,7 @@ body {
 .nav-menu {
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: var(--teal);
+  background-color: var(--gray-dark);
   width: 100%;
   height: auto;
   padding: 5px 0px;
@@ -126,7 +126,7 @@ body {
 }
 
 .nav-link {
-  color: var(--gray);
+  color: var(--teal);
   padding: 0.5rem;
   font-size: 14px;
   font-weight: 600;
@@ -145,15 +145,16 @@ body {
   padding: 0.5rem;
   font-size: 14px;
   font-weight: 600;
-  color: var(--antiquewhite);
-  background-color: var(--gray-dark);
+  color: var(--gray-dark);
+  background-color: var(--teal);
   text-align: center;
   border-radius: 0.5em;
   margin-right: auto;
 }
 
 .btn:hover {
-  color: var(--teal);
+  color: var(--gray-dark);
+  background-color: var(--antiquewhite);
 }
 
 .fa-phone {
