@@ -767,6 +767,7 @@ li {
   .nav-item {
     flex-direction: column;
     gap: 5px;
+    margin-bottom: 20px;
   }
 
   .nav-menu.active {
