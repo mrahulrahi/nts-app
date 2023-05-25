@@ -593,6 +593,13 @@ body {
   border-right: 2px solid var(--gray-dark);
 }
 
+.btn-2:hover {
+  cursor: pointer;
+  color: var(--antiquewhite);
+  background-color: var(--gray-dark);
+  border: 1px solid var(--gray-dark);
+}
+
 .cc-caption-term {
   gap: 5px;
 }
