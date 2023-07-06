@@ -696,19 +696,23 @@ body {
 }
 
 /* Contact Page */
+.contact-header {
+  background-color: var(--gray-dark);
+  width: 100%;
+}
 
 .contact-title {
   padding: 5% 10%;
 }
 
 .contact-title h3 {
-  color: var(--gray-dark);
-  font-size: 1.75vw;
+  color: var(--antiquewhite);
+  font-size: 3vw;
 }
 
 .contact-title h1 {
-  color: var(--gray-dark);
-  font-size: 6vw;
+  color: var(--antiquewhite);
+  font-size: 7vw;
 }
 
 .contact {
@@ -856,10 +860,12 @@ li {
     flex-direction: column;
     background-color: var(--gray-dark);
     width: 100%;
+    height: calc(100vh - 100px);
     text-align: center;
     transition: 0.3s;
     z-index: 99;
     padding: 20px;
+    transition: .5s ease-in-out;
   }
 
   .nav-item {
@@ -898,7 +904,7 @@ li {
 
   .swiper-slide {
     width: 100%;
-    height: calc(80vh - 100px);
+    height: calc(75vh - 100px);
   }
 
   .header-title {
@@ -946,6 +952,14 @@ li {
     -ms-overflow-style: none;
     scrollbar-width: none;
     /* Firefox */
+  }
+
+  .contact-title h3 {
+    font-size: 5vw;
+  }
+
+  .contact-title h1 {
+    font-size: 10vw;
   }
 
   .contact-form {
