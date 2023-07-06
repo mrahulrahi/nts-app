@@ -13,6 +13,10 @@
     <meta name="author" content="Devcrud" />
     <title>Tour & Travels | IMAGINE GROUP</title>
     <!-- styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <link
@@ -22,8 +26,8 @@
       href="./assets/imgs/favicon.png"
     />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <script type="module" src="./assets/js/script.js"></script>
     <script
@@ -41,10 +45,61 @@
 
     <!-- page-header -->
     <header class="page-header">
-      <div class="header-title">
-        <h1>IMAGINE GROUP</h1>
-        <h3>Tour & Travels</h3>
+      <div class="content">
+        <span>group</span>
+        <h1>imagine</h1>
+        <p>tells a story</p>
+        <hr />
       </div>
+      <div class="swiper-bottom">
+        <ul>
+          <li><span>likes</span>87</li>
+          <li><span>views</span>173</li>
+        </ul>
+      </div>
+      <div class="swiper hero-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/1478685/pexels-photo-1478685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1676557059846-2dad064ae6e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1676557060416-1418aefb165d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1675685468877-8cda3a02c49f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1677108581323-7050fbfd528f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1442328166075-47fe7153c128?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </header>
     <!-- end of page header -->
     <!-- Booking Start -->
@@ -417,5 +472,24 @@
     <!-- Page Footer -->
     <my-footer></my-footer>
     <!-- End of Page Footer -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var slider = new Swiper(".hero-slider", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

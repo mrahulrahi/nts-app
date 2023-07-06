@@ -113,8 +113,7 @@ body {
   justify-content: space-around;
   background-color: var(--gray-dark);
   width: 100%;
-  height: auto;
-  padding: 5px 0px;
+  height: 50px;
   position: relative;
   top: 0;
   z-index: 100;
@@ -220,36 +219,122 @@ body {
 /* Header Section */
 
 .page-header {
+  width: 100%;
   position: relative;
-  background: url(../imgs/header.jpg) no-repeat center bottom fixed;
-  background-size: cover;
-  height: 450px;
-  text-align: center;
+  min-height: 31.25rem;
+  height: calc(100vh - 120px);
+  background-color: #202948;
+  font-family: "Poppins", sans-serif;
 }
 
-.page-header::after {
-  content: "";
-  display: block;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+.content {
   position: absolute;
+  z-index: 50;
+  left: 5rem;
+  top: 50%;
+  transform: translatey(-50%);
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.175rem;
+}
+
+.content span {
+  font-size: clamp(1.85rem, 1.7053rem + 0.5447vw, 2.25rem);
+  font-weight: 300;
+  display: block;
+  margin-bottom: -0.625rem;
+}
+
+.content h1 {
+  font-size: clamp(3.5rem, 1.8723rem + 6.1277vw, 8rem);
+  font-weight: 400;
+  margin-inline: -0.313rem;
+}
+
+.content p {
+  font-size: clamp(1.2rem, 1.0191rem + 0.6809vw, 1.7rem);
+  margin-top: -0.313rem;
+}
+
+.content hr {
+  display: block;
+  width: 3rem;
+  border: none;
+  height: 0.125rem;
+  background: #fff;
+  margin-top: 0.938rem;
+  margin-inline: 0.313rem;
+}
+
+.swiper-bottom {
+  position: absolute;
+  z-index: 50;
+  left: 2rem;
+  bottom: 1rem;
+  transform: translatey(-50%);
+}
+
+.swiper-bottom ul {
+  list-style: none;
+  display: flex;
+  gap: 1.563rem;
+}
+
+.swiper-bottom ul li {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #1aad8a;
+}
+
+.swiper-bottom ul li span {
+  font-size: 0.8rem;
+  opacity: 0.4;
+  color: #fff;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+
+.swiper-pagination {
+  position: relative;
+  bottom: -0.313rem;
+  text-align: left;
+}
+
+.swiper-pagination {
+  border-radius: 0;
+  width: 1.125rem;
+  height: 0.25rem;
+  background: #fff;
+}
+
+.swiper-slide {
   width: 100%;
   height: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  overflow: hidden;
+  opacity: 0.5;
 }
 
-.header-title {
-  font-size: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2em;
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
 }
 
-.header-title h3 {
-  font-size: 1.75em;
+
+@media screen and (max-width: 62.188rem) and (max-height: 43.75rem) {
+  .content {
+    top: 30% !important;
+    transform: translatey(-30%);
+  }
 }
+
 
 /* Home Section */
 
