@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
 :root {
@@ -52,15 +52,14 @@ body {
       #f3edd4,
       #faebd7);
   width: 100%;
-  margin-top: 115px;
+  padding-top: 120px;
 }
 
 /* Navigation menu */
 
 .navbar {
   width: 100%;
-  height: auto;
-  min-height: 60px;
+  min-height: 70px;
   position: fixed;
   top: 0;
   z-index: 99;
@@ -222,21 +221,19 @@ body {
   width: 100%;
   position: relative;
   min-height: 31.25rem;
-  height: calc(100vh - 120px);
+  height: 100%;
   background-color: #202948;
   font-family: "Poppins", sans-serif;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 .content {
   position: absolute;
   z-index: 50;
   left: 5rem;
   top: 50%;
-  transform: translatey(-50%);
+  transform: translateY(-50%);
   text-transform: uppercase;
-  color: #fff;
+  color: var(--antiquewhite);
   letter-spacing: 0.175rem;
 }
 
@@ -263,7 +260,7 @@ body {
   width: 3rem;
   border: none;
   height: 0.125rem;
-  background: #fff;
+  background: var(--teal);
   margin-top: 0.938rem;
   margin-inline: 0.313rem;
 }
@@ -288,7 +285,7 @@ body {
   letter-spacing: 0.1rem;
   font-weight: 600;
   font-size: 1.75rem;
-  color: #1aad8a;
+  color: var(--antiquewhite);
 }
 
 .swiper-bottom ul li span {
@@ -300,23 +297,31 @@ body {
   margin-right: 0.5rem;
 }
 
-
-.swiper-pagination {
+.swiper-pagination .swiper-pagination-bullets {
   position: relative;
   bottom: -0.313rem;
-  text-align: left;
+  text-align: center;
 }
 
-.swiper-pagination {
+.swiper-pagination .swiper-pagination-bullet {
   border-radius: 0;
   width: 1.125rem;
   height: 0.25rem;
-  background: #fff;
+  background: var(--teal);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 40px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 20px;
+  --swiper-navigation-color: var(--teal);
 }
 
 .swiper-slide {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 120px);
   text-align: center;
   overflow: hidden;
   opacity: 0.5;
@@ -325,6 +330,7 @@ body {
 .swiper-slide img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 
@@ -809,7 +815,7 @@ li {
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
   body {
-    margin-top: 100px;
+    padding-top: 100px;
     background-image: radial-gradient(circle,
         #faebd7,
         #f3edd4,
@@ -890,10 +896,9 @@ li {
     margin: 0;
   }
 
-  .page-header {
-    background: url(../imgs/header.jpg) repeat center bottom fixed;
-    background-size: cover;
-    height: 300px;
+  .swiper-slide {
+    width: 100%;
+    height: calc(80vh - 100px);
   }
 
   .header-title {
