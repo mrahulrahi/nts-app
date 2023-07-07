@@ -540,7 +540,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .feature-post-title {
@@ -595,14 +595,14 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   gap: 30px;
   padding: 50px;
 }
 
 .car-card-item {
   width: 325px;
-  height: 325px;
+  height: 100%;
   background-color: var(--gray-dark);
   display: flex;
   flex-direction: column;
@@ -613,7 +613,7 @@ body {
 
 .car-card-img {
   width: 300px;
-  height: auto;
+  height: 100%;
   margin: 10px;
   aspect-ratio: 16/9;
   border-radius: 1em;
@@ -622,6 +622,7 @@ body {
 .car-card-caption {
   color: var(--gray-dark);
   background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
 }
 
 .cc-caption-top {
