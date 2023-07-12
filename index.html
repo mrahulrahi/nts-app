@@ -41,64 +41,74 @@
 
     <!-- page-header -->
     <header class="page-header">
-      <div class="swiper-bottom">
-        <ul>
-          <li><span>likes</span>87</li>
-          <li><span>views</span>173</li>
-        </ul>
-      </div>
       <div class="swiper hero-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="content">
-              <span>group</span>
-              <h1>imagine</h1>
-              <p>tells a story</p>
-              <hr />
-            </div>
             <img src="./assets/imgs/swiper-img-1.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <div class="content">
-              <span>group</span>
-              <h1>imagine</h1>
-              <p>tells a story</p>
-              <hr />
-            </div>
             <img src="./assets/imgs/swiper-img-2.jpeg" alt="" />
           </div>
           <div class="swiper-slide">
-            <div class="content">
-              <span>group</span>
-              <h1>imagine</h1>
-              <p>tells a story</p>
-              <hr />
-            </div>
             <img src="./assets/imgs/swiper-img-3.jpeg" alt="" />
           </div>
           <div class="swiper-slide">
-            <div class="content">
-              <span>group</span>
-              <h1>imagine</h1>
-              <p>tells a story</p>
-              <hr />
-            </div>
             <img src="./assets/imgs/swiper-img-4.jpeg" alt="" />
           </div>
           <div class="swiper-slide">
-            <div class="content">
-              <span>group</span>
-              <h1>imagine</h1>
-              <p>tells a story</p>
-              <hr />
-            </div>
             <img src="./assets/imgs/swiper-img-5.jpeg" alt="" />
           </div>
         </div>
       </div>
+      <div class="swiper content-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="content">
+              <p>tells a story</p>
+              <h1>imagine</h1>
+              <span>group</span>
+              <hr />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+              <p>tells a story</p>
+              <h1>imagine</h1>
+              <span>group</span>
+              <hr />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+              <p>tells a story</p>
+              <h1>imagine</h1>
+              <span>group</span>
+              <hr />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+              <p>tells a story</p>
+              <h1>imagine</h1>
+              <span>group</span>
+              <hr />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+              <p>tells a story</p>
+              <h1>imagine</h1>
+              <span>group</span>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-bottom">
+        <div class="swiper-button-next"><span>Next &gt;</span></div>
+        <div class="swiper-button-prev"><span>&lt; Previous</span></div>
+      </div>
       <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </header>
     <!-- end of page header -->
     <!-- Booking Start -->
@@ -560,9 +570,8 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var slider = new Swiper(".hero-slider", {
+      var heroSlider = new Swiper(".hero-slider", {
         slidesPerView: 1,
-        loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -572,6 +581,15 @@
           prevEl: ".swiper-button-prev",
         },
       });
+      var contentSlider = new Swiper(".content-slider", {
+        slidesPerView: 1,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      heroSlider.controller.control = contentSlider;
+      contentSlider.controller.control = heroSlider;
     </script>
   </body>
 </html>

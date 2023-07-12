@@ -226,7 +226,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.content {
+.content-slider {
   position: absolute;
   z-index: 50;
   left: 5rem;
@@ -269,38 +269,23 @@ body {
 .swiper-bottom {
   position: absolute;
   z-index: 50;
-  left: 2rem;
-  bottom: 1rem;
+  right: 10rem;
+  bottom: 4rem;
   transform: translatey(-50%);
 }
 
-.swiper-bottom ul {
-  list-style: none;
-  display: flex;
-  gap: 1.563rem;
-}
-
-.swiper-bottom ul li {
+.swiper-bottom div {
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.1rem;
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1rem;
   color: var(--antiquewhite);
-}
-
-.swiper-bottom ul li span {
-  font-size: 0.8rem;
-  opacity: 0.4;
-  color: #fff;
-  font-weight: 400;
-  display: inline-block;
-  margin-right: 0.5rem;
 }
 
 .swiper-pagination .swiper-pagination-bullets {
   position: relative;
-  bottom: -0.313rem;
+  bottom: 1rem;
   text-align: center;
 }
 
@@ -313,22 +298,21 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-  --swiper-navigation-size: 40px;
-  --swiper-navigation-top-offset: 50%;
-  --swiper-navigation-sides-offset: 20px;
+  --swiper-navigation-size: 10px;
+  --swiper-navigation-sides-offset: 50px;
   --swiper-navigation-color: var(--teal);
 }
 
-.swiper-slide {
+.hero-slider .swiper-slide {
   position: relative;
   width: 100%;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 140px);
   text-align: center;
   overflow: hidden;
   opacity: 0.5;
 }
 
-.swiper-slide img {
+.hero-slider .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
