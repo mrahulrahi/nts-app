@@ -233,6 +233,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   text-transform: uppercase;
+  text-align: left;
   color: var(--antiquewhite);
   letter-spacing: 0.175rem;
 }
@@ -337,7 +338,7 @@ body {
 @media screen and (max-width: 62.188rem) and (max-height: 43.75rem) {
   .content {
     top: 30% !important;
-    transform: translatey(-30%);
+    transform: translateY(-30%);
   }
 }
 
