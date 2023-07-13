@@ -105,8 +105,8 @@
         </div>
       </div>
       <div class="swiper-bottom">
-        <div class="swiper-button-next"><span>Next &gt;</span></div>
-        <div class="swiper-button-prev"><span>&lt; Previous</span></div>
+        <div class="swiper-button-next"><span>Next&gt;</span></div>
+        <div class="swiper-button-prev"><span>&lt;Previous</span></div>
       </div>
       <div class="swiper-pagination"></div>
     </header>
@@ -583,6 +583,10 @@
       });
       var contentSlider = new Swiper(".content-slider", {
         slidesPerView: 1,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
