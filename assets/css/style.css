@@ -220,7 +220,6 @@ body {
 .page-header {
   width: 100%;
   position: relative;
-  min-height: 31.25rem;
   height: 100%;
   background-color: #202948;
   font-family: "Poppins", sans-serif;
@@ -228,6 +227,7 @@ body {
 
 .content-slider {
   position: absolute;
+  width: 100%;
   z-index: 50;
   left: 5rem;
   top: 50%;
@@ -310,7 +310,7 @@ body {
 .hero-slider .swiper-slide {
   position: relative;
   width: 100%;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 120px);
   text-align: center;
   overflow: hidden;
   opacity: 0.5;
@@ -321,15 +321,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
-
-@media screen and (max-width: 62.188rem) and (max-height: 43.75rem) {
-  .content {
-    top: 50% !important;
-    transform: translateY(-50%);
-  }
-}
-
 
 /* Home Section */
 
@@ -800,7 +791,6 @@ li {
   width: 500px;
   padding: 3%;
   color: var(--gray-dark);
-  background-color: var(--antiquewhite);
   border-radius: 1em;
 }
 
@@ -810,6 +800,9 @@ li {
   justify-content: start;
   gap: 20px;
   margin-bottom: 20px;
+  background-color: var(--antiquewhite);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .contact-content-item i {
@@ -817,7 +810,7 @@ li {
   color: var(--antiquewhite);
   padding: 20px;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 2F0px;
 }
 
 .gmap-canvas {
@@ -916,9 +909,17 @@ li {
     margin: 0;
   }
 
-  .swiper-slide {
+  .hero-slider .swiper-slide {
     width: 100%;
-    height: calc(75vh - 100px);
+    height: calc(70vh - 100px);
+  }
+
+  .content-slider {
+    left: 3rem;
+  }
+
+  .swiper-bottom {
+    display: none;
   }
 
   .header-title {
