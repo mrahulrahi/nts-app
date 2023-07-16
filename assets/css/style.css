@@ -227,7 +227,7 @@ body {
 
 .content-slider {
   position: absolute;
-  width: 100%;
+  width: calc(100% - 5rem);
   z-index: 50;
   left: 5rem;
   top: 50%;
