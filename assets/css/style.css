@@ -630,6 +630,11 @@ body {
   padding: 10px;
   font-size: 1em;
   margin-bottom: 10px;
+  border-left: 1px solid var(--gray-dark);
+}
+
+.cc-caption-top p:last-child {
+  border-right: 1px solid var(--gray-dark);
 }
 
 .car-card-caption span {
