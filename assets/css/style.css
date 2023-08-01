@@ -820,7 +820,9 @@ li {
   color: var(--antiquewhite);
   padding: 20px;
   border-radius: 10px;
-  font-size: 2F0px;
+  font-size: 20px;
+  width: 55px;
+  height: 55px;
 }
 
 .gmap-canvas {
