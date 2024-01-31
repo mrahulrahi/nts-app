@@ -1,46 +1,5 @@
 // header
 
-class MyHeader extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
-    <nav class="navbar">
-        <div class="navbar-first flex">
-            <a class="navbar-brand" href="#">
-              <img src="assets/imgs/logo.png" alt="">
-            </a>
-            <a class="navbar-title" href="#">
-                <h1>IMAGINE GROUP</h1>
-            </a>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-            <div class="socials">
-              <a href="https://facebook.com/imaginegrouplko"><i class="fab fa-facebook"></i></a>
-              <a href="https://twitter.com/imaginegroupig"><i class="fab fa-twitter"></i></a>
-              <a href="https://instagram.com/imaginegroupig"><i class="fab fa-instagram"></i></a>
-              <a href="https://wa.me/+918881888339"><i class="fab fa-whatsapp"></i></a>
-            </div>     
-        </div>
-
-        <div class="nav-menu flex">                     
-          <div class="nav-item flex">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="index.html#services">Our Services</a>
-            <a class="nav-link" href="index.html#cars">Available Cars</a>
-            <a class="nav-link" href="index.html#contact">Contact Us</a>    
-          </div>
-          <div class="nav-item">
-            <a href="tel:888-188-8339" class="btn"><i class="fa fa-phone"></i> Call Us</a>
-          </div>
-        </div>
-    </nav>
-      
-      `;
-  }
-}
-customElements.define("my-header", MyHeader);
 
 // hamburger menu
 
