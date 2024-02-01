@@ -14,7 +14,7 @@ const Header = () => {
                             aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                     
+
                         <div className="header-right d-none d-lg-block">
                             <ul className="social-links d-flex justify-content-center">
                                 <li><a href="https://facebook.com/imaginegrouplko"><FaFacebook /></a></li>
