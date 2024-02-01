@@ -9,7 +9,7 @@ a:focus,input:focus,textarea:focus,*:focus{outline:0!important;}
 /* =================reset css ends here================= */
 
 /* =================core css starts here================= */
-body{font-family: 'Poppins', sans-serif;font-size:16px;line-height:1.6;font-weight:300;;color: inherit;background: var(--white);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale; }
+body{font-family: 'Montserrat', sans-serif;font-size:16px;line-height:1.6;font-weight:300;;color: inherit;background: var(--white);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale; }
 .container{width:100%;max-width:1320px;}
 .content-container{padding: 120px 0;}
 a,input,button{display:inline-block;text-decoration:none;color:inherit;outline:none;transition:all 0.2s ease-in;-webkit-transition:all 0.2s ease-in;}
@@ -24,7 +24,7 @@ a:focus{outline:none;outline-offset:0px;text-decoration:none;color:inherit;}
 .os-animation{opacity:0;}
 .os-animation.animated{opacity:1;}
 img{max-width:100%;border:0;height:auto;}
-h1,h2,h3,h4,h5,h6{margin:0px;padding:0px;margin-bottom:20px;font-family: 'Poppins', sans-serif;line-height:1.6;font-weight:600;color:inherit;}
+h1,h2,h3,h4,h5,h6{margin:0px;padding:0px;margin-bottom:20px;font-family: 'Montserrat', sans-serif;line-height:1.6;font-weight:600;color:inherit;}
 h1{font-size:58px;}
 h2{font-size:48px;}
 h3{font-size:40px;}
@@ -36,13 +36,17 @@ strong{font-weight:700;}
 b{font-weight:400;}
 p:last-child{margin-bottom:0;}
 
-.btn {min-width: 196px;width: fit-content;border-radius: 80px;padding: 20.5px 15px;font-family: 'Poppins', sans-serif;font-size: 14px;font-weight: 400;line-height: 1;box-shadow: none;}
-.btn-default,.btn-default:focus { color: var(--white);background-color: var(--violet);border: solid 1px var(--violet); }
-.btn-default:hover,.btn-default:active { color: var(--white)!important;background-color: var(--blue)!important;border-color: var(--blue)!important;}
-.btn.white,.btn.white:focus { color: var(--violet);background-color: var(--white);border: solid 1px var(--white); }
+.btn {min-width: 196px;width: fit-content;border-radius: 80px;padding: 20.5px 15px;font-family: 'Montserrat', sans-serif;font-size: 16px;font-weight: 600;line-height: 1;box-shadow: none;border-radius: 8px;}
+.btn-default,.btn-default:focus { color: var(--gray-dark);background-color: var(--teal);border: solid 1px var(--violet); }
+.btn-default:hover,.btn-default:active { color: var(--gray-dark)!important;background-color: var(--antiquewhite)!important;border-color: var(--antiquewhite)!important;}
 
 .btn.btn-block{min-width: 100%;}
 .btn+.btn {margin-left: 25px;}
 .bottom-btn-box{margin-top: 40px;}
 
 /* =================core css ends here================= */
+
+@media (max-width:991.98px){
+    body{padding-top: 70px;}
+    .container{width: calc(100% - 16px);}
+}

@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaPhone } from "react-i
 const Header = () => {
     return (
         <header id="header">
-            <nav className="navbar navbar-expand-xl">
+            <nav className="navbar navbar-expand-lg">
                 <div className="container">
                     <div className="nav-inside d-flex flex-wrap align-items-center justify-content-between">
                         <a className="navbar-brand" href="index.html"><img src="./images/logo.png" alt="logo" /></a>
@@ -15,7 +15,7 @@ const Header = () => {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                      
-                        <div className="header-right d-none d-xl-block">
+                        <div className="header-right d-none d-lg-block">
                             <ul className="social-links d-flex justify-content-center">
                                 <li><a href="https://facebook.com/imaginegrouplko"><FaFacebook /></a></li>
                                 <li><a href="https://twitter.com/imaginegroupig"><FaTwitter /></a></li>
@@ -24,7 +24,7 @@ const Header = () => {
                             </ul>
                         </div>
 
-                        <div className="collapse navbar-collapse justify-content-center" id="mainNav">
+                        <div className="collapse navbar-collapse align-items-center justify-content-center" id="mainNav">
                             <div className="navbar-inside">
                                 <ul className="navbar-nav">
                                     <li className="nav-item"><a className="nav-link" href="#!">Home</a></li>
@@ -32,11 +32,11 @@ const Header = () => {
                                     <li className="nav-item"><a className="nav-link" href="#!">Our Services</a></li>
                                     <li className="nav-item"><a className="nav-link" href="#!">Available Cars</a></li>
                                     <li className="nav-item"><a className="nav-link" href="#!">Contact Us</a></li>
-                                    <li className="nav-item header-btn">
-                                        <a href="tel:888-188-8339" className="btn btn-default"><FaPhone /> Call Us</a>
+                                    <li className="nav-item header-btn me-auto me-lg-0 ms-auto d-flex align-items-center">
+                                        <a href="tel:888-188-8339" className="btn btn-default d-flex align-items-center justify-content-center gap-3"><FaPhone /> Call Us</a>
                                     </li>
                                 </ul>
-                                <div className="navbar-bottom mt-auto d-xl-none">
+                                <div className="navbar-bottom mt-auto d-lg-none">
                                     <ul className="social-links d-flex justify-content-center">
                                         <li><a href="https://facebook.com/imaginegrouplko"><FaFacebook /></a></li>
                                         <li><a href="https://twitter.com/imaginegroupig"><FaTwitter /></a></li>

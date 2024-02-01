@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import 'bootstrap/dist/css/bootstrap.css'
 import ImportBsJS from "./importBsJS";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import "./style.css";
 import Header from "./components/Header/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"], display: 'swap',
+variable: '--font-montserrat', });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,9 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ImportBsJS />
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Header />
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }
