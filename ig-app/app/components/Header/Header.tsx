@@ -38,7 +38,7 @@ const Header = () => {
                 <nav className="navbar navbar-expand-lg">
                     <div className="container">
                         <div className="nav-inside d-flex flex-wrap align-items-center justify-content-between">
-                            <a className="navbar-brand" href="index.html"><img src="./images/logo.png" alt="logo" /></a>
+                            <a className="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a>
                             <a className="navbar-title" href="#">IMAGINE GROUP</a>
                             <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"

@@ -24,12 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
       <ImportBsJS />
       <body className={montserrat.className}>
         <Header />
         {children}
         <Footer />
       </body>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     </html>
   );
 }
