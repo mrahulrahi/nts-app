@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import 'bootstrap/dist/css/bootstrap.css'
 import ImportBsJS from "./importBsJS";
-import { Montserrat } from "next/font/google";
+import { Montserrat } from 'next/font/google';
 import "./globals.css";
 import "./style.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 const montserrat = Montserrat({
-  subsets: ["latin"], display: 'swap',
+  weight: ['300', '400', '500','600', '700'],
+  subsets: ['latin'],
+  display:'swap',
   variable: '--font-montserrat',
 });
 
@@ -24,14 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
       <ImportBsJS />
       <body className={montserrat.className}>
         <Header />
         {children}
         <Footer />
       </body>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     </html>
   );
 }

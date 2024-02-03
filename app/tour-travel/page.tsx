@@ -1,134 +1,14 @@
-'use client'
-import React, { useEffect, useRef } from "react";
+import Banner from "../components/Banner/Banner"
 
 
 const TourTravelPage = () => {
 
-  const swiperRef = useRef<Swiper | null>(null); // create a ref to store the swiper instance
 
-  useEffect(() => {
-    // initialize swiper when document is ready
-    swiperRef.current = new Swiper(".swiper-container", {
-      // swiper options
-      direction: "horizontal",
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-
-    var heroSlider = new Swiper(".hero-slider", {
-      slidesPerView: 1,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-    var contentSlider = new Swiper(".content-slider", {
-      slidesPerView: 1,
-      effect: "fade",
-      fadeEffect: {
-        crossFade: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-    heroSlider.controller.control = contentSlider;
-    contentSlider.controller.control = heroSlider;
-  }, []);
-
-  useEffect(() => {
-    // run some code when swiper is initialized
-    if (swiperRef.current) {
-      // access swiper instance
-      console.log("Swiper is ready!");
-    }
-  }, [swiperRef.current]);
 
   return (
     <>
-      <header className="page-header">
-        <div className="swiper hero-slider">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
-              <img src="./images/swiper-img-1.jpg" alt="" />
-            </div>
-            <div className="swiper-slide">
-              <img src="./images/swiper-img-2.jpeg" alt="" />
-            </div>
-            <div className="swiper-slide">
-              <img src="./images/swiper-img-3.jpeg" alt="" />
-            </div>
-            <div className="swiper-slide">
-              <img src="./images/swiper-img-4.jpeg" alt="" />
-            </div>
-            <div className="swiper-slide">
-              <img src="./images/swiper-img-5.jpeg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div className="swiper content-slider">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
-              <div className="content">
-                <p>tells a story</p>
-                <h1>imagine</h1>
-                <span>group</span>
-                <hr />
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="content">
-                <p>tells a story</p>
-                <h1>book</h1>
-                <span>your car</span>
-                <hr />
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="content">
-                <p>tells a story</p>
-                <h1>travel</h1>
-                <span>with us</span>
-                <hr />
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="content">
-                <p>tells a story</p>
-                <h1>invest</h1>
-                <span>in property</span>
-                <hr />
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="content">
-                <p>tells a story</p>
-                <h1>buy</h1>
-                <span>your dream house</span>
-                <hr />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="swiper-bottom">
-          <div className="swiper-button-next"><span>Next&gt;</span></div>
-          <div className="swiper-button-prev"><span>&lt;Previous</span></div>
-        </div>
-        <div className="swiper-pagination"></div>
-      </header>
-
+    <Banner />
+     
 
       <section id="book" className="container container-book">
         <div className="container-title">Book Your Car</div>
@@ -159,7 +39,7 @@ const TourTravelPage = () => {
             </select>
           </div>
           <div className="field">
-            <button onclick="bookCar()" className="btn-book" type="button">
+            <button className="btn-book" type="button">
               Book Now
             </button>
           </div>
@@ -465,7 +345,7 @@ const TourTravelPage = () => {
         <br />
         <input type="text" name="form_message" placeholder="Message" id="form_message" required />
         <br />
-        <button onclick="sendEmail()" type="button" id="button">
+        <button type="button" id="button">
           Send Email
         </button>
       </form>
@@ -500,8 +380,8 @@ const TourTravelPage = () => {
     <div className="gmap-canvas">
       <iframe width="100%" height="300" id="gmap_canvas"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.4519880543903!2d80.98884681531288!3d26.889146967576703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399959205b897b3b%3A0x385a5519bc060254!2sImagine%20group!5e0!3m2!1sen!2sin!4v1676302436631!5m2!1sen!2sin"
-        loading="lazy" referrerPolicy="no-referrer-when-downgrade" frameBorder="0" scrolling="no" marginHeight="0"
-        marginwidth="0"></iframe>
+        loading="lazy" referrerPolicy="no-referrer-when-downgrade" frameBorder="0" scrolling="no" marginHeight={0}
+        marginWidth={0}></iframe>
     </div>
   </div>
     </>
