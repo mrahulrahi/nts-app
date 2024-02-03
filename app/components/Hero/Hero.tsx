@@ -99,7 +99,7 @@ const Hero = () => {
                         <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
-                    <div className="hero-bottom d-flex gap-4">
+                    <div className="hero-bottom d-none d-lg-flex gap-4">
                         <button className="hero-btn hero-btn-next" type="button" data-bs-target="#carousel" data-bs-slide="next"><span>Next&gt;</span></button>
                         <button className="hero-btn hero-btn-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev"><span>&lt;Previous</span></button>
                     </div>

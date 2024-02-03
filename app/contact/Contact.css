@@ -1,0 +1,23 @@
+.contact-container{padding-top: 120px;margin-top: 70px;}
+.contact-gmap-canvas {display: flex;justify-content: center;overflow: hidden;background: none !important;height: 100%;width: 100%;}
+.contact-head h3{color: var(--antiquewhite);font-size: 46px;font-weight: 600;line-height: 1.2;}
+.contact-head h1{color: var(--antiquewhite);font-size: 92px;font-weight: 700;line-height: 1.2;}
+.contact-body{gap: 40px;margin: 50px 0 80px;}
+
+.contact-body-left{width: 500px;}
+.contact-form{width: 100%;background-color: var(--dark-grey);border-radius: 1em;}
+input.form-control,input.form-control:focus{background: var(--antiquewhite);color: var(--dark-grey);width: 100%;height: 46px;border-radius: 8px;font-size: 18px;font-weight: 500;outline: none;border: none;box-shadow: none;}
+textarea.form-control,textarea.form-control:focus{background: var(--antiquewhite);color: var(--dark-grey);width: 100%;height: 114px;border-radius: 8px;font-size: 18px;font-weight: 500;resize: none;outline: none;border: none;box-shadow: none;}
+input.form-control::placeholder{color: var(--grey);}
+textarea.form-control::placeholder{color: var(--grey);}
+
+.contact-body-right{width: 400px;}
+.contact-details-item{gap: 20px;margin-bottom: 20px;background-color: var(--antiquewhite);padding: 16px;border-radius: 10px;}
+.cd-icon{width: 40px;height: 40px;position: relative;top:5px;font-size: 20px;background: var(--dark-grey);color: var(--antiquewhite);border-radius: 8px;}
+.cd-text{font-size: 16px;font-weight: 500;line-height: 1.2;}
+.cd-text h5{font-size: 24px;font-weight: 600;line-height: 1.2;margin-bottom: 8px;}
+
+@media (max-width: 991.98px){
+    .contact-container{padding-top: 60px;}
+    .contact-body-left,.contact-body-right{width: 100%;}
+}
