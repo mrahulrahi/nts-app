@@ -2,12 +2,12 @@
 .hero-bg{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:1;}
 .hero-bg img{width: 100%;height: 100%;object-fit: cover;}
 .hero-bg::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:2;background:  rgb(194, 246, 234, 0.2);}
-.hero-content{color: var(--antiquewhite);padding: 210px 0;}
+.hero-content{color: var(--antique-white);padding: 210px 0;}
 .hero-content h5 {font-size: 30px;font-weight: 500;line-height: 1.6;}
 .hero-content h1 {font-size: 92px;font-weight:700;line-height:1.2;}
 .hero-content h3 {font-size: 46px;font-weight: 600;line-height:1.2;}
 .hero-content hr {display: block;width: 60px;height: 3px;background: var(--teal);border: none;margin-top: 15px;}
 .hero-bottom {position: absolute;z-index: 50;right: 72px;bottom: 16px;}
 .hero-btn{text-transform: uppercase;letter-spacing: 0.1rem;font-weight: 600;font-size: 20px;color: var(--teal);color: var(--teal);border: 0;background: transparent;}
-.carousel-indicators [data-bs-target]{width: 30px;height: 5px;background-color: var(--antiquewhite);}
+.carousel-indicators [data-bs-target]{width: 30px;height: 5px;background-color: var(--antique-white);}
 .carousel-indicators button.active {width: 40px;height: 5px;background-color: var(--teal);}

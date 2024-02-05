@@ -7,7 +7,7 @@ const TourTravelPage = () => {
 
   return (
     <>
-      <Banner />
+      <Banner heading="Tour & Travel" subheading="Book Your Car" />
 
 
       <section id="book" className="container container-book">

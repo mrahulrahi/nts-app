@@ -1,6 +1,11 @@
 import './Banner.css'
 
-const Banner = () => {
+interface Banner{
+    heading: string;
+    subheading: string;
+}
+
+const Banner = ({heading, subheading} : Banner) => {
 
     return (
         <>
@@ -10,8 +15,8 @@ const Banner = () => {
                     <div className="row">
                         <div className="col-md-7">
                             <div className="banner-content position-relative z-3">
-                                <h1>Tour & Travel</h1>
-                                <h3>Book Your Car</h3>
+                                <h1>{heading}</h1>
+                                <h3>{subheading}</h3>
                             </div>
                         </div>
                     </div>

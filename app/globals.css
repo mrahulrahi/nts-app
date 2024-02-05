@@ -1,4 +1,4 @@
-:root{--teal: #c2f6ea;--white: #fff;--antiquewhite: antiquewhite;--gray: #6c757d;--gray-dark: #343a40;}
+:root{--teal: #c2f6ea;--white: #fff;--antique-white: antiquewhite;--gray: #6c757d;--gray-dark: #343a40;}
 
 /* =================reset css starts here=================  */
 *{margin:0;padding:0;}
@@ -38,7 +38,7 @@ p:last-child{margin-bottom:0;}
 
 .btn {min-width: 196px;width: fit-content;border-radius: 80px;padding: 20.5px 15px;font-family: 'Montserrat', sans-serif;font-size: 16px;font-weight: 600;line-height: 1;box-shadow: none;border-radius: 8px;}
 .btn-default,.btn-default:focus { color: var(--gray-dark);background-color: var(--teal);border: solid 1px var(--violet); }
-.btn-default:hover,.btn-default:active { color: var(--gray-dark)!important;background-color: var(--antiquewhite)!important;border-color: var(--antiquewhite)!important;}
+.btn-default:hover,.btn-default:active { color: var(--gray-dark)!important;background-color: var(--antique-white)!important;border-color: var(--antique-white)!important;}
 
 .btn.btn-block{min-width: 100%;}
 .btn+.btn {margin-left: 25px;}
