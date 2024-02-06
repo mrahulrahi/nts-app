@@ -1,134 +1,128 @@
+import './TourTravel.css'
 import Banner from "../components/Banner/Banner"
-
+import WorkCard from '../components/WorkCard/WorkCard'
+import ServiceCard from '../components/ServiceCard/ServiceCard'
+import FeatureCard from '../components/FeatureCard/FeatureCard'
 
 const TourTravelPage = () => {
+  const workCards = [
+    { imgUrl: "images/best-price.png", title: "Check Price", body: "Select your car & tell us about its current location, and our advanced AI tech will make the perfect price for you." },
+    { imgUrl: "images/book-ride.png", title: "Book Ride", body: "Select your car & your pickup location then click on the book button, & our service expert will call you and send car to you." },
+    { imgUrl: "/images/pickup.png", title: "Schedule Pickup", body: "Book a ride and schedule pickup from your home or work or anywhere with current loaction best suits your convenience." },
+  ]
 
+  const serviceCards = [
+    { imgUrl: "images/local.png", title: "Local Rentals"},
+    { imgUrl: "images/oneway.png", title: "OneWay Drops"},
+    { imgUrl: "images/twoway.png", title: "Round Trips"},
+    { imgUrl: "images/airport.png", title: "Airport Transfers"},
+    { imgUrl: "images/railway-station.png", title: "Railway Station Transfers"},
+    { imgUrl: "images/bus-stand.png", title: "Bus Stand Transfers"},
+    { imgUrl: "images/event.png", title: "Event Booking"},
+    { imgUrl: "images/office.png", title: "For Office Use"},
+  ]
 
+  const featureCards = [
+    { imgUrl: "images/whyus-1.png", title: "Reasonable Prices"},
+    { imgUrl: "images/whyus-2.png", title: "Reasonable Prices"},
+    { imgUrl: "images/whyus-3.png", title: "Reasonable Prices"},
+    { imgUrl: "images/whyus-4.png", title: "Reasonable Prices"},
+    { imgUrl: "images/whyus-5.png", title: "Reasonable Prices"},
+    { imgUrl: "images/whyus-6.png", title: "Reasonable Prices"},
+  ]
 
   return (
     <>
       <Banner heading="Tour & Travel" subheading="Book Your Car" />
 
-
-      <section id="book" className="container container-book">
-        <div className="container-title">Book Your Car</div>
-        <div className="book-form">
-          <div className="field">
-            <input type="text" placeholder="Full Name" name="" id="book_name" />
-          </div>
-          <div className="field">
-            <input type="tel" placeholder="Phone No." name="" id="book_phone" />
-          </div>
-          <div className="field">
-            <input type="text" placeholder="Pickup Location" name="" id="book_pickup" />
-          </div>
-          <div className="field">
-            <input type="text" placeholder="Drop Location" name="" id="book_drop" />
-          </div>
-          <div className="field">
-            <input type="datetime-local" placeholder="Pickup Date & Time" name="" id="book_datetime" />
-          </div>
-          <div className="field">
-            <select className="custom-select" id="book_cartype">
-              <option selected>Select Car type</option>
-              <option value="Luxury">Luxury</option>
-              <option value="MPV">MPV</option>
-              <option value="SUV">SUV</option>
-              <option value="Sedan">Sedan</option>
-              <option value="Hatchback">Hatchback</option>
-            </select>
-          </div>
-          <div className="field">
-            <button className="btn-book" type="button">
-              Book Now
-            </button>
+      <div className="content-container">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>Book Your Car</h3>
+              </div>
+              <div className="book-form-wrapper w-100">
+                <div className="form-control-row d-flex flex-wrap">
+                  <div className="form-control-col"><input type="text" className="form-control" placeholder="Full Name" name="" id="book_name" /></div>
+                  <div className="form-control-col"><input type="tel" className="form-control" placeholder="Phone No." name="" id="book_phone" /></div>
+                  <div className="form-control-col"><input type="text" className="form-control" placeholder="Pickup Location" name="" id="book_pickup" /></div>
+                  <div className="form-control-col"><input type="text" className="form-control" placeholder="Drop Location" name="" id="book_drop" /></div>
+                  <div className="form-control-col"><input type="date" className="form-control" placeholder="Pickup Date" name="" id="book_datetime" /></div>
+                  <div className="form-control-col">
+                    <select className="form-select" id="book_cartype">
+                      <option selected>Select Car type</option>
+                      <option value="Luxury">Luxury</option>
+                      <option value="MPV">MPV</option>
+                      <option value="SUV">SUV</option>
+                      <option value="Sedan">Sedan</option>
+                      <option value="Hatchback">Hatchback</option>
+                    </select>
+                  </div>
+                  <div className="form-control-col"> <button className="btn btn-default" type="button">Book Now</button></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
 
-      <section className="container first d-flex flex-column align-items-center justify-content-center gap-4">
-        <h2 className="container-title">How We Work ?</h2>
-        <ul className="d-flex align-items-center justify-content-center gap-4 main-container">
-          <li className="container-1 d-flex align-items-center justify-content-center gap-4">
-            <img className="img-container-first" src="images/best-price.png" alt="" />
-            <h3 className="text-2xl m-1 p-2">
-              <span className="num-bg">1</span>
-              Check Price
-            </h3>
-            <p className="m-2 p-2">
-              Select your car & tell us about its current location, and our
-              advanced AI tech will make the perfect price for you.
-            </p>
-          </li>
-          <li className="container-1 d-flex align-items-center justify-content-center gap-4">
-            <img className="img-container-first" src="images/book-ride.png" alt="" />
-            <h3 className="text-2xl m-1 p-2">
-              <span className="num-bg">2</span>
-              Book Ride
-            </h3>
-            <p className="m-2 p-2">
-              Select your car & your pickup location then click on the book
-              button, & our service expert will call you and send car to you.
-            </p>
-          </li>
-          <li className="container-1 d-flex align-items-center justify-content-center gap-4">
-            <img className="img-container-first" src="images/pickup.png" alt="" />
-            <h3 className="text-2xl m-1 p-2">
-              <span className="num-bg">3</span>
-              Schedule Pickup
-            </h3>
-            <p className="m-2 p-2">
-              Book a ride and schedule pickup from your home or work or anywhere
-              with current loaction best suits your convenience.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-
-      <section className="container container-service d-flex flex-column align-items-center justify-content-center gap-4" id="services">
-        <div className="container-title">Our Services</div>
-        <div className="service-card">
-          <div className="service-card-item">
-            <img src="images/local.png" className="service-card-img" alt="" />
-            <div className="service-card-caption">Local Rentals</div>
-          </div>
-          <div className="service-card-item">
-            <img src="images/oneway.png" className="service-card-img" alt="" />
-            <div className="service-card-caption">OneWay Drops</div>
-          </div>
-          <div className="service-card-item">
-            <img src="images/twoway.png" className="service-card-img" alt="" />
-            <div className="service-card-caption">Round Trips</div>
-          </div>
-          <div className="service-card-item">
-            <img src="images/airport.png" className="service-card-img" alt="" />
-            <div className="service-card-caption">Airport Transfers</div>
-          </div>
-          <div className="service-card-item">
-            <img src="images/railway-station.png" className="service-card-img" alt="" />
-            <div className="service-card-caption">Railway Station Transfers</div>
-          </div>
-          <div className="service-card-item">
-            <img src="images/bus-stand.png" className="service-card-img" alt="" />
-            <div className="service-card-caption">Bus Stand Transfers</div>
-          </div>
-          <div className="service-card-item">
-            <img src="images/event.png" className="service-card-img" alt="" />
-            <div className="service-card-caption">Event Booking</div>
-          </div>
-          <div className="service-card-item">
-            <img src="images/office.png" className="service-card-img" alt="" />
-            <div className="service-card-caption">For Office Use</div>
+      <div className="content-container pt-0">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>How We Work ?</h3>
+              </div>
+              <div className="work-card-list d-flex flex-wrap">
+                {workCards.map((card, index) => <div className="work-card-item">
+                  <WorkCard card={card} index={index} />
+                </div>)}
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
 
+      <div className="content-container pt-0">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>Our Services</h3>
+              </div>
+              <div className="service-card-list d-flex flex-wrap">
+                {serviceCards.map((card) => <div className="service-card-item">
+                  <ServiceCard card={card} />
+                </div>)}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <section className="container second d-flex flex-column align-items-center justify-content-center gap-4">
-        <h2 className="container-title">Why Us ?</h2>
+      <div className="content-container pt-0">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>Why Us ?</h3>
+              </div>
+              <div className="feature-card-list d-flex flex-wrap">
+                {featureCards.map((card) => <div className="feature-card-item">
+                  <FeatureCard card={card} />
+                </div>)}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <section className="container d-flex flex-column align-items-center justify-content-center gap-4">
+        <h2 className="container-title"></h2>
         <div className="main-container d-flex align-items-center justify-content-center gap-4">
           <div className="container-2 d-flex align-items-center justify-content-center gap-4">
             <div className="d-flex align-items-center justify-content-center gap-4 img-container">

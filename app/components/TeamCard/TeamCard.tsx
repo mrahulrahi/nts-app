@@ -2,10 +2,10 @@ import './TeamCard.css'
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 
 interface Card {
-    card : TeamCard;
+    card : CardProp;
 }
 
-interface TeamCard{
+interface CardProp{
     imgUrl: string;
     name : string;
     jobPost: string;

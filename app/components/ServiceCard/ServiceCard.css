@@ -1,0 +1,4 @@
+.service-card-box{background: var(--dark-grey);border-radius: 16px;}
+.service-card-img{width: 128px;height: 128px;padding: 20px;}
+.service-card-img img{width: 100%;height: 100%;object-fit: cover;}
+.service-card-caption{padding: 10px;font-size: 16px;font-weight: 600;color: var(--antique-white);background: rgba(0, 0, 0, 0.2);border-radius: 16px;}

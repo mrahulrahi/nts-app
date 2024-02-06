@@ -1,0 +1,6 @@
+.work-card-box{color: var(--white);background: var(--dark-grey);gap: 30px;padding: 30px;border-radius: 16px;}
+.work-card-img{width: 125px;height: 125px;padding: 16px;background: antiquewhite;border-radius: 10px;}
+.work-card-img img{width: 100%;height: 100%;object-fit: cover;}
+.work-card-text{font-size: 18px;font-weight: 500;}
+.work-card-count{padding: 5px 10px;font-size: 20px;font-weight: 700; color: var(--dark-grey);background-color: var(--antique-white);border-radius: 8px;}
+.work-card-text h4{font-size: 30px;line-height: 1.2;margin-bottom: 0;}

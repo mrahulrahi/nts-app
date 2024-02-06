@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
 :root {
-  --orange: #fd7e14;
   --teal: #c2f6ea;
   --white: #fff;
   --antiquewhite: antiquewhite;
@@ -30,132 +29,6 @@ body {
   background-color: #fff;
   width: 100%;
 }
-
-
-
-/* Home Section */
-
-.container {
-  width: 100%;
-  height: auto;
-  background-color: var(--teal);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.banner-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  padding: 100px 50px;
-  gap: 50px;
-  background-color: rgba(100, 100, 100, 0.5);
-}
-.banner-item {
-  background-color: var(--antiquewhite);
-  width: 450px;
-  height: auto;
-  padding: 5%;
-}
-.text-block {
-  line-height: 3em;
-}
-.text-block b {
-  color: var(--orange);
-}
-.btn-1 {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0rem;
-  color: var(--antiquewhite);
-  background-color: var(--orange);
-  border-color: var(--orange);
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-}
-
-/* About Section */
-
-.about-container {
-  background-color: var(--antiquewhite);
-  width: 80%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.about-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: auto;
-  padding: 20px;
-}
-.mission-info,
-.story-info {
-  text-align: center;
-}
-.img img {
-  width: 350px;
-  padding: 50px;
-}
-
-/* footer section */
-
-.page-footer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container-footer {
-  width: 80%;
-  height: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-.row-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.socials {
-  display: flex;
-  flex-wrap: wrap;
-}
-.socials a {
-  text-decoration: none;
-  background-color: transparent;
-  color: #6c757d;
-  font-weight: 700;
-  margin-right: 1rem;
-}
-.container-footer p {
-  font-size: 80%;
-  font-weight: 500;
-  opacity: 0.8;
-  line-height: 1.5;
-  border-top: 1px solid #dee2e6;
-}
-.container-footer p a {
-  text-decoration: none;
-  color: var(--gray-dark);
-}
-
-/* Car Page */
 
 .container-feature {
   background-color: var(--teal);
@@ -210,52 +83,9 @@ body {
   color: var(--gray-dark);
   background-color: rgba(0, 0, 0, 0.2);
 }
-.container-book {
-  background-color: var(--antiquewhite);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  padding: 50px 0;
-}
-.container-title {
-  margin: 10px;
-  font-size: 2.5em;
-  font-weight: bold;
-}
-.book-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
-  height: auto;
-  padding: 1em 0;
-}
-.field {
-  margin: 5px;
-}
-.field input,
-.field select,
-.btn-book {
-  width: 150px;
-  height: 50px;
-  padding: 10px;
-}
-.btn-book {
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: #fff;
-  background-color: var(--gray-dark);
-  border-color: var(--gray-dark);
-}
-.field input::placeholder {
-  color: var(--gray-dark);
-  font-size: 1rem;
-  font-weight: 200;
-  border-style: none;
-}
+
+
+
 
 
 

@@ -42,23 +42,23 @@ const ContactPage = () => {
                                     <div className="contact-details-item d-flex">
                                         <div className="cd-icon d-flex align-items-center justify-content-center flex-shrink-0"><FaMapMarkerAlt /></div>
                                         <div className="cd-text">
-                                            <h5>Head Office:</h5>
+                                            <h5>Head Office</h5>
                                             <address>
-                                                102, Om Plaza Apartment, sector 19, Indira Nagar, <br /> Lucknow, UP, India
+                                                102, Om Plaza Apartment,<br />sector 19, Indira Nagar,<br />Lucknow, UP, India
                                             </address>
                                         </div>
                                     </div>
                                     <div className="contact-details-item d-flex">
                                         <div className="cd-icon d-flex align-items-center justify-content-center flex-shrink-0"><FaPhoneAlt /></div>
                                         <div className="cd-text">
-                                            <h5>Phone:</h5>
-                                            <p>+91-888188839</p>
+                                            <h5>Phone</h5>
+                                            <p>+91 8881 88839</p>
                                         </div>
                                     </div>
                                     <div className="contact-details-item d-flex">
                                         <div className="cd-icon d-flex align-items-center justify-content-center flex-shrink-0"><FaEnvelope /></div>
                                         <div className="cd-text">
-                                            <h5>Email:</h5>
+                                            <h5>Email</h5>
                                             <p>support@imaginegroup.com</p>
                                         </div>
                                     </div>
@@ -74,8 +74,6 @@ const ContactPage = () => {
                         marginWidth={0}></iframe>
                 </div>
             </div>
-
-
         </>
     )
 }
