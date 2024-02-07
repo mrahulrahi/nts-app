@@ -7,6 +7,10 @@
 .feature-card-list{width: calc(100% + 30px);margin-left: -15px;margin-bottom: -30px;}
 .feature-card-item{width: 33.33%;padding: 0 15px;margin-bottom: 30px;}
 
+.type-card-list-wrapper{width: 100%;overflow-x: scroll;}
+.type-card-list {width: 100%;min-width: 1080px;gap: 20px;}
+.type-card-item{max-width: calc(16.66% - 20px);}
+
 @media (max-width:1199.98px){
 .work-card-item{width: 50%;flex-grow: 1;}
 .service-card-item{width: 33.33%;flex-grow: 1;}

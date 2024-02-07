@@ -15,6 +15,9 @@ input.form-control::placeholder {color: var(--antique-white);}
 .form-control-col .btn{min-width: 100%;height: 48px;color: var(--dark-grey);background: var(--teal);border: 2px solid var(--dark-grey);border-radius: 8px;}
 .form-control-col .btn:hover{background: var(--dark-grey)!important;color: var(--antique-white)!important;}
 
+.scrollbar-hidden::-webkit-scrollbar {  display: none;}
+.scrollbar-hidden {  -ms-overflow-style: none;  scrollbar-width: none;}
+
 @media(max-width:1199.98px){
     .form-control-col{width: calc(33.33% - 10px);flex-basis: auto;}
 }
@@ -28,18 +31,6 @@ input.form-control::placeholder {color: var(--antique-white);}
 
 /*function of IG*/
 .main-container {flex-wrap: wrap;justify-content: space-around;}
-
-.container-feature {padding: 2.5em 0;}
-
-.feature-posts {width: 80%;height: auto;display: flex;flex-wrap: wrap;gap: 10px;justify-content: center;}
-
-.feature-post-title {width: 5em;height: auto;padding: 45px 30px;font-size: 2em;font-weight: bold;text-transform: uppercase;color: var(--antique-white);background-color: var(--dark-grey);border-radius: 0.5em;}
-
-.feature-post-item {text-decoration: none;width: 10em;height: auto;background-color: var(--dark-grey);display: flex;flex-direction: column;justify-content: space-between;align-items: center;border-radius: 1em;}
-
-.feature-post-img {width: calc(9em - 10px);height: auto;object-fit: cover;padding: 10px;padding-bottom: 0;}
-
-.feature-post-caption {width: 100%;font-size: 1.12em;font-weight: bold;text-align: center;padding: 10px;color: var(--antique-white);background-color: rgba(0, 0, 0, 0.2);border-radius: 1em;}
 
 .container-car {padding: 2.5em 0;}
 
@@ -83,8 +74,7 @@ input.form-control::placeholder {color: var(--antique-white);}
     .container-2 {  width: 100%;}
     .feature-posts {  flex-wrap: nowrap;  justify-content: flex-start;  width: 100%;  overflow-x: scroll;  padding: 10px 20px;}
     .feature-post-img {  width: calc(11em - 10px);  height: auto;  padding: 20px;  padding-bottom: 0;}
-    /* Hide scrollbar for Chrome, Safari and Opera */.scrollbar-hidden::-webkit-scrollbar {  display: none;}
-    /* Hide scrollbar for IE, Edge add Firefox */.scrollbar-hidden {  -ms-overflow-style: none;  scrollbar-width: none;  /* Firefox */}
+
  
 }
     

@@ -3,6 +3,7 @@ import Banner from "../components/Banner/Banner"
 import WorkCard from '../components/WorkCard/WorkCard'
 import ServiceCard from '../components/ServiceCard/ServiceCard'
 import FeatureCard from '../components/FeatureCard/FeatureCard'
+import TypeCard from '../components/TypeCard/TypeCard'
 
 const TourTravelPage = () => {
   const workCards = [
@@ -12,23 +13,31 @@ const TourTravelPage = () => {
   ]
 
   const serviceCards = [
-    { imgUrl: "images/local.png", title: "Local Rentals"},
-    { imgUrl: "images/oneway.png", title: "OneWay Drops"},
-    { imgUrl: "images/twoway.png", title: "Round Trips"},
-    { imgUrl: "images/airport.png", title: "Airport Transfers"},
-    { imgUrl: "images/railway-station.png", title: "Railway Station Transfers"},
-    { imgUrl: "images/bus-stand.png", title: "Bus Stand Transfers"},
-    { imgUrl: "images/event.png", title: "Event Booking"},
-    { imgUrl: "images/office.png", title: "For Office Use"},
+    { imgUrl: "images/local.png", title: "Local Rentals" },
+    { imgUrl: "images/oneway.png", title: "OneWay Drops" },
+    { imgUrl: "images/twoway.png", title: "Round Trips" },
+    { imgUrl: "images/airport.png", title: "Airport Transfers" },
+    { imgUrl: "images/railway-station.png", title: "Railway Station Transfers" },
+    { imgUrl: "images/bus-stand.png", title: "Bus Stand Transfers" },
+    { imgUrl: "images/event.png", title: "Event Booking" },
+    { imgUrl: "images/office.png", title: "For Office Use" },
   ]
 
   const featureCards = [
-    { imgUrl: "images/whyus-1.png", title: "Reasonable Prices"},
-    { imgUrl: "images/whyus-2.png", title: "Reasonable Prices"},
-    { imgUrl: "images/whyus-3.png", title: "Reasonable Prices"},
-    { imgUrl: "images/whyus-4.png", title: "Reasonable Prices"},
-    { imgUrl: "images/whyus-5.png", title: "Reasonable Prices"},
-    { imgUrl: "images/whyus-6.png", title: "Reasonable Prices"},
+    { imgUrl: "images/whyus-1.png", title: "Reasonable Prices" },
+    { imgUrl: "images/whyus-2.png", title: "Clean & Comfortable Cabs" },
+    { imgUrl: "images/whyus-3.png", title: "Simple & Convenient Booking" },
+    { imgUrl: "images/whyus-4.png", title: "Doorstep Pickup" },
+    { imgUrl: "images/whyus-5.png", title: "Experienced & Polite Drivers" },
+    { imgUrl: "images/whyus-6.png", title: "No Hidden Charges" },
+  ]
+
+  const typeCards = [
+    { imgUrl: "images/luxury.png", title: "Luxury" },
+    { imgUrl: "images/mpv.png", title: "MPV" },
+    { imgUrl: "images/suv.png", title: "SUV" },
+    { imgUrl: "images/sedan.png", title: "Sedan" },
+    { imgUrl: "images/hatchback.png", title: "Hatchback" },
   ]
 
   return (
@@ -120,89 +129,32 @@ const TourTravelPage = () => {
         </div>
       </div>
 
-
-      <section className="container d-flex flex-column align-items-center justify-content-center gap-4">
-        <h2 className="container-title"></h2>
-        <div className="main-container d-flex align-items-center justify-content-center gap-4">
-          <div className="container-2 d-flex align-items-center justify-content-center gap-4">
-            <div className="d-flex align-items-center justify-content-center gap-4 img-container">
-              <img src="images/whyus-1.png" alt="" />
-            </div>
-            <div className="d-flex align-items-center justify-content-center gap-4 info-container">
-              <p className="info-title">Reasonable Prices</p>
-            </div>
-          </div>
-          <div className="container-2 d-flex align-items-center justify-content-center gap-4">
-            <div className="d-flex align-items-center justify-content-center gap-4 img-container">
-              <img src="images/whyus-2.png" alt="" />
-            </div>
-            <div className="d-flex align-items-center justify-content-center gap-4 info-container">
-              <p>Clean & Comfortable Cabs</p>
-            </div>
-          </div>
-          <div className="container-2 d-flex align-items-center justify-content-center gap-4">
-            <div className="d-flex align-items-center justify-content-center gap-4 img-container">
-              <img src="images/whyus-3.png" alt="" />
-            </div>
-            <div className="d-flex align-items-center justify-content-center gap-4 info-container">
-              <p>Simple & Convenient Booking</p>
-            </div>
-          </div>
-          <div className="container-2 d-flex align-items-center justify-content-center gap-4">
-            <div className="d-flex align-items-center justify-content-center gap-4 img-container">
-              <img src="images/whyus-4.png" alt="" />
-            </div>
-            <div className="d-flex align-items-center justify-content-center gap-4 info-container">
-              <p>Doorstep Pickup</p>
-            </div>
-          </div>
-          <div className="container-2 d-flex align-items-center justify-content-center gap-4">
-            <div className="d-flex align-items-center justify-content-center gap-4 img-container">
-              <img src="images/whyus-5.png" alt="" />
-            </div>
-            <div className="d-flex align-items-center justify-content-center gap-4 info-container">
-              <p>Experienced & Polite Drivers</p>
-            </div>
-          </div>
-          <div className="container-2 d-flex align-items-center justify-content-center gap-4">
-            <div className="d-flex align-items-center justify-content-center gap-4 img-container">
-              <img src="images/whyus-6.png" alt="" />
-            </div>
-            <div className="d-flex align-items-center justify-content-center gap-4 info-container">
-              <p>No Hidden Charges</p>
+      <div className="content-container pt-0">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>Available Cars</h3>
+              </div>
+              <div className="type-card-list-wrapper scrollbar-hidden">
+                <div className="type-card-list d-flex flex-wrap justify-content-center">
+                  <div className="type-card-item">
+                    <div className="type-card-box w-100 h-100 d-flex align-items-center justify-content-center">
+                      <div className="type-card-title text-uppercase">Cars Types</div>
+                    </div>
+                  </div>
+                  {typeCards.map((card) => <div className="type-card-item">
+                    <TypeCard card={card} />
+                  </div>)}
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
+      <section className="container container-car">
 
-      <section className="container container-car" id="cars">
-        <div className="container-title">Available Cars</div>
-        <section className="container container-feature">
-          <div className="feature-posts scrollbar-hidden">
-            <div className="feature-post-title">Cars Types</div>
-            <a href="single-post.html" className="feature-post-item">
-              <img src="images/luxury.png" className="feature-post-img" alt="" />
-              <div className="feature-post-caption">Luxury</div>
-            </a>
-            <a href="single-post.html" className="feature-post-item">
-              <img src="images/mpv.png" className="feature-post-img" alt="" />
-              <div className="feature-post-caption">MPV</div>
-            </a>
-            <a href="single-post.html" className="feature-post-item">
-              <img src="images/suv.png" className="feature-post-img" alt="" />
-              <div className="feature-post-caption">SUV</div>
-            </a>
-            <a href="single-post.html" className="feature-post-item">
-              <img src="images/sedan.png" className="feature-post-img" alt="" />
-              <div className="feature-post-caption">Sedan</div>
-            </a>
-            <a href="single-post.html" className="feature-post-item">
-              <img src="images/hatchback.png" className="feature-post-img" alt="" />
-              <div className="feature-post-caption">Hatchback</div>
-            </a>
-          </div>
-        </section>
         <div className="car-card-list">
           <div className="car-card-item">
             <img src="images/xuv300.webp" className="car-card-img" alt="" />
