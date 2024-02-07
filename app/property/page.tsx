@@ -1,7 +1,16 @@
-import React from 'react'
+import './Property.css'
 import Banner from '../components/Banner/Banner'
+import TypeCard from '../components/TypeCard/TypeCard'
 
 const PropertyPage = () => {
+    const typeCards = [
+        { imgUrl: "images/house.png", title: "Rent House" },
+        { imgUrl: "images/buy-house.png", title: "Buy House" },
+        { imgUrl: "images/sell-house.png", title: "Sell House" },
+        { imgUrl: "images/buy-plot.png", title: "Buy Plot" },
+        { imgUrl: "images/sell-plot.png", title: "Sell Plot" },
+    ]
+
     return (
         <>
             <Banner heading="Property" subheading="Buy & Sell Property" />
@@ -30,6 +39,30 @@ const PropertyPage = () => {
                                         </select>
                                     </div>
                                     <div className="form-control-col"> <button className="btn btn-default" type="button">Book Now</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="content-container pt-0">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="heading text-center">
+                                <h3>Available Property</h3>
+                            </div>
+                            <div className="type-card-list-wrapper scrollbar-hidden">
+                                <div className="type-card-list d-flex flex-wrap justify-content-center">
+                                    <div className="type-card-item">
+                                        <div className="type-card-box w-100 h-100 d-flex align-items-center justify-content-center">
+                                            <div className="type-card-title text-uppercase">Property Type</div>
+                                        </div>
+                                    </div>
+                                    {typeCards.map((card) => <div className="type-card-item">
+                                        <TypeCard card={card} />
+                                    </div>)}
                                 </div>
                             </div>
                         </div>

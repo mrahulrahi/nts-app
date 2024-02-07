@@ -9,7 +9,10 @@
 
 .type-card-list-wrapper{width: 100%;overflow-x: scroll;}
 .type-card-list {width: 100%;min-width: 1080px;gap: 20px;}
-.type-card-item{max-width: calc(16.66% - 20px);}
+.type-card-item{max-width: 15%;}
+
+.car-card-list{width: calc(100% +30px);margin-left: -15px;margin-bottom: -30px;}
+.car-card-item{width: 33.33%;padding: 0 15px;margin-bottom: 30px;}
 
 @media (max-width:1199.98px){
 .work-card-item{width: 50%;flex-grow: 1;}
@@ -18,10 +21,12 @@
 }
 @media (max-width:991.98px){
 .service-card-item{width: 50%;}
+.car-card-item{width: 50%;}
 }
 @media (max-width:767.98px){
 .work-card-item{width: 100%;}
 .feature-card-item{width: 100%;}
+.car-card-item{width: 100%;}
 }
 @media (max-width:575.98px){
 .service-card-item{width: 100%;}

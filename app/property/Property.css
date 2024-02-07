@@ -1,0 +1,3 @@
+.type-card-list-wrapper{width: 100%;overflow-x: scroll;}
+.type-card-list {width: 100%;min-width: 1080px;gap: 20px;}
+.type-card-item{max-width: 21%;}

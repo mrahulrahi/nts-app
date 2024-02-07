@@ -1,13 +1,13 @@
 #header{position: fixed;left: 0;top: 0;right: 0;padding: 0;z-index: 9999;background:transparent;color: var(--black);transition:all 0.2s ease-in;}
 .fixed #header{background:var(--white);box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.1);transition: all 0.2s ease-in;}
 .navbar{padding: 0; width: 100%;height: 120px;} 
-.nav-inside{width:100%;padding:0;padding-bottom: 50px;}
+.nav-inside{width:100%;padding:0 0 50px;}
 .navbar-brand{width:60px;padding:0;margin:0;position:relative;z-index:999;}
 .navbar-brand img{width:100%;}  
 .navbar-title{color: var(--black);font-size: 36px;font-weight: 700;line-height: 45px;position:relative;z-index:999;}
 .navbar-collapse{position: absolute;bottom: 0;left: 0;width: 100%;height: 50px;background: var(--dark-grey);visibility: hidden;opacity: 0;transition: all 0.2s ease-in;}
 .fixed .navbar-collapse{visibility: visible;opacity: 1;}
-.navbar-inside{width: 100%;max-width: 1300px;}
+.navbar-inside{width: 100%;max-width: 1300px;padding: 0 30px;}
 .navbar-nav{width: 100%;gap: 50px;}
 .navbar-expand-lg .navbar-nav .nav-link{font-size: 16px;font-weight: 600;line-height: 40px;color: var(--teal);padding: 0!important;;margin:0;transition: all 0.1s ease-in;}
 .navbar-expand-lg .navbar-nav .nav-item:hover .nav-link,.navbar-expand-lg .navbar-nav .nav-item.active .nav-link{color:var(--antique-white);}

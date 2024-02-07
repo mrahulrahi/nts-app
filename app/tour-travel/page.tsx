@@ -4,6 +4,7 @@ import WorkCard from '../components/WorkCard/WorkCard'
 import ServiceCard from '../components/ServiceCard/ServiceCard'
 import FeatureCard from '../components/FeatureCard/FeatureCard'
 import TypeCard from '../components/TypeCard/TypeCard'
+import CarCard from '../components/CarCard/CarCard'
 
 const TourTravelPage = () => {
   const workCards = [
@@ -38,6 +39,15 @@ const TourTravelPage = () => {
     { imgUrl: "images/suv.png", title: "SUV" },
     { imgUrl: "images/sedan.png", title: "Sedan" },
     { imgUrl: "images/hatchback.png", title: "Hatchback" },
+  ]
+
+  const carCards = [
+    { imgUrl: "images/xuv300.webp", title: "XUV 300", type: "SUV", capacity: "4 + 1", airCondition: "AC" },
+    { imgUrl: "images/innova.webp", title: "Innova", type: "MPV", capacity: "6 + 1", airCondition: "AC" },
+    { imgUrl: "images/dzire.webp", title: "Dzire", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
+    { imgUrl: "images/fortuner.webp", title: "Fortuner", type: "SUV", capacity: "6 + 1", airCondition: "AC" },
+    { imgUrl: "images/zest.avif", title: "Zest", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
+    { imgUrl: "images/indigo.webp", title: "Indigo", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
   ]
 
   return (
@@ -148,129 +158,16 @@ const TourTravelPage = () => {
                   </div>)}
                 </div>
               </div>
+
+              <div className="car-card-list d-flex flex-wrap mt-5">
+                {carCards.map((card) => <div className="car-card-item">
+                  <CarCard card={card} />
+                </div>)}
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <section className="container container-car">
-
-        <div className="car-card-list">
-          <div className="car-card-item">
-            <img src="images/xuv300.webp" className="car-card-img" alt="" />
-            <div className="car-card-caption">
-              <div className="cc-caption-top">
-                <p><i className="fas fa-car"></i>SUV</p>
-                <p><i className="fa fa-solid fa-users"></i>4 + 1</p>
-                <p><i className="fa fa-regular fa-snowflake"></i>AC</p>
-              </div>
-
-              <div className="cc-caption-bot">
-                <p>XUV 300</p>
-                <a href="#book" className="btn-2">Book Now</a>
-              </div>
-              <span className="d-flex align-items-center justify-content-center gap-4 cc-caption-term">
-                <b>Note :</b> For car booking price check the rate list.
-              </span>
-            </div>
-          </div>
-
-          <div className="car-card-item">
-            <img src="images/innova.webp" className="car-card-img" alt="" />
-            <div className="car-card-caption">
-              <div className="cc-caption-top">
-                <p><i className="fas fa-car"></i>MPV</p>
-                <p><i className="fa fa-solid fa-users"></i>6 + 1</p>
-                <p><i className="fa fa-regular fa-snowflake"></i>AC</p>
-              </div>
-
-              <div className="cc-caption-bot">
-                <p>Innova</p>
-                <a href="#book" className="btn-2">Book Now</a>
-              </div>
-              <span className="d-flex align-items-center justify-content-center gap-4 cc-caption-term">
-                <b>Note :</b> For car booking price check the rate list.
-              </span>
-            </div>
-          </div>
-
-          <div className="car-card-item">
-            <img src="images/dzire.webp" className="car-card-img" alt="" />
-            <div className="car-card-caption">
-              <div className="cc-caption-top">
-                <p><i className="fas fa-car"></i>Sedan</p>
-                <p><i className="fa fa-solid fa-users"></i>4 + 1</p>
-                <p><i className="fa fa-regular fa-snowflake"></i>AC</p>
-              </div>
-
-              <div className="cc-caption-bot">
-                <p>Dzire</p>
-                <a href="#book" className="btn-2">Book Now</a>
-              </div>
-              <span className="d-flex align-items-center justify-content-center gap-4 cc-caption-term">
-                <b>Note :</b> For car booking price check the rate list.
-              </span>
-            </div>
-          </div>
-
-          <div className="car-card-item">
-            <img src="images/fortuner.webp" className="car-card-img" alt="" />
-            <div className="car-card-caption">
-              <div className="cc-caption-top">
-                <p><i className="fas fa-car"></i>SUV</p>
-                <p><i className="fa fa-solid fa-users"></i>6 + 1</p>
-                <p><i className="fa fa-regular fa-snowflake"></i>AC</p>
-              </div>
-
-              <div className="cc-caption-bot">
-                <p>Fortuner</p>
-                <a href="#book" className="btn-2">Book Now</a>
-              </div>
-              <span className="d-flex align-items-center justify-content-center gap-4 cc-caption-term">
-                <b>Note :</b> For car booking price check the rate list.
-              </span>
-            </div>
-          </div>
-
-          <div className="car-card-item">
-            <img src="images/zest.avif" className="car-card-img" alt="" />
-            <div className="car-card-caption">
-              <div className="cc-caption-top">
-                <p><i className="fas fa-car"></i>Sedan</p>
-                <p><i className="fa fa-solid fa-users"></i>4 + 1</p>
-                <p><i className="fa fa-regular fa-snowflake"></i>AC</p>
-              </div>
-
-              <div className="cc-caption-bot">
-                <p>Zest</p>
-                <a href="#book" className="btn-2">Book Now</a>
-              </div>
-              <span className="d-flex align-items-center justify-content-center gap-4 cc-caption-term">
-                <b>Note :</b> For car booking price check the rate list.
-              </span>
-            </div>
-          </div>
-
-          <div className="car-card-item">
-            <img src="images/indigo.webp" className="car-card-img" alt="" />
-            <div className="car-card-caption">
-              <div className="cc-caption-top">
-                <p><i className="fas fa-car"></i>Sedan</p>
-                <p><i className="fa fa-solid fa-users"></i>4 + 1</p>
-                <p><i className="fa fa-regular fa-snowflake"></i>AC</p>
-              </div>
-
-              <div className="cc-caption-bot">
-                <p>Indigo</p>
-                <a href="#book" className="btn-2">Book Now</a>
-              </div>
-              <span className="d-flex align-items-center justify-content-center gap-4 cc-caption-term">
-                <b>Note :</b> For car booking price check the rate list.
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   )
 }

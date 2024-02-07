@@ -15,7 +15,7 @@ const TypeCard = ({ card }: Card) => {
 
     return (
         <div className="type-card-box w-100 h-100 d-flex flex-column">
-            <div className="type-card-img mx-auto"><img src={imgUrl} alt="" /></div>
+            <div className="type-card-img mx-auto"><img src={imgUrl} alt={`${title} image`} /></div>
             <div className="type-card-label text-center mt-auto">{title}</div>
         </div>
     )
