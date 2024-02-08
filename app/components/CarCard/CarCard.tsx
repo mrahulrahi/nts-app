@@ -19,7 +19,7 @@ const CarCard = ({ card }: Card) => {
     return (
         <div className="car-card-box w-100 h-100">
             <div className="car-card-img-box">
-                <div className="car-card-img overflow-hidden"><img src={imgUrl} alt="" /></div>
+                <div className="car-card-img overflow-hidden"><img src={imgUrl} alt={`${title} image`} /></div>
             </div>
 
             <div className="car-card-row d-flex">
