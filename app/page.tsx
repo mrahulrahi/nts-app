@@ -1,5 +1,6 @@
 import BlogCard from "./components/BlogCard/BlogCard";
 import Hero from "./components/Hero/Hero";
+import PlanCard from "./components/PlanCard/PlanCard";
 import TestimonialCard from "./components/TestimonialCard/TestimonialCard";
 
 export default function Home() {
@@ -58,6 +59,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <PlanCard />
     </main>
   );
 }
