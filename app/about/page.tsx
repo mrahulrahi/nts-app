@@ -3,6 +3,7 @@ import Banner from '../components/Banner/Banner'
 import AboutBlock from '../components/AboutBlock/AboutBlock'
 import ImageTextBlock from '../components/ImageTextBlock/ImageTextBlock'
 import TeamCard from '../components/TeamCard/TeamCard'
+import TextCard from '../components/TextCard/TextCard'
 
 const AboutPage = () => {
     const teamCards = [
@@ -25,6 +26,8 @@ const AboutPage = () => {
                 </div>
             </div>
 
+          
+
             <div className="content-container pt-0">
                 <div className="container">
                     <div className="row">
@@ -32,6 +35,7 @@ const AboutPage = () => {
                             <div className="heading text-center">
                                 <h3>Mission & Vision</h3>
                             </div>
+                            <TextCard />
                             <ImageTextBlock />
                         </div>
                     </div>
