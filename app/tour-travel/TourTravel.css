@@ -1,9 +1,5 @@
 .place-card-list{width: calc(100% + 20px);margin: 0 -10px;margin-bottom: -20px;}
-.place-card-item{width: 20%;padding: 0 10px;margin-bottom: 20px;}
-
-@media (max-width:1199.98px){
-.place-card-item{width: 33.33%;}
-}
+.place-card-item{width: 33.33%;padding: 0 10px;margin-bottom: 20px;}
 
 @media (max-width:991.98px){
 .place-card-item{width: 50%;}

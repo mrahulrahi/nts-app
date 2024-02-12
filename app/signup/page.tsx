@@ -3,7 +3,8 @@ import './Signup.css'
 const SignupForm = () => {
     return (
 
-        <div className="content-container">
+        <div className="signup-container content-container position-relative">
+            <div className="signup-bg"><img src="images/swiper-img-1.jpg" alt="" /></div>
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">

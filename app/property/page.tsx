@@ -1,6 +1,7 @@
 import './Property.css'
 import Banner from '../components/Banner/Banner'
 import TypeCard from '../components/TypeCard/TypeCard'
+import PropertyCard from '../components/PropertyCard/PropertyCard'
 
 const PropertyPage = () => {
     const typeCards = [
@@ -9,6 +10,14 @@ const PropertyPage = () => {
         { imgUrl: "images/sell-house.png", title: "Sell House" },
         { imgUrl: "images/buy-plot.png", title: "Buy Plot" },
         { imgUrl: "images/sell-plot.png", title: "Sell Plot" },
+    ]
+
+    const propertyCards = [
+        { imgUrl: "images/house-img-1.jpg", title: "Property 1", body: "One of the most vibrant cities you can visit - a trip no one should miss!" },
+        { imgUrl: "images/house-img-2.jpg", title: "Property 2", body: "One of the most vibrant cities you can visit - a trip no one should miss!" },
+        { imgUrl: "images/house-img-3.jpg", title: "Property 3", body: "One of the most vibrant cities you can visit - a trip no one should miss!" },
+        { imgUrl: "images/house-img-4.jpg", title: "Property 4", body: "One of the most vibrant cities you can visit - a trip no one should miss!" },
+        { imgUrl: "images/house-img-5.jpg", title: "Property 5", body: "One of the most vibrant cities you can visit - a trip no one should miss!" },
     ]
 
     return (
@@ -53,6 +62,7 @@ const PropertyPage = () => {
                             <div className="heading text-center">
                                 <h3>Available Property</h3>
                             </div>
+
                             <div className="type-card-list-wrapper scrollbar-hidden">
                                 <div className="type-card-list d-flex flex-wrap justify-content-center">
                                     <div className="type-card-item">
@@ -64,6 +74,12 @@ const PropertyPage = () => {
                                         <TypeCard card={card} />
                                     </div>)}
                                 </div>
+                            </div>
+
+                            <div className="property-card-list d-flex flex-wrap mt-5">
+                                {propertyCards.map((card) => <div className="property-card-item">
+                                    <PropertyCard card={card} />
+                                </div>)}
                             </div>
                         </div>
                     </div>

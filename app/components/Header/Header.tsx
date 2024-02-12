@@ -59,13 +59,12 @@ const Header = () => {
                                 <div className="navbar-inside">
                                     <ul className="navbar-nav">
                                         <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
-                                        <li className="nav-item"><a className="nav-link" href="/about">About us</a></li>
+                                        <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
                                         <li className="nav-item"><a className="nav-link" href="/tour-travel">Tour & Travel</a></li>
                                         <li className="nav-item"><a className="nav-link" href="/property">Property</a></li>
                                         <li className="nav-item"><a className="nav-link" href="/car-rental">Car Rental</a></li>
-                                        <li className="nav-item"><a className="nav-link" href="/contact">Contact Us</a></li>
+                                        <li className="nav-item"><a className="nav-link" href="/contact">Contact</a></li>
                                         <li className="header-btn d-flex align-items-center">
-                                            <a href="tel:888-188-8339" className="btn btn-default d-flex align-items-center justify-content-center gap-3"><FaPhone /> Call Us</a>
                                             <a href="/login" className="btn btn-default d-flex align-items-center justify-content-center gap-3">Login</a>
                                             <a href="/signup" className="btn btn-default d-flex align-items-center justify-content-center gap-3">Sign up</a>
                                         </li>

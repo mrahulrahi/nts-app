@@ -6,7 +6,7 @@ const ImageTextBlock = () => {
             <div className="image-text-row">
                 <div className="image-text-box d-flex flex-wrap justify-content-between align-items-center">
                     <div className="image-text-img overflow-hidden">
-                        <img src="images/image-text-img.png" alt="image text image" />
+                        <img src="images/image-text-img-1.jpg" alt="image text image" />
                     </div>
                     <div className="image-text-content">
                         <h4>Our Mission</h4>
@@ -21,7 +21,7 @@ const ImageTextBlock = () => {
                 <div
                     className="image-text-box d-flex flex-wrap flex-row-reverse justify-content-between align-items-center">
                     <div className="image-text-img overflow-hidden">
-                        <img src="images/image-text-img.jpg" alt="image text image" />
+                        <img src="images/image-text-img-2.jpg" alt="image text image" />
                     </div>
                     <div className="image-text-content">
                         <h4>Our Vision</h4>
