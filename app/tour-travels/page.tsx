@@ -95,7 +95,7 @@ const TourTravelsPage = () => {
                 <h3>How We Work ?</h3>
               </div>
               <div className="work-card-list d-flex flex-wrap">
-                {workCards.map((card, index) => <div key={index} className="work-card-item">
+                {workCards.map((card, index) => <div key={card.title} className="work-card-item">
                   <WorkCard card={card} index={index} />
                 </div>)}
               </div>
@@ -113,7 +113,7 @@ const TourTravelsPage = () => {
                 <h3>Our Services</h3>
               </div>
               <div className="service-card-list d-flex flex-wrap">
-                {serviceCards.map((card, index) => <div key={index} className="service-card-item">
+                {serviceCards.map((card) => <div key={card.title} className="service-card-item">
                   <ServiceCard card={card} />
                 </div>)}
               </div>
@@ -130,7 +130,7 @@ const TourTravelsPage = () => {
                 <h3>Why Us ?</h3>
               </div>
               <div className="feature-card-list d-flex flex-wrap">
-                {featureCards.map((card, index) => <div key={index} className="feature-card-item">
+                {featureCards.map((card) => <div key={card.title} className="feature-card-item">
                   <FeatureCard card={card} />
                 </div>)}
               </div>
@@ -153,14 +153,14 @@ const TourTravelsPage = () => {
                       <div className="type-card-title text-uppercase">Cars Types</div>
                     </div>
                   </div>
-                  {typeCards.map((card, index) => <div key={index} className="type-card-item">
+                  {typeCards.map((card) => <div key={card.title} className="type-card-item">
                     <TypeCard card={card} />
                   </div>)}
                 </div>
               </div>
 
               <div className="car-card-list d-flex flex-wrap mt-5">
-                {carCards.map((card, index) => <div key={index} className="car-card-item">
+                {carCards.map((card) => <div key={card.title} className="car-card-item">
                   <CarCard card={card} />
                 </div>)}
               </div>

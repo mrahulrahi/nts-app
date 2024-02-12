@@ -1,13 +1,10 @@
 .property-card-box{border-radius:20px;;border-radius: 16px;box-shadow:1px 1px 5px rgba(0,0,0,0.5);transition: all 0.2 ease-in;}
 .property-card-img{width:100%;position: relative;padding-bottom: 60%;overflow: hidden;border-radius: 6px;}
 .property-card-img img{width:100%;height: 100%;object-fit: cover;position: absolute;top: 0;left: 0;}
-.property-card-content{font-size:14px;padding: 15px 10px;color: var(--dark-grey);}
+.property-card-content{font-size:14px;padding: 10px;color: var(--dark-grey);}
 .property-card-content h5{font-size: 28px;font-weight:700;margin-bottom: 0;color: var(--dark-grey);}
 .property-card-box:hover{background: var(--dark-grey)}
 .property-card-box:hover .property-card-content{color: var(--white)}
-
 .property-card-count {position: absolute;bottom: 0;right: 0;width: 80px;background: var(--teal);text-align: center;border-top-left-radius: 6px;font-size: 14px;font-weight: 600; }
-.place-card-content{width: 100%;font-size: 16px;padding: 10px;border-radius: 5px;color: var(--antique-white);}
 .pcc-top-row {background: var(--antique-white);padding: 10px;border-radius: 5px;margin-bottom: 10px;}
 .pcc-top-row span {background: var(--dark-grey);color: var(--teal);font-size: 14px;padding: 5px 10px;border-radius: 5px;}
-.pcc-top-row h5{}
