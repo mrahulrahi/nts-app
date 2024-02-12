@@ -33,7 +33,7 @@ export default function Home() {
               </div>
 
               <div className="testimonial-card-list d-flex flex-wrap">
-                {testimonialCards.map((card) => <div className="testimonial-card-item flex-grow-1">
+                {testimonialCards.map((card, index) => <div key={index} className="testimonial-card-item flex-grow-1">
                   <TestimonialCard card={card} />
                 </div>)}
               </div>
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
 
               <div className="blog-card-list d-flex flex-wrap">
-                {blogCards.map((card) => <div className="blog-card-item">
+                {blogCards.map((card, index) => <div key={index} className="blog-card-item">
                   <BlogCard card={card} />
                 </div>)}
               </div>

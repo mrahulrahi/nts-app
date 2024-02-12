@@ -70,14 +70,14 @@ const PropertyPage = () => {
                                             <div className="type-card-title text-uppercase">Property Type</div>
                                         </div>
                                     </div>
-                                    {typeCards.map((card) => <div className="type-card-item">
+                                    {typeCards.map((card, index) => <div key={index} className="type-card-item">
                                         <TypeCard card={card} />
                                     </div>)}
                                 </div>
                             </div>
 
                             <div className="property-card-list d-flex flex-wrap mt-5">
-                                {propertyCards.map((card) => <div className="property-card-item">
+                                {propertyCards.map((card, index) => <div key={index} className="property-card-item">
                                     <PropertyCard card={card} />
                                 </div>)}
                             </div>

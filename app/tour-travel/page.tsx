@@ -46,7 +46,7 @@ const TourTravelPage = () => {
                             </div>
 
                             <div className="place-card-list d-flex flex-wrap">
-                                {placeCards.map((card , index) => <div className="place-card-item">
+                                {placeCards.map((card , index) => <div key={index} className="place-card-item">
                                     <PlaceCard card={card} index={index} />
                                 </div>)}
                             </div>

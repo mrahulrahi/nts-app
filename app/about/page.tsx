@@ -50,7 +50,7 @@ const AboutPage = () => {
                                 <h3>Our Team</h3>
                             </div>
                             <div className="team-card-list d-flex flex-wrap">
-                                {teamCards.map(card => <div className="team-card-item">
+                                {teamCards.map((card, index )=> <div key={index} className="team-card-item">
                                     <TeamCard card={card} />
                                 </div>)}
                             </div>
