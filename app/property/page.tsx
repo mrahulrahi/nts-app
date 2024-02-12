@@ -13,11 +13,11 @@ const PropertyPage = () => {
     ]
 
     const propertyCards = [
-        { imgUrl: "images/house-img-1.jpg", title: "Property 1", body: "One of the most vibrant cities you can visit - a trip no one should miss!" },
-        { imgUrl: "images/house-img-2.jpg", title: "Property 2", body: "One of the most vibrant cities you can visit - a trip no one should miss!" },
-        { imgUrl: "images/house-img-3.jpg", title: "Property 3", body: "One of the most vibrant cities you can visit - a trip no one should miss!" },
-        { imgUrl: "images/house-img-4.jpg", title: "Property 4", body: "One of the most vibrant cities you can visit - a trip no one should miss!" },
-        { imgUrl: "images/house-img-5.jpg", title: "Property 5", body: "One of the most vibrant cities you can visit - a trip no one should miss!" },
+        { imgUrl: "images/house-img-1.jpg", title: "Property 1", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 400 },
+        { imgUrl: "images/house-img-2.jpg", title: "Property 2", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 500 },
+        { imgUrl: "images/house-img-3.jpg", title: "Property 3", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 600 },
+        { imgUrl: "images/house-img-4.jpg", title: "Property 4", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 700 },
+        { imgUrl: "images/house-img-5.jpg", title: "Property 5", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 800 },
     ]
 
     return (
@@ -78,7 +78,7 @@ const PropertyPage = () => {
 
                             <div className="property-card-list d-flex flex-wrap mt-5">
                                 {propertyCards.map((card, index) => <div key={index} className="property-card-item">
-                                    <PropertyCard card={card} />
+                                    <PropertyCard card={card} index={index} />
                                 </div>)}
                             </div>
                         </div>

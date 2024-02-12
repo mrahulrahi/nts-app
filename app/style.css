@@ -73,12 +73,13 @@ input.form-control::placeholder {color: var(--antique-white);}
 .testimonial-card-list{width: calc(100% + 30px);margin-left: -15px;margin-bottom: -30px;}
 .testimonial-card-item{width:33.33%;height:auto;padding: 0 15px;margin-bottom: 30px;}
 
-.blog-card-list{width: calc(100% + 30px);margin: 0 -15px;margin-bottom: -30px;}
-.blog-card-item{width: 33.33%;padding: 0 15px;margin-bottom: 30px;}
+.blog-card-list{width: calc(100% + 20px);margin: 0 -10px;margin-bottom: -20px;}
+.blog-card-item{width: 25%;padding: 0 10px;margin-bottom: 20px;}
 
 @media (max-width:1199.98px){
 .container{width: calc(100% - 36px);}
 .form-control-col{width: calc(33.33% - 10px);flex-basis: auto;}
+.blog-card-item{width: 33.33%;}
 }
 
 

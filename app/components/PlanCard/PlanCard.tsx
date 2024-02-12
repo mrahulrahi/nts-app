@@ -3,13 +3,13 @@ import './PlanCard.css'
 const PlanCard = () => {
     return (
 
-        <div className="content-container bg-gold">
+        <div className="content-container pt-0">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
                         <div className="content-box d-flex flex-wrap">
                             <div className="heading">
-                                <h3>Components</h3>
+                                <h3>Plans</h3>
                             </div>
 
                             <div className="plan-list">

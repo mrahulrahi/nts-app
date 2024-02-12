@@ -15,7 +15,7 @@ const ContactForm = () => {
             <div className="contact-wrapper">
               <div className="contact-box-1 d-flex flex-wrap glass-bg">
                 <div className="contact-text">
-                  <h4>Let's talk!</h4>
+                  <h4>Let&apos;s talk!</h4>
                   <div className="contact-details-list d-flex flex-wrap">
                     <div className="contact-details-item">
                       <h5>Phone</h5>
