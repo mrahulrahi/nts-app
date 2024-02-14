@@ -24,11 +24,13 @@ const PropertyCard = ({ card, index }: Card) => {
                 <span className="property-card-count">{`# ${index + 1}`}</span>
             </div>
             <div className="property-card-content text-center">
-                <div className="pcc-top-row d-flex align-items-center justify-content-between">
-                    <span><FaIndianRupeeSign />{price * 30}</span>
-                    <h5>{title}</h5>
+                <div className="pcc-inside">
+                    <div className="pcc-row d-flex flex-wrap align-items-center justify-content-between">
+                        <span className="d-flex align-items-center justify-content-center"><FaIndianRupeeSign />{price * 30}</span>
+                        <h5>{title}</h5>
+                    </div>
+                    <p>{body}</p>
                 </div>
-                <p>{body}</p>
             </div>
         </div>
     )

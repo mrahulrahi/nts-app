@@ -26,7 +26,7 @@ const LoginPage = () => {
                 </div>
                 <button>Log in</button>
                 <div className="login-register">
-                  <p>Don't have a account <a href="#">Register</a></p>
+                  <p>Don&apos;t have a account <a href="#">Register</a></p>
                 </div>
               </form>
             </div>
