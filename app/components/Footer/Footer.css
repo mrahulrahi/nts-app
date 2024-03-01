@@ -3,4 +3,20 @@
 .footer-title{font-size: 60px;font-weight: 700;line-height: 1.2;}
 .social-links{gap: 20px;background-color: transparent;font-weight: 700;}
 .social-links a{color: var(--dark-grey)!important;}
-.copyright{font-size: 14px;font-weight: 500;color: rgba(0, 0, 0, 0.6);border-top: 1px solid var(--grey);padding: 30px 0;}
+.footer-copyright-row{padding: 30px 0;border-top: 1px solid var(--grey);font-size: 14px;font-weight: 500;color: rgba(0, 0, 0, 0.6);}
+
+.footer-nav{padding: 20px 0;border-top: 1px solid var(--grey);}
+.footer-nav-list{gap: 30px;}
+.footer-nav-item{font-size: 18px;font-weight: 500;line-height: 1.6;}
+
+@media (max-width:767.98px){
+    .footer-title{font-size: 40px;}
+    .footer-nav-item{font-size: 16px;}
+}
+
+@media (max-width:575.98px){
+    .social-links{margin-top: 20px;}
+    .footer-nav-list{gap: 20px;}
+    .footer-nav-item{width: 100%;text-align: center;}
+    .made-by{margin-top: 20px;}
+}

@@ -1,13 +1,22 @@
 import './Footer.css'
+import Link from 'next/link'
 import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 const Footer = () => {
+    const links = [
+        { 'path': '/', 'label': 'Home' },
+        { 'path': '/about', 'label': 'About' },
+        { 'path': '/tour-travels', 'label': 'Tour & Travels' },
+        { 'path': '/property', 'label': 'Property' },
+        { 'path': '#contact', 'label': 'Contact' },
+    ]
+
     return (
         <footer className="footer">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <div className="footer-content d-flex align-items-center justify-content-between">
+                        <div className="footer-content d-flex flex-column flex-sm-row align-items-center justify-content-between">
                             <div className="footer-title">IMAGINE GROUP</div>
                             <ul className="social-links d-flex justify-content-center">
                                 <li><a href="https://facebook.com/imaginegrouplko"><FaFacebook /></a></li>
@@ -17,7 +26,16 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className="copyright pt-4">&copy;Imagine Group Created By <a href="https://mrahulrahi.github.io/mrahulrahi/" className="" target="_blank">mrahulrahi.</a>  All rights reserved </div>
+                        <div className="footer-nav">
+                            <div className="footer-nav-list d-flex flex-wrap align-items-center justify-content-sm-between">
+                                {links.map(link => <span key={link.path} className="footer-nav-item"><Link href={link.path}>{link.label}</Link></span>)}
+                            </div>
+                        </div>
+
+                        <div className="footer-copyright-row d-flex flex-column flex-sm-row align-items-center justify-content-md-between">
+                            <div className="copyright">&copy;2024 Imagine Group. All rights reserved.</div>
+                            <div className="made-by">Proudly coded ❤️ by <a href="https://mrahulrahi.github.io/mrahulrahi/" target="_blank">mrahulrahi.</a></div>
+                        </div>
                     </div>
                 </div>
 
