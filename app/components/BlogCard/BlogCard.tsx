@@ -14,7 +14,7 @@ const BlogCard = ({ card }: Card) => {
     const { imgUrl, title, body } = card;
 
     return (
-        <div className="blog-card-box d-flex flex-column bg-glass">
+        <div className="blog-card-box d-flex flex-column">
             <div className="blog-card-img overflow-hidden">
                 <img src={imgUrl} alt={`${title} image`} />
             </div>

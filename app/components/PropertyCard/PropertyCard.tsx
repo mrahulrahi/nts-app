@@ -7,18 +7,17 @@ import 'swiper/css';
 
 interface Card {
     card: CardProp;
-    index: number;
 }
 
 interface CardProp {
-    imgUrl: [string];
+    imgUrl: string[];
     title: string;
     body: string;
     price: number;
 }
 
 
-const PropertyCard = ({ card, index }: Card) => {
+const PropertyCard = ({ card }: Card) => {
     const { imgUrl, title, body, price } = card
 
     return (

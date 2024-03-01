@@ -8,12 +8,12 @@ const PlanCard = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="content-box d-flex flex-wrap">
-                            <div className="heading">
+                            <div className="heading text-center">
                                 <h3>Plans</h3>
                             </div>
 
-                            <div className="plan-list">
-                                <article className="plan bg-glass">
+                            <div className="plan-list d-flex flex-wrap align-items-center justify-content-center">
+                                <div className="plan d-flex flex-column align-items-center justify-content-between">
                                     <h4 className="plan-title">FREE</h4>
                                     <h5 className="plan-price">$0/month</h5>
                                     <h6>For hobby projects or small teams.</h6>
@@ -26,8 +26,8 @@ const PlanCard = () => {
                                     <div>
                                         <button className="btn btn-default">CHOOSE PLAN</button>
                                     </div>
-                                </article>
-                                <article className="plan plan-highlighted bg-glass">
+                                </div>
+                                <div className="plan d-flex flex-column align-items-center justify-content-between plan-highlighted">
                                     <h4 className="plan-annotation">RECOMMENDED</h4>
                                     <h4 className="plan-title">PLUS</h4>
                                     <h5 className="plan-price">$29/month</h5>
@@ -41,8 +41,8 @@ const PlanCard = () => {
                                     <div>
                                         <button className="btn btn-default">CHOOSE PLAN</button>
                                     </div>
-                                </article>
-                                <article className="plan bg-glass">
+                                </div>
+                                <div className="plan d-flex flex-column align-items-center justify-content-between">
                                     <h4 className="plan-title">PREMIUM</h4>
                                     <h5 className="plan-price">$99/month</h5>
                                     <h6>Your enterprise solution.</h6>
@@ -55,61 +55,7 @@ const PlanCard = () => {
                                     <div>
                                         <button className="btn btn-default">CHOOSE PLAN</button>
                                     </div>
-                                </article>
-                            </div>
-
-                            <div id="key-features" className="bg-glass">
-                                <h1 className="section-title">Many Good Reasons to Stick Around</h1>
-                                <ul className="key-feature-list d-flex flex-wrap">
-                                    <li className="key-feature-item">
-                                        <div className="key-feature-box d-flex flex-column align-items-center justify-content-center">
-                                            <div className="key-feature-image">
-                                                <img src="images/feature-img-1.png" alt="" />
-                                            </div>
-                                            <div className="key-feature-description">3,857,000 Trusting Customers</div>
-                                        </div>
-                                    </li>
-                                    <li className="key-feature-item">
-                                        <div className="key-feature-box d-flex flex-column align-items-center justify-content-center">
-                                            <div className="key-feature-image">
-                                                <img src="images/feature-img-2.png" alt="" />
-                                            </div>
-                                            <div className="key-feature-description">Receive on time</div>
-                                        </div>
-                                    </li>
-                                    <li className="key-feature-item">
-                                        <div className="key-feature-box d-flex flex-column align-items-center justify-content-center">
-                                            <div className="key-feature-image">
-                                                <img src="images/feature-img-3.png" alt="" />
-                                            </div>
-                                            <div className="key-feature-description">Lightning Fast CDN</div>
-                                        </div>
-                                    </li>
-                                    <li className="key-feature-item">
-                                        <div className="key-feature-box d-flex flex-column align-items-center justify-content-center">
-                                            <div className="key-feature-image">
-                                                <img src="images/feature-img-4.png" alt="" />
-                                            </div>
-                                            <div className="key-feature-description">Fixed Price Projects</div>
-                                        </div>
-                                    </li>
-                                    <li className="key-feature-item">
-                                        <div className="key-feature-box d-flex flex-column align-items-center justify-content-center">
-                                            <div className="key-feature-image">
-                                                <img src="images/feature-img-5.png" alt="" />
-                                            </div>
-                                            <div className="key-feature-description">99.999% Uptime Guarantee</div>
-                                        </div>
-                                    </li>
-                                    <li className="key-feature-item">
-                                        <div className="key-feature-box d-flex flex-column align-items-center justify-content-center">
-                                            <div className="key-feature-image">
-                                                <img src="images/feature-img-6.png" alt="" />
-                                            </div>
-                                            <div className="key-feature-description">Highly Skilled</div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
