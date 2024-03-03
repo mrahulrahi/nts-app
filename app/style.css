@@ -70,9 +70,6 @@ input.form-control::placeholder {color: var(--antique-white);}
 .scrollbar-hidden::-webkit-scrollbar{display: none;}
 .scrollbar-hidden{-ms-overflow-style: none;scrollbar-width: none;}
 
-.testimonial-card-list{width: calc(100% + 30px);margin-left: -15px;margin-bottom: -30px;}
-.testimonial-card-item{width:33.33%;height:auto;padding: 0 15px;margin-bottom: 30px;}
-
 .blog-card-list{width: calc(100% + 20px);margin: 0 -10px;margin-bottom: -20px;}
 .blog-card-item{width: 25%;padding: 0 10px;margin-bottom: 20px;}
 
@@ -85,14 +82,12 @@ input.form-control::placeholder {color: var(--antique-white);}
 
 @media(max-width:991.98px){
 .form-control-col{width: calc(50% - 10px);flex-basis: auto;}
-.testimonial-card-item{width: 50%;}
 .blog-card-item{width: 50%;}
 }
 
 
 @media (max-width: 768px) {
 body {background-image: radial-gradient(circle,#faebd7,#f3edd4,#eaefd4,#def2d7,#d2f4dd,#d2f4dd,#d2f4dd,#d2f4dd,#def2d7,#eaefd4,#f3edd4,#faebd7);}
-.testimonial-card-item{width: 100%;}
 .blog-card-item{width: 100%;}
 }
 

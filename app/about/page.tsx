@@ -1,7 +1,6 @@
 import './About.css'
 import Banner from '../components/Banner/Banner'
 import AboutBlock from '../components/AboutBlock/AboutBlock'
-import ImageTextBlock from '../components/ImageTextBlock/ImageTextBlock'
 import TeamCard from '../components/TeamCard/TeamCard'
 import TextCard from '../components/TextCard/TextCard'
 
@@ -36,7 +35,6 @@ const AboutPage = () => {
                                 <h3>Mission & Vision</h3>
                             </div>
                             <TextCard />
-                            <ImageTextBlock />
                         </div>
                     </div>
                 </div>

@@ -1,10 +1,19 @@
+'use client'
 import BlogCard from "./components/BlogCard/BlogCard";
 import Hero from "./components/Hero/Hero";
+import ImageTextBlock from "./components/ImageTextBlock/ImageTextBlock";
 import PlanCard from "./components/PlanCard/PlanCard";
 import TestimonialCard from "./components/TestimonialCard/TestimonialCard";
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 export default function Home() {
   const testimonialCards = [
+    { name: "Jake Sinclair", title: "Brand Designer", body: "Hostingry impressed me with amazing customer experience and effortless migration from my previous provider." },
+    { name: "Yassen Sattar", title: "Graphic and Web Designer", body: "Support matters to me the most. Your specialists were always there to help me immediately." },
+    { name: "Jhon Ortega", title: "Entrepreneur", body: "I was looking for a company that is very intuitive for beginners and very well-configured for good performance." },
     { name: "Jake Sinclair", title: "Brand Designer", body: "Hostingry impressed me with amazing customer experience and effortless migration from my previous provider." },
     { name: "Yassen Sattar", title: "Graphic and Web Designer", body: "Support matters to me the most. Your specialists were always there to help me immediately." },
     { name: "Jhon Ortega", title: "Entrepreneur", body: "I was looking for a company that is very intuitive for beginners and very well-configured for good performance." },
@@ -21,8 +30,21 @@ export default function Home() {
     <main>
       <Hero />
 
-
       <div className="content-container">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>About</h3>
+              </div>
+              <ImageTextBlock />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="content-container pt-0">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -30,11 +52,34 @@ export default function Home() {
                 <h3>Testimonials</h3>
               </div>
 
-              <div className="testimonial-card-list d-flex flex-wrap">
-                {testimonialCards.map((card) => <div key={card.name} className="testimonial-card-item flex-grow-1">
-                  <TestimonialCard card={card} />
-                </div>)}
-              </div>
+              <Swiper
+                modules={[Autoplay]}
+                loop={true}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                breakpoints={{
+                  768: {
+                    slidesPerView: 2,
+                  },
+                  992: {
+                    slidesPerView: 3,
+                  },
+                }}
+                slidesPerView={1}
+                spaceBetween={30}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+                className="testimonial-card-list d-flex flex-wrap"
+              >
+                {testimonialCards.map((card) =>
+                  <SwiperSlide key={card.name} className="testimonial-card-item">
+                    <TestimonialCard card={card} />
+                  </SwiperSlide>
+                )}
+              </Swiper>
             </div>
           </div>
         </div>
