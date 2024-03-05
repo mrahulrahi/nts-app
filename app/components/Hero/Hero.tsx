@@ -1,6 +1,6 @@
 'use client'
 import './Hero.css'
-import { Navigation, Pagination, EffectFade } from 'swiper/modules';
+import { Navigation, Pagination, EffectFade, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,10 +14,14 @@ const Hero = () => {
         <>
             <div className="hero-container">
                 <Swiper
-                    modules={[Navigation, Pagination, EffectFade]} 
+                    modules={[Navigation, Pagination, EffectFade, Autoplay]} 
                     effect="fade"
                     spaceBetween={50}
                     slidesPerView={1} 
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                      }}
                     navigation={{
                         nextEl: ".hero-btn-next",
                         prevEl: ".hero-btn-prev",
