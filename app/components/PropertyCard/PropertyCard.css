@@ -7,3 +7,5 @@
 .pcc-inside {background: var(--dark-grey);padding: 15px;border-radius: 10px;color: var(--teal);}
 .pcc-row{margin-bottom: 20px;}
 .pcc-inside span {background: var(--teal);color: var(--dark-grey);font-size: 16px;padding: 5px 10px;border-radius: 5px;font-weight: 700;}
+
+.property-card-box .swiper-button-prev::after,.property-card-box .swiper-button-next::after{color: var(--dark-grey);font-size: 30px;font-weight: 700; background: var(--teal);padding: 10px;}
