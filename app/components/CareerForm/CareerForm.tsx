@@ -2,34 +2,26 @@ import './CareerForm.css'
 
 const CareerForm = () => {
   return (
-    <div className="contact-wrapper">
-      <div className="contact-box-1 d-flex flex-wrap glass-bg">
-        <div className="contact-text">
-          <h3>CONTACT</h3>
-          <h1>GET IN TOUCH</h1>
- 
-        </div>
+    <div className="career-wrapper d-flex flex-wrap">
+      <div className="career-left">
+        <h3>Join our team</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam nihil praesentium vitae nesciunt voluptate perferendis tempore recusandae cumque ut.</p>
 
-        <div className="contact-form">
-          <form className="contact-form-box">
-            <label>Name <span>*</span></label>
-            <input type="text" className="form-control" />
-            <label>Email <span>*</span></label>
-            <input type="email" className="form-control" />
-
-            <span className="d-flex justify-content-between">
-              <input type="text" name="Name" placeholder="Name" id="form-name" />
-              <input type="email" name="Email" placeholder="Email" id="form-email" />
-            </span>
-            <input type="text" name="Subject" placeholder="Subject" id="form-subject" />
-            <br />
-            <input type="text" name="Message" placeholder="Message" id="form-message" />
-            <br />
-            <input type="button" value="SEND MESSAGE" className="btn btn-default" />
-          </form>
-        </div>
       </div>
 
+      <div className="career-right">
+        <form className="career-form-box">
+          <div className="row g-3">
+            <div className="col-6"><input className="form-control" type="text" placeholder="First Name" id="form-name" /></div>
+            <div className="col-6"><input className="form-control" type="text" placeholder="Last name" id="form-email" /></div>
+            <div className="col-12"><input className="form-control" type="email" placeholder="Email" id="form-email" /></div>
+            <div className="col-12"><input className="form-control" type="tel" placeholder="Phone" id="form-email" /></div>
+            <div className="col-12"><input className="form-control" type="text" placeholder="Subject" id="form-subject" /></div>
+            <div className="col-12"><input className="form-control" type="text" placeholder="Message" id="form-message" /></div>
+            <div className="col-12"> <input className="btn btn-default" type="button" value="Send" /></div>
+          </div>
+        </form>
+      </div>
     </div>
   )
 }

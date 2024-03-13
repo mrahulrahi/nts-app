@@ -14,7 +14,7 @@ const ContactPage = () => {
                                 <h1>GET IN TOUCH</h1>
                             </div>
                             <div className="contact-body d-flex flex-wrap justify-content-between">
-                                <div className="contact-body-left">
+                                <div className="contact-body-left d-flex align-items-end">
                                     <form className="contact-form">
                                         <div className="row g-3">
                                             <div className="col-6">

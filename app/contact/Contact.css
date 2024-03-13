@@ -23,5 +23,14 @@
 @media (max-width: 991.98px){
 .contact-container{padding-top: 60px;}
 .contact-body-left{width: 100%;}
-.contact-body-right{width: 100%;padding-left: 0;margin-top: 30px;}
+.contact-body-right{width: 100%;padding-left: 0;margin-top: 60px;}
+.contact-head h3{font-size: 40px;}
+.contact-head h1{font-size: 72px;}
+.contact-details-box h4{font-size: 36px;}
+}   
+
+@media (max-width: 575.98px){
+    .contact-head h3{font-size: 36px;}
+    .contact-head h1{font-size: 52px;}
+    .contact-details-box h4{font-size: 32px;}
 }

@@ -62,7 +62,7 @@ main{min-height: 100vh;}
 
 input.form-control,input.form-control:focus,
 select.form-select,select.form-select:focus{height: 48px;padding: 8px 16px;font-size: 16px;font-weight: 300;background-color: var(--dark-grey);color: var(--antique-white);border-radius: 8px;box-shadow: none;border: 0;}
-input.form-control::placeholder {color: var(--antique-white);}
+input.form-control::placeholder{color: var(--antique-white);}
 
 .form-control-col .btn{min-width: 100%;height: 48px;color: var(--dark-grey);background: var(--teal);border: 2px solid var(--dark-grey);border-radius: 8px;}
 .form-control-col .btn:hover{background: var(--dark-grey)!important;color: var(--antique-white)!important;}
@@ -86,7 +86,7 @@ input.form-control::placeholder {color: var(--antique-white);}
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
 body {background-image: radial-gradient(circle,#faebd7,#f3edd4,#eaefd4,#def2d7,#d2f4dd,#d2f4dd,#d2f4dd,#d2f4dd,#def2d7,#eaefd4,#f3edd4,#faebd7);}
 .blog-card-item{width: 100%;}
 }

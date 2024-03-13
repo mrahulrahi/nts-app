@@ -26,7 +26,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-          
+
 
             <div className="content-container pt-0">
                 <div className="container">
@@ -45,11 +45,11 @@ const AboutPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                        <div className="heading text-center">
+                            <div className="heading text-center">
                                 <h3>Our Team</h3>
                             </div>
                             <div className="team-card-list d-flex flex-wrap">
-                                {teamCards.map((card)=> <div key={card.name} className="team-card-item">
+                                {teamCards.map((card) => <div key={card.name} className="team-card-item">
                                     <TeamCard card={card} />
                                 </div>)}
                             </div>
@@ -62,12 +62,11 @@ const AboutPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                        <div className="heading text-center">
+                            <div className="heading text-center">
                                 <h3>Careers</h3>
                             </div>
-                            <div className="team-card-list d-flex flex-wrap">
-                               <CareerForm />
-                            </div>
+
+                            <CareerForm />
                         </div>
                     </div>
                 </div>

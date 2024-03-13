@@ -9,3 +9,10 @@
   .about-img{width: 100%;padding-bottom: 60%;}
   .about-text{width: 100%;padding-left: 0;margin-top: 30px;}
 }
+
+@media (max-width:575.98px){
+  .about-box{padding:20px;}
+  .about-text{font-size:14px;}
+  .about-text h4{font-size:48px;}
+  .about-text h5{font-size:20px;font-weight: 600;line-height: 1.4;}
+}
