@@ -2,22 +2,26 @@
 .contact-gmap-canvas {display: flex;justify-content: center;overflow: hidden;background: none !important;height: 100%;width: 100%;}
 .contact-head h3{color: var(--antique-white);font-size: 46px;font-weight: 600;line-height: 1.2;}
 .contact-head h1{color: var(--antique-white);font-size: 92px;font-weight: 700;line-height: 1.2;}
-.contact-body{gap: 40px;margin: 50px 0 80px;}
+.contact-body{margin: 50px 0 80px;}
 
-.contact-body-left{width: 500px;}
+.contact-body-left{width: 50%;}
 .contact-form{width: 100%;background-color: var(--dark-grey);border-radius: 1em;}
 .contact-form input.form-control,input.form-control:focus{background: var(--antique-white);color: var(--dark-grey);width: 100%;height: 46px;border-radius: 8px;font-size: 18px;font-weight: 500;outline: none;border: none;box-shadow: none;}
 .contact-form textarea.form-control,textarea.form-control:focus{background: var(--antique-white);color: var(--dark-grey);width: 100%;height: 114px;border-radius: 8px;font-size: 18px;font-weight: 500;resize: none;outline: none;border: none;box-shadow: none;}
 .contact-form input.form-control::placeholder{color: var(--grey);}
 .contact-form textarea.form-control::placeholder{color: var(--grey);}
 
-.contact-body-right{width: 400px;}
-.contact-details-item{gap: 20px;margin-bottom: 20px;background: var(--grey);padding: 16px;border-radius: 10px;}
-.cd-icon{width: 30px;height: 30px;background: var(--antique-white);color: var(--dark-grey);border-radius: 8px;}
-.cd-text{color: var(--dark-grey);font-size: 16px;font-weight: 500;line-height: 1.2;}
-.cd-text h5{font-size: 24px;font-weight: 600;line-height: 1.2;margin-bottom: 8px;}
+.contact-body-right{width: 50%;padding-left: 10%;}
+.contact-details-box{background: var(--dark-grey);padding: 40px 30px;border-radius: 10px;border: 2px solid var(--grey);}
+.contact-details-box h4{color: var(--antique-white);font-size: 40px;font-weight: 600;line-height: 1.2;}
+.contact-details-row{gap: 20px;}
+.contact-details-row:not(:last-child){margin-bottom: 20px;}
+.cd-icon{width: 30px;height: 30px;color: rgba(255, 255, 255, 0.3);border-radius: 8px;font-size: 24px;}
+.cd-text{color: var(--grey);font-size: 16px;font-weight: 500;line-height: 1.2;}
+.cd-text h5{color: var(--teal);font-size: 24px;font-weight: 600;line-height: 1.2;margin-bottom: 8px;}
 
 @media (max-width: 991.98px){
 .contact-container{padding-top: 60px;}
-.contact-body-left,.contact-body-right{width: 100%;}
+.contact-body-left{width: 100%;}
+.contact-body-right{width: 100%;padding-left: 0;margin-top: 30px;}
 }

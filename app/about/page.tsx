@@ -3,6 +3,7 @@ import Banner from '../components/Banner/Banner'
 import AboutBlock from '../components/AboutBlock/AboutBlock'
 import TeamCard from '../components/TeamCard/TeamCard'
 import TextCard from '../components/TextCard/TextCard'
+import CareerForm from '../components/CareerForm/CareerForm'
 
 const AboutPage = () => {
     const teamCards = [
@@ -51,6 +52,21 @@ const AboutPage = () => {
                                 {teamCards.map((card)=> <div key={card.name} className="team-card-item">
                                     <TeamCard card={card} />
                                 </div>)}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="content-container pt-0">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                        <div className="heading text-center">
+                                <h3>Careers</h3>
+                            </div>
+                            <div className="team-card-list d-flex flex-wrap">
+                               <CareerForm />
                             </div>
                         </div>
                     </div>

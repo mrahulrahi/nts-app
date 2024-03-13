@@ -1,3 +1,4 @@
+import { FaClock } from 'react-icons/fa6';
 import './Contact.css'
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
@@ -7,7 +8,7 @@ const ContactPage = () => {
             <div className="contact-container bg-dark-grey">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-10 mx-auto">
+                        <div className="col-lg-12 mx-auto">
                             <div className="contact-head">
                                 <h3>CONTACT</h3>
                                 <h1>GET IN TOUCH</h1>
@@ -39,27 +40,37 @@ const ContactPage = () => {
                                 </div>
 
                                 <div className="contact-body-right">
-                                    <div className="contact-details-item d-flex">
-                                        <div className="cd-icon d-flex align-items-center justify-content-center flex-shrink-0"><FaMapMarkerAlt /></div>
-                                        <div className="cd-text">
-                                            <h5>Head Office</h5>
-                                            <address>
-                                                102, Om Plaza Apartment,<br />sector 19, Indira Nagar,<br />Lucknow, UP, India
-                                            </address>
+                                    <div className="contact-details-box">
+                                        <h4>Let&apos;s talk!</h4>
+                                        <div className="contact-details-row d-flex">
+                                            <div className="cd-icon d-flex align-items-center justify-content-center flex-shrink-0"><FaPhoneAlt /></div>
+                                            <div className="cd-text">
+                                                <h5>Phone</h5>
+                                                <p>+91 8881 88839</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="contact-details-item d-flex">
-                                        <div className="cd-icon d-flex align-items-center justify-content-center flex-shrink-0"><FaPhoneAlt /></div>
-                                        <div className="cd-text">
-                                            <h5>Phone</h5>
-                                            <p>+91 8881 88839</p>
+                                        <div className="contact-details-row d-flex">
+                                            <div className="cd-icon d-flex align-items-center justify-content-center flex-shrink-0"><FaEnvelope /></div>
+                                            <div className="cd-text">
+                                                <h5>Email</h5>
+                                                <p>support@imaginegroup.com</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="contact-details-item d-flex">
-                                        <div className="cd-icon d-flex align-items-center justify-content-center flex-shrink-0"><FaEnvelope /></div>
-                                        <div className="cd-text">
-                                            <h5>Email</h5>
-                                            <p>support@imaginegroup.com</p>
+                                        <div className="contact-details-row d-flex">
+                                            <div className="cd-icon d-flex align-items-center justify-content-center flex-shrink-0"><FaMapMarkerAlt /></div>
+                                            <div className="cd-text">
+                                                <h5>Address</h5>
+                                                <address>
+                                                    102, Om Plaza Apartment,<br />sector 19, Indira Nagar,<br />Lucknow, UP, India
+                                                </address>
+                                            </div>
+                                        </div>
+                                        <div className="contact-details-row d-flex">
+                                            <div className="cd-icon d-flex align-items-center justify-content-center flex-shrink-0"><FaClock /></div>
+                                            <div className="cd-text">
+                                                <h5>Timing</h5>
+                                                <p>10am - 6pm | Monday - Friday</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
