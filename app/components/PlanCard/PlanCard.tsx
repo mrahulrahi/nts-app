@@ -24,7 +24,7 @@ const PlanCard = () => {
                                         <li className="plan-feature">Basic Support</li>
                                     </ul>
                                     <div>
-                                        <button className="btn btn-default">CHOOSE PLAN</button>
+                                        <button className="btn btn-light">CHOOSE PLAN</button>
                                     </div>
                                 </div>
                                 <div className="plan d-flex flex-column align-items-center justify-content-between plan-highlighted">
@@ -53,7 +53,7 @@ const PlanCard = () => {
                                         <li className="plan-feature">Priority Support</li>
                                     </ul>
                                     <div>
-                                        <button className="btn btn-default">CHOOSE PLAN</button>
+                                        <button className="btn btn-light">CHOOSE PLAN</button>
                                     </div>
                                 </div>
                             </div>

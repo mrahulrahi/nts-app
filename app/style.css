@@ -39,6 +39,8 @@ p:last-child{margin-bottom:0;}
 .btn {min-width: 196px;border-radius: 80px;padding: 16px 15px;font-family: var(--font-montserrat);font-size: 16px;font-weight: 600;line-height: 1;box-shadow: none;border-radius: 8px;}
 .btn-default,.btn-default:focus { color: var(--dark-grey);background-color: var(--teal);border: solid 1px var(--violet); }
 .btn-default:hover,.btn-default:active { color: var(--dark-grey)!important;background-color: var(--antique-white)!important;border-color: var(--antique-white)!important;}
+.btn-light, .btn-light:focus{color: var(--dark-grey);background-color: var(--antique-white);border: solid 1px var(--antique-white); }
+.btn-light:hover,.btn-light:active { color: var(--teal)!important;background-color: var(--dark-grey)!important;border-color: var(--dark-grey)!important;}
 
 .btn.btn-block{min-width: 100%;}
 .btn+.btn {margin-left: 25px;}
