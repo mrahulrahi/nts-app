@@ -9,7 +9,7 @@ const ImageTextBlock = () => {
                         <img src="images/image-text-img.jpg" alt="image text image" />
                     </div>
                     <div className="image-text-content">
-                        <h4>Our Mission</h4>
+                        <h4>Tour & Travels</h4>
                         <h5>Lorem ipsum dolor</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga animi iusto reprehenderit magni tempora!</p>
@@ -24,7 +24,7 @@ const ImageTextBlock = () => {
                         <img src="images/image-text-img.jpg" alt="image text image" />
                     </div>
                     <div className="image-text-content">
-                        <h4>Our Vision</h4>
+                        <h4>Property</h4>
                         <h5>Lorem ipsum dolor</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga animi iusto reprehenderit magni tempora!</p>

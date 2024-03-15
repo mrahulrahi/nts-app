@@ -39,12 +39,14 @@ const PropertyCard = ({ card }: Card) => {
                 )}
             </Swiper>
 
-            <div className="property-card-content text-center">
+            <div className="property-card-content">
                 <div className="pcc-inside">
                     <div className="pcc-row d-flex flex-wrap align-items-center justify-content-between">
                         <span className="d-flex align-items-center justify-content-center"><FaIndianRupeeSign />{price * 30}</span>
                         <h5>{title}</h5>
                     </div>
+                    <address>123 Main Street, <br /> Anytown, USA 12345</address>
+                    2BHK | 2,000sqft
                     <p>{body}</p>
                 </div>
             </div>

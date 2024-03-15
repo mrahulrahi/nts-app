@@ -35,7 +35,7 @@ export default function Home() {
           <div className="row">
             <div className="col-md-12">
               <div className="heading text-center">
-                <h3>About</h3>
+                <h3>Services</h3>
               </div>
               <ImageTextBlock />
             </div>
