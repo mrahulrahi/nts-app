@@ -22,7 +22,7 @@ const PropertyCard = ({ card }: Card) => {
     const { imgUrl, title, body, price } = card
 
     return (
-        <div className="property-card-box w-100 h-100 overflow-hidden">
+        <div className="property-card-box w-100 h-100">
 
             <Swiper
             modules={[Navigation]}
@@ -43,8 +43,9 @@ const PropertyCard = ({ card }: Card) => {
                 <div className="pcc-inside">
                     <div className="pcc-row d-flex flex-wrap align-items-center justify-content-between">
                         <span className="d-flex align-items-center justify-content-center"><FaIndianRupeeSign />{price * 30}</span>
-                        <h5>{title}</h5>
+                        <a href="#!" className="btn btn-dark">Book</a>
                     </div>
+                    <h5>{title}</h5>
                     <address>123 Main Street, <br /> Anytown, USA 12345</address>
                     2BHK | 2,000sqft
                     <p>{body}</p>

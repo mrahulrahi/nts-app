@@ -1,11 +1,11 @@
-.property-card-img{width:100%;position: relative;padding-bottom: 60%;overflow: hidden;border-radius: 6px;}
+.property-card-img{width:100%;position: relative;padding-bottom: 60%;overflow: hidden;border-radius: 10px;}
 .property-card-img img{width:100%;height: 100%;object-fit: cover;position: absolute;top: 0;left: 0;}
-.property-card-content{font-size:14px;margin-top: 10px;color: var(--dark-grey);}
-.property-card-content h5{font-size: 28px;font-weight:700;margin-bottom: 0;color: var(--teal);}
+.property-card-content{font-size:14px;margin-top: 10px;color: var(--dark-grey);box-shadow: 1px 1px 5px rgba(0,0,0,0.5);border: 4px solid var(--dark-grey);border-radius: 10px;}
+.property-card-content h5{font-size: 28px;font-weight:700;line-height: 1.2;margin-bottom: 10px;color: var(--dark-grey);}
 .property-card-box:hover .property-card-content{color: var(--white)}
-.property-card-count {position: absolute;bottom: 0;right: 0;padding: 15px 25px;background: var(--dark-grey);text-align: center;border-top-left-radius: 6px;font-size: 14px;font-weight: 600;color: var(--teal);}
-.pcc-inside {background: var(--dark-grey);padding: 15px;border-radius: 10px;color: var(--teal);}
-.pcc-row{margin-bottom: 20px;}
-.pcc-inside span {background: var(--teal);color: var(--dark-grey);font-size: 16px;padding: 5px 10px;border-radius: 5px;font-weight: 700;}
+.property-card-count {position: absolute;bottom: 0;right: 0;padding: 15px 25px;text-align: center;border-top-left-radius: 6px;font-size: 14px;font-weight: 600;color: var(--teal);background: var(--dark-grey);}
+.pcc-inside {padding: 15px;}
+.pcc-row{margin-bottom: 15px;}
+.pcc-inside span {background: var(--dark-grey);color: var(--teal);font-size: 18px;padding: 16px 24px;border-radius: 5px;font-weight: 700;line-height: 1;}
 
-.property-card-box .swiper-button-prev::after,.property-card-box .swiper-button-next::after{color: var(--dark-grey);font-size: 30px;font-weight: 700; background: var(--teal);padding: 10px;}
+.property-card-box .swiper-button-prev::after,.property-card-box .swiper-button-next::after{color: var(--dark-grey);font-size: 26px;font-weight: 700; background: var(--teal);padding: 14px 12px;border-radius: 4px;}
