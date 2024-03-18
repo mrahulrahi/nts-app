@@ -8,6 +8,7 @@ import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import AboutBlock from "./components/AboutBlock/AboutBlock";
 
 export default function Home() {
   const testimonialCards = [
@@ -29,6 +30,16 @@ export default function Home() {
   return (
     <main>
       <Hero />
+
+      <div className="content-container">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <AboutBlock />
+                        </div>
+                    </div>
+                </div>
+            </div>
 
       <div className="content-container">
         <div className="container">
