@@ -9,9 +9,9 @@ import FeatureCard from '../components/FeatureCard/FeatureCard'
 const PropertyPage = () => {
 
     const workCards = [
-        { imgUrl: "images/best-price.png", title: "Check Price", body: "Select your car & tell us about its current location, and our advanced AI tech will make the perfect price for you." },
-        { imgUrl: "images/book-ride.png", title: "Book Ride", body: "Select your car & your pickup location then click on the book button, & our service expert will call you and send car to you." },
-        { imgUrl: "/images/pickup.png", title: "Schedule Pickup", body: "Book a ride and schedule pickup from your home or work or anywhere with current loaction best suits your convenience." },
+        { imgUrl: "images/best-price.png", title: "Check Property", body: "Browse through property list and select your favourite property with perfect price for you." },
+        { imgUrl: "images/book-ride.png", title: "Book Enquire", body: "Select property then click on the book button, & our service expert will call you." },
+        { imgUrl: "/images/pickup.png", title: "Schedule Visit", body: "Schedule visit for your selected property with your suitable time." },
     ]
 
     const serviceCards = [
@@ -20,23 +20,24 @@ const PropertyPage = () => {
         { imgUrl: "images/sell-house.png", title: "Sell House" },
         { imgUrl: "images/buy-plot.png", title: "Buy Plot" },
         { imgUrl: "images/sell-plot.png", title: "Sell Plot" },
+        { imgUrl: "images/house.png", title: "Rent Commercial" },
     ]
 
     const featureCards = [
         { imgUrl: "images/whyus-1.png", title: "Reasonable Prices" },
-        { imgUrl: "images/whyus-2.png", title: "Clean & Comfortable Cabs" },
+        { imgUrl: "images/whyus-2.png", title: "Easy loans on property" },
         { imgUrl: "images/whyus-3.png", title: "Simple & Convenient Booking" },
-        { imgUrl: "images/whyus-4.png", title: "Doorstep Pickup" },
-        { imgUrl: "images/whyus-5.png", title: "Experienced & Polite Drivers" },
+        { imgUrl: "images/whyus-4.png", title: "Visit Pickup" },
+        { imgUrl: "images/whyus-5.png", title: "Experienced & Polite Client" },
         { imgUrl: "images/whyus-6.png", title: "No Hidden Charges" },
     ]
 
     const typeCards = [
-        { imgUrl: "images/house.png", title: "Rent House" },
-        { imgUrl: "images/buy-house.png", title: "Buy House" },
-        { imgUrl: "images/sell-house.png", title: "Sell House" },
-        { imgUrl: "images/buy-plot.png", title: "Buy Plot" },
-        { imgUrl: "images/sell-plot.png", title: "Sell Plot" },
+        { imgUrl: "images/house.png", title: "Villa" },
+        { imgUrl: "images/buy-house.png", title: "Commercial" },
+        { imgUrl: "images/sell-house.png", title: "House" },
+        { imgUrl: "images/buy-plot.png", title: "Flat" },
+        { imgUrl: "images/sell-plot.png", title: "Plot" },
     ]
 
     const propertyCards = [
