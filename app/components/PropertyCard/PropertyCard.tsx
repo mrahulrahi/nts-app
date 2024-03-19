@@ -6,6 +6,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+import { IoBed } from "react-icons/io5";
+import { FaMapLocationDot, FaBath , FaRegSquare } from "react-icons/fa6";
+
 interface Card {
     card: CardProp;
 }
@@ -25,16 +28,16 @@ const PropertyCard = ({ card }: Card) => {
         <div className="property-card-box w-100 h-100">
 
             <Swiper
-            modules={[Navigation]}
+                modules={[Navigation]}
                 spaceBetween={50}
-                slidesPerView={1} navigation    
+                slidesPerView={1} navigation
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
                 {imgUrl.map((item, index) =>
                     <SwiperSlide key={index} className="property-card-img">
                         <img src={item} alt="" />
-                        <span className="property-card-count">{`# ${index + 1}`}</span>
+                        <span className="property-card-count">{`${index + 1} / ${imgUrl.length}`}</span>
                     </SwiperSlide>
                 )}
             </Swiper>
@@ -46,8 +49,12 @@ const PropertyCard = ({ card }: Card) => {
                         <a href="#!" className="btn btn-dark">Book</a>
                     </div>
                     <h5>{title}</h5>
-                    <address>123 Main Street, <br /> Anytown, USA 12345</address>
-                    2BHK | 2,000sqft
+                    <div className="property-card-row d-flex flex-wrap rounded-2 overflow-hidden">
+                        <div className="property-card-col d-flex align-items-center justify-content-between w-100 "><FaMapLocationDot  /><address>123 Main Street, <br /> Anytown, USA 12345</address></div>
+                        <div className="property-card-col d-flex align-items-center justify-content-between"><IoBed /> 3</div>
+                        <div className="property-card-col d-flex align-items-center justify-content-between"><FaBath  />2</div>
+                        <div className="property-card-col d-flex align-items-center justify-content-between"><FaRegSquare />2,000sqft</div>
+                    </div>
                     <p>{body}</p>
                 </div>
             </div>

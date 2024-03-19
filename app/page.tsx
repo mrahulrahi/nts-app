@@ -41,7 +41,7 @@ export default function Home() {
                 </div>
             </div>
 
-      <div className="content-container">
+      <div className="content-container pt-0">
         <div className="container">
           <div className="row">
             <div className="col-md-12">

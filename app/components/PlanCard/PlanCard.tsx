@@ -7,8 +7,7 @@ const PlanCard = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <div className="content-box d-flex flex-wrap">
-                            <div className="heading text-center">
+                    <div className="heading text-center">
                                 <h3>Plans</h3>
                             </div>
 
@@ -57,7 +56,6 @@ const PlanCard = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>

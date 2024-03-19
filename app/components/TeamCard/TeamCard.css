@@ -1,7 +1,8 @@
 .team-card-box{padding: 60px 30px 30px;background: var(--dark-grey);box-shadow:0 0 20px 2px var(--dark-grey);border-radius:250px;border-top-left-radius:999px;border-top-right-radius:999px;}
-.team-card-img{width:70%;aspect-ratio: 1; margin-bottom:50px;box-shadow:0 0 10px 5px var(--teal);}
+.team-card-img{width:70%;aspect-ratio: 1; margin-bottom:50px;transition: all 0.2s ease-in;}
 .team-card-img img{width:100%;height:100%;object-fit: cover;}
 .team-card-box{color: var(--grey);font-size:24px;font-weight: 600;line-height:1.2;}
 .team-card-box h4{color: var(--teal);font-size:30px;font-weight: 700;line-height:1.2;}
 .tc-social-icon{width:25px;height:25px;color: var(--teal);}
 .tc-social-icon:hover{transform:scale(1.25);color: var(--teal);}
+.team-card-box:hover .team-card-img{box-shadow:0 0 10px 5px var(--teal);}

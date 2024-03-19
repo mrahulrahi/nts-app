@@ -1,7 +1,7 @@
 .image-text-box{gap: 30px;background: var(--dark-grey);box-shadow:0 0 20px 2px var(--dark-grey);border-radius:16px;}
-.image-text-img{width:50%;background: var(--white);border-radius:16px;}
+.image-text-img{width:45%;background: var(--white);border-radius:16px;}
 .image-text-img img{width:100%;height: 100%;object-fit: cover;}
-.image-text-content{width: 45%;padding: 30px;}
+.image-text-content{width: 50%;padding: 30px;}
 .image-text-row:nth-child(odd) .image-text-content{text-align:right}
 .image-text-content{color: var(--white);font-size:16px;font-weight:500;line-height:1.5;}
 .image-text-content h4{color: var(--teal);font-size:32px;font-size: 700;line-height: 1.2;}

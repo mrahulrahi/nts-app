@@ -12,13 +12,13 @@ const CareerForm = () => {
       <div className="career-right">
         <form className="career-form-box">
           <div className="row g-3">
-            <div className="col-6"><input className="form-control" type="text" placeholder="First Name" id="form-name" /></div>
-            <div className="col-6"><input className="form-control" type="text" placeholder="Last name" id="form-email" /></div>
-            <div className="col-12"><input className="form-control" type="email" placeholder="Email" id="form-email" /></div>
-            <div className="col-12"><input className="form-control" type="tel" placeholder="Phone" id="form-email" /></div>
-            <div className="col-12"><input className="form-control" type="text" placeholder="Subject" id="form-subject" /></div>
-            <div className="col-12"><input className="form-control" type="text" placeholder="Message" id="form-message" /></div>
-            <div className="col-12"> <input className="btn btn-default" type="button" value="Send" /></div>
+            <div className="col-md-6"><input className="form-control" type="text" placeholder="First Name" id="form-name" /></div>
+            <div className="col-md-6"><input className="form-control" type="text" placeholder="Last name" id="form-email" /></div>
+            <div className="col-md-6"><input className="form-control" type="email" placeholder="Email" id="form-email" /></div>
+            <div className="col-md-6"><input className="form-control" type="tel" placeholder="Phone" id="form-email" /></div>
+            <div className="col-md-12"><input className="form-control" type="text" placeholder="Subject" id="form-subject" /></div>
+            <div className="col-md-12"><input className="form-control" type="text" placeholder="Message" id="form-message" /></div>
+            <div className="col-md-12"> <input className="btn btn-default" type="button" value="Send" /></div>
           </div>
         </form>
       </div>
