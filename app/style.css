@@ -75,12 +75,11 @@ input.form-control::placeholder{color: var(--antique-white);}
 .scrollbar-hidden{-ms-overflow-style: none;scrollbar-width: none;}
 
 .blog-card-list{width: calc(100% + 20px);margin: 0 -10px;margin-bottom: -20px;}
-.blog-card-item{width: 25%;padding: 0 10px;margin-bottom: 20px;}
+.blog-card-item{width: 33.33%;padding: 0 10px;margin-bottom: 20px;}
 
 @media (max-width:1199.98px){
 .container{width: calc(100% - 15px);}
 .form-control-col{width: calc(33.33% - 10px);flex-basis: auto;}
-.blog-card-item{width: 33.33%;}
 }
 
 

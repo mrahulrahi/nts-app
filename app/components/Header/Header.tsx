@@ -64,8 +64,7 @@ const Header = () => {
                                         <li className="nav-item"><a className="nav-link" href="/property">Property</a></li>
                                         <li className="nav-item"><a className="nav-link" href="/contact">Contact</a></li>
                                         <li className="header-btn d-flex align-items-center">
-                                            <a href="/login" className="btn btn-default d-flex align-items-center justify-content-center gap-3">Login</a>
-                                            <a href="/signup" className="btn btn-default d-flex align-items-center justify-content-center gap-3">Sign up</a>
+                                            <a href="/login" className="btn btn-default">Login</a>
                                         </li>
                                         
                                     </ul>

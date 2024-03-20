@@ -1,14 +1,14 @@
 'use client'
 import BlogCard from "./components/BlogCard/BlogCard";
 import Hero from "./components/Hero/Hero";
-import ImageTextBlock from "./components/ImageTextBlock/ImageTextBlock";
-import PlanCard from "./components/PlanCard/PlanCard";
+import ImageTextBlock from './components/ImageTextBlock/ImageTextBlock'
+import ServiceBlock from "./components/ServiceBlock/ServiceBlock";
+import PlanCard from "./components/ImageTextBlock/PlanCard/PlanCard";
 import TestimonialCard from "./components/TestimonialCard/TestimonialCard";
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import AboutBlock from "./components/AboutBlock/AboutBlock";
 
 export default function Home() {
   const testimonialCards = [
@@ -24,8 +24,14 @@ export default function Home() {
     { imgUrl: "images/blog-img-1.jpg", title: "Web Design", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
     { imgUrl: "images/blog-img-2.jpg", title: "App Design", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
     { imgUrl: "images/blog-img-3.jpg", title: "Graphic Design", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
-    { imgUrl: "images/blog-img-4.jpg", title: "Photography", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
   ]
+
+  const serviceBlocks = [
+    { imgUrl: "images/service-img.jpg", title: "Tour & Travels", subTitle: "Lorem ipsum dolor", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
+    { imgUrl: "images/service-img.jpg", title: "Property", subTitle: "Lorem ipsum dolor", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
+
+  ]
+
 
   return (
     <main>
@@ -33,9 +39,14 @@ export default function Home() {
 
       <div className="content-container">
                 <div className="container">
-                    <div className="row">
+                    <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
-                            <AboutBlock />
+                            <ImageTextBlock imgUrl='images/about-img.jpg'>
+                                <h4>About Us</h4>
+                                <h5>Welcome to Imagine Group<br />We’re keen to tell you about us.</h5>
+                                <p>The website which you’re looking at right now was established in November 2019. With more than five years development experience.</p>
+                                <a href="#!" className="btn btn-light mt-auto w-25">Learn More</a>
+                            </ImageTextBlock>
                         </div>
                     </div>
                 </div>
@@ -43,12 +54,17 @@ export default function Home() {
 
       <div className="content-container pt-0">
         <div className="container">
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>Services</h3>
               </div>
-              <ImageTextBlock />
+              <div className="service-block-wrapper d-flex flex-wrap gap-5">
+                {serviceBlocks.map(block => <div key={block.title} className="service-block-row">
+                  <ServiceBlock block={block} />
+                </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -57,7 +73,7 @@ export default function Home() {
 
       <div className="content-container pt-0">
         <div className="container">
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>Testimonials</h3>
