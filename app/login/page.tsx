@@ -26,11 +26,12 @@ const LoginPage = () => {
                   <div className="tab-pane active" id="login" role="tabpanel" aria-labelledby="login-tab">
                     <form>
                       <div className="login-input-box">
+                      <img src="images/person.svg" alt="username" className="img-icon" />
                         <input type="email" required />
                         <label htmlFor="">Email</label>
                       </div>
                       <div className="login-input-box">
-                      <img src="images/person.svg" alt="username" className="user-name" />
+                      <img src="images/lock.svg" alt="username" className="img-icon" />
                         <input type="password" required />
                         <label htmlFor="">Password</label>
                       </div>
@@ -38,52 +39,43 @@ const LoginPage = () => {
                         <label htmlFor=""><input type="checkbox" />Remember Me</label>
                         <a href="#">Forget Password</a>
                       </div>
-                      <button>Log in</button>
+                      <input type="submit" value="Log in" className="button" />
                       <div className="login-register">
-                        <p>Don&apos;t have a account <a href="#" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</a></p>
+                        <p>Don&apos;t have a account <a href="#!">Register</a></p>
                       </div>
                     </form>
                   </div>
                   <div className="tab-pane" id="register" role="tabpanel" aria-labelledby="register-tab">
-                    <div className="register mx-auto">
-                      <div>
+                  <form className="mx-auto">
                         <div className="login-input-box">
-                          <img src="images/person.svg" alt="username" className="user-name" />
+                          <img src="images/person.svg" alt="username" className="img-icon" />
                           <input type="text" className="name input" />
                           <label htmlFor="">Full Name</label>
                         </div>
                         <div className="login-input-box">
-                          <img src="images/person.svg" alt="username" className="user-name" />
-                          <input type="text" className="name input" />
-                          <label htmlFor="">Username</label>
-                        </div>
-                        <div className="login-input-box">
-                          <img src="images/lock.svg" alt="pass" className="pass" />
+                          <img src="images/person.svg" alt="pass" className="img-icon" />
                           <input type="password" className="name input" />
                           <label htmlFor="">Email</label>
                         </div>
                         <div className="login-input-box">
-                          <img src="images/lock.svg" alt="pass" className="pass" />
+                          <img src="images/lock.svg" alt="pass" className="img-icon" />
                           <input type="password" className="name input" />
                           <label htmlFor="">Password</label>
                         </div>
                         <div className="login-input-box">
-                          <img src="images/lock.svg" alt="pass" className="pass" />
+                          <img src="images/lock.svg" alt="pass" className="img-icon" />
                           <input type="password" className="name input" />
                           <label htmlFor="">Password</label>
                         </div>
-                        <div className="link d-flex justify-content-between">
+                        <div className="login-forget d-flex justify-content-between">
                           <span>
                             <input type="checkbox" id="agree-terms" required />
                             <label htmlFor="agree-terms"><a href="#">Agree to Terms &amp; Conditions</a>
                             </label>
                           </span>
                         </div>
-                      </div>
-                      <button className="btn btn-default btn-login">
-                        SIGNUP
-                      </button>
-                    </div>
+                        <input type="submit" value="Register" className="button" />
+                      </form>
                   </div>
 
                 </div>
