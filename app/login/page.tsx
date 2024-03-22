@@ -8,32 +8,29 @@ const LoginPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="content-box d-flex flex-column align-items-center justify-content-center section bg-glass mx-auto position-relative">
-                <div className="img-container">
+              <div className="login-register-content-box d-flex flex-column justify-content-center bg-glass mx-auto position-relative">
+                <div className="img-container mb-5 mx-auto">
                   <img src="images/user.svg" alt="profile" className="profile" />
                 </div>
-                <ul className="nav nav-tabs" id="myTab" role="tablist">
+                <ul className="lrc-nav nav" id="myTab" role="tablist">
                   <li className="nav-item" role="presentation">
-                    <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                    <button className="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
                   </li>
                   <li className="nav-item" role="presentation">
-                    <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                    <button className="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
                   </li>
-
                 </ul>
 
 
                 <div className="tab-content">
-                  <div className="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div className="tab-pane active" id="login" role="tabpanel" aria-labelledby="login-tab">
                     <form>
-                      <h1>Login</h1>
-                      <div className="login-inputbox">
-                        {/* <ion-icon name="mail-outline"></ion-icon> */}
+                      <div className="login-input-box">
                         <input type="email" required />
                         <label htmlFor="">Email</label>
                       </div>
-                      <div className="login-inputbox">
-                        {/* <ion-icon name="lock-closed-outline"></ion-icon> */}
+                      <div className="login-input-box">
+                      <img src="images/person.svg" alt="username" className="user-name" />
                         <input type="password" required />
                         <label htmlFor="">Password</label>
                       </div>
@@ -43,32 +40,37 @@ const LoginPage = () => {
                       </div>
                       <button>Log in</button>
                       <div className="login-register">
-                        <p>Don&apos;t have a account <a href="#" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Register</a></p>
+                        <p>Don&apos;t have a account <a href="#" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</a></p>
                       </div>
                     </form>
                   </div>
-                  <div className="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div className="tab-pane" id="register" role="tabpanel" aria-labelledby="register-tab">
                     <div className="register mx-auto">
                       <div>
                         <div className="login-input-box">
                           <img src="images/person.svg" alt="username" className="user-name" />
-                          <input type="text" placeholder="Full Name" className="name input" />
+                          <input type="text" className="name input" />
+                          <label htmlFor="">Full Name</label>
                         </div>
                         <div className="login-input-box">
                           <img src="images/person.svg" alt="username" className="user-name" />
-                          <input type="text" placeholder="Username" className="name input" />
+                          <input type="text" className="name input" />
+                          <label htmlFor="">Username</label>
                         </div>
                         <div className="login-input-box">
                           <img src="images/lock.svg" alt="pass" className="pass" />
-                          <input type="password" placeholder="Email" className="name input" />
+                          <input type="password" className="name input" />
+                          <label htmlFor="">Email</label>
                         </div>
                         <div className="login-input-box">
                           <img src="images/lock.svg" alt="pass" className="pass" />
-                          <input type="password" placeholder="Password" className="name input" />
+                          <input type="password" className="name input" />
+                          <label htmlFor="">Password</label>
                         </div>
                         <div className="login-input-box">
                           <img src="images/lock.svg" alt="pass" className="pass" />
-                          <input type="password" placeholder="Password" className="name input" />
+                          <input type="password" className="name input" />
+                          <label htmlFor="">Password</label>
                         </div>
                         <div className="link d-flex justify-content-between">
                           <span>
@@ -76,7 +78,6 @@ const LoginPage = () => {
                             <label htmlFor="agree-terms"><a href="#">Agree to Terms &amp; Conditions</a>
                             </label>
                           </span>
-                          <a href="google.com">Forgot Password?</a>
                         </div>
                       </div>
                       <button className="btn btn-default btn-login">
