@@ -68,11 +68,7 @@ const LoginPage = () => {
                           <label htmlFor="">Password</label>
                         </div>
                         <div className="login-forget d-flex justify-content-between">
-                          <span>
-                            <input type="checkbox" id="agree-terms" required />
-                            <label htmlFor="agree-terms"><a href="#">Agree to Terms &amp; Conditions</a>
-                            </label>
-                          </span>
+                        <label htmlFor="agree-terms"><input type="checkbox" id="agree-terms" /><a href="#">Agree to Terms &amp; Conditions</a></label>
                         </div>
                         <input type="submit" value="Register" className="button" />
                       </form>
