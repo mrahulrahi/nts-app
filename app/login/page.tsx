@@ -49,22 +49,22 @@ const LoginPage = () => {
                   <form className="mx-auto">
                         <div className="login-input-box">
                           <img src="images/person.svg" alt="username" className="img-icon" />
-                          <input type="text" className="name input" />
+                          <input type="text"/>
                           <label htmlFor="">Full Name</label>
                         </div>
                         <div className="login-input-box">
                           <img src="images/person.svg" alt="pass" className="img-icon" />
-                          <input type="password" className="name input" />
+                          <input type="password"/>
                           <label htmlFor="">Email</label>
                         </div>
                         <div className="login-input-box">
                           <img src="images/lock.svg" alt="pass" className="img-icon" />
-                          <input type="password" className="name input" />
+                          <input type="password"/>
                           <label htmlFor="">Password</label>
                         </div>
                         <div className="login-input-box">
                           <img src="images/lock.svg" alt="pass" className="img-icon" />
-                          <input type="password" className="name input" />
+                          <input type="password"/>
                           <label htmlFor="">Password</label>
                         </div>
                         <div className="login-forget d-flex justify-content-between">
