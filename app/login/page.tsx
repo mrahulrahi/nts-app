@@ -49,28 +49,31 @@ const LoginPage = () => {
                   <form className="mx-auto">
                         <div className="login-input-box">
                           <img src="images/person.svg" alt="username" className="img-icon" />
-                          <input type="text"/>
+                          <input type="text" required/>
                           <label htmlFor="">Full Name</label>
                         </div>
                         <div className="login-input-box">
                           <img src="images/person.svg" alt="pass" className="img-icon" />
-                          <input type="password"/>
+                          <input type="password" required/>
                           <label htmlFor="">Email</label>
                         </div>
                         <div className="login-input-box">
                           <img src="images/lock.svg" alt="pass" className="img-icon" />
-                          <input type="password"/>
+                          <input type="password" required/>
                           <label htmlFor="">Password</label>
                         </div>
                         <div className="login-input-box">
                           <img src="images/lock.svg" alt="pass" className="img-icon" />
-                          <input type="password"/>
+                          <input type="password" required/>
                           <label htmlFor="">Password</label>
                         </div>
                         <div className="login-forget d-flex justify-content-between">
                         <label htmlFor="agree-terms"><input type="checkbox" id="agree-terms" /><a href="#">Agree to Terms &amp; Conditions</a></label>
                         </div>
                         <input type="submit" value="Register" className="button" />
+                        <div className="login-register">
+                        <p>Already have a account <a href="#!">Login</a></p>
+                      </div>
                       </form>
                   </div>
 
