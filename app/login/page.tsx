@@ -9,15 +9,15 @@ const LoginPage = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="login-register-content-box d-flex flex-column justify-content-center bg-glass mx-auto position-relative">
-                <div className="img-container mb-5 mx-auto">
+                <div className="img-container mb-4 mx-auto">
                   <img src="images/user.svg" alt="profile" className="profile" />
                 </div>
                 <ul className="lrc-nav nav" id="myTab" role="tablist">
                   <li className="nav-item" role="presentation">
-                    <button className="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+                    <button className="nav-link active py-0" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
                   </li>
                   <li className="nav-item" role="presentation">
-                    <button className="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
+                    <button className="nav-link py-0" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
                   </li>
                 </ul>
 
@@ -56,11 +56,6 @@ const LoginPage = () => {
                           <img src="images/person.svg" alt="pass" className="img-icon" />
                           <input type="password" required/>
                           <label htmlFor="">Email</label>
-                        </div>
-                        <div className="login-input-box">
-                          <img src="images/lock.svg" alt="pass" className="img-icon" />
-                          <input type="password" required/>
-                          <label htmlFor="">Password</label>
                         </div>
                         <div className="login-input-box">
                           <img src="images/lock.svg" alt="pass" className="img-icon" />

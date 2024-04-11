@@ -2,31 +2,31 @@
 .login-register-bg{width: 100%;height: 100%;position: absolute;top: 0;left: 0;bottom: 0;right: 0;}
 .login-register-bg img{width: 100%;height: 100%;object-fit: cover;object-position: bottom;}
 
-.login-register-content-box{margin-top: 10px;max-width: 450px;padding: 2rem 3rem;border-radius: 20px;}
-.login-register-content-box .img-container{padding:20px;background: var(--dark-grey);border-radius: 24px;margin-top: -100px;width: 150px;border-radius: 50%;border: 1px solid white;}
+.login-register-content-box{max-width: 450px;padding: 32px 48px;border-radius: 20px;}
+.login-register-content-box .img-container{padding:20px;background: var(--dark-grey);border-radius: 24px;margin-top: -95px;width: 125px;border-radius: 50%;border: 1px solid white;}
 .login-register-content-box .img-container img{width: 100%;height: 100%;object-fit: contain;}
 
 .lrc-nav{margin-bottom: 20px;}
 
-.nav-link {font-size: 2rem;color: #fff;text-align: center;font-weight: 600;}
+.nav-link {font-size: 30px;color: #fff;text-align: center;font-weight: 600;}
 
 .login-input-box {position: relative;margin: 30px 0;border-bottom: 2px solid #fff;}
-.login-input-box label {position: absolute;top: 50%;left: 5px;transform: translateY(-50%);color: #fff;font-size: 1rem;pointer-events: none;transition: all 0.5s ease-in-out;}
+.login-input-box label {position: absolute;top: 50%;left: 5px;transform: translateY(-50%);color: #fff;font-size: 16px;pointer-events: none;transition: all 0.5s ease-in-out;}
 .login-input-box input:focus ~ label,.login-input-box input:valid ~ label {top: -5px;}
-.login-input-box input {width: 100%;height: 60px;background: transparent;border: none;outline: none;font-size: 1rem;padding: 0 50px 0 5px;color: #fff;}
+.login-input-box input {width: 100%;height: 60px;background: transparent;border: none;outline: none;font-size: 16px;padding: 0 50px 0 5px;color: #fff;}
 .login-forget {margin: 35px 0;font-size: 0.85rem;color: #fff;display: flex;justify-content: space-between;}
 .login-forget label {display: flex;align-items: center;}
 .login-forget label input {margin-right: 3px;}
 .login-forget a {color: #fff;text-decoration: none;font-weight: 600;}
 .login-forget a:hover {text-decoration: underline;}
-.button {width: 100%;height: 40px; border-radius: 40px;background-color: rgb(255, 255,255, 1);border: none;outline: none;cursor: pointer;font-size: 1rem;font-weight: 600;transition: all 0.4s ease;}
+.button {width: 100%;height: 40px; border-radius: 40px;background-color: rgb(255, 255,255, 1);border: none;outline: none;cursor: pointer;font-size: 16px;font-weight: 600;transition: all 0.4s ease;}
 .button:hover {background-color: rgb(255, 255,255, 0.5);}
 .login-register {font-size: 0.9rem;color: #fff;text-align: center;margin: 25px 0 10px;}
 .login-register p a {text-decoration: none;color: #fff;font-weight: 600;}
 .login-register p a:hover {text-decoration: underline;}
 
 
-.login-input-box .img-icon{justify-content:center;align-items:center;height:3rem;width:3rem;position:absolute;padding:10px;right: 0;border-radius: 50%;border: 1px solid white;}
+.login-input-box .img-icon{justify-content:center;align-items:center;width:36px;height:36px;position:absolute;right: 0;}
 .link{font-size:16px;font-weight:400;margin-top: 30px;color:var(--white);font-style:italic;text-decoration:none}
 .btn-login{cursor:pointer;width:100%;height:70px;border-radius:20px;color:#fff;background-color:var(--dark-grey);font-size:24px;margin-top: 30px;}
 

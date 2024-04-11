@@ -7,7 +7,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { IoBed } from "react-icons/io5";
-import { FaMapLocationDot, FaBath , FaRegSquare } from "react-icons/fa6";
+import { MdSpaceDashboard } from "react-icons/md";
+import { FaMapLocationDot, FaBath } from "react-icons/fa6";
 
 interface Card {
     card: CardProp;
@@ -53,7 +54,7 @@ const PropertyCard = ({ card }: Card) => {
                         <div className="property-card-col d-flex align-items-center justify-content-between w-100 "><FaMapLocationDot  /><address>123 Main Street, <br /> Anytown, USA 12345</address></div>
                         <div className="property-card-col d-flex align-items-center justify-content-between"><IoBed /> 3</div>
                         <div className="property-card-col d-flex align-items-center justify-content-between"><FaBath  />2</div>
-                        <div className="property-card-col d-flex align-items-center justify-content-between"><FaRegSquare />2,000sqft</div>
+                        <div className="property-card-col d-flex align-items-center justify-content-between"><MdSpaceDashboard />2,000sqft</div>
                     </div>
                     <p>{body}</p>
                 </div>
