@@ -14,10 +14,10 @@ const LoginPage = () => {
                 </div>
                 <ul className="lrc-nav nav" id="myTab" role="tablist">
                   <li className="nav-item" role="presentation">
-                    <button className="nav-link active py-0" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+                    <button className="nav-link active px-2 py-0" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
                   </li>
                   <li className="nav-item" role="presentation">
-                    <button className="nav-link py-0" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
+                    <button className="nav-link px-2 py-0" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
                   </li>
                 </ul>
 
@@ -37,7 +37,7 @@ const LoginPage = () => {
                       </div>
                       <div className="login-forget">
                         <label htmlFor=""><input type="checkbox" />Remember Me</label>
-                        <a href="#">Forget Password</a>
+                        <a href="#">Forget Password ?</a>
                       </div>
                       <input type="submit" value="Log in" className="button" />
                       <div className="login-register">
