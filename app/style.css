@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+
 :root{--white: #FFF;--black: #000;--teal: #C2F6EA;--antique-white: #FAEBD7;--grey: #B4B4B4;--dark-grey: #343A40;
 --body-gradient: linear-gradient(to right bottom,#faebd7,#f3edd4,#eaefd4,#def2d7,#d2f4dd,#d2f4dd,#d2f4dd,#d2f4dd,#def2d7,#eaefd4,#f3edd4,#faebd7);}
     
