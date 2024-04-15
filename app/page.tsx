@@ -27,8 +27,8 @@ export default function Home() {
   ]
 
   const serviceBlocks = [
-    { imgUrl: "images/service-img.jpg", title: "Tour & Travels", subTitle: "Lorem ipsum dolor", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
-    { imgUrl: "images/service-img.jpg", title: "Property", subTitle: "Lorem ipsum dolor", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
+    { imgUrl: "images/service-img-1.jpg", title: "Tour & Travels", subTitle: "Lorem ipsum dolor", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
+    { imgUrl: "images/service-img-2.png", title: "Property", subTitle: "Lorem ipsum dolor", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
 
   ]
 

@@ -1,6 +1,6 @@
 .property-card-img{width:100%;position: relative;padding-bottom: 60%;overflow: hidden;border-radius: 10px;}
 .property-card-img img{width:100%;height: 100%;object-fit: cover;position: absolute;top: 0;left: 0;}
-.property-card-content{font-size:14px;margin-top: 10px;color: var(--dark-grey);box-shadow: 1px 1px 5px rgba(0,0,0,0.5);border: 4px solid var(--dark-grey);border-radius: 10px;}
+.property-card-content{font-size:14px;margin-top: 10px;color: var(--dark-grey);box-shadow: 1px 1px 5px rgba(0,0,0,0.5);border: 4px solid var(--dark-grey);border-radius: 10px;backdrop-filter: blur(1px);}
 .property-card-content h5{font-size: 28px;font-weight:700;line-height: 1.2;margin-bottom: 10px;color: var(--dark-grey);}
 .property-card-count {position: absolute;bottom: 0;right: 0;padding: 15px 25px;text-align: center;border-top-left-radius: 6px;font-size: 14px;font-weight: 600;color: var(--teal);background: var(--dark-grey);}
 .pcc-inside {padding: 15px;}
