@@ -4,7 +4,7 @@
 .nav-inside{width:100%;padding:0 0 50px;}
 .navbar-brand{width:60px;padding:0;margin:0;position:relative;z-index:999;}
 .navbar-brand img{width:100%;}  
-.navbar-title{color: var(--black);font-size: 36px;font-weight: 700;line-height: 45px;position:relative;z-index:999;}
+.navbar-title{color: var(--black);font-family: var(--font-montserrat);font-size: 36px;font-weight: 700;line-height: 45px;position:relative;z-index:999;}
 .navbar-collapse{position: absolute;bottom: 0;left: 0;width: 100%;height: 50px;background: var(--dark-grey);visibility: hidden;opacity: 0;transition: all 0.2s ease-in;}
 .fixed .navbar-collapse{visibility: visible;opacity: 1;}
 .navbar-inside{width: 100%;max-width: 1300px;padding: 0 30px;}

@@ -3,7 +3,6 @@ import BlogCard from "./components/BlogCard/BlogCard";
 import Hero from "./components/Hero/Hero";
 import ImageTextBlock from './components/ImageTextBlock/ImageTextBlock'
 import ServiceBlock from "./components/ServiceBlock/ServiceBlock";
-import PlanCard from "./components/ImageTextBlock/PlanCard/PlanCard";
 import TestimonialCard from "./components/TestimonialCard/TestimonialCard";
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -27,8 +26,8 @@ export default function Home() {
   ]
 
   const serviceBlocks = [
-    { imgUrl: "images/service-img-1.jpg", title: "Tour & Travels", subTitle: "Lorem ipsum dolor", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
-    { imgUrl: "images/service-img-2.png", title: "Property", subTitle: "Lorem ipsum dolor", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
+    { imgUrl: "images/service-img-1.jpg", title: "Tour & Travels", subTitle: "Book Your Car", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
+    { imgUrl: "images/service-img-2.png", title: "Property", subTitle: "Buy & Sell Property", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
 
   ]
 
@@ -129,8 +128,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <PlanCard />
     </main>
   );
 }

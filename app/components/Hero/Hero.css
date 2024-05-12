@@ -8,7 +8,7 @@
 .hero-content h3 {font-size: 46px;font-weight: 600;line-height:1.2;}
 .hero-content hr {display: block;width: 60px;height: 3px;background: var(--teal);border: none;margin-top: 15px;}
 .hero-bottom {position: absolute;z-index: 50;right: 72px;bottom: 16px;}
-.hero-btn{text-transform: uppercase;letter-spacing: 0.1rem;font-weight: 600;font-size: 20px;color: var(--teal);color: var(--teal);border: 0;background: transparent;}
+.hero-btn{text-transform: uppercase;font-family: var(--font-montserrat);letter-spacing: 0.1rem;font-weight: 600;font-size: 20px;color: var(--teal);color: var(--teal);border: 0;background: transparent;}
 .swiper-pagination .swiper-pagination-bullet{width: 30px;height: 5px;background-color: var(--antique-white);border-radius: 0;opacity: 1;}
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {width: 40px;height: 5px;background-color: var(--teal);}
     
