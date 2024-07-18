@@ -1,4 +1,4 @@
-.contact-container{padding-top: 120px;margin-top: 70px;}
+.contact-container{padding-top: 200px;}
 .contact-gmap-canvas {display: flex;justify-content: center;overflow: hidden;background: none !important;height: 100%;width: 100%;}
 .contact-head h3{color: var(--antique-white);font-size: 46px;font-weight: 600;line-height: 1.2;}
 .contact-head h1{color: var(--antique-white);font-size: 92px;font-weight: 700;line-height: 1.2;}
@@ -21,7 +21,7 @@
 .cd-text h5{color: var(--teal);font-size: 24px;font-weight: 600;line-height: 1.2;margin-bottom: 8px;}
 
 @media (max-width: 991.98px){
-.contact-container{padding-top: 60px;}
+.contact-container{padding-top: 140px;}
 .contact-body-left{width: 100%;}
 .contact-body-right{width: 100%;padding-left: 0;margin-top: 60px;}
 .contact-head h3{font-size: 40px;}

@@ -46,7 +46,7 @@ const ContactPage = () => {
                                             <div className="cd-icon d-flex align-items-center justify-content-center flex-shrink-0"><FaPhoneAlt /></div>
                                             <div className="cd-text">
                                                 <h5>Phone</h5>
-                                                <p>+91 8881 88839</p>
+                                                <p>+91 8881 888339</p>
                                             </div>
                                         </div>
                                         <div className="contact-details-row d-flex">
