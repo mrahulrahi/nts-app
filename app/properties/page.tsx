@@ -1,4 +1,4 @@
-import './Property.css'
+import './Properties.css'
 import Banner from '../components/Banner/Banner'
 import TypeCard from '../components/TypeCard/TypeCard'
 import PropertyCard from '../components/PropertyCard/PropertyCard'
@@ -6,7 +6,7 @@ import WorkCard from '../components/WorkCard/WorkCard'
 import ServiceCard from '../components/ServiceCard/ServiceCard'
 import FeatureCard from '../components/FeatureCard/FeatureCard'
 
-const PropertyPage = () => {
+const PropertiesPage = () => {
 
     const workCards = [
         { imgUrl: "images/best-price.png", title: "Check Property", body: "Browse through property list and select your favourite property with perfect price for you." },
@@ -49,7 +49,7 @@ const PropertyPage = () => {
 
     return (
         <>
-            <Banner heading="Property" subheading="Buy & Sell Property" />
+            <Banner heading="Properties" subheading="Buy & Sell Properties" />
 
             <div className="content-container">
                 <div className="container">
@@ -167,4 +167,4 @@ const PropertyPage = () => {
     )
 }
 
-export default PropertyPage
+export default PropertiesPage

@@ -27,7 +27,7 @@ export default function Home() {
 
   const serviceBlocks = [
     { imgUrl: "images/service-img-1.jpg", title: "Tour & Travels", subTitle: "Book Your Car", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
-    { imgUrl: "images/service-img-2.png", title: "Property", subTitle: "Buy & Sell Property", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
+    { imgUrl: "images/service-img-2.jpg", title: "Property", subTitle: "Buy & Sell Property", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
 
   ]
 

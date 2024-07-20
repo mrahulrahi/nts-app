@@ -7,7 +7,7 @@ const Footer = () => {
         { 'path': '/', 'label': 'Home' },
         { 'path': '/about', 'label': 'About' },
         { 'path': '/tour-travels', 'label': 'Tour & Travels' },
-        { 'path': '/property', 'label': 'Property' },
+        { 'path': '/properties', 'label': 'Properties' },
         { 'path': '#contact', 'label': 'Contact' },
     ]
 

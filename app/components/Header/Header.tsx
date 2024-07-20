@@ -68,7 +68,7 @@ const Header = () => {
                                         <li className="nav-item"><Link className="nav-link" href="/">Home</Link></li>
                                         <li className="nav-item"><Link className="nav-link" href="/about">About</Link></li>
                                         <li className="nav-item"><Link className="nav-link" href="/tour-travels">Tour & Travels</Link></li>
-                                        <li className="nav-item"><Link className="nav-link" href="/property">Property</Link></li>
+                                        <li className="nav-item"><Link className="nav-link" href="/properties">Properties</Link></li>
                                         <li className="nav-item"><Link className="nav-link" href="/contact">Contact</Link></li>
                                         <li className="header-btn d-flex align-items-center">
                                             <Link href="/login" className="btn btn-default">Login</Link>
