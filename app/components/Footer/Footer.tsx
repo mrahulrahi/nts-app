@@ -34,7 +34,7 @@ const Footer = () => {
 
                         <div className="footer-copyright-row d-flex flex-column flex-sm-row align-items-center justify-content-md-between">
                             <div className="copyright">&copy;2024 Imagine Group. All rights reserved.</div>
-                            <div className="made-by">Proudly coded ❤️ by <a href="https://mrahulrahi.github.io/mrahulrahi/" target="_blank">mrahulrahi.</a></div>
+                            <div className="made-by">Made with ❤️ by <a href="https://mrahulrahi.github.io/mrahulrahi/" target="_blank">mrahulrahi.</a></div>
                         </div>
                     </div>
                 </div>
