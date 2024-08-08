@@ -5,6 +5,12 @@ import ServiceCard from '../components/ServiceCard/ServiceCard'
 import FeatureCard from '../components/FeatureCard/FeatureCard'
 import TypeCard from '../components/TypeCard/TypeCard'
 import CarCard from '../components/CarCard/CarCard'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "IG - Tour & Travels",
+  description: "More about tour & travels",
+};
 
 const TourTravelsPage = () => {
   const workCards = [

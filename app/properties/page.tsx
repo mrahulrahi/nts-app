@@ -5,6 +5,12 @@ import PropertyCard from '../components/PropertyCard/PropertyCard'
 import WorkCard from '../components/WorkCard/WorkCard'
 import ServiceCard from '../components/ServiceCard/ServiceCard'
 import FeatureCard from '../components/FeatureCard/FeatureCard'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "IG - Properties",
+  description: "More about properties",
+};
 
 const PropertiesPage = () => {
 

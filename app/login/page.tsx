@@ -1,4 +1,10 @@
 import './Login.css'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "IG - Login",
+  description: "Login Page",
+};
 
 const LoginPage = () => {
   return (
