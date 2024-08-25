@@ -7,7 +7,7 @@ interface Block{
 
 const ImageTextBlock = ({imgUrl, children} : Block) => {
   return (
-    <div className="image-text-box d-flex flex-wrap bg-glass">
+    <div className="image-text-box d-flex align-items-center flex-wrap bg-glass">
       <div className="image-text-img">
         <img src={imgUrl} alt={imgUrl} />
       </div>

@@ -11,12 +11,12 @@ import 'swiper/css/navigation';
 
 export default function Home() {
   const testimonialCards = [
-    { name: "Jake Sinclair", title: "Brand Designer", body: "Hostingry impressed me with amazing customer experience and effortless migration from my previous provider." },
-    { name: "Yassen Sattar", title: "Graphic and Web Designer", body: "Support matters to me the most. Your specialists were always there to help me immediately." },
-    { name: "Jhon Ortega", title: "Entrepreneur", body: "I was looking for a company that is very intuitive for beginners and very well-configured for good performance." },
-    { name: "Jake Sinclair", title: "Brand Designer", body: "Hostingry impressed me with amazing customer experience and effortless migration from my previous provider." },
-    { name: "Yassen Sattar", title: "Graphic and Web Designer", body: "Support matters to me the most. Your specialists were always there to help me immediately." },
-    { name: "Jhon Ortega", title: "Entrepreneur", body: "I was looking for a company that is very intuitive for beginners and very well-configured for good performance." },
+    { name: "B. K. Singh", title: "Dist. Commanded Homegaurd", body: "Imagine Group made our vacation dreams a reality! Their attention to detail and personalized itinerary ensured we had an unforgettable experience. Highly recommended!" },
+    { name: "Sanju Singh", title: "Folk Singer", body: "Finding the perfect home was a breeze thanks to Imagine Group. Their knowledgeable team guided us every step of the way, making the process smooth and stress-free." },
+    { name: "K. D. Maurya", title: "National President (KKS)", body: "Our travel experience with Imagine Group was exceptional. From booking to exploring, their service was top-notch, and they truly went the extra mile for us." },
+    { name: "Savita Maurya", title: "Block Head", body: "Imagine Group exceeded our expectations with their property services. Their professionalism and dedication helped us find the ideal investment property quickly and efficiently." },
+    { name: "Manoj Manav", title: "Assistant Minister", body: "Thanks to Imagine Group, our family vacation was perfectly organized and tailored to our preferences. We couldn’t have asked for a better travel partner." },
+    { name: "Parmatma Maurya", title: "Doctor", body: "Imagine Group made buying our new home an enjoyable experience. Their expertise and personalized approach were invaluable throughout the entire process." },
   ]
 
   const blogCards = [
@@ -26,8 +26,8 @@ export default function Home() {
   ]
 
   const serviceBlocks = [
-    { imgUrl: "images/service-img-1.jpg", title: "Tour & Travels", subTitle: "Book Your Car", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
-    { imgUrl: "images/service-img-2.jpg", title: "Property", subTitle: "Buy & Sell Property", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil non rem facilis ipsa soluta!" },
+    { imgUrl: "images/service-img-1.jpg", title: "Tour & Travels", subTitle: "Book Your Car", body: "Discover the world with Imagine Group's bespoke tour and travel services. We craft personalized itineraries that turn every journey into an unforgettable adventure, ensuring a seamless experience from start to finish.", pageLink: "./tour-travels"},
+    { imgUrl: "images/service-img-2.jpg", title: "Property", subTitle: "Buy & Sell Property", body: "Find your ideal property with ease through Imagine Group. Our expert team offers a curated selection of homes and investment opportunities, guiding you to make informed decisions and secure the perfect space for your needs.", pageLink: "./properties"},
 
   ]
 
@@ -42,9 +42,9 @@ export default function Home() {
                         <div className="col-md-12">
                             <ImageTextBlock imgUrl='images/about-img.jpg'>
                                 <h4>About Us</h4>
-                                <h5>Welcome to Imagine Group<br />We’re keen to tell you about us.</h5>
-                                <p>The website which you’re looking at right now was established in November 2019. With more than five years development experience.</p>
-                                <a href="#!" className="btn btn-light mt-auto w-25">Learn More</a>
+                                <h5>Your Trusted Partner in Travel and Property Services Since 2016</h5>
+                                <p>At Imagine Group, we are dedicated to making your dreams come true with exceptional tour and travel experiences, as well as premier property services. Since our inception in 2016, based in the heart of Lucknow, we have been committed to delivering unparalleled service and personalized attention to each client. Whether you're planning a memorable journey, seeking your dream home, or looking to invest in the right property, our team of experts is here to guide you every step of the way. With a reputation for excellence and a passion for exceeding expectations, Imagine Group is your trusted partner for all your travel and property needs.</p>
+                                <a href="/about" className="btn btn-light mt-auto w-25">Learn More</a>
                             </ImageTextBlock>
                         </div>
                     </div>
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="content-container pt-0">
+      <div className="content-container pt-0 d-none">
         <div className="container">
           <div className="row">
             <div className="col-md-12">

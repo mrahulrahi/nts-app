@@ -9,10 +9,11 @@ interface BlockProp {
     title: string;
     subTitle: string;
     body: string;
+    pageLink: string;
 }
 
 const ServiceBlock = ({ block }: Block) => {
-    const { imgUrl, title, subTitle, body } = block;
+    const { imgUrl, title, subTitle, body, pageLink } = block;
 
     return (
         <>
@@ -24,7 +25,7 @@ const ServiceBlock = ({ block }: Block) => {
                     <h4>{title}</h4>
                     <h5>{subTitle}</h5>
                     <p>{body}</p>
-                    <a href="#!" className="btn btn-light">Open</a>
+                    <a href={pageLink} className="btn btn-light">Open</a>
                 </div>
             </div>
         </>

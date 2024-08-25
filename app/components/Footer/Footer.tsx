@@ -1,6 +1,6 @@
 import './Footer.css'
 import Link from 'next/link'
-import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { FaFacebookF, FaXTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 const Footer = () => {
     const links = [
@@ -19,8 +19,8 @@ const Footer = () => {
                         <div className="footer-content d-flex flex-column flex-sm-row align-items-center justify-content-between">
                             <div className="footer-title">IMAGINE GROUP</div>
                             <ul className="social-links d-flex justify-content-center">
-                                <li><a href="https://facebook.com/imaginegrouplko"><FaFacebook /></a></li>
-                                <li><a href="https://twitter.com/imaginegroupig"><FaTwitter /></a></li>
+                                <li><a href="https://facebook.com/imaginegindia"><FaFacebookF /></a></li>
+                                <li><a href="https://twitter.com/imaginegroupig"><FaXTwitter /></a></li>
                                 <li><a href="https://instagram.com/imaginegroupig"><FaInstagram /></a></li>
                                 <li><a href="https://wa.me/+918881888339"><FaWhatsapp /></a></li>
                             </ul>

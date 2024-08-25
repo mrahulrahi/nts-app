@@ -14,9 +14,12 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
     const teamCards = [
-        { imgUrl: "images/team-img-1.jpg", name: "Keith Marshall", jobPost: "Founder" },
-        { imgUrl: "images/team-img-2.jpg", name: "George Williams", jobPost: "Developer" },
-        { imgUrl: "images/team-img-3.jpg", name: "George Watson", jobPost: "Designer" },
+        { imgUrl: "images/team-img-1.jpg", name: "Anuj Maurya", jobPost: "Founder" },
+        { imgUrl: "images/team-img-2.png", name: "Kalpana Maurya", jobPost: "CEO" },
+        { imgUrl: "images/team-img-3.png", name: "Komal Rathor", jobPost: "Chief Manager" },
+        { imgUrl: "images/team-img-4.png", name: "Yogendra Singh", jobPost: "CFO" },
+        { imgUrl: "images/team-img-5.jpg", name: "Rahul Maurya", jobPost: "CTO" },
+        { imgUrl: "images/team-img-6.png", name: "Priyanka Tiwari", jobPost: "Assistant" },
     ]
 
     return (
@@ -27,10 +30,12 @@ const AboutPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <ImageTextBlock imgUrl='images/our-story-img.jpg'>
+                            <ImageTextBlock imgUrl='images/about-img.jpg'>
                                 <h4>Our Story</h4>
-                                <h5>Welcome to RahiCreations<br />Glad to have you here!<br />We’re keen to tell you image-text us.</h5>
-                                <p>The website which you’re looking at right now was established in November 2019. With more than five years development experience, we here at Rahi Creations are whizz at Graphics Designing , Web Designing , App Designing And Photography that provide excellent user experience and are quite easy to manage. We are obsessed with web-app development and committed to our work. Moreover, Our vision is to deliver best in className stuff that you’re looking for and we do assure you of providing best service out-there.</p>
+                                <h5>Your Trusted Partner in Travel and Property Services Since 2016</h5>
+                                <p>At Imagine Group, our journey began in 2016 with a vision to transform the travel and property experience for our clients. Based in Lucknow, we started with a small but passionate team committed to providing personalized and exceptional services. What began as a modest endeavor quickly grew into a trusted name in both the travel and property sectors.</p>
+                                <p>Our story is built on a foundation of dedication, expertise, and a deep understanding of our clients’ needs. From curating memorable travel experiences to finding the perfect properties, we have always strived to exceed expectations and deliver unparalleled satisfaction. Over the years, we’ve expanded our services and refined our approach, but our core values remain the same: integrity, innovation, and customer-centricity.</p>
+                                <p>As we continue to grow, we are proud of the lasting relationships we’ve built and the milestones we’ve achieved. Our commitment to excellence drives us forward, and we are excited to help you embark on your next adventure or find your ideal property. Thank you for being part of our journey.</p>
                             </ImageTextBlock>
                         </div>
                     </div>

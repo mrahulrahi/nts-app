@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import './Header.css'
 import React,{ useState, useEffect } from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaPhone } from "react-icons/fa6";
+import { FaFacebookF, FaXTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 const Header = () => {
 
@@ -55,8 +55,8 @@ const Header = () => {
 
                             <div className="header-right d-none d-lg-block">
                                 <ul className="social-links d-flex justify-content-center">
-                                    <li><Link href="https://facebook.com/imaginegrouplko"><FaFacebook /></Link></li>
-                                    <li><Link href="https://twitter.com/imaginegroupig"><FaTwitter /></Link></li>
+                                    <li><Link href="https://facebook.com/imaginegindia"><FaFacebookF /></Link></li>
+                                    <li><Link href="https://twitter.com/imaginegroupig"><FaXTwitter /></Link></li>
                                     <li><Link href="https://instagram.com/imaginegroupig"><FaInstagram /></Link></li>
                                     <li><Link href="https://wa.me/+918881888339"><FaWhatsapp /></Link></li>
                                 </ul>
@@ -77,8 +77,8 @@ const Header = () => {
                                     </ul>
                                     <div className="navbar-bottom mt-auto d-lg-none">
                                         <ul className="social-links d-flex justify-content-center">
-                                            <li><Link href="https://facebook.com/imaginegrouplko"><FaFacebook /></Link></li>
-                                            <li><Link href="https://twitter.com/imaginegroupig"><FaTwitter /></Link></li>
+                                            <li><Link href="https://facebook.com/imaginegindia"><FaFacebookF /></Link></li>
+                                            <li><Link href="https://twitter.com/imaginegroupig"><FaXTwitter /></Link></li>
                                             <li><Link href="https://instagram.com/imaginegroupig"><FaInstagram /></Link></li>
                                             <li><Link href="https://wa.me/+918881888339"><FaWhatsapp /></Link></li>
                                         </ul>
