@@ -12,7 +12,7 @@ const LoginPage = () => {
       <div className="login-register-container content-container position-relative">
         <div className="login-register-bg"><img src="images/swiper-img-1.jpg" alt="" /></div>
         <div className="container">
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             <div className="col-md-12">
               <div className="login-register-content-box d-flex flex-column justify-content-center bg-glass mx-auto position-relative">
                 <div className="img-container mb-4 mx-auto">

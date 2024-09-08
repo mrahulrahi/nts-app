@@ -1,11 +1,11 @@
 .contact-container{padding-top: 200px;}
-.contact-gmap-canvas {display: flex;justify-content: center;overflow: hidden;background: none !important;height: 100%;width: 100%;}
+.contact-gmap-canvas {display: flex;justify-content: center;overflow: hidden;background: none !important;height: 100%;width: 100%;position: relative;z-index: 9;}
 .contact-head h3{color: var(--antique-white);font-size: 46px;font-weight: 600;line-height: 1.2;}
 .contact-head h1{color: var(--antique-white);font-size: 92px;font-weight: 700;line-height: 1.2;}
 .contact-body{margin: 50px 0 80px;}
 
 .contact-body-left{width: 50%;}
-.contact-form{width: 100%;background-color: var(--dark-grey);border-radius: 1em;}
+.contact-form{width: 100%;border-radius: 1em;}
 .contact-form input.form-control,input.form-control:focus{background: var(--antique-white);color: var(--dark-grey);width: 100%;height: 46px;border-radius: 8px;font-size: 18px;font-weight: 500;outline: none;border: none;box-shadow: none;}
 .contact-form textarea.form-control,textarea.form-control:focus{background: var(--antique-white);color: var(--dark-grey);width: 100%;height: 114px;border-radius: 8px;font-size: 18px;font-weight: 500;resize: none;outline: none;border: none;box-shadow: none;}
 .contact-form input.form-control::placeholder{color: var(--grey);}

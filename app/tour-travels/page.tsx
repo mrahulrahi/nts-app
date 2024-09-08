@@ -62,7 +62,7 @@ const TourTravelsPage = () => {
 
       <div className="content-container">
         <div className="container">
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>Book Your Car</h3>
@@ -95,7 +95,7 @@ const TourTravelsPage = () => {
 
       <div className="content-container pt-0">
         <div className="container">
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>How We Work ?</h3>
@@ -113,7 +113,7 @@ const TourTravelsPage = () => {
 
       <div className="content-container pt-0">
         <div className="container">
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>Our Services</h3>
@@ -130,7 +130,7 @@ const TourTravelsPage = () => {
 
       <div className="content-container pt-0">
         <div className="container">
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>Why Us ?</h3>
@@ -147,12 +147,12 @@ const TourTravelsPage = () => {
 
       <div className="content-container pt-0">
         <div className="container">
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>Available Cars</h3>
               </div>
-              <div className="type-card-list-wrapper scrollbar-hidden">
+              <div className="type-card-list-wrapper scrollbar-hidden" data-aos="fade-up">
                 <div className="type-card-list d-flex flex-wrap justify-content-center">
                   <div className="type-card-item">
                     <div className="type-card-box w-100 h-100 d-flex align-items-center justify-content-center">
@@ -166,7 +166,7 @@ const TourTravelsPage = () => {
               </div>
 
               <div className="car-card-list d-flex flex-wrap mt-5">
-                {carCards.map((card) => <div key={card.title} className="car-card-item">
+                {carCards.map((card) => <div key={card.title} className="car-card-item" data-aos="fade-up">
                   <CarCard card={card} />
                 </div>)}
               </div>

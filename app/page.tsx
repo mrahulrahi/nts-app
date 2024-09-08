@@ -20,9 +20,9 @@ export default function Home() {
   ]
 
   const blogCards = [
-    { imgUrl: "images/blog-img-1.jpg", title: "Web Design", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
-    { imgUrl: "images/blog-img-2.jpg", title: "App Design", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
-    { imgUrl: "images/blog-img-3.jpg", title: "Graphic Design", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
+    { imgUrl: "images/blog-img-1.jpg", title: "Web Design", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
+    { imgUrl: "images/blog-img-2.jpg", title: "App Design", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
+    { imgUrl: "images/blog-img-3.jpg", title: "Graphic Design", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
   ]
 
   const serviceBlocks = [
@@ -111,19 +111,37 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="content-container pt-0 d-none">
+      <div className="content-container bg-pattern-light d-none">
         <div className="container">
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>Blogs</h3>
               </div>
 
-              <div className="blog-card-list d-flex flex-wrap">
-                {blogCards.map((card) => <div key={card.title} className="blog-card-item">
+              <Swiper
+                modules={[Autoplay]}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                breakpoints={{
+                  992: {
+                    slidesPerView: 2,
+                  },
+                }}
+                slidesPerView={1}
+                spaceBetween={30}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+                className="blog-card-list d-flex flex-wrap"
+              >
+       
+                {blogCards.map((card) =>
+                <SwiperSlide key={card.title} className="blog-card-item">
                   <BlogCard card={card} />
-                </div>)}
-              </div>
+                </SwiperSlide>)}
+              </Swiper>
             </div>
           </div>
         </div>

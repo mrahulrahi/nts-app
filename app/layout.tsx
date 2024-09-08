@@ -1,22 +1,24 @@
 import type { Metadata } from "next";
 import 'bootstrap/dist/css/bootstrap.css'
+import 'aos/dist/aos.css';
 import ImportBsJS from "./importBsJS";
+import ImportAOS from './importAOS';
 import { Alkatra, Montserrat } from 'next/font/google';
 import "./style.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 const montserrat = Montserrat({
-  weight: ['300', '400', '500','600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
-  display:'swap',
+  display: 'swap',
   variable: '--font-montserrat',
 });
 
 const alkatra = Alkatra({
-  weight: ['400', '500','600', '700'],
+  weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
-  display:'swap',
+  display: 'swap',
   variable: '--font-alkatra',
 });
 
@@ -38,6 +40,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ImportAOS />
       </body>
     </html>
   );

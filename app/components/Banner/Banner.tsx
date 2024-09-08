@@ -14,7 +14,7 @@ const Banner = ({heading, subheading} : Banner) => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9">
-                            <div className="banner-content position-relative z-3">
+                            <div className="banner-content position-relative z-3" data-aos="fade-up">
                                 <h1>{heading}</h1>
                                 <h3>{subheading}</h3>
                             </div>

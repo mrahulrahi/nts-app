@@ -28,7 +28,7 @@ const AboutPage = () => {
 
             <div className="content-container bg-pattern-dark">
                 <div className="container">
-                    <div className="row">
+                    <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
                             <ImageTextBlock imgUrl='images/about-img.jpg'>
                                 <h4>Our Story</h4>
@@ -44,7 +44,7 @@ const AboutPage = () => {
 
             <div className="content-container bg-pattern-light">
                 <div className="container">
-                    <div className="row">
+                    <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
                             <div className="heading text-center">
                                 <h3>Mission & Vision</h3>
@@ -55,9 +55,9 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="content-container pt-0">
+            <div className="content-container bg-pattern-dark">
                 <div className="container">
-                    <div className="row">
+                    <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
                             <div className="heading text-center">
                                 <h3>Our Team</h3>
@@ -72,9 +72,9 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="content-container pt-0">
+            <div className="content-container bg-pattern-light">
                 <div className="container">
-                    <div className="row">
+                    <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
                             <div className="heading text-center">
                                 <h3>Careers</h3>
