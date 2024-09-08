@@ -1,5 +1,5 @@
 import './TeamCard.css'
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 // Define an interface for the social media links
 interface SocialLinks {
@@ -35,7 +35,7 @@ const TeamCard = ({ card }: Card) => {
                     <ul className="team-card-social-row d-flex gap-3 align-items-center justify-content-center">
                         {Links.facebook && (
                             <a className="tc-social-icon" href={Links.facebook} target="_blank" rel="noopener noreferrer">
-                                <FaFacebook />
+                                <FaFacebookF />
                             </a>
                         )}
                         {Links.twitter && (

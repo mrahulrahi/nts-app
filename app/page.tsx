@@ -36,7 +36,7 @@ export default function Home() {
     <main>
       <Hero />
 
-      <div className="content-container bg-dark-grey">
+      <div className="content-container bg-pattern-dark">
                 <div className="container">
                     <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
             </div>
 
-      <div className="content-container bg-pattern">
+      <div className="content-container bg-pattern-light">
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
@@ -70,7 +70,7 @@ export default function Home() {
       </div>
 
 
-      <div className="content-container bg-dark-grey overflow-hidden">
+      <div className="content-container bg-pattern-dark overflow-hidden">
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
@@ -88,13 +88,14 @@ export default function Home() {
                 breakpoints={{
                   768: {
                     slidesPerView: 2,
+                    spaceBetween: 30,
                   },
                   992: {
                     slidesPerView: 3,
                   },
                 }}
-                slidesPerView={1}
-                spaceBetween={30}
+                slidesPerView={'auto'}
+                spaceBetween={20}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 className="testimonial-card-list d-flex flex-wrap overflow-visible"

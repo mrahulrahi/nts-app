@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
     const teamCards = [
-        { imgUrl: "images/team-img-1.jpg", name: "Anuj Maurya", jobPost: "Founder" },
+        { imgUrl: "images/team-img-1.jpg", name: "Anuj Maurya", jobPost: "Founder", Links: { facebook: "https://www.facebook.com/anujmauryaa", instagram: "https://www.instagram.com/anujmauryaa"}},
         { imgUrl: "images/team-img-2.png", name: "Kalpana Maurya", jobPost: "CEO" },
         { imgUrl: "images/team-img-3.png", name: "Komal Rathor", jobPost: "Chief Manager" },
         { imgUrl: "images/team-img-4.png", name: "Yogendra Singh", jobPost: "CFO" },
@@ -26,7 +26,7 @@ const AboutPage = () => {
         <>
             <Banner heading="About Us" subheading="Know Us" />
 
-            <div className="content-container">
+            <div className="content-container bg-pattern-dark">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -42,7 +42,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="content-container bg-pattern">
+            <div className="content-container bg-pattern-light">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
