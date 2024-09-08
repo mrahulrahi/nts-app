@@ -36,7 +36,7 @@ export default function Home() {
     <main>
       <Hero />
 
-      <div className="content-container">
+      <div className="content-container bg-dark-grey">
                 <div className="container">
                     <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
@@ -44,14 +44,14 @@ export default function Home() {
                                 <h4>About Us</h4>
                                 <h5>Your Trusted Partner in Travel and Property Services Since 2016</h5>
                                 <p>At Imagine Group, we are dedicated to making your dreams come true with exceptional tour and travel experiences, as well as premier property services. Since our inception in 2016, based in the heart of Lucknow, we have been committed to delivering unparalleled service and personalized attention to each client. Whether you&apos;re planning a memorable journey, seeking your dream home, or looking to invest in the right property, our team of experts is here to guide you every step of the way. With a reputation for excellence and a passion for exceeding expectations, Imagine Group is your trusted partner for all your travel and property needs.</p>
-                                <a href="/about" className="btn btn-light mt-auto w-25">Learn More</a>
+                                <a href="/about" className="btn btn-dark mt-auto w-25">Learn More</a>
                             </ImageTextBlock>
                         </div>
                     </div>
                 </div>
             </div>
 
-      <div className="content-container pt-0">
+      <div className="content-container bg-pattern">
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
@@ -70,7 +70,7 @@ export default function Home() {
       </div>
 
 
-      <div className="content-container pt-0">
+      <div className="content-container bg-dark-grey overflow-hidden">
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
@@ -80,7 +80,6 @@ export default function Home() {
 
               <Swiper
                 modules={[Autoplay]}
-                loop={true}
                 centeredSlides={true}
                 autoplay={{
                   delay: 2500,
@@ -98,7 +97,7 @@ export default function Home() {
                 spaceBetween={30}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                className="testimonial-card-list d-flex flex-wrap"
+                className="testimonial-card-list d-flex flex-wrap overflow-visible"
               >
                 {testimonialCards.map((card) =>
                   <SwiperSlide key={card.name} className="testimonial-card-item">
