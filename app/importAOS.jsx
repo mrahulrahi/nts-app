@@ -2,7 +2,7 @@
 import AOS from 'aos';
 import { useEffect } from 'react';
 
-const importAOS = () => {
+const ImportAOS = () => {
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -11,4 +11,4 @@ const importAOS = () => {
     return null;
 }
 
-export default importAOS
+export default ImportAOS

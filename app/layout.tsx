@@ -35,11 +35,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ImportBsJS />
       <body className={`${montserrat.variable} ${alkatra.variable}`}>
         <Header />
         {children}
         <Footer />
+        <ImportBsJS />
         <ImportAOS />
       </body>
     </html>
