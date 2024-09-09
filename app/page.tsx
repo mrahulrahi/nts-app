@@ -2,6 +2,7 @@
 import BlogCard from "./components/BlogCard/BlogCard";
 import Hero from "./components/Hero/Hero";
 import ImageTextBlock from './components/ImageTextBlock/ImageTextBlock'
+import WorkCard from './components/WorkCard/WorkCard'
 import ServiceBlock from "./components/ServiceBlock/ServiceBlock";
 import TestimonialCard from "./components/TestimonialCard/TestimonialCard";
 import { Autoplay } from 'swiper/modules';
@@ -26,9 +27,21 @@ export default function Home() {
   ]
 
   const serviceBlocks = [
-    { imgUrl: "images/service-img-1.jpg", title: "Tour & Travels", subTitle: "Book Your Car", body: "Discover the world with Imagine Group's bespoke tour and travel services. We craft personalized itineraries that turn every journey into an unforgettable adventure, ensuring a seamless experience from start to finish.", pageLink: "./tour-travels"},
-    { imgUrl: "images/service-img-2.jpg", title: "Property", subTitle: "Buy & Sell Property", body: "Find your ideal property with ease through Imagine Group. Our expert team offers a curated selection of homes and investment opportunities, guiding you to make informed decisions and secure the perfect space for your needs.", pageLink: "./properties"},
+    { imgUrl: "images/service-img-1.jpg", title: "Tour & Travels", subTitle: "Book Your Car", body: "Discover the world with Imagine Group's bespoke tour and travel services. We craft personalized itineraries that turn every journey into an unforgettable adventure, ensuring a seamless experience from start to finish.", pageLink: "./tour-travels" },
+    { imgUrl: "images/service-img-2.jpg", title: "Property", subTitle: "Buy & Sell Property", body: "Find your ideal property with ease through Imagine Group. Our expert team offers a curated selection of homes and investment opportunities, guiding you to make informed decisions and secure the perfect space for your needs.", pageLink: "./properties" },
 
+  ]
+
+  const travelWorkCards = [
+    { imgUrl: "images/best-price.png", title: "Check Price", body: "Select your car & tell us about its current location, and our advanced AI tech will make the perfect price for you." },
+    { imgUrl: "images/book-ride.png", title: "Book Ride", body: "Select your car & your pickup location then click on the book button, & our service expert will call you and send car to you." },
+    { imgUrl: "/images/pickup.png", title: "Schedule Pickup", body: "Book a ride and schedule pickup from your home or work or anywhere with current loaction best suits your convenience." },
+  ]
+
+  const propertyWorkCards = [
+    { imgUrl: "images/best-price.png", title: "Check Property", body: "Browse through property list and select your favourite property with perfect price for you." },
+    { imgUrl: "images/book-ride.png", title: "Book Enquire", body: "Select property then click on the book button, & our service expert will call you." },
+    { imgUrl: "/images/pickup.png", title: "Schedule Visit", body: "Schedule visit for your selected property with your suitable time." },
   ]
 
 
@@ -37,19 +50,19 @@ export default function Home() {
       <Hero />
 
       <div className="content-container bg-pattern-dark">
-                <div className="container">
-                    <div className="row" data-aos="fade-up">
-                        <div className="col-md-12">
-                            <ImageTextBlock imgUrl='images/about-img.jpg'>
-                                <h4>About Us</h4>
-                                <h5>Your Trusted Partner in Travel and Property Services Since 2016</h5>
-                                <p>At Imagine Group, we are dedicated to making your dreams come true with exceptional tour and travel experiences, as well as premier property services. Since our inception in 2016, based in the heart of Lucknow, we have been committed to delivering unparalleled service and personalized attention to each client. Whether you&apos;re planning a memorable journey, seeking your dream home, or looking to invest in the right property, our team of experts is here to guide you every step of the way. With a reputation for excellence and a passion for exceeding expectations, Imagine Group is your trusted partner for all your travel and property needs.</p>
-                                <a href="/about" className="btn btn-dark mt-auto w-25">Learn More</a>
-                            </ImageTextBlock>
-                        </div>
-                    </div>
-                </div>
+        <div className="container">
+          <div className="row" data-aos="fade-up">
+            <div className="col-md-12">
+              <ImageTextBlock imgUrl='images/about-img.jpg'>
+                <h4>About Us</h4>
+                <h5>Your Trusted Partner in Travel and Property Services Since 2016</h5>
+                <p>At Imagine Group, we are dedicated to making your dreams come true with exceptional tour and travel experiences, as well as premier property services. Since our inception in 2016, based in the heart of Lucknow, we have been committed to delivering unparalleled service and personalized attention to each client. Whether you&apos;re planning a memorable journey, seeking your dream home, or looking to invest in the right property, our team of experts is here to guide you every step of the way. With a reputation for excellence and a passion for exceeding expectations, Imagine Group is your trusted partner for all your travel and property needs.</p>
+                <a href="/about" className="btn btn-dark mt-auto w-25">Learn More</a>
+              </ImageTextBlock>
             </div>
+          </div>
+        </div>
+      </div>
 
       <div className="content-container bg-pattern-light">
         <div className="container">
@@ -69,8 +82,47 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="content-container bg-pattern-dark">
+        <div className="container">
+          <div className="row" data-aos="fade-up">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>How We Work ?</h3>
+              </div>
 
-      <div className="content-container bg-pattern-dark overflow-hidden">
+              <div className="hiw-tab-wrapper">
+                <ul className="nav" id="myTab" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Tour & Travels</button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Property</button>
+                  </li>
+                </ul>
+                <div className="tab-content" id="myTabContent">
+                  <div className="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabIndex={0}>
+                    <div className="work-card-list d-flex flex-wrap">
+                      {travelWorkCards.map((card, index) => <div key={card.title} className="work-card-item">
+                        <WorkCard card={card} index={index} />
+                      </div>)}
+                    </div>
+                  </div>
+                  <div className="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabIndex={0}>
+                    <div className="work-card-list d-flex flex-wrap">
+                      {propertyWorkCards.map((card, index) => <div key={card.title} className="work-card-item">
+                        <WorkCard card={card} index={index} />
+                      </div>)}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="content-container bg-pattern-light overflow-hidden">
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
@@ -111,7 +163,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="content-container bg-pattern-light d-none">
+      <div className="content-container bg-pattern-dark d-none">
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
@@ -136,11 +188,11 @@ export default function Home() {
                 onSwiper={(swiper) => console.log(swiper)}
                 className="blog-card-list d-flex flex-wrap"
               >
-       
+
                 {blogCards.map((card) =>
-                <SwiperSlide key={card.title} className="blog-card-item">
-                  <BlogCard card={card} />
-                </SwiperSlide>)}
+                  <SwiperSlide key={card.title} className="blog-card-item">
+                    <BlogCard card={card} />
+                  </SwiperSlide>)}
               </Swiper>
             </div>
           </div>

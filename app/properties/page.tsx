@@ -2,7 +2,6 @@ import './Properties.css'
 import Banner from '../components/Banner/Banner'
 import TypeCard from '../components/TypeCard/TypeCard'
 import PropertyCard from '../components/PropertyCard/PropertyCard'
-import WorkCard from '../components/WorkCard/WorkCard'
 import ServiceCard from '../components/ServiceCard/ServiceCard'
 import FeatureCard from '../components/FeatureCard/FeatureCard'
 import type { Metadata } from "next";
@@ -13,12 +12,6 @@ export const metadata: Metadata = {
 };
 
 const PropertiesPage = () => {
-
-    const workCards = [
-        { imgUrl: "images/best-price.png", title: "Check Property", body: "Browse through property list and select your favourite property with perfect price for you." },
-        { imgUrl: "images/book-ride.png", title: "Book Enquire", body: "Select property then click on the book button, & our service expert will call you." },
-        { imgUrl: "/images/pickup.png", title: "Schedule Visit", body: "Schedule visit for your selected property with your suitable time." },
-    ]
 
     const serviceCards = [
         { imgUrl: "images/house.png", title: "Rent House" },
@@ -82,23 +75,6 @@ const PropertiesPage = () => {
                                     </div>
                                     <div className="form-control-col"> <button className="btn btn-default" type="button">Book Now</button></div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="content-container pt-0">
-                <div className="container">
-                    <div className="row" data-aos="fade-up">
-                        <div className="col-md-12">
-                            <div className="heading text-center">
-                                <h3>How We Work ?</h3>
-                            </div>
-                            <div className="work-card-list d-flex flex-wrap">
-                                {workCards.map((card, index) => <div key={card.title} className="work-card-item">
-                                    <WorkCard card={card} index={index} />
-                                </div>)}
                             </div>
                         </div>
                     </div>

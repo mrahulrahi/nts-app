@@ -1,6 +1,5 @@
 import './TourTravels.css'
 import Banner from "../components/Banner/Banner"
-import WorkCard from '../components/WorkCard/WorkCard'
 import ServiceCard from '../components/ServiceCard/ServiceCard'
 import FeatureCard from '../components/FeatureCard/FeatureCard'
 import TypeCard from '../components/TypeCard/TypeCard'
@@ -13,11 +12,6 @@ export const metadata: Metadata = {
 };
 
 const TourTravelsPage = () => {
-  const workCards = [
-    { imgUrl: "images/best-price.png", title: "Check Price", body: "Select your car & tell us about its current location, and our advanced AI tech will make the perfect price for you." },
-    { imgUrl: "images/book-ride.png", title: "Book Ride", body: "Select your car & your pickup location then click on the book button, & our service expert will call you and send car to you." },
-    { imgUrl: "/images/pickup.png", title: "Schedule Pickup", body: "Book a ride and schedule pickup from your home or work or anywhere with current loaction best suits your convenience." },
-  ]
 
   const serviceCards = [
     { imgUrl: "images/local.png", title: "Local Rentals" },
@@ -91,25 +85,6 @@ const TourTravelsPage = () => {
           </div>
         </div>
       </div>
-
-
-      <div className="content-container pt-0">
-        <div className="container">
-          <div className="row" data-aos="fade-up">
-            <div className="col-md-12">
-              <div className="heading text-center">
-                <h3>How We Work ?</h3>
-              </div>
-              <div className="work-card-list d-flex flex-wrap">
-                {workCards.map((card, index) => <div key={card.title} className="work-card-item">
-                  <WorkCard card={card} index={index} />
-                </div>)}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
 
       <div className="content-container pt-0">
         <div className="container">
