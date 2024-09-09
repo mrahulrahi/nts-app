@@ -58,9 +58,6 @@ const TourTravelsPage = () => {
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
-              <div className="heading text-center">
-                <h3>Book Your Car</h3>
-              </div>
               <div className="book-form-wrapper w-100">
                 <div className="form-control-row d-flex flex-wrap">
                   <div className="form-control-col"><input type="text" className="form-control" placeholder="Full Name" name="" id="book_name" /></div>
@@ -80,6 +77,36 @@ const TourTravelsPage = () => {
                   </div>
                   <div className="form-control-col"> <button className="btn btn-default" type="button">Book Now</button></div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="content-container pt-0">
+        <div className="container">
+          <div className="row" data-aos="fade-up">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>Available Cars</h3>
+              </div>
+              <div className="type-card-list-wrapper scrollbar-hidden" data-aos="fade-up">
+                <div className="type-card-list d-flex flex-wrap justify-content-center">
+                  <div className="type-card-item">
+                    <div className="type-card-box w-100 h-100 d-flex align-items-center justify-content-center">
+                      <div className="type-card-title text-uppercase">Cars Types</div>
+                    </div>
+                  </div>
+                  {typeCards.map((card) => <div key={card.title} className="type-card-item">
+                    <TypeCard card={card} />
+                  </div>)}
+                </div>
+              </div>
+
+              <div className="car-card-list d-flex flex-wrap mt-5">
+                {carCards.map((card) => <div key={card.title} className="car-card-item" data-aos="fade-up">
+                  <CarCard card={card} />
+                </div>)}
               </div>
             </div>
           </div>
@@ -113,36 +140,6 @@ const TourTravelsPage = () => {
               <div className="feature-card-list d-flex flex-wrap">
                 {featureCards.map((card) => <div key={card.title} className="feature-card-item">
                   <FeatureCard card={card} />
-                </div>)}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="content-container pt-0">
-        <div className="container">
-          <div className="row" data-aos="fade-up">
-            <div className="col-md-12">
-              <div className="heading text-center">
-                <h3>Available Cars</h3>
-              </div>
-              <div className="type-card-list-wrapper scrollbar-hidden" data-aos="fade-up">
-                <div className="type-card-list d-flex flex-wrap justify-content-center">
-                  <div className="type-card-item">
-                    <div className="type-card-box w-100 h-100 d-flex align-items-center justify-content-center">
-                      <div className="type-card-title text-uppercase">Cars Types</div>
-                    </div>
-                  </div>
-                  {typeCards.map((card) => <div key={card.title} className="type-card-item">
-                    <TypeCard card={card} />
-                  </div>)}
-                </div>
-              </div>
-
-              <div className="car-card-list d-flex flex-wrap mt-5">
-                {carCards.map((card) => <div key={card.title} className="car-card-item" data-aos="fade-up">
-                  <CarCard card={card} />
                 </div>)}
               </div>
             </div>

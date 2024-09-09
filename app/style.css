@@ -32,7 +32,7 @@ h3{font-size:40px;}
 h4{font-size:30px;}
 h5{font-size:26px;}
 h6{font-size:22px;}
-p{margin:0px;padding:0px;margin-bottom:30px;}
+p{margin:0px;padding:0px;margin-bottom:20px;}
 strong{font-weight:700;}
 b{font-weight:400;}
 p:last-child{margin-bottom:0;}
@@ -69,14 +69,14 @@ main{min-height: 100vh;}
 .error-box h2{color: var(--teal);font-size: 64px;font-weight: 700;line-height: 1;}
 .error-box h4{color: var(--antique-white);font-size: 32px;font-weight: 600;line-height: 1;}
 
-.form-control-row{gap: 10px;}
+.form-control-row{border-radius: 10px;overflow: hidden;}
 .form-control-col{flex-grow: 1;flex-basis: 0;}
 
 input.form-control,input.form-control:focus,
-select.form-select,select.form-select:focus{height: 48px;padding: 8px 16px;font-size: 16px;font-weight: 300;background-color: var(--dark-grey);color: var(--antique-white);border-radius: 8px;box-shadow: none;border: 0;}
+select.form-select,select.form-select:focus{padding: 18px 20px;font-size: 16px;font-weight: 300;background-color: var(--dark-grey);color: var(--antique-white);border-radius: 0;box-shadow: none;border: 0;}
 input.form-control::placeholder{color: var(--antique-white);}
 
-.form-control-col .btn{min-width: 100%;height: 48px;color: var(--dark-grey);background: var(--teal);border: 2px solid var(--dark-grey);border-radius: 8px;}
+.form-control-col .btn{min-width: 100%;height: 60px;color: var(--dark-grey);background: var(--teal);border: 2px solid var(--teal);border-radius: 0;}
 .form-control-col .btn:hover{background: var(--dark-grey)!important;color: var(--antique-white)!important;}
 
 .scrollbar-hidden::-webkit-scrollbar{display: none;}
