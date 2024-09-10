@@ -54,14 +54,12 @@ const TourTravelsPage = () => {
     <>
       <Banner heading="Tour & Travels" subheading="Book Your Car" />
 
-      <div className="content-container">
+      <div className="content-container py-0">
         <div className="container">
-          <div className="row" data-aos="fade-up">
-            <div className="col-md-12">
-              <div className="book-form-wrapper w-100">
+          <div className="row">
+            <div className="col-md-10 mx-auto">
+              <div className="book-form-wrapper w-100" data-aos="fade-up">
                 <div className="form-control-row d-flex flex-wrap">
-                  <div className="form-control-col"><input type="text" className="form-control" placeholder="Full Name" name="" id="book_name" /></div>
-                  <div className="form-control-col"><input type="tel" className="form-control" placeholder="Phone No." name="" id="book_phone" /></div>
                   <div className="form-control-col"><input type="text" className="form-control" placeholder="Pickup Location" name="" id="book_pickup" /></div>
                   <div className="form-control-col"><input type="text" className="form-control" placeholder="Drop Location" name="" id="book_drop" /></div>
                   <div className="form-control-col"><input type="date" className="form-control" placeholder="Pickup Date" name="" id="book_datetime" /></div>
@@ -83,7 +81,7 @@ const TourTravelsPage = () => {
         </div>
       </div>
 
-      <div className="content-container pt-0">
+      <div className="content-container bg-pattern-light">
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
@@ -113,24 +111,7 @@ const TourTravelsPage = () => {
         </div>
       </div>
 
-      <div className="content-container pt-0">
-        <div className="container">
-          <div className="row" data-aos="fade-up">
-            <div className="col-md-12">
-              <div className="heading text-center">
-                <h3>Our Services</h3>
-              </div>
-              <div className="service-card-list d-flex flex-wrap">
-                {serviceCards.map((card) => <div key={card.title} className="service-card-item">
-                  <ServiceCard card={card} />
-                </div>)}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="content-container pt-0">
+      <div className="content-container bg-pattern-dark">
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
@@ -140,6 +121,23 @@ const TourTravelsPage = () => {
               <div className="feature-card-list d-flex flex-wrap">
                 {featureCards.map((card) => <div key={card.title} className="feature-card-item">
                   <FeatureCard card={card} />
+                </div>)}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="content-container bg-pattern-light">
+        <div className="container">
+          <div className="row" data-aos="fade-up">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>Our Services</h3>
+              </div>
+              <div className="service-card-list d-flex flex-wrap">
+                {serviceCards.map((card) => <div key={card.title} className="service-card-item">
+                  <ServiceCard card={card} />
                 </div>)}
               </div>
             </div>
