@@ -1,4 +1,11 @@
-:root{--white: #FFF;--black: #000;--teal: #C2F6EA;--antique-white: #faebd7;--grey: #B4B4B4;--dark-grey: #343a40;}
+:root {
+    --white: #FFF;
+    --black: #222;
+    --teal: #bae2df;
+    --antique-white: #faebd7;
+    --grey: #B4B4B4;
+    --dark-grey: #343a40;
+}
  
 @import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
 
@@ -38,12 +45,12 @@ b{font-weight:400;}
 p:last-child{margin-bottom:0;}
 
 .btn {min-width: 160px;padding: 15px 18px;font-family: var(--font-montserrat);font-size: 16px;font-weight: 700;line-height: 1;box-shadow: none;border-radius: 80px;}
-.btn-default,.btn-default:focus { color: var(--dark-grey);background-color: var(--teal);border: solid 1px var(--violet); }
-.btn-default:hover,.btn-default:active { color: var(--dark-grey)!important;background-color: var(--antique-white)!important;border-color: var(--antique-white)!important;}
-.btn-light, .btn-light:focus{color: var(--dark-grey);background-color: var(--antique-white);border: solid 1px var(--antique-white); }
-.btn-light:hover,.btn-light:active { color: var(--teal)!important;background-color: var(--dark-grey)!important;border-color: var(--dark-grey)!important;}
-.btn-dark, .btn-dark:focus{color: var(--white);background-color: var(--dark-grey);border: solid 1px var(--dark-grey); }
-.btn-dark:hover,.btn-dark:active { color: var(--white)!important;background-color: var(--black)!important;border-color: var(--black)!important;}
+.btn-default,.btn-default:focus { color: var(--dark-grey);background-color: var(--teal);border: solid 2px var(--teal); }
+.btn-default:hover,.btn-default:active { color: var(--teal)!important;background-color: var(--dark-grey)!important;border-color: var(--teal)!important;}
+.btn-light, .btn-light:focus{color: var(--dark-grey);background-color: var(--antique-white);border: solid 2px var(--antique-white); }
+.btn-light:hover,.btn-light:active { color: var(--antique-white)!important;background-color: var(--dark-grey)!important;border-color: var(--antique-white)!important;}
+.btn-dark, .btn-dark:focus{color: var(--white);background-color: var(--dark-grey);border: solid 2px var(--dark-grey); }
+.btn-dark:hover,.btn-dark:active { color: var(--dark-grey)!important;background-color: var(--white)!important;border-color: var(--dark-grey)!important;}
 
 .btn.btn-block{min-width: 100%;}
 .btn+.btn {margin-left: 25px;}
