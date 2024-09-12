@@ -5,6 +5,7 @@ import PropertyCard from '../components/PropertyCard/PropertyCard'
 import ServiceCard from '../components/ServiceCard/ServiceCard'
 import FeatureCard from '../components/FeatureCard/FeatureCard'
 import type { Metadata } from "next";
+import ImageTextBlock from '../components/ImageTextBlock/ImageTextBlock'
 
 export const metadata: Metadata = {
   title: "IG - Properties",
@@ -109,6 +110,20 @@ const PropertiesPage = () => {
             </div>
 
             <div className="content-container bg-pattern-dark">
+        <div className="container">
+          <div className="row" data-aos="fade-up">
+            <div className="col-md-12">
+              <ImageTextBlock imgUrl='images/service-img-2.jpg'>
+                <h4>Property</h4>
+                <h5>Buy & Sell Property</h5>
+                <p>Find your ideal property with ease through Imagine Group. Our expert team offers a curated selection of homes and investment opportunities, guiding you to make informed decisions and secure the perfect space for your needs.</p>
+              </ImageTextBlock>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <div className="content-container bg-pattern-light">
                 <div className="container">
                     <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
@@ -125,7 +140,7 @@ const PropertiesPage = () => {
                 </div>
             </div>
 
-            <div className="content-container bg-pattern-light">
+            <div className="content-container bg-pattern-dark">
                 <div className="container">
                     <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
