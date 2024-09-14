@@ -9,6 +9,7 @@ import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import CTABlock from "./components/CTABlock/CTABlock";
 
 export default function Home() {
   const testimonialCards = [
@@ -43,6 +44,20 @@ export default function Home() {
     { imgUrl: "images/book-ride.png", title: "Book Enquire", body: "Select property then click on the book button, & our service expert will call you." },
     { imgUrl: "/images/pickup.png", title: "Schedule Visit", body: "Schedule visit for your selected property with your suitable time." },
   ]
+
+  const ctaData = {
+    cardBG: "dark-grey",
+    cardHeading: "Book on Call / Whatsapp",
+    cardPara: "Discover seamless travel with our tour and travel services, offering a range of comfortable vehicles to suit your journey. Whether it's a local rental, airport transfer, or an outstation trip, we provide reliable and affordable solutions for all your travel needs. Book now and experience a hassle-free ride with professional drivers and 24/7 support!",
+    cardFirstHeading: "Book on call",
+    cardFirstPara: "Our advisors are just a phone call away. On average, we answer calls <strong>within 90 seconds.</strong> Lines open 24/7.",
+    cardFirstLink: "+91 8881 888339",
+    cardFirstUrl: "tel:+918881888339",
+    cardSecondHeading: "Book on whatsapp",
+    cardSecondPara: "Book your ride easily on WhatsApp! Just send us your details, and we'll arrange your vehicle in no time. Fast, simple, and convenient – your next journey is just a message away!",
+    cardSecondLink: "Start chat",
+    cardSecondUrl: "https://api.whatsapp.com/send/?phone=%2B918881888339&text&type=phone_number&app_absent=0",
+  };
 
 
   return (
@@ -91,7 +106,7 @@ export default function Home() {
               </div>
 
               <div className="hiw-tab-wrapper">
-                <ul className="nav" id="myTab" role="tablist">
+                <ul className="nav mx-auto" id="myTab" role="tablist">
                   <li className="nav-item" role="presentation">
                     <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Tour & Travels</button>
                   </li>
@@ -194,6 +209,16 @@ export default function Home() {
                     <BlogCard card={card} />
                   </SwiperSlide>)}
               </Swiper>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="content-container full-width-cta-container bg-pattern-dark">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-10 mx-auto">
+              <CTABlock card={ctaData} />
             </div>
           </div>
         </div>

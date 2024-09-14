@@ -3,7 +3,7 @@
 .testimonial-card-subtitle{font-size:16px;line-height:1.6;}
 .testimonial-card-info{padding:16px;border:2px solid var(--dark-grey);color: var(--black);background:#fff;font-size:14px;border-radius: 10px;}
 .testimonial-card-item.swiper-slide-active .testimonial-card-box{color: var(--dark-grey);background:#fcaf3b;}
-.testimonial-card-box:hover{border-color:var(--antique-white);box-shadow:2px 2px 4px rgba(0,0,0,0.5);}
+.testimonial-card-box:hover{background: var(--teal);box-shadow:2px 2px 4px rgba(0,0,0,0.5);}
 .testimonial-card-item{height: auto;}
 
 @media (max-width: 767.98px){
