@@ -40,7 +40,7 @@ const Hero = () => {
                             <div className="row h-100 align-items-center">
                                 <div className="col-md-7">
                                     <div className="hero-content text-uppercase position-relative z-3" data-aos="fade-up">
-                                        <h5>tells a story</h5>
+                                        <h5>#01</h5>
                                         <h1>imagine</h1>
                                         <h3>group</h3>
                                         <hr />
@@ -58,7 +58,7 @@ const Hero = () => {
                             <div className="row h-100 align-items-center">
                                 <div className="col-md-7">
                                     <div className="hero-content text-uppercase position-relative z-3" data-aos="fade-up">
-                                        <h5>tells a story</h5>
+                                        <h5>#02</h5>
                                         <h1>book</h1>
                                         <h3>your car</h3>
                                         <hr />
@@ -76,7 +76,7 @@ const Hero = () => {
                             <div className="row h-100 align-items-center">
                                 <div className="col-md-7">
                                     <div className="hero-content text-uppercase position-relative z-3" data-aos="fade-up">
-                                        <h5>tells a story</h5>
+                                        <h5>#03</h5>
                                         <h1>travel</h1>
                                         <h3>with us</h3>
                                         <hr />
@@ -94,7 +94,7 @@ const Hero = () => {
                             <div className="row h-100 align-items-center">
                                 <div className="col-md-7">
                                     <div className="hero-content text-uppercase position-relative z-3" data-aos="fade-up">
-                                        <h5>tells a story</h5>
+                                        <h5>#04</h5>
                                         <h1>invest</h1>
                                         <h3>in property</h3>
                                         <hr />
@@ -112,7 +112,7 @@ const Hero = () => {
                             <div className="row h-100 align-items-center">
                                 <div className="col-md-7">
                                     <div className="hero-content text-uppercase position-relative z-3" data-aos="fade-up">
-                                        <h5>tells a story</h5>
+                                        <h5>#05</h5>
                                         <h1>buy</h1>
                                         <h3>your dream house</h3>
                                         <hr />

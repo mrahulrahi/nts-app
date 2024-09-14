@@ -1,5 +1,5 @@
-.service-box{gap: 30px;background: var(--dark-grey);box-shadow:0 0 20px 2px var(--dark-grey);border-radius:16px;}
-.service-img{width:45%;background: var(--white);border-radius:16px;}
+.service-box{width: 100%;height: 100%;gap: 30px;background: var(--dark-grey);box-shadow:0 0 20px 2px var(--dark-grey);border-radius:16px;}
+.service-img{width:45%;height: 100%;background: var(--white);border-radius:16px;}
 .service-img img{width:100%;height: 100%;object-fit: cover;}
 .service-content{width: 50%;padding: 30px;}
 .service-block-row:nth-child(even) .service-box{flex-flow: row-reverse;}
@@ -11,5 +11,6 @@
 @media (max-width: 991.98px) {
 .service-img,.service-content{width: 100%;}
 .service-block-row:nth-child(odd) .service-content{text-align:left}
+.service-box{height: auto;}
 }
 

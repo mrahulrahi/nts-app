@@ -49,7 +49,7 @@ const CTABlock = () => {
                                                             src="/images/cta-icon-2.svg" alt="" /></div>
                                                         <h3>Book on whatsapp</h3>
                                                     </div>
-                                                    <p>Book your ride easily on WhatsApp! Just send us your details, and we'll arrange your vehicle in no time. Fast, simple, and convenient – your next journey is just a message away!</p>
+                                                    <p>Book your ride easily on WhatsApp! Just send us your details, and we &apos ll arrange your vehicle in no time. Fast, simple, and convenient – your next journey is just a message away!</p>
 
                                                     <a href="#!" className="btn btn-default mt-auto btn-block">Start chat
                                                         <span className="btn-icon"><i className="fa-solid fa-chevron-right"></i></span>
