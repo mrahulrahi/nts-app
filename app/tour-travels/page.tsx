@@ -131,7 +131,7 @@ const TourTravelsPage = () => {
               <ImageTextBlock imgUrl='images/service-img-1.jpg'>
                 <h4>Tour & Travels</h4>
                 <h5>Book Your Car</h5>
-                <p>Discover the world with Imagine Group's bespoke tour and travel services. We craft personalized itineraries that turn every journey into an unforgettable adventure, ensuring a seamless experience from start to finish.</p>
+                <p>Discover the world with Imagine Group &apos s bespoke tour and travel services. We craft personalized itineraries that turn every journey into an unforgettable adventure, ensuring a seamless experience from start to finish.</p>
               </ImageTextBlock>
             </div>
           </div>
