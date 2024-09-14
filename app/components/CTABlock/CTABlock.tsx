@@ -12,7 +12,7 @@ const CTABlock = () => {
                                 <div className="col-lg-8 mx-auto">
                                     <div className="heading d-flex flex-column">
                                         <h3>Book on Call / Whatsapp</h3>
-                                        <p className="mt-4">Discover seamless travel with our tour and travel services, offering a range of comfortable vehicles to suit your journey. Whether it’s a local rental, airport transfer, or an outstation trip, we provide reliable and affordable solutions for all your travel needs. Book now and experience a hassle-free ride with professional drivers and 24/7 support!</p>
+                                        <p className="mt-4">Discover seamless travel with our tour and travel services, offering a range of comfortable vehicles to suit your journey. Whether it &apos s a local rental, airport transfer, or an outstation trip, we provide reliable and affordable solutions for all your travel needs. Book now and experience a hassle-free ride with professional drivers and 24/7 support!</p>
                                     </div>
                                 </div>
 
