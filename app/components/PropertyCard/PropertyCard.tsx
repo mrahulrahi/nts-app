@@ -1,7 +1,7 @@
 'use client';
 import './PropertyCard.css'
-import { FaChevronLeft, FaChevronRight, FaIndianRupeeSign } from "react-icons/fa6";
-import { Navigation } from 'swiper/modules';
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -9,6 +9,7 @@ import 'swiper/css/navigation';
 import { IoBed } from "react-icons/io5";
 import { MdSpaceDashboard } from "react-icons/md";
 import { FaMapLocationDot, FaBath } from "react-icons/fa6";
+import { FaRupeeSign } from 'react-icons/fa';
 
 interface Card {
     card: CardProp;
@@ -29,7 +30,7 @@ const PropertyCard = ({ card }: Card) => {
         <div className="property-card-box w-100 h-100">
 
             <Swiper
-                modules={[Navigation]}
+                modules={[Pagination, Navigation]}
                 spaceBetween={50}
                 slidesPerView={1}
                 navigation={{
@@ -37,34 +38,43 @@ const PropertyCard = ({ card }: Card) => {
                     prevEl: ".property-arrow-prev",
                     disabledClass: "swiper-button-disabled"
                 }}
+                pagination={{
+                    el: ".property-pagination",
+                    type: 'fraction',
+                }}
+                className="position-relative"
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
-                {imgUrl.map((item, index) =>
-                    <SwiperSlide key={index} className="property-card-img">
+                {imgUrl.map((item) =>
+                    <SwiperSlide key={item} className="property-card-img">
                         <img src={item} alt="" />
-                        <span className="property-card-count">{`${index + 1} / ${imgUrl.length}`}</span>
                     </SwiperSlide>
                 )}
+
+                <div className="property-info-row d-flex align-items-center justify-content-between">
+                    <div className="property-price d-flex align-items-center justify-content-center gap-2"><FaRupeeSign />{price * 30}</div>
+                    <div className="property-list-arrow-container d-flex align-items-center justify-content-between gap-3">
+                        <button
+                            className="property-arrow-prev arrow-button-box d-flex align-items-center justify-content-center">
+                            <FaChevronLeft />
+                        </button>
+                        <div className="property-pagination"></div>
+                        <button
+                            className="property-arrow-next arrow-button-box d-flex align-items-center justify-content-center">
+                            <FaChevronRight />
+                        </button>
+                    </div>
+                </div>
             </Swiper>
 
             <div className="property-card-content">
                 <div className="pcc-inside">
                     <div className="pcc-row d-flex flex-wrap align-items-center justify-content-between">
-                        <div className="property-list-arrow-container d-flex justify-content-between">
-                            <button
-                                className="property-arrow-prev swiper-arrow-prev arrow-button-box d-flex align-items-center justify-content-center">
-                                <FaChevronLeft />
-                            </button>
-                            <button
-                                className="property-arrow-next swiper-arrow-next arrow-button-box d-flex align-items-center justify-content-center">
-                                <FaChevronRight />
-                            </button>
-                        </div>
-                        <span className="d-flex align-items-center justify-content-center"><FaIndianRupeeSign />{price * 30}</span>
-                        <a href="#!" className="btn btn-dark">Book</a>
+                        <h5>{title}</h5>
+                        <a href="#!" className="btn btn-light">Book</a>
                     </div>
-                    <h5>{title}</h5>
+
                     <div className="property-card-row d-flex flex-wrap rounded-2 overflow-hidden">
                         <div className="property-card-col d-flex align-items-center justify-content-between w-100 "><FaMapLocationDot /><address>123 Main Street, <br /> Anytown, USA 12345</address></div>
                         <div className="property-card-col d-flex align-items-center justify-content-between"><IoBed /> 3</div>
