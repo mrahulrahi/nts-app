@@ -1,6 +1,6 @@
 'use client';
 import './PropertyCard.css'
-import { FaIndianRupeeSign } from "react-icons/fa6";
+import { FaChevronLeft, FaChevronRight, FaIndianRupeeSign } from "react-icons/fa6";
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -31,7 +31,12 @@ const PropertyCard = ({ card }: Card) => {
             <Swiper
                 modules={[Navigation]}
                 spaceBetween={50}
-                slidesPerView={1} navigation
+                slidesPerView={1}
+                navigation={{
+                    nextEl: ".property-arrow-next",
+                    prevEl: ".property-arrow-prev",
+                    disabledClass: "swiper-button-disabled"
+                }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
@@ -46,14 +51,24 @@ const PropertyCard = ({ card }: Card) => {
             <div className="property-card-content">
                 <div className="pcc-inside">
                     <div className="pcc-row d-flex flex-wrap align-items-center justify-content-between">
+                        <div className="property-list-arrow-container d-flex justify-content-between">
+                            <button
+                                className="property-arrow-prev swiper-arrow-prev arrow-button-box d-flex align-items-center justify-content-center">
+                                <FaChevronLeft />
+                            </button>
+                            <button
+                                className="property-arrow-next swiper-arrow-next arrow-button-box d-flex align-items-center justify-content-center">
+                                <FaChevronRight />
+                            </button>
+                        </div>
                         <span className="d-flex align-items-center justify-content-center"><FaIndianRupeeSign />{price * 30}</span>
                         <a href="#!" className="btn btn-dark">Book</a>
                     </div>
                     <h5>{title}</h5>
                     <div className="property-card-row d-flex flex-wrap rounded-2 overflow-hidden">
-                        <div className="property-card-col d-flex align-items-center justify-content-between w-100 "><FaMapLocationDot  /><address>123 Main Street, <br /> Anytown, USA 12345</address></div>
+                        <div className="property-card-col d-flex align-items-center justify-content-between w-100 "><FaMapLocationDot /><address>123 Main Street, <br /> Anytown, USA 12345</address></div>
                         <div className="property-card-col d-flex align-items-center justify-content-between"><IoBed /> 3</div>
-                        <div className="property-card-col d-flex align-items-center justify-content-between"><FaBath  />2</div>
+                        <div className="property-card-col d-flex align-items-center justify-content-between"><FaBath />2</div>
                         <div className="property-card-col d-flex align-items-center justify-content-between"><MdSpaceDashboard />2,000sqft</div>
                     </div>
                     <p>{body}</p>
