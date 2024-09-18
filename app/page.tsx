@@ -178,7 +178,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="content-container bg-pattern-dark d-none">
+      <div className="content-container bg-pattern-dark overflow-hidden">
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
@@ -201,7 +201,7 @@ export default function Home() {
                 spaceBetween={30}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                className="blog-card-list d-flex flex-wrap"
+                className="blog-card-list d-flex flex-wrap overflow-visible"
               >
 
                 {blogCards.map((card) =>
@@ -214,7 +214,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="content-container full-width-cta-container bg-pattern-dark">
+      <div className="content-container full-width-cta-container bg-pattern-light ">
         <div className="container">
           <div className="row">
             <div className="col-lg-10 mx-auto">
