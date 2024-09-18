@@ -3,6 +3,7 @@ import Link from 'next/link';
 import './Header.css';
 import React, { useState, useEffect, useRef } from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { CgProfile } from 'react-icons/cg';
 
 const Header = () => {
     const [scrollClass, setScrollClass] = useState('');
@@ -47,25 +48,14 @@ const Header = () => {
 
     return (
         <header id="header">
-            <nav className="navbar navbar-expand-lg">
+            <nav className="navbar navbar-expand-xl">
                 <div className="container">
                     <div className="nav-inside d-flex flex-wrap align-items-center justify-content-between">
-                        <Link className="navbar-brand" href="/"><img src="images/logo.png" alt="logo" /></Link>
-                        <Link className="navbar-title" href="/">IMAGINE GROUP</Link>
-                        <button className={`navbar-toggler ${isOpen ? '' : 'collapsed'}`} type="button" data-bs-toggle="collapse"
-                            data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded={isOpen}
-                            aria-label="Toggle navigation" onClick={handleButtonClick}>
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
+                        <Link className="navbar-logo-area d-flex align-items-center" href="/">
+                            <div className="navbar-logo"><img src="images/logo.png" alt="logo" /></div>
+                            <div className="navbar-title">IMAGINE <br /> GROUP</div>
+                        </Link>
 
-                        <div className="header-right d-none d-lg-block">
-                            <ul className="social-links d-flex justify-content-center">
-                                <li><Link href="https://facebook.com/imaginegindia" onClick={handleLinkClick}><FaFacebookF /></Link></li>
-                                <li><Link href="https://twitter.com/imaginegroupig" onClick={handleLinkClick}><FaTwitter /></Link></li>
-                                <li><Link href="https://instagram.com/imaginegroupig" onClick={handleLinkClick}><FaInstagram /></Link></li>
-                                <li><Link href="https://wa.me/+918881888339" onClick={handleLinkClick}><FaWhatsapp /></Link></li>
-                            </ul>
-                        </div>
 
                         <div className={`collapse navbar-collapse justify-content-center ${isOpen ? 'show' : ''}`} id="mainNav" ref={navbarRef}>
                             <div className="navbar-inside">
@@ -75,19 +65,34 @@ const Header = () => {
                                     <li className="nav-item"><Link className="nav-link" href="/tour-travels" onClick={handleLinkClick}>Tour & Travels</Link></li>
                                     <li className="nav-item"><Link className="nav-link" href="/properties" onClick={handleLinkClick}>Properties</Link></li>
                                     <li className="nav-item"><Link className="nav-link" href="/contact" onClick={handleLinkClick}>Contact</Link></li>
-                                    <li className="header-btn d-flex align-items-center">
-                                        <Link href="/login" className="btn btn-default" onClick={handleLinkClick}>Login</Link>
-                                    </li>
                                 </ul>
-                                <div className="navbar-bottom mt-auto d-lg-none">
-                                    <ul className="social-links d-flex justify-content-center">
-                                        <li><Link href="https://facebook.com/imaginegindia" onClick={handleLinkClick}><FaFacebookF /></Link></li>
-                                        <li><Link href="https://twitter.com/imaginegroupig" onClick={handleLinkClick}><FaTwitter /></Link></li>
-                                        <li><Link href="https://instagram.com/imaginegroupig" onClick={handleLinkClick}><FaInstagram /></Link></li>
-                                        <li><Link href="https://wa.me/+918881888339" onClick={handleLinkClick}><FaWhatsapp /></Link></li>
-                                    </ul>
-                                </div>
                             </div>
+
+                            <div className="navbar-bottom mt-auto d-xl-none">
+                                <ul className="social-links d-flex justify-content-center">
+                                    <li><Link href="https://facebook.com/imaginegindia" onClick={handleLinkClick}><FaFacebookF /></Link></li>
+                                    <li><Link href="https://twitter.com/imaginegroupig" onClick={handleLinkClick}><FaTwitter /></Link></li>
+                                    <li><Link href="https://instagram.com/imaginegroupig" onClick={handleLinkClick}><FaInstagram /></Link></li>
+                                    <li><Link href="https://wa.me/+918881888339" onClick={handleLinkClick}><FaWhatsapp /></Link></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="header-right d-flex align-items-center">
+                            <ul className="social-links d-none d-xl-flex justify-content-center">
+                                <li><Link href="https://facebook.com/imaginegindia" onClick={handleLinkClick}><FaFacebookF /></Link></li>
+                                <li><Link href="https://twitter.com/imaginegroupig" onClick={handleLinkClick}><FaTwitter /></Link></li>
+                                <li><Link href="https://instagram.com/imaginegroupig" onClick={handleLinkClick}><FaInstagram /></Link></li>
+                                <li><Link href="https://wa.me/+918881888339" onClick={handleLinkClick}><FaWhatsapp /></Link></li>
+                            </ul>
+
+                            <Link href="/login" className="header-btn d-flex align-items-center justify-content-center" onClick={handleLinkClick}><CgProfile /></Link>
+
+                            <button className={`navbar-toggler ${isOpen ? '' : 'collapsed'}`} type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded={isOpen}
+                                aria-label="Toggle navigation" onClick={handleButtonClick}>
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
