@@ -1,15 +1,15 @@
 'use client'
-import BlogCard from "./components/BlogCard/BlogCard";
-import Hero from "./components/Hero/Hero";
-import ImageTextBlock from './components/ImageTextBlock/ImageTextBlock'
-import WorkCard from './components/WorkCard/WorkCard'
-import ServiceBlock from "./components/ServiceBlock/ServiceBlock";
-import TestimonialCard from "./components/TestimonialCard/TestimonialCard";
+import BlogCard from "../components/BlogCard/BlogCard";
+import Hero from "../components/Hero/Hero";
+import ImageTextBlock from '../components/ImageTextBlock/ImageTextBlock'
+import WorkCard from '../components/WorkCard/WorkCard'
+import ServiceBlock from "../components/ServiceBlock/ServiceBlock";
+import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
+import CTABlock from "../components/CTABlock/CTABlock";
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import CTABlock from "./components/CTABlock/CTABlock";
 
 export default function Home() {
   const testimonialCards = [

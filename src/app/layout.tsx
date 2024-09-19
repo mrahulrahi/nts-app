@@ -5,8 +5,8 @@ import ImportBsJS from "./importBsJS";
 import ImportAOS from './importAOS';
 import { Alkatra, Montserrat } from 'next/font/google';
 import "./style.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 const montserrat = Montserrat({
   weight: ['300', '400', '500', '600', '700'],

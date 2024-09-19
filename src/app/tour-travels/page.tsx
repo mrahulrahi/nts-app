@@ -1,13 +1,13 @@
 'use client'
 import { useState } from 'react';
 import './TourTravels.css';
-import Banner from "../components/Banner/Banner";
-import ServiceCard from '../components/ServiceCard/ServiceCard';
-import FeatureCard from '../components/FeatureCard/FeatureCard';
-import TypeCard from '../components/TypeCard/TypeCard';
-import CarCard from '../components/CarCard/CarCard';
-import ImageTextBlock from '../components/ImageTextBlock/ImageTextBlock';
-import CTABlock from '../components/CTABlock/CTABlock';
+import Banner from "../../components/Banner/Banner";
+import ServiceCard from '../../components/ServiceCard/ServiceCard';
+import FeatureCard from '../../components/FeatureCard/FeatureCard';
+import TypeCard from '../../components/TypeCard/TypeCard';
+import CarCard from '../../components/CarCard/CarCard';
+import ImageTextBlock from '../../components/ImageTextBlock/ImageTextBlock';
+import CTABlock from '../../components/CTABlock/CTABlock';
 
 const TourTravelsPage = () => {
   const [selectedCarType, setSelectedCarType] = useState<string | null>(null);

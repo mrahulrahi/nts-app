@@ -1,9 +1,9 @@
 import './About.css'
-import Banner from '../components/Banner/Banner'
-import ImageTextBlock from '../components/ImageTextBlock/ImageTextBlock'
-import TeamCard from '../components/TeamCard/TeamCard'
-import TextCard from '../components/TextCard/TextCard'
-import CareerForm from '../components/CareerForm/CareerForm'
+import Banner from '../../components/Banner/Banner'
+import ImageTextBlock from '../../components/ImageTextBlock/ImageTextBlock'
+import TeamCard from '../../components/TeamCard/TeamCard'
+import TextCard from '../../components/TextCard/TextCard'
+import CareerForm from '../../components/CareerForm/CareerForm'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
