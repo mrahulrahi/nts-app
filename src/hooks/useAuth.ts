@@ -1,50 +1,51 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-// Define the useAuth hook with TypeScript
 const useAuth = () => {
     const router = useRouter();
     const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
-    const [userRole, setUserRole] = useState<'admin' | 'user' | null>(null); // Track user role
+    const [user, setUser] = useState<{ id: string; role: string } | null>(null);
+
+    // Memoize the users array
+    const users = useMemo(() => [
+        { id: 'admin', email: 'admin@ig.com', password: 'adminPwd123', role: 'admin', token: 'adminToken123' },
+        { id: 'user1', email: 'user1@ig.com', password: 'userPwd123', role: 'user', token: 'user1Token123' },
+        { id: 'user2', email: 'user2@ig.com', password: 'userPwd456', role: 'user', token: 'user2Token456' },
+        { id: 'user3', email: 'user3@ig.com', password: 'userPwd789', role: 'user', token: 'user3Token789' },
+    ], []); // Empty dependency array ensures it only runs once
 
     useEffect(() => {
-        // Check authentication status on mount
         const token = localStorage.getItem('authToken');
-        if (token) {
-            setIsAuthenticated(true);
+        const userId = localStorage.getItem('userId');
+
+        if (token && userId) {
+            const authenticatedUser = users.find(user => user.id === userId);
+            if (authenticatedUser) {
+                setIsAuthenticated(true);
+                setUser({ id: authenticatedUser.id, role: authenticatedUser.role });
+            } else {
+                setIsAuthenticated(false);
+                setUser(null);
+            }
         } else {
             setIsAuthenticated(false);
-            router.push('/login');
+            setUser(null);
         }
-    }, [router]);
+    }, [users, router]); // `users` is now memoized, so it won't change on re-render
 
     const login = (email: string, password: string) => {
-        // Define your login data
-        const adminData = {
-            email: 'admin@example.com',
-            password: 'adminPassword123',
-        };
-
-        const userData = {
-            email: 'user@example.com',
-            password: 'userPassword123',
-        };
-
-        if (email === adminData.email && password === adminData.password) {
-            // Admin login
-            const token = 'adminToken123';
-            localStorage.setItem('authToken', token);
+        const authenticatedUser = users.find(user => user.email === email && user.password === password);
+        if (authenticatedUser) {
+            localStorage.setItem('authToken', authenticatedUser.token);
+            localStorage.setItem('userId', authenticatedUser.id);
             setIsAuthenticated(true);
-            setUserRole('admin');
-            router.push('/admin'); // Redirect to admin page
-        } else if (email === userData.email && password === userData.password) {
-            // User login
-            const token = 'userToken123';
-            localStorage.setItem('authToken', token);
-            setIsAuthenticated(true);
-            setUserRole('user');
-            router.push('/user'); // Redirect to user page
+            setUser({ id: authenticatedUser.id, role: authenticatedUser.role });
+            if (authenticatedUser.role === 'admin') {
+                router.push('/admin'); // Redirect admin to /admin
+            } else {
+                router.push(`/user/${authenticatedUser.id}`); // Redirect user to their profile
+            }
         } else {
             alert('Invalid email or password');
         }
@@ -52,12 +53,13 @@ const useAuth = () => {
 
     const logout = () => {
         localStorage.removeItem('authToken');
+        localStorage.removeItem('userId');
         setIsAuthenticated(false);
-        setUserRole(null); // Reset user role
-        router.push('/login'); // Redirect to login page
+        setUser(null);
+        router.push('/login');
     };
 
-    return { isAuthenticated, userRole, login, logout };
+    return { isAuthenticated, user, login, logout };
 };
 
 export default useAuth;
