@@ -33,7 +33,7 @@ export default function UserProfile({ user }: UserProfileProps) {
 
     return (
         <div style={{ padding: '20px', fontFamily: 'Arial' }}>
-            <h1>{user.name}'s Profile</h1>
+            <h1>{user.name}&apos;s Profile</h1>
             <p>
                 <strong>Name:</strong> {user.name}
             </p>
