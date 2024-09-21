@@ -1,7 +1,8 @@
 'use client'; // Required for client-side rendering
 import { useState } from 'react';
 import Link from 'next/link';
-import '../login/Login.css';
+import Image from 'next/image';
+import '../signin/Signin.css';
 import type { Metadata } from 'next';
 import { IoAt, IoLockClosedOutline, IoPersonOutline } from 'react-icons/io5';
 
@@ -50,7 +51,7 @@ const SignupPage = () => {
     <>
       <div className="login-register-container content-container position-relative d-flex align-items-center">
         <div className="login-register-bg">
-          <img src="images/swiper-img-1.jpg" alt="background" />
+          <Image src="images/swiper-img-1.jpg" alt="background" fill/>
         </div>
         <div className="container position-relative z-3">
           <div className="row" data-aos="fade-up">
@@ -59,7 +60,7 @@ const SignupPage = () => {
                 <div className="login-register-head d-flex align-items-end justify-content-between mb-4">
                   <h3>Register</h3>
                   <div className="img-container flex-shrink-0">
-                    <img src="images/user.svg" alt="profile" className="profile" />
+                    <Image src="images/user.svg" alt="profile" className="profile" fill/>
                   </div>
                 </div>
 

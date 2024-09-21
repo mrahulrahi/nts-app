@@ -1,4 +1,5 @@
 import './Banner.css'
+import Image from 'next/image';
 
 interface Banner{
     heading: string;
@@ -10,7 +11,7 @@ const Banner = ({heading, subheading} : Banner) => {
     return (
         <>
             <div className="banner-container position-relative" >
-                <div className="banner-bg"><img src="images/swiper-img-1.jpg" alt="banner bg" /></div>
+                <div className="banner-bg"><Image src="/images/swiper-img-1.jpg" alt="banner bg" fill/></div>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9">

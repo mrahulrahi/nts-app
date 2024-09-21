@@ -1,56 +1,29 @@
-.admin-dashboard {
-    display: flex;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-}
+    .admin-dashboard {
+        min-height: 100vh;
+        background-color: #f8f9fa;
+    }
 
-.sidebar {
-    width: 250px;
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    position: fixed;
-    height: 100%;
-    overflow-y: auto;
-    padding-top: 20px;
-}
+    .card {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        transition: box-shadow 0.3s ease-in-out;
+    }
 
-.sidebar-header {
-    padding: 20px;
-    text-align: center;
-    background-color: #34495e;
-}
+    .card:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
 
-.sidebar-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+    .navbar-brand {
+        font-weight: bold;
+    }
 
-.sidebar-nav ul li {
-    padding: 15px 20px;
-}
+    .table {
+        font-size: 0.9rem;
+    }
 
-.sidebar-nav ul li a {
-    color: #ecf0f1;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
+    .badge {
+        font-size: 0.8rem;
+    }
 
-.sidebar-nav ul li a:hover {
-    background-color: #2980b9;
-}
-
-.main-content {
-    margin-left: 250px;
-    padding: 20px;
-    flex-grow: 1;
-    background-color: #ecf0f1;
-}
-
-.top-nav {
-    background-color: #2980b9;
-    color: #ecf0f1;
-    padding: 15px;
-    text-align: center;
-}
-
+    .btn-lg {
+        font-size: 1rem;
+    }

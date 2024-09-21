@@ -1,4 +1,5 @@
 import './CarCard.css'
+import Image from 'next/image';
 import { FaCar, FaUsers, FaSnowflake } from "react-icons/fa";
 
 interface Card {
@@ -19,7 +20,7 @@ const CarCard = ({ card }: Card) => {
     return (
         <div className="car-card-box w-100 h-100">
             <div className="car-card-img-box">
-                <div className="car-card-img overflow-hidden"><img src={imgUrl} alt={`${title} image`} /></div>
+                <div className="car-card-img overflow-hidden"><Image src={imgUrl} alt={`${title} image`} fill/></div>
             </div>
 
             <div className="car-card-row d-flex">

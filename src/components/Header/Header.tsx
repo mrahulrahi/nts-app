@@ -102,7 +102,7 @@ const Header = () => {
                                         <li><Link href="https://wa.me/+918881888339" onClick={handleLinkClick}><FaWhatsapp /></Link></li>
                                     </ul>
 
-                                    <Link href="/login" className="header-btn d-flex align-items-center justify-content-center" onClick={handleLinkClick}><CgProfile /></Link>
+                                    <Link href="/signin" className="header-btn d-flex align-items-center justify-content-center" onClick={handleLinkClick}><CgProfile /></Link>
 
                                     <button className={`navbar-toggler ${isOpen ? '' : 'collapsed'}`} type="button" data-bs-toggle="collapse"
                                         data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded={isOpen}

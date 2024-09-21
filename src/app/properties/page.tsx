@@ -16,36 +16,36 @@ export const metadata: Metadata = {
 const PropertiesPage = () => {
 
     const serviceCards = [
-        { imgUrl: "images/house.png", title: "Rent House" },
-        { imgUrl: "images/buy-house.png", title: "Buy House" },
-        { imgUrl: "images/sell-house.png", title: "Sell House" },
-        { imgUrl: "images/buy-plot.png", title: "Buy Plot" },
-        { imgUrl: "images/sell-plot.png", title: "Sell Plot" },
-        { imgUrl: "images/house.png", title: "Rent Commercial" },
+        { imgUrl: "/images/house.png", title: "Rent House" },
+        { imgUrl: "/images/buy-house.png", title: "Buy House" },
+        { imgUrl: "/images/sell-house.png", title: "Sell House" },
+        { imgUrl: "/images/buy-plot.png", title: "Buy Plot" },
+        { imgUrl: "/images/sell-plot.png", title: "Sell Plot" },
+        { imgUrl: "/images/house.png", title: "Rent Commercial" },
     ]
 
     const featureCards = [
-        { imgUrl: "images/whyus-1.png", title: "Reasonable Prices" },
-        { imgUrl: "images/whyus-2.png", title: "Easy loans on property" },
-        { imgUrl: "images/whyus-3.png", title: "Simple & Convenient Booking" },
-        { imgUrl: "images/whyus-4.png", title: "Visit Pickup" },
-        { imgUrl: "images/whyus-5.png", title: "Experienced & Polite Client" },
-        { imgUrl: "images/whyus-6.png", title: "No Hidden Charges" },
+        { imgUrl: "/images/whyus-1.png", title: "Reasonable Prices" },
+        { imgUrl: "/images/whyus-2.png", title: "Easy loans on property" },
+        { imgUrl: "/images/whyus-3.png", title: "Simple & Convenient Booking" },
+        { imgUrl: "/images/whyus-4.png", title: "Visit Pickup" },
+        { imgUrl: "/images/whyus-5.png", title: "Experienced & Polite Client" },
+        { imgUrl: "/images/whyus-6.png", title: "No Hidden Charges" },
     ]
 
     const typeCards = [
-        { imgUrl: "images/house.png", title: "Villa" },
-        { imgUrl: "images/buy-house.png", title: "Commercial" },
-        { imgUrl: "images/sell-house.png", title: "House" },
-        { imgUrl: "images/buy-plot.png", title: "Flat" },
-        { imgUrl: "images/sell-plot.png", title: "Plot" },
+        { imgUrl: "/images/house.png", title: "Villa" },
+        { imgUrl: "/images/buy-house.png", title: "Commercial" },
+        { imgUrl: "/images/sell-house.png", title: "House" },
+        { imgUrl: "/images/buy-plot.png", title: "Flat" },
+        { imgUrl: "/images/sell-plot.png", title: "Plot" },
     ]
 
     const propertyCards = [
-        { imgUrl: ["images/house-img-1.jpg", "images/house-img-2.jpg", "images/house-img-3.jpg", "images/house-img-4.jpg", "images/house-img-5.jpg"], title: "Property 1", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 60000 },
-        { imgUrl: ["images/house-img-1.jpg", "images/house-img-2.jpg", "images/house-img-3.jpg", "images/house-img-4.jpg", "images/house-img-5.jpg"], title: "Property 2", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 70000 },
-        { imgUrl: ["images/house-img-1.jpg", "images/house-img-2.jpg", "images/house-img-3.jpg", "images/house-img-4.jpg", "images/house-img-5.jpg"], title: "Property 3", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 80000 },
-        { imgUrl: ["images/house-img-1.jpg", "images/house-img-2.jpg", "images/house-img-3.jpg", "images/house-img-4.jpg", "images/house-img-5.jpg"], title: "Property 4", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 90000 },
+        { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 1", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 60000 },
+        { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 2", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 70000 },
+        { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 3", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 80000 },
+        { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 4", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 90000 },
     ]
 
     const ctaData = {
@@ -128,7 +128,7 @@ const PropertiesPage = () => {
                 <div className="container">
                     <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
-                            <ImageTextBlock imgUrl='images/service-img-2.jpg'>
+                            <ImageTextBlock imgUrl='/images/service-img-2.jpg'>
                                 <h4>Property</h4>
                                 <h5>Buy & Sell Property</h5>
                                 <p>Find your ideal property with ease through Imagine Group. Our expert team offers a curated selection of homes and investment opportunities, guiding you to make informed decisions and secure the perfect space for your needs.</p>

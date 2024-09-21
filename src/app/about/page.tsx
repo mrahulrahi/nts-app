@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
     const teamCards = [
-        { imgUrl: "images/team-img-1.jpg", name: "Anuj Maurya", jobPost: "Founder", Links: { facebook: "https://www.facebook.com/anujmauryaa", instagram: "https://www.instagram.com/anujmauryaa"}},
-        { imgUrl: "images/team-img-2.png", name: "Kalpana Maurya", jobPost: "CEO" },
-        { imgUrl: "images/team-img-3.png", name: "Komal Rathor", jobPost: "Chief Manager" },
-        { imgUrl: "images/team-img-4.png", name: "Yogendra Singh", jobPost: "CFO" },
-        { imgUrl: "images/team-img-5.jpg", name: "Rahul Maurya", jobPost: "CTO", Links: { linkedin: "https://www.linkedin.com/in/mrahulrahi/" } },
-        { imgUrl: "images/team-img-6.png", name: "Priyanka Tiwari", jobPost: "Assistant" },
+        { imgUrl: "/images/team-img-1.jpg", name: "Anuj Maurya", jobPost: "Founder", Links: { facebook: "https://www.facebook.com/anujmauryaa", instagram: "https://www.instagram.com/anujmauryaa"}},
+        { imgUrl: "/images/team-img-2.png", name: "Kalpana Maurya", jobPost: "CEO" },
+        { imgUrl: "/images/team-img-3.png", name: "Komal Rathor", jobPost: "Chief Manager" },
+        { imgUrl: "/images/team-img-4.png", name: "Yogendra Singh", jobPost: "CFO" },
+        { imgUrl: "/images/team-img-5.jpg", name: "Rahul Maurya", jobPost: "CTO", Links: { linkedin: "https://www.linkedin.com/in/mrahulrahi/" } },
+        { imgUrl: "/images/team-img-6.png", name: "Priyanka Tiwari", jobPost: "Assistant" },
     ]
 
     return (

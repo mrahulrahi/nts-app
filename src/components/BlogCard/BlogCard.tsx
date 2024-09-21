@@ -1,4 +1,5 @@
 import './BlogCard.css'
+import Image from 'next/image';
 
 interface Card {
     card: CardProp;
@@ -16,7 +17,7 @@ const BlogCard = ({ card }: Card) => {
     return (
         <div className="blog-card-box d-flex flex-column">
             <div className="blog-card-img overflow-hidden">
-                <img src={imgUrl} alt={`${title} image`} />
+                <Image src={imgUrl} alt={`${title} image`} fill/>
             </div>
             <div className="blog-card-text">
                 <h6>12, January</h6>

@@ -1,5 +1,6 @@
 'use client'
 import './Hero.css'
+import Image from 'next/image';
 import { Navigation, Pagination, EffectFade, Autoplay, Thumbs } from 'swiper/modules';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/css';
@@ -34,31 +35,31 @@ const Hero = () => {
 
                         <SwiperSlide>
                             <div className="hero-bg">
-                                <img src="images/swiper-img-1.jpg" alt="" />
+                                <Image src="/images/swiper-img-1.jpg" alt="" fill />
                             </div>
                         </SwiperSlide>
 
                         <SwiperSlide>
                             <div className="hero-bg">
-                                <img src="images/swiper-img-2.jpeg" alt="" />
+                                <Image src="/images/swiper-img-2.jpeg" alt="" fill />
                             </div>
                         </SwiperSlide>
 
                         <SwiperSlide>
                             <div className="hero-bg">
-                                <img src="images/swiper-img-3.jpeg" alt="" />
+                                <Image src="/images/swiper-img-3.jpeg" alt="" fill />
                             </div>
                         </SwiperSlide>
 
                         <SwiperSlide>
                             <div className="hero-bg">
-                                <img src="images/swiper-img-4.jpeg" alt="" />
+                                <Image src="/images/swiper-img-4.jpeg" alt="" fill />
                             </div>
                         </SwiperSlide>
 
                         <SwiperSlide>
                             <div className="hero-bg">
-                                <img src="images/swiper-img-5.jpeg" alt="" />
+                                <Image src="/images/swiper-img-5.jpeg" alt="" fill />
                             </div>
                         </SwiperSlide>
                     </Swiper>

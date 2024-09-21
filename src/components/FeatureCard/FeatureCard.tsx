@@ -1,4 +1,5 @@
 import './FeatureCard.css'
+import Image from 'next/image';
 
 interface Card {
     card: CardProp;
@@ -15,7 +16,7 @@ const FeatureCard = ({ card }: Card) => {
     return (
         <div className="feature-card-box w-100 h-100 d-flex align-items-center justify-content-center gap-4">
             <div className="feature-card-img d-flex align-items-center justify-content-center">
-                <img src={imgUrl} alt={`${title} image`} />
+                <Image src={imgUrl} alt={`${title} image`} fill />
             </div>
             <div className="feature-card-title text-center d-flex align-items-center justify-content-center">{title}</div>
         </div>

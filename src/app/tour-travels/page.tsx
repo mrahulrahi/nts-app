@@ -13,41 +13,41 @@ const TourTravelsPage = () => {
   const [selectedCarType, setSelectedCarType] = useState<string | null>(null);
 
   const serviceCards = [
-    { imgUrl: "images/local.png", title: "Local Rentals" },
-    { imgUrl: "images/oneway.png", title: "OneWay Drops" },
-    { imgUrl: "images/twoway.png", title: "Round Trips" },
-    { imgUrl: "images/airport.png", title: "Airport Transfers" },
-    { imgUrl: "images/railway-station.png", title: "Railway Station Transfers" },
-    { imgUrl: "images/bus-stand.png", title: "Bus Stand Transfers" },
-    { imgUrl: "images/event.png", title: "Event Booking" },
-    { imgUrl: "images/office.png", title: "For Office Use" },
+    { imgUrl: "/images/local.png", title: "Local Rentals" },
+    { imgUrl: "/images/oneway.png", title: "OneWay Drops" },
+    { imgUrl: "/images/twoway.png", title: "Round Trips" },
+    { imgUrl: "/images/airport.png", title: "Airport Transfers" },
+    { imgUrl: "/images/railway-station.png", title: "Railway Station Transfers" },
+    { imgUrl: "/images/bus-stand.png", title: "Bus Stand Transfers" },
+    { imgUrl: "/images/event.png", title: "Event Booking" },
+    { imgUrl: "/images/office.png", title: "For Office Use" },
   ];
 
   const featureCards = [
-    { imgUrl: "images/whyus-1.png", title: "Reasonable Prices" },
-    { imgUrl: "images/whyus-2.png", title: "Clean & Comfortable Cabs" },
-    { imgUrl: "images/whyus-3.png", title: "Simple & Convenient Booking" },
-    { imgUrl: "images/whyus-4.png", title: "Doorstep Pickup" },
-    { imgUrl: "images/whyus-5.png", title: "Experienced & Polite Drivers" },
-    { imgUrl: "images/whyus-6.png", title: "No Hidden Charges" },
+    { imgUrl: "/images/whyus-1.png", title: "Reasonable Prices" },
+    { imgUrl: "/images/whyus-2.png", title: "Clean & Comfortable Cabs" },
+    { imgUrl: "/images/whyus-3.png", title: "Simple & Convenient Booking" },
+    { imgUrl: "/images/whyus-4.png", title: "Doorstep Pickup" },
+    { imgUrl: "/images/whyus-5.png", title: "Experienced & Polite Drivers" },
+    { imgUrl: "/images/whyus-6.png", title: "No Hidden Charges" },
   ];
 
   const typeCards = [
-    { imgUrl: "images/luxury.png", title: "Luxury" },
-    { imgUrl: "images/mpv.png", title: "MPV" },
-    { imgUrl: "images/suv.png", title: "SUV" },
-    { imgUrl: "images/sedan.png", title: "Sedan" },
-    { imgUrl: "images/hatchback.png", title: "Hatchback" },
+    { imgUrl: "/images/luxury.png", title: "Luxury" },
+    { imgUrl: "/images/mpv.png", title: "MPV" },
+    { imgUrl: "/images/suv.png", title: "SUV" },
+    { imgUrl: "/images/sedan.png", title: "Sedan" },
+    { imgUrl: "/images/hatchback.png", title: "Hatchback" },
   ];
 
   const carCards = [
-    { imgUrl: "images/xuv300.webp", title: "XUV 300", type: "SUV", capacity: "4 + 1", airCondition: "AC" },
-    { imgUrl: "images/innova.webp", title: "Innova", type: "MPV", capacity: "6 + 1", airCondition: "AC" },
-    { imgUrl: "images/dzire.webp", title: "Dzire", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
-    { imgUrl: "images/fortuner.webp", title: "Fortuner", type: "SUV", capacity: "6 + 1", airCondition: "AC" },
-    { imgUrl: "images/zest.avif", title: "Zest", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
-    { imgUrl: "images/indigo.webp", title: "Indigo", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
-    { imgUrl: "images/ertiga.webp", title: "Ertiga", type: "MPV", capacity: "6 + 1", airCondition: "AC" },
+    { imgUrl: "/images/xuv300.webp", title: "XUV 300", type: "SUV", capacity: "4 + 1", airCondition: "AC" },
+    { imgUrl: "/images/innova.webp", title: "Innova", type: "MPV", capacity: "6 + 1", airCondition: "AC" },
+    { imgUrl: "/images/dzire.webp", title: "Dzire", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
+    { imgUrl: "/images/fortuner.webp", title: "Fortuner", type: "SUV", capacity: "6 + 1", airCondition: "AC" },
+    { imgUrl: "/images/zest.avif", title: "Zest", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
+    { imgUrl: "/images/indigo.webp", title: "Indigo", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
+    { imgUrl: "/images/ertiga.webp", title: "Ertiga", type: "MPV", capacity: "6 + 1", airCondition: "AC" },
   ];
 
   const ctaData = {
@@ -142,7 +142,7 @@ const TourTravelsPage = () => {
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
-              <ImageTextBlock imgUrl='images/service-img-1.jpg'>
+              <ImageTextBlock imgUrl='/images/service-img-1.jpg'>
                 <h4>Tour & Travels</h4>
                 <h5>Book Your Car</h5>
                 <p>Discover the world with Imagine Group &apos s bespoke tour and travel services. We craft personalized itineraries that turn every journey into an unforgettable adventure, ensuring a seamless experience from start to finish.</p>

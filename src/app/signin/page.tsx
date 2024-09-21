@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
-import './Login.css';
+import './Signin.css';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import useAuth from '../../hooks/useAuth';
 import { IoAt, IoLockClosedOutline } from 'react-icons/io5';
@@ -38,7 +39,7 @@ const LoginPage = () => {
     return (
         <div className="login-register-container content-container position-relative d-flex align-items-center">
             <div className="login-register-bg">
-                <img src="images/swiper-img-1.jpg" alt="" />
+                <Image src="images/swiper-img-1.jpg" alt="" fill />
             </div>
             <div className="container position-relative z-3">
                 <div className="row" data-aos="fade-up">
@@ -47,7 +48,7 @@ const LoginPage = () => {
                             <div className="login-register-head d-flex align-items-end justify-content-between mb-4">
                                 <h3>Login</h3>
                                 <div className="img-container flex-shrink-0">
-                                    <img src="images/user.svg" alt="profile" className="profile" />
+                                    <Image src="images/user.svg" alt="profile" className="profile" fill />
                                 </div>
                             </div>
 
