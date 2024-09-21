@@ -1,7 +1,8 @@
 'use client';
-import Link from 'next/link';
-import './Header.css';
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import './Header.css';
 import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { CgProfile } from 'react-icons/cg';
 import { usePathname } from 'next/navigation';
@@ -64,7 +65,7 @@ const Header = () => {
                 <div className="container">
                     <div className="nav-inside d-flex flex-wrap align-items-center justify-content-between">
                         <Link className="navbar-logo-area d-flex align-items-center" href="/">
-                            <div className="navbar-logo"><img src="images/logo.png" alt="logo" /></div>
+                            <div className="navbar-logo"><Image src="/images/logo.png" alt="logo" width={100} height={100} quality={100} /></div>
                             <div className="navbar-title">IMAGINE <br /> GROUP</div>
                         </Link>
 

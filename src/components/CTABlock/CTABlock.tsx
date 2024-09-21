@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import './CTABlock.css';
 
@@ -48,12 +47,12 @@ const CTABlock: React.FC<CTABlockProps> = ({ card }) => {
                         <div className="col-lg-6 fw-cta-item">
                             <div className="full-width-cta-box w-100 h-100 d-flex">
                                 <div className="full-width-cta-icon has-img-contain d-none d-md-block">
-                                    <Image src="/images/cta-icon-1.svg" alt="First Icon" fill />
+                                    <Image src="/images/cta-icon-1.svg" alt="First Icon" width={100} height={100} quality={100} />
                                 </div>
                                 <div className="full-width-cta-content d-flex flex-column flex-grow-1">
                                     <div className="fwc-icon-label d-flex align-items-center">
                                         <div className="full-width-cta-icon has-img-contain d-md-none">
-                                            <Image src="/images/cta-icon-1.svg" alt="First Icon" fill />
+                                            <Image src="/images/cta-icon-1.svg" alt="First Icon" width={100} height={100} quality={100} />
                                         </div>
                                         <h3>{cardFirstHeading}</h3>
                                     </div>
@@ -70,12 +69,12 @@ const CTABlock: React.FC<CTABlockProps> = ({ card }) => {
                         <div className="col-lg-6 fw-cta-item">
                             <div className="full-width-cta-box w-100 h-100 d-flex">
                                 <div className="full-width-cta-icon has-img-contain d-none d-md-block">
-                                    <Image src="/images/cta-icon-2.svg" alt="Second Icon" fill />
+                                    <Image src="/images/cta-icon-2.svg" alt="Second Icon" width={100} height={100} quality={100} />
                                 </div>
                                 <div className="full-width-cta-content d-flex flex-column flex-grow-1">
                                     <div className="fwc-icon-label d-flex align-items-center">
                                         <div className="full-width-cta-icon has-img-contain d-md-none">
-                                            <Image src="/images/cta-icon-2.svg" alt="Second Icon" fill />
+                                            <Image src="/images/cta-icon-2.svg" alt="Second Icon" width={100} height={100} quality={100} />
                                         </div>
                                         <h3>{cardSecondHeading}</h3>
                                     </div>

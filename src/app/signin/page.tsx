@@ -1,11 +1,11 @@
 'use client';
-import Link from 'next/link';
-import './Signin.css';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+import './Signin.css';
 import useAuth from '../../hooks/useAuth';
 import { IoAt, IoLockClosedOutline } from 'react-icons/io5';
-import { useRouter } from 'next/navigation';
 
 const LoginPage = () => {
     const { login, isAuthenticated, user } = useAuth();
@@ -39,7 +39,7 @@ const LoginPage = () => {
     return (
         <div className="login-register-container content-container position-relative d-flex align-items-center">
             <div className="login-register-bg">
-                <Image src="images/swiper-img-1.jpg" alt="" fill />
+                <Image src="images/swiper-img-1.jpg" alt="" width={100} height={100} quality={100} />
             </div>
             <div className="container position-relative z-3">
                 <div className="row" data-aos="fade-up">
@@ -48,7 +48,7 @@ const LoginPage = () => {
                             <div className="login-register-head d-flex align-items-end justify-content-between mb-4">
                                 <h3>Login</h3>
                                 <div className="img-container flex-shrink-0">
-                                    <Image src="images/user.svg" alt="profile" className="profile" fill />
+                                    <Image src="images/user.svg" alt="profile" className="profile" width={100} height={100} quality={100} />
                                 </div>
                             </div>
 

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import './ServiceBlock.css'
 
 interface Block {
@@ -19,7 +20,7 @@ const ServiceBlock = ({ block }: Block) => {
         <>
             <div className="service-box d-flex flex-wrap justify-content-between align-items-center">
                 <div className="service-img overflow-hidden">
-                    <img src={imgUrl} alt={`${title} image`} />
+                    <Image src={imgUrl} alt={`${title} image`} width={100} height={100} quality={100} />
                 </div>
                 <div className="service-content">
                     <h4>{title}</h4>

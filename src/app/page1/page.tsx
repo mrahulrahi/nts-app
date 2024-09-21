@@ -1,7 +1,7 @@
 'use client'
+import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
 import styles from './AdminUserProfile.module.css'
 
 export default function AdminUserProfile() {

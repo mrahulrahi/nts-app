@@ -1,10 +1,9 @@
 // src/app/user/[userId]/UserProfile.tsx
 'use client';
-
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation'; // Updated import
-import useAuth from '../../../hooks/useAuth'; // Adjust the import path as necessary
 import Link from 'next/link';
+import useAuth from '../../../hooks/useAuth'; // Adjust the import path as necessary
 
 // Define the User type
 type User = {

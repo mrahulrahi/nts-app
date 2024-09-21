@@ -1,7 +1,7 @@
 'use client';
-import './Footer.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
+import './Footer.css'
 import { FaFacebookF, FaXTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 const Footer = () => {

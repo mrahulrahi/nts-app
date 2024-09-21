@@ -1,6 +1,5 @@
 // src/app/admin/AdminDashboard.tsx
 'use client';
-
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation'; // Ensure correct import for new `app` directory
 import useAuth from '../../hooks/useAuth';
@@ -55,8 +54,8 @@ const AdminDashboard = () => {
                                     <Image
                                         src="/placeholder.svg?height=32&width=32"
                                         alt="Admin"
-                                        fill
                                         className="w-100 rounded-circle"
+                                        width={100} height={100} quality={100}
                                     />
                                 </Nav.Link>
                             </Nav>

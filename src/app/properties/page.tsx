@@ -1,5 +1,5 @@
-import './Properties.css'
 import type { Metadata } from "next";
+import './Properties.css'
 import Banner from '../../components/Banner/Banner'
 import TypeCard from '../../components/TypeCard/TypeCard'
 import PropertyCard from '../../components/PropertyCard/PropertyCard'

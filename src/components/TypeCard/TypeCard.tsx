@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import './TypeCard.css'
 
 interface Card {
@@ -15,7 +16,7 @@ const TypeCard = ({ card }: Card) => {
 
     return (
         <div className="type-card-box w-100 h-100 d-flex flex-column">
-            <div className="type-card-img mx-auto"><img src={imgUrl} alt={`${title} image`} /></div>
+            <div className="type-card-img mx-auto"><Image src={imgUrl} alt={`${title} image`} width={100} height={100} quality={100} /></div>
             <div className="type-card-label text-center mt-auto">{title}</div>
         </div>
     )

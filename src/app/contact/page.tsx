@@ -1,7 +1,7 @@
-import { FaClock } from 'react-icons/fa6';
-import './Contact.css'
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import type { Metadata } from "next";
+import './Contact.css'
+import { FaClock } from 'react-icons/fa6';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "IG - Contact",

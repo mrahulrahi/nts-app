@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import './PropertyCard.css'
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { Navigation, Pagination } from 'swiper/modules';
@@ -48,7 +49,7 @@ const PropertyCard = ({ card }: Card) => {
             >
                 {imgUrl.map((item) =>
                     <SwiperSlide key={item} className="property-card-img">
-                        <img src={item} alt="" />
+                        <Image src={item} alt="" width={100} height={100} quality={100} />
                     </SwiperSlide>
                 )}
 

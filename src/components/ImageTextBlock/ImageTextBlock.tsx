@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import './ImageTextBlock.css'
 
 interface Block{
@@ -9,7 +10,7 @@ const ImageTextBlock = ({imgUrl, children} : Block) => {
   return (
     <div className="image-text-box d-flex align-items-center flex-wrap bg-antique-white">
       <div className="image-text-img">
-        <img src={imgUrl} alt={imgUrl} />
+        <Image src={imgUrl} alt={imgUrl} width={100} height={100} quality={100} />
       </div>
       <div className="image-text-content-box">
         <div className="itc-inside d-flex flex-column h-100">
