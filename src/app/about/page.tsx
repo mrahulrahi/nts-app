@@ -30,7 +30,7 @@ const AboutPage = () => {
                 <div className="container">
                     <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
-                            <ImageTextBlock imgUrl='images/about-img.jpg'>
+                            <ImageTextBlock imgUrl='/images/about-img.jpg'>
                                 <h4>Our Story</h4>
                                 <h5>Your Trusted Partner in Travel and Property Services Since 2016</h5>
                                 <p>At Imagine Group, our journey began in 2016 with a vision to transform the travel and property experience for our clients. Based in Lucknow, we started with a small but passionate team committed to providing personalized and exceptional services. What began as a modest endeavor quickly grew into a trusted name in both the travel and property sectors.</p>
