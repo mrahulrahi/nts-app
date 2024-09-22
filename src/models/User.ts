@@ -1,11 +1,19 @@
-import mongoose, { Schema, model, models } from 'mongoose';
+import mongoose, { Schema, Document } from 'mongoose';
 
-const userSchema = new Schema({
+interface IUser extends Document {
+  fullName: string;
+  email: string;
+  password: string;
+  role: string; // Add role field
+}
+
+const UserSchema: Schema = new Schema({
   fullName: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  role: { type: String, enum: ['user', 'admin'], default: 'user' },
-}, { timestamps: true });
+  role: { type: String, required: true, default: 'user' }, // Default role is 'user'
+});
 
-const User = models.User || model('User', userSchema);
+const User = mongoose.model<IUser>('User', UserSchema);
+
 export default User;

@@ -1,31 +1,30 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation'; // Import usePathname
 import Link from 'next/link';
 import Image from 'next/image';
 import './Signin.css';
 import useAuth from '../../hooks/useAuth';
 import { IoAt, IoLockClosedOutline } from 'react-icons/io5';
 
-const LoginPage = () => {
+const SigninPage = () => {
     const { login, isAuthenticated, user } = useAuth();
     const router = useRouter();
+    const pathname = usePathname(); // Get the current path
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(true); // Add a loading state
 
     // Use an effect to handle redirection based on authentication state
     useEffect(() => {
-        if (isAuthenticated) {
-            setLoading(false); // Set loading to false when authenticated state is determined
-            if (user) {
-                const redirectPath = user.role === 'admin' ? `/admin` : `/user/${user.id}`;
+        if (isAuthenticated && user) {
+            const redirectPath = user.role === 'admin' ? `/admin` : `/user/${user.id}`;
+            if (pathname !== redirectPath) { // Use pathname instead of router.asPath
                 router.push(redirectPath);
             }
-        } else {
-            setLoading(false); // Stop loading if not authenticated
         }
-    }, [isAuthenticated, user, router]);
+        setLoading(false);
+    }, [isAuthenticated, user, router, pathname]);
 
     // Handle form submission
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -80,4 +79,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default SigninPage;
