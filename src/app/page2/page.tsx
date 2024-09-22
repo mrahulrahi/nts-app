@@ -66,7 +66,7 @@ export default function AdminDashboard() {
             </button>
             <div className={styles.userMenu}>
               <span>Welcome, Admin</span>
-              <Image src="/placeholder.svg" alt="Admin" className={styles.avatar} width={100} height={100} quality={100} />
+              <Image src="/placeholder.svg" alt="Admin" className={styles.avatar} width={4000} height={4000} quality={100} />
             </div>
           </header>
 
@@ -119,7 +119,7 @@ export default function AdminDashboard() {
                     <h5 className="card-title">Bookings Overview</h5>
                     <div className={styles.chart}>
                       {/* Placeholder for chart */}
-                      <Image src="/placeholder.svg?height=300&width=600" alt="Bookings Chart" className="img-fluid" width={100} height={100} quality={100} />
+                      <Image src="/placeholder.svg?height=300&width=600" alt="Bookings Chart" className="img-fluid" width={4000} height={4000} quality={100} />
                     </div>
                   </div>
                 </div>

@@ -13,7 +13,7 @@ const Banner = ({ heading, subheading, children }: Banner) => {
     return (
         <>
             <div className="banner-container position-relative" >
-                <div className="banner-bg"><Image src="/images/swiper-img-1.jpg" alt="banner bg" width={100} height={100} quality={100} /></div>
+                <div className="banner-bg"><Image src="/images/swiper-img-1.jpg" alt="banner bg" width={4000} height={4000} quality={100} /></div>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9">

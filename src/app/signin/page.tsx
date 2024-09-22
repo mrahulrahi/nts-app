@@ -39,7 +39,7 @@ const LoginPage = () => {
     return (
         <div className="login-register-container content-container position-relative d-flex align-items-center">
             <div className="login-register-bg">
-                <Image src="images/swiper-img-1.jpg" alt="" width={100} height={100} quality={100} />
+                <Image src="/images/swiper-img-1.jpg" alt="" width={4000} height={4000} quality={100} />
             </div>
             <div className="container position-relative z-3">
                 <div className="row" data-aos="fade-up">
@@ -48,7 +48,7 @@ const LoginPage = () => {
                             <div className="login-register-head d-flex align-items-end justify-content-between mb-4">
                                 <h3>Login</h3>
                                 <div className="img-container flex-shrink-0">
-                                    <Image src="images/user.svg" alt="profile" className="profile" width={100} height={100} quality={100} />
+                                    <Image src="images/user.svg" alt="profile" className="profile" width={4000} height={4000} quality={100} />
                                 </div>
                             </div>
 

@@ -27,7 +27,7 @@ const TeamCard = ({ card }: Card) => {
     return (
         <div className="team-card-box w-100 h-100 d-flex flex-column align-items-center">
             <div className="team-card-img rounded-circle overflow-hidden">
-                <Image src={imgUrl} alt={`${name} image`} width={100} height={100} quality={100} />
+                <Image src={imgUrl} alt={`${name} image`} width={4000} height={4000} quality={100} />
             </div>
             <div className="team-card-text text-center">
                 <h4>{name}</h4>

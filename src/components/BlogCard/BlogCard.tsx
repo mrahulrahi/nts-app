@@ -17,7 +17,7 @@ const BlogCard = ({ card }: Card) => {
     return (
         <div className="blog-card-box d-flex flex-column">
             <div className="blog-card-img overflow-hidden">
-                <Image src={imgUrl} alt={`${title} image`} width={100} height={100} quality={100} />
+                <Image src={imgUrl} alt={`${title} image`} width={4000} height={4000} quality={100} />
             </div>
             <div className="blog-card-text">
                 <h6>12, January</h6>

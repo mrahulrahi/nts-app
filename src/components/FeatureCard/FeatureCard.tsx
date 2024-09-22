@@ -16,7 +16,7 @@ const FeatureCard = ({ card }: Card) => {
     return (
         <div className="feature-card-box w-100 h-100 d-flex align-items-center justify-content-center gap-4">
             <div className="feature-card-img d-flex align-items-center justify-content-center">
-                <Image src={imgUrl} alt={`${title} image`} width={100} height={100} quality={100} />
+                <Image src={imgUrl} alt={`${title} image`} width={4000} height={4000} quality={100} />
             </div>
             <div className="feature-card-title text-center d-flex align-items-center justify-content-center">{title}</div>
         </div>

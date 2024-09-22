@@ -65,7 +65,7 @@ const Header = () => {
                 <div className="container">
                     <div className="nav-inside d-flex flex-wrap align-items-center justify-content-between">
                         <Link className="navbar-logo-area d-flex align-items-center" href="/">
-                            <div className="navbar-logo"><Image src="/images/logo.png" alt="logo" width={100} height={100} quality={100} /></div>
+                            <div className="navbar-logo"><Image src="/images/logo.png" alt="logo" width={4000} height={4000} quality={100} /></div>
                             <div className="navbar-title">IMAGINE <br /> GROUP</div>
                         </Link>
 

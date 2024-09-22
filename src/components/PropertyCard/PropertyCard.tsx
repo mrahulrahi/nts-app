@@ -49,7 +49,7 @@ const PropertyCard = ({ card }: Card) => {
             >
                 {imgUrl.map((item) =>
                     <SwiperSlide key={item} className="property-card-img">
-                        <Image src={item} alt="" width={100} height={100} quality={100} />
+                        <Image src={item} alt="" width={4000} height={4000} quality={100} />
                     </SwiperSlide>
                 )}
 

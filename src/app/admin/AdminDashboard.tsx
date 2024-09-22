@@ -55,7 +55,7 @@ const AdminDashboard = () => {
                                         src="/placeholder.svg?height=32&width=32"
                                         alt="Admin"
                                         className="w-100 rounded-circle"
-                                        width={100} height={100} quality={100}
+                                        width={4000} height={4000} quality={100}
                                     />
                                 </Nav.Link>
                             </Nav>

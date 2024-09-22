@@ -20,7 +20,7 @@ const ServiceBlock = ({ block }: Block) => {
         <>
             <div className="service-box d-flex flex-wrap justify-content-between align-items-center">
                 <div className="service-img overflow-hidden">
-                    <Image src={imgUrl} alt={`${title} image`} width={100} height={100} quality={100} />
+                    <Image src={imgUrl} alt={`${title} image`} width={4000} height={4000} quality={100} />
                 </div>
                 <div className="service-content">
                     <h4>{title}</h4>
