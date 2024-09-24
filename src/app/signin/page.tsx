@@ -18,7 +18,7 @@ const SigninPage = () => {
     // Use an effect to handle redirection based on authentication state
     useEffect(() => {
         if (isAuthenticated && user) {
-            const redirectPath = user.role === 'admin' ? `/admin` : `/user/${user.id}`;
+            const redirectPath = user.role === 'admin' ? `/admin` : `user/${user.id}`;
             if (pathname !== redirectPath) { // Use pathname instead of router.asPath
                 router.push(redirectPath);
             }
