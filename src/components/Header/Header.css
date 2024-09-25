@@ -15,8 +15,8 @@
 .navbar-expand-xl .navbar-nav .nav-item:hover .nav-link,.navbar-expand-xl .navbar-nav .nav-item.active .nav-link{color:var(--teal);}
 .fixed .navbar-nav .nav-link{color: var(--dark-grey);}
 .header-right{gap: 10px;}
-.header-btn{width: 30px;height: 30px;padding: 5px;color: var(--white);border-radius: 50%;}
-.fixed .header-btn{background: var(--dark-grey);}
+.header-btn{width: 30px;height: 30px;padding: 5px;border-radius: 50%;}
+.fixed .header-btn{background: var(--dark-grey);color: var(--white);}
 .social-links{gap: 20px;background-color: transparent;font-weight: 700;}
 .social-links a{color: var(--white);}
 .fixed .social-links a{color: var(--dark-grey);}

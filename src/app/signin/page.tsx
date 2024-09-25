@@ -5,20 +5,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import './Signin.css';
 import useAuth from '../../hooks/useAuth';
-import { IoAt, IoLockClosedOutline } from 'react-icons/io5';
+import { IoAt, IoLockClosedOutline, IoPersonOutline } from 'react-icons/io5';
 
 const SigninPage = () => {
     const { login, isAuthenticated, user } = useAuth();
     const router = useRouter();
     const pathname = usePathname(); // Get the current path
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(true); // Add a loading state
 
     // Use an effect to handle redirection based on authentication state
     useEffect(() => {
         if (isAuthenticated && user) {
-            const redirectPath = user.role === 'admin' ? `/admin` : `user/${user.id}`;
+            const redirectPath = user.role === 'admin' ? `/admin` : `/${user.username}`;
             if (pathname !== redirectPath) { // Use pathname instead of router.asPath
                 router.push(redirectPath);
             }
@@ -29,7 +29,7 @@ const SigninPage = () => {
     // Handle form submission
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        login(email, password);
+        login(username, password);
     };
 
     // Show a loading message until the state is settled
@@ -53,9 +53,9 @@ const SigninPage = () => {
 
                             <form className="login-register-form" onSubmit={handleSubmit}>
                                 <div className="login-input-box">
-                                    <span className="img-icon d-flex align-items-center justify-content-center"><IoAt /></span>
-                                    <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
-                                    <label>Email</label>
+                                    <span className="img-icon d-flex align-items-center justify-content-center"><IoPersonOutline /></span>
+                                    <input type="text" required value={username} onChange={(e) => setUsername(e.target.value)} />
+                                    <label>Username</label>
                                 </div>
                                 <div className="login-input-box">
                                     <span className="img-icon d-flex align-items-center justify-content-center"><IoLockClosedOutline /></span>

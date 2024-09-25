@@ -8,25 +8,25 @@ const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
 
 export async function POST(request: Request) {
   try {
-    const { email, password } = await request.json();
+    const { username, password } = await request.json();
 
     await connectToDatabase();
 
-    // Find user by email
-    const user = await User.findOne({ email });
+    // Find user by username
+    const user = await User.findOne({ username });
     if (!user) {
-      return NextResponse.json({ message: 'Invalid email or password' }, { status: 401 });
+      return NextResponse.json({ message: 'Invalid username or password' }, { status: 401 });
     }
 
     // Check password
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
-      return NextResponse.json({ message: 'Invalid email or password' }, { status: 401 });
+      return NextResponse.json({ message: 'Invalid username or password' }, { status: 401 });
     }
 
     // Generate JWT token
     const token = jwt.sign(
-      { userId: user._id, email: user.email, role: user.role },
+      { userId: user.username, email: user.email, role: user.role },
       JWT_SECRET,
       { expiresIn: '1h' }
     );
@@ -36,7 +36,7 @@ export async function POST(request: Request) {
       token,
       user: {
         id: user._id,
-        fullName: user.fullName,
+        username: user.username,
         email: user.email,
         role: user.role
       }

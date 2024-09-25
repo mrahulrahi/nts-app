@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './TourTravels.css';
 import Banner from "../../components/Banner/Banner";
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
-import FeatureCard from '../../components/FeatureCard/FeatureCard';
+import FeatureCard from '../../components/Header/FeatureCard/FeatureCard';
 import TypeCard from '../../components/TypeCard/TypeCard';
 import CarCard from '../../components/CarCard/CarCard';
 import ImageTextBlock from '../../components/ImageTextBlock/ImageTextBlock';

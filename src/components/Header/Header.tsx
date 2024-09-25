@@ -6,10 +6,12 @@ import './Header.css';
 import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { CgProfile } from 'react-icons/cg';
 import { usePathname } from 'next/navigation';
+import useAuth from '../../hooks/useAuth'; // Import useAuth hook
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const navbarRef = useRef(null);
+    const { isAuthenticated, logout, user } = useAuth(); // Get authentication state, logout function, and user object
 
     const handleScroll = () => {
         const scrollY = window.scrollY;
@@ -56,8 +58,8 @@ const Header = () => {
         { path: '/contact', label: 'Contact' },
     ];
 
-    // Check if the current path is '/login' or '/signup'
-    const isAuthPage = currentPath === '/login' || currentPath === '/signup';
+    // Check if the current path is '/signin' or '/signup'
+    const isAuthPage = currentPath === '/signin' || currentPath === '/signup';
 
     return (
         <header id="header">
@@ -69,7 +71,7 @@ const Header = () => {
                             <div className="navbar-title">IMAGINE <br /> GROUP</div>
                         </Link>
 
-                        {/* Only render the navbar collapse if not on login or signup */}
+                        {/* Only render the navbar collapse if not on signin or signup */}
                         {!isAuthPage && (
                             <>
                                 <div className={`collapse navbar-collapse justify-content-center ${isOpen ? 'show' : ''}`} id="mainNav" ref={navbarRef}>
@@ -103,7 +105,19 @@ const Header = () => {
                                         <li><Link href="https://wa.me/+918881888339" onClick={handleLinkClick}><FaWhatsapp /></Link></li>
                                     </ul>
 
-                                    <Link href="/signin" className="header-btn d-flex align-items-center justify-content-center" onClick={handleLinkClick}><CgProfile /></Link>
+                                    {isAuthenticated ? (
+                                        <div className="dropdown">
+                                            <button className="header-btn d-flex align-items-center justify-content-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <CgProfile />
+                                            </button>
+                                            <ul className="dropdown-menu end-0">
+                                                <li><Link className="dropdown-item" href={`/${user?.username || ''}`}>Profile</Link></li>
+                                                <li><button className="dropdown-item" onClick={logout}>Logout</button></li>
+                                            </ul>
+                                        </div>
+                                    ) : (
+                                        <Link href="/signin" className="header-btn d-flex align-items-center justify-content-center" onClick={handleLinkClick}><CgProfile /></Link>
+                                    )}
 
                                     <button className={`navbar-toggler ${isOpen ? '' : 'collapsed'}`} type="button" data-bs-toggle="collapse"
                                         data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded={isOpen}

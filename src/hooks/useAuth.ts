@@ -4,7 +4,9 @@ import { useRouter } from 'next/navigation';
 const useAuth = () => {
     const router = useRouter();
     const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
-    const [user, setUser] = useState<{ id: string; role: string } | null>(null);
+    const [user, setUser] = useState<{
+        username: any; id: string; role: string 
+} | null>(null);
 
     useEffect(() => {
         const token = localStorage.getItem('authToken');
@@ -12,21 +14,25 @@ const useAuth = () => {
 
         if (token && userId) {
             setIsAuthenticated(true);
-            setUser({ id: userId, role: localStorage.getItem('userRole') || 'user' });
+            setUser({
+                username: localStorage.getItem('username') || '',
+                id: userId,
+                role: localStorage.getItem('userRole') || 'user'
+            });
         } else {
             setIsAuthenticated(false);
             setUser(null);
         }
     }, [router]);
 
-    const login = async (email: string, password: string) => {
+    const login = async (username: string, password: string) => {
         try {
             const response = await fetch('/api/signin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email, password }),
+                body: JSON.stringify({ username, password }),
             });
 
             if (response.ok) {
@@ -34,8 +40,13 @@ const useAuth = () => {
                 localStorage.setItem('authToken', data.token);
                 localStorage.setItem('userId', data.user.id);
                 localStorage.setItem('userRole', data.user.role);
+                localStorage.setItem('username', data.user.username);
                 setIsAuthenticated(true);
-                setUser({ id: data.user.id, role: data.user.role });
+                setUser({
+                    username: data.user.username,
+                    id: data.user.id,
+                    role: data.user.role
+                });
             } else {
                 const errorData = await response.json();
                 alert(errorData.message);

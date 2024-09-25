@@ -12,7 +12,7 @@ import { IoAt, IoLockClosedOutline, IoPersonOutline } from 'react-icons/io5';
 // };
 
 const SignupPage = () => {
-  const [fullName, setFullName] = useState('');
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isAgree, setIsAgree] = useState(false);
@@ -21,7 +21,7 @@ const SignupPage = () => {
     e.preventDefault();
 
     // Basic validation
-    if (!fullName || !email || !password || !isAgree) {
+    if (!username || !email || !password || !isAgree) {
       alert('Please fill in all fields and agree to terms and conditions.');
       return;
     }
@@ -32,7 +32,7 @@ const SignupPage = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ fullName, email, password }),
+        body: JSON.stringify({ username, email, password }),
       });
 
       if (response.ok) {
@@ -72,10 +72,10 @@ const SignupPage = () => {
                     <input
                       type="text"
                       required
-                      value={fullName}
-                      onChange={(e) => setFullName(e.target.value)}
+                      value={username}
+                      onChange={(e) => setUsername(e.target.value)}
                     />
-                    <label>Full Name</label>
+                    <label>Username</label>
                   </div>
                   <div className="login-input-box">
                     <span className="img-icon d-flex align-items-center justify-content-center">

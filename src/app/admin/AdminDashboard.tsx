@@ -5,14 +5,16 @@ import { useRouter } from 'next/navigation'; // Ensure correct import for new `a
 import useAuth from '../../hooks/useAuth';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './AdminDashboard.module.css'
+import './Admin.css';
+
 import {
     Navbar, Container, Nav, Card, Row, Col, Table,
     Button, Form, InputGroup, ProgressBar
 } from 'react-bootstrap';
 import {
     FaPlane, FaHotel, FaHome, FaBuilding, FaUsers,
-    FaChartLine, FaCalendarAlt, FaCog, FaSearch
+    FaChartLine, FaCalendarAlt, FaCog, FaSearch,
+    FaHamburger
 } from 'react-icons/fa';
 
 const AdminDashboard = () => {
@@ -29,32 +31,68 @@ const AdminDashboard = () => {
         <>
           
 
-            <div className="admin-dashboard pt-5">
-                <Navbar bg="dark" variant="dark" expand="lg" className="mb-4">
-                    <Container>
-                        <Navbar.Brand href="#home">Admin Dashboard</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto">
-                                <Nav.Link href="#home">Home</Nav.Link>
-                                <Nav.Link href="#tour-travels">Tour & Travels</Nav.Link>
-                                <Nav.Link href="#property-realestate">Property & Real Estate</Nav.Link>
-                                <button onClick={logout}>Logout</button>
-                            </Nav>
-                            <Nav>
-                                <Nav.Link href="#profile">
-                                    <Image
-                                        src="/placeholder.svg?height=32&width=32"
-                                        alt="Admin"
-                                        className="w-100 rounded-circle"
-                                        width={4000} height={4000} quality={100}
-                                    />
-                                </Nav.Link>
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Container>
-                </Navbar>
 
+            
+      <div className="adminDashboard">
+        <nav className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
+          <div className="sidebarHeader">
+            <h3>Imagine Group</h3>
+            <button className="closeSidebar" onClick={() => setSidebarOpen(false)}>
+              <i className="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <ul className="nav flex-column">
+            <li className="nav-item">
+              <Link href="/admin/dashboard" className="nav-link active">
+                <i className="bi bi-speedometer2 me-2"></i> Dashboard
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/admin/users" className="nav-link">
+                <i className="bi bi-people me-2"></i> Users
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/admin/bookings" className="nav-link">
+                <i className="bi bi-calendar-check me-2"></i> Bookings
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/admin/properties" className="nav-link">
+                <i className="bi bi-house-door me-2"></i> Properties
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/admin/reports" className="nav-link">
+                <i className="bi bi-graph-up me-2"></i> Reports
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/admin/settings" className="nav-link">
+                <i className="bi bi-gear me-2"></i> Settings
+              </Link>
+            </li>
+            <li className="nav-item">   <button className="nav-link" onClick={logout}>Logout</button></li>
+          </ul>
+        </nav>
+
+        <main className="content mt-5">
+          <header className="header">
+            <button className="sidebarToggle" onClick={() => setSidebarOpen(!sidebarOpen)}>
+              <FaHamburger />
+            </button>
+            <div className="userMenu">
+              <span>Welcome, Admin</span>
+              <Image src="/placeholder.svg" alt="Admin" className="avatar" width={40} height={40} quality={100} />
+            </div>
+          </header>
+
+          <div className="container-fluid py-4">
+            <h1 className="mb-4">Dashboard</h1>
+
+
+            <div className="admin-dashboard pt-5">
+            
                 <Container>
                     <Row className="mb-4">
                         <Col md={6} lg={3} className="mb-4">
@@ -227,66 +265,10 @@ const AdminDashboard = () => {
                 </Container>
             </div>
 
-            
-      <div className={styles.adminDashboard}>
-        <nav className={`${styles.sidebar} ${sidebarOpen ? styles.open : ''}`}>
-          <div className={styles.sidebarHeader}>
-            <h3>Imagine Group</h3>
-            <button className={styles.closeSidebar} onClick={() => setSidebarOpen(false)}>
-              <i className="bi bi-x-lg"></i>
-            </button>
-          </div>
-          <ul className="nav flex-column">
-            <li className="nav-item">
-              <Link href="/admin/dashboard" className="nav-link active">
-                <i className="bi bi-speedometer2 me-2"></i> Dashboard
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/admin/users" className="nav-link">
-                <i className="bi bi-people me-2"></i> Users
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/admin/bookings" className="nav-link">
-                <i className="bi bi-calendar-check me-2"></i> Bookings
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/admin/properties" className="nav-link">
-                <i className="bi bi-house-door me-2"></i> Properties
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/admin/reports" className="nav-link">
-                <i className="bi bi-graph-up me-2"></i> Reports
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/admin/settings" className="nav-link">
-                <i className="bi bi-gear me-2"></i> Settings
-              </Link>
-            </li>
-          </ul>
-        </nav>
-
-        <main className={styles.content}>
-          <header className={styles.header}>
-            <button className={styles.sidebarToggle} onClick={() => setSidebarOpen(!sidebarOpen)}>
-              <i className="bi bi-list"></i>
-            </button>
-            <div className={styles.userMenu}>
-              <span>Welcome, Admin</span>
-              <Image src="/placeholder.svg" alt="Admin" className={styles.avatar} width={4000} height={4000} quality={100} />
-            </div>
-          </header>
-
-          <div className="container-fluid py-4">
-            <h1 className="mb-4">Dashboard</h1>
 
             <div className="row g-4 mb-4">
               <div className="col-md-3 col-sm-6">
-                <div className={`${styles.statCard} card h-100`}>
+                <div className="statCard card h-100">
                   <div className="card-body">
                     <h5 className="card-title">Total Users</h5>
                     <p className="card-text display-4">1,234</p>
@@ -295,7 +277,7 @@ const AdminDashboard = () => {
                 </div>
               </div>
               <div className="col-md-3 col-sm-6">
-                <div className={`${styles.statCard} card h-100`}>
+                <div className="statCard card h-100">
                   <div className="card-body">
                     <h5 className="card-title">Active Bookings</h5>
                     <p className="card-text display-4">56</p>
@@ -304,7 +286,7 @@ const AdminDashboard = () => {
                 </div>
               </div>
               <div className="col-md-3 col-sm-6">
-                <div className={`${styles.statCard} card h-100`}>
+                <div className="statCard card h-100">
                   <div className="card-body">
                     <h5 className="card-title">Total Properties</h5>
                     <p className="card-text display-4">789</p>
@@ -313,7 +295,7 @@ const AdminDashboard = () => {
                 </div>
               </div>
               <div className="col-md-3 col-sm-6">
-                <div className={`${styles.statCard} card h-100`}>
+                <div className="statCard card h-100">
                   <div className="card-body">
                     <h5 className="card-title">Revenue</h5>
                     <p className="card-text display-4">$52K</p>
@@ -325,10 +307,10 @@ const AdminDashboard = () => {
 
             <div className="row g-4">
               <div className="col-lg-8">
-                <div className={`${styles.chartCard} card`}>
+                <div className="chartCard card">
                   <div className="card-body">
                     <h5 className="card-title">Bookings Overview</h5>
-                    <div className={styles.chart}>
+                    <div className="chart">
                       {/* Placeholder for chart */}
                       <Image src="/placeholder.svg?height=300&width=600" alt="Bookings Chart" className="img-fluid" width={4000} height={4000} quality={100} />
                     </div>
@@ -336,7 +318,7 @@ const AdminDashboard = () => {
                 </div>
               </div>
               <div className="col-lg-4">
-                <div className={`${styles.recentActivityCard} card`}>
+                <div className="accordion-flushrecentActivityCard card">
                   <div className="card-body">
                     <h5 className="card-title">Recent Activity</h5>
                     <ul className="list-unstyled">

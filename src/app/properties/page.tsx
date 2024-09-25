@@ -4,7 +4,7 @@ import Banner from '../../components/Banner/Banner'
 import TypeCard from '../../components/TypeCard/TypeCard'
 import PropertyCard from '../../components/PropertyCard/PropertyCard'
 import ServiceCard from '../../components/ServiceCard/ServiceCard'
-import FeatureCard from '../../components/FeatureCard/FeatureCard'
+import FeatureCard from '../../components/Header/FeatureCard/FeatureCard'
 import ImageTextBlock from '../../components/ImageTextBlock/ImageTextBlock'
 import CTABlock from '../../components/CTABlock/CTABlock'
 
