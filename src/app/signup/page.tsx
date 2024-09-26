@@ -1,10 +1,10 @@
 'use client'; // Required for client-side rendering
 import { useState } from 'react';
-import type { Metadata } from 'next';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import '../signin/Signin.css';
-import { IoAt, IoLockClosedOutline, IoLockOpenOutline , IoPersonOutline } from 'react-icons/io5';
+import '../../styles/Member.css';
+import { IoAt, IoLockClosedOutline, IoLockOpenOutline, IoPersonOutline } from 'react-icons/io5';
 
 // export const metadata: Metadata = {
 //   title: 'IG - Signup',
@@ -17,6 +17,7 @@ const SignupPage = () => {
   const [password, setPassword] = useState('');
   const [isAgree, setIsAgree] = useState(false);
   const [isPasswordVisible, setIsPasswordVisible] = useState(false); // State to track password visibility
+  const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -38,6 +39,7 @@ const SignupPage = () => {
 
       if (response.ok) {
         alert('Registration successful! You can now log in.');
+        router.push('/signin'); // Redirect to signin page
       } else {
         const errorData = await response.json();
         alert(`Registration failed: ${errorData.message}`);
@@ -54,23 +56,27 @@ const SignupPage = () => {
 
   return (
     <>
-      <div className="login-register-container content-container position-relative d-flex align-items-center">
-        <div className="login-register-bg">
+      <div className="member-container content-container position-relative d-flex align-items-center">
+        <Link className="member-logo-area d-flex align-items-center" href="/">
+          <div className="member-logo"><Image src="/images/logo.png" alt="logo" width={4000} height={4000} quality={100} /></div>
+          <div className="member-title">IMAGINE <br /> GROUP</div>
+        </Link>
+        <div className="member-bg">
           <Image src="/images/swiper-img-1.jpg" alt="background" width={4000} height={4000} quality={100} />
         </div>
         <div className="container position-relative z-3">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
-              <div className="login-register-content-box d-flex flex-column justify-content-center bg-glass mx-auto position-relative">
-                <div className="login-register-head d-flex align-items-end justify-content-between mb-4">
+              <div className="member-content-box d-flex flex-column justify-content-center bg-glass mx-auto position-relative">
+                <div className="member-head d-flex align-items-end justify-content-between mb-4">
                   <h3>Register</h3>
                   <div className="img-container flex-shrink-0">
                     <Image src="images/user.svg" alt="profile" className="profile" width={4000} height={4000} quality={100} />
                   </div>
                 </div>
 
-                <form className="login-register-form" onSubmit={handleSubmit}>
-                  <div className="login-input-box">
+                <form className="member-form" onSubmit={handleSubmit}>
+                  <div className="member-input-box">
                     <span className="img-icon d-flex align-items-center justify-content-center">
                       <IoPersonOutline />
                     </span>
@@ -82,7 +88,7 @@ const SignupPage = () => {
                     />
                     <label>Username</label>
                   </div>
-                  <div className="login-input-box">
+                  <div className="member-input-box">
                     <span className="img-icon d-flex align-items-center justify-content-center">
                       <IoAt />
                     </span>
@@ -94,9 +100,9 @@ const SignupPage = () => {
                     />
                     <label>Email</label>
                   </div>
-                  <div className="login-input-box">
+                  <div className="member-input-box">
                     <span className="img-icon d-flex align-items-center justify-content-center" onClick={togglePasswordVisibility}>
-                      {isPasswordVisible ? <IoLockOpenOutline  /> : <IoLockClosedOutline />}
+                      {isPasswordVisible ? <IoLockOpenOutline /> : <IoLockClosedOutline />}
                     </span>
                     <input
                       type={isPasswordVisible ? 'text' : 'password'}
@@ -106,7 +112,7 @@ const SignupPage = () => {
                     />
                     <label>Password</label>
                   </div>
-                  <div className="login-forget d-flex justify-content-between">
+                  <div className="member-forget d-flex justify-content-between">
                     <label htmlFor="agree-terms">
                       <input
                         type="checkbox"
@@ -118,8 +124,8 @@ const SignupPage = () => {
                       <a href="#">Terms &amp; Conditions</a>
                     </label>
                   </div>
-                  <input type="submit" value="Register" className="button" />
-                  <div className="login-register">
+                  <input type="submit" value="Register" className="btn-white" />
+                  <div className="member-bottom">
                     <p>
                       Already have an account?{' '}
                       <Link href="/signin">Login</Link>

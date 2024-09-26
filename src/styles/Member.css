@@ -1,0 +1,30 @@
+.member-container{padding-top: 120px;height: 100dvh;}
+.member-logo-area{position:fixed;top:0;left:5%;z-index:9999;padding:20px 0;}
+.member-logo{width:50px;margin-right: 10px;position:relative;z-index:999;filter: brightness(0) invert(1);}
+.member-logo img{width:100%;}  
+.member-title{color: var(--white);font-family: var(--font-montserrat);font-size: 20px;font-weight: 700;line-height: 1;position:relative;z-index:999;}
+
+.member-bg{width: 100%;height: 100%;position: absolute;top: 0;left: 0;bottom: 0;right: 0;}
+.member-bg img{width: 100%;height: 100%;object-fit: cover;object-position: bottom;}
+.member-bg::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:2;background:  linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%), rgba(0,0,0,0.5) 100%;}
+
+.member-content-box{max-width: 450px;padding: 32px 40px;border-radius: 20px;}
+.member-content-box .img-container{padding:25px;background: var(--dark-grey);margin-top: -100%;width: 120px;height: 120px;border-radius: 50%;border: 1px solid var(--white);}
+.member-content-box .img-container img{width: 100%;height: 100%;object-fit: contain;}
+.member-content-box h3 {font-family: var(--font-alkatra);font-size: 30px;line-height: 1;color: var(--white);text-align: center;margin-bottom: 0;}
+
+.member-input-box {position: relative;margin: 30px 0;border-bottom: 2px solid var(--white);}
+.member-input-box label {position: absolute;top: 50%;left: 5px;transform: translateY(-50%);color: var(--white);font-size: 16px;pointer-events: none;transition: all 0.5s ease-in-out;}
+.member-input-box input:focus ~ label,.member-input-box input:valid ~ label {top: -5px;}
+.member-input-box input {width: 100%;height: 48px;background: transparent;border: none;outline: none;font-size: 16px;padding: 0 45px 0 5px;color: var(--white);}
+.member-input-box .img-icon{font-size: 26px;font-weight: 400;line-height: 1;position:absolute;right: 0;bottom: 16px;color: var(--white);}
+.member-forget {margin: 35px 0;font-size: 0.85rem;color: var(--white);display: flex;justify-content: space-between;}
+.member-forget label {display: flex;align-items: center;}
+.member-forget label input {margin-right: 3px;}
+.member-forget a {color: var(--white);text-decoration: none;font-weight: 600;}
+.member-forget a:hover {text-decoration: underline;}
+.btn-white {width: 100%;height: 40px; border-radius: 40px;background-color: rgb(255, 255,255, 1);border: none;outline: none;cursor: pointer;font-size: 16px;font-weight: 600;transition: all 0.4s ease;}
+.btn-white:hover {background-color: rgb(255, 255,255, 0.5);}
+.member-bottom {font-size: 0.9rem;color: var(--white);text-align: center;margin: 25px 0 10px;}
+.member-bottom p a {text-decoration: none;color: var(--white);font-weight: 600;}
+.member-bottom p a:hover {text-decoration: underline;}

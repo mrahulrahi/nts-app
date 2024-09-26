@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation'; // Import usePathname
 import Link from 'next/link';
 import Image from 'next/image';
-import './Signin.css';
+import '../../styles/Member.css';
 import useAuth from '../../hooks/useAuth';
 import { IoLockClosedOutline, IoLockOpenOutline, IoPersonOutline } from 'react-icons/io5';
 
@@ -42,48 +42,54 @@ const SigninPage = () => {
     if (loading) return <div>Loading...</div>;
 
     return (
-        <div className="login-register-container content-container position-relative d-flex align-items-center">
-            <div className="login-register-bg">
-                <Image src="/images/swiper-img-1.jpg" alt="" width={4000} height={4000} quality={100} />
-            </div>
-            <div className="container position-relative z-3">
-                <div className="row" data-aos="fade-up">
-                    <div className="col-md-12">
-                        <div className="login-register-content-box d-flex flex-column justify-content-center bg-glass mx-auto position-relative">
-                            <div className="login-register-head d-flex align-items-end justify-content-between mb-4">
-                                <h3>Login</h3>
-                                <div className="img-container flex-shrink-0">
-                                    <Image src="images/user.svg" alt="profile" className="profile" width={4000} height={4000} quality={100} />
+        <>
+            <div className="member-container content-container position-relative d-flex align-items-center">
+                <Link className="member-logo-area d-flex align-items-center" href="/">
+                    <div className="member-logo"><Image src="/images/logo.png" alt="logo" width={4000} height={4000} quality={100} /></div>
+                    <div className="member-title">IMAGINE <br /> GROUP</div>
+                </Link>
+                <div className="member-bg">
+                    <Image src="/images/swiper-img-1.jpg" alt="" width={4000} height={4000} quality={100} />
+                </div>
+                <div className="container position-relative z-3">
+                    <div className="row" data-aos="fade-up">
+                        <div className="col-md-12">
+                            <div className="member-content-box d-flex flex-column justify-content-center bg-glass mx-auto position-relative">
+                                <div className="member-head d-flex align-items-end justify-content-between mb-4">
+                                    <h3>Login</h3>
+                                    <div className="img-container flex-shrink-0">
+                                        <Image src="images/user.svg" alt="profile" className="profile" width={4000} height={4000} quality={100} />
+                                    </div>
                                 </div>
-                            </div>
 
-                            <form className="login-register-form" onSubmit={handleSubmit}>
-                                <div className="login-input-box">
-                                    <span className="img-icon d-flex align-items-center justify-content-center"><IoPersonOutline /></span>
-                                    <input type="text" required value={username} onChange={(e) => setUsername(e.target.value)} />
-                                    <label>Username</label>
-                                </div>
-                                <div className="login-input-box">
-                                    <span className="img-icon d-flex align-items-center justify-content-center" onClick={togglePasswordVisibility}>
-                                        {isPasswordVisible ? <IoLockOpenOutline /> : <IoLockClosedOutline />}
-                                    </span>
-                                    <input type={isPasswordVisible ? 'text' : 'password'} required value={password} onChange={(e) => setPassword(e.target.value)} />
-                                    <label>Password</label>
-                                </div>
-                                <div className="login-forget">
-                                    <label><input type="checkbox" /> Remember Me</label>
-                                    <a href="#">Forget Password?</a>
-                                </div>
-                                <input type="submit" value="Log in" className="button" />
-                                <div className="login-register">
-                                    <p>Don&apos;t have an account? <Link href="/signup">Register</Link></p>
-                                </div>
-                            </form>
+                                <form className="member-form" onSubmit={handleSubmit}>
+                                    <div className="member-input-box">
+                                        <span className="img-icon d-flex align-items-center justify-content-center"><IoPersonOutline /></span>
+                                        <input type="text" required value={username} onChange={(e) => setUsername(e.target.value)} />
+                                        <label>Username</label>
+                                    </div>
+                                    <div className="member-input-box">
+                                        <span className="img-icon d-flex align-items-center justify-content-center" onClick={togglePasswordVisibility}>
+                                            {isPasswordVisible ? <IoLockOpenOutline /> : <IoLockClosedOutline />}
+                                        </span>
+                                        <input type={isPasswordVisible ? 'text' : 'password'} required value={password} onChange={(e) => setPassword(e.target.value)} />
+                                        <label>Password</label>
+                                    </div>
+                                    <div className="member-forget">
+                                        <label><input type="checkbox" /> Remember Me</label>
+                                        <a href="#">Forget Password?</a>
+                                    </div>
+                                    <input type="submit" value="Log in" className="btn-white" />
+                                    <div className="member-bottom">
+                                        <p>Don&apos;t have an account? <Link href="/signup">Register</Link></p>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
