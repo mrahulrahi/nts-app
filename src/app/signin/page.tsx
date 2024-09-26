@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import './Signin.css';
 import useAuth from '../../hooks/useAuth';
-import { IoAt, IoLockClosedOutline, IoPersonOutline } from 'react-icons/io5';
+import { IoLockClosedOutline, IoLockOpenOutline, IoPersonOutline } from 'react-icons/io5';
 
 const SigninPage = () => {
     const { login, isAuthenticated, user } = useAuth();
@@ -14,6 +14,7 @@ const SigninPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(true); // Add a loading state
+    const [isPasswordVisible, setIsPasswordVisible] = useState(false); // State to track password visibility
 
     // Use an effect to handle redirection based on authentication state
     useEffect(() => {
@@ -30,6 +31,11 @@ const SigninPage = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         login(username, password);
+    };
+
+    // Toggle password visibility
+    const togglePasswordVisibility = () => {
+        setIsPasswordVisible(!isPasswordVisible);
     };
 
     // Show a loading message until the state is settled
@@ -58,8 +64,10 @@ const SigninPage = () => {
                                     <label>Username</label>
                                 </div>
                                 <div className="login-input-box">
-                                    <span className="img-icon d-flex align-items-center justify-content-center"><IoLockClosedOutline /></span>
-                                    <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)} />
+                                    <span className="img-icon d-flex align-items-center justify-content-center" onClick={togglePasswordVisibility}>
+                                        {isPasswordVisible ? <IoLockOpenOutline /> : <IoLockClosedOutline />}
+                                    </span>
+                                    <input type={isPasswordVisible ? 'text' : 'password'} required value={password} onChange={(e) => setPassword(e.target.value)} />
                                     <label>Password</label>
                                 </div>
                                 <div className="login-forget">

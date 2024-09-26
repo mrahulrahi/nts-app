@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import '../signin/Signin.css';
-import { IoAt, IoLockClosedOutline, IoPersonOutline } from 'react-icons/io5';
+import { IoAt, IoLockClosedOutline, IoLockOpenOutline , IoPersonOutline } from 'react-icons/io5';
 
 // export const metadata: Metadata = {
 //   title: 'IG - Signup',
@@ -16,6 +16,7 @@ const SignupPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isAgree, setIsAgree] = useState(false);
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false); // State to track password visibility
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -45,6 +46,10 @@ const SignupPage = () => {
       console.error('An error occurred during registration:', error);
       alert('An error occurred. Please try again.');
     }
+  };
+
+  const togglePasswordVisibility = () => {
+    setIsPasswordVisible(!isPasswordVisible);
   };
 
   return (
@@ -90,11 +95,11 @@ const SignupPage = () => {
                     <label>Email</label>
                   </div>
                   <div className="login-input-box">
-                    <span className="img-icon d-flex align-items-center justify-content-center">
-                      <IoLockClosedOutline />
+                    <span className="img-icon d-flex align-items-center justify-content-center" onClick={togglePasswordVisibility}>
+                      {isPasswordVisible ? <IoLockOpenOutline  /> : <IoLockClosedOutline />}
                     </span>
                     <input
-                      type="password"
+                      type={isPasswordVisible ? 'text' : 'password'}
                       required
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
