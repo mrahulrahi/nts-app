@@ -1,9 +1,8 @@
-.career-wrapper{width: 100%;font-family:"Readex Pro",sans-serif;width: 100%;border-radius:16px;background: var(--dark-grey);padding: 30px;}
+.career-wrapper{width: 100%;width: 100%;border-radius:16px;background: var(--dark-grey);padding: 30px;}
 .career-left{width: 50%;padding-right: 10%;color:var(--antique-white);}
 .career-left h3{font-size:48px;}
 .career-right{width: 50%;}
-.career-form-box input.form-control{background: var(--teal);color: var(--dark-grey);}
-.career-form-box input.form-control::placeholder{color: var(--dark-grey)!important;}
+
 
 @media (max-width: 991.98px) {
   .career-left{width: 100%;padding-right: 0;}

@@ -144,8 +144,8 @@ const Hero = () => {
 
                 <div className="swiper-pagination"></div>
                 <div className="hero-bottom d-none d-lg-flex gap-4">
+                <button className="hero-btn hero-btn-prev d-flex align-items-center justify-content-center gap-2"><span><FaChevronLeft /></span>Previous</button>
                     <button className="hero-btn hero-btn-next d-flex align-items-center justify-content-center gap-2">Next<span><FaChevronRight /></span></button>
-                    <button className="hero-btn hero-btn-prev d-flex align-items-center justify-content-center gap-2"><span><FaChevronLeft /></span>Previous</button>
                 </div>
             </div>
         </>

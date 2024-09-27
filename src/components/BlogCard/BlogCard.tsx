@@ -15,7 +15,7 @@ const BlogCard = ({ card }: Card) => {
     const { imgUrl, title, body } = card;
 
     return (
-        <div className="blog-card-box d-flex flex-column">
+        <div className="blog-card-box d-flex flex-column bg-glass">
             <div className="blog-card-img overflow-hidden">
                 <Image src={imgUrl} alt={`${title} image`} width={4000} height={4000} quality={100} />
             </div>

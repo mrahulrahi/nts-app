@@ -1,11 +1,13 @@
 :root {
     --white: #FFF;
     --black: #222;
-    --teal: #bae2df;
+    --teal: #c2a57b;
     --antique-white: #faebd7;
     --grey: #B4B4B4;
     --dark-grey: #343a40;
 }
+
+
 
 /* =================reset css starts here=================  */
 *{margin:0;padding:0;}
@@ -37,7 +39,7 @@ h3{font-size:40px;}
 h4{font-size:30px;}
 h5{font-size:26px;}
 h6{font-size:22px;}
-p{margin:0px;padding:0px;margin-bottom:20px;}
+p{margin:0px;padding:0px;margin-bottom:20px;opacity: 0.75;}
 strong{font-weight:700;}
 b{font-weight:400;}
 p:last-child{margin-bottom:0;}
@@ -62,9 +64,9 @@ p:last-child{margin-bottom:0;}
 .bg-pattern-dark{background-image: url(/images/bg-pattern-light.svg);position: relative;background-color: var(--dark-grey);color: var(--white);}
 .bg-pattern-dark::before{content: '';position: absolute;top: 0;left: 0;right: 0;bottom: 0;background: linear-gradient(180deg, rgba(52, 58, 64,1) 0%,rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, rgba(52, 58, 64,1) 100%);}
 .bg-pattern-dark > .container{position: relative;z-index: 9;}
-.bg-pattern-light .bg-glass{background-color: transparent;border: 2px solid rgba(0, 0, 0, 0.75);backdrop-filter: blur(4px);box-shadow: 0 4px 30px rgba(0,0,0, 0.75);}
-.bg-pattern-dark .bg-glass{background-color: transparent;border: 2px solid rgba(255, 255, 255, 0.75);backdrop-filter: blur(4px);box-shadow: 0 4px 30px rgba(255, 255, 255, 0.75);}
-.bg-glass{background-color: transparent;border: 2px solid rgba(255, 255, 255, 0.75);backdrop-filter: blur(4px);box-shadow: 0 4px 30px rgba(255, 255, 255, 0.75);}
+.bg-pattern-light .bg-glass{background-color: transparent;border: 2px solid rgba(0, 0, 0, 0.5);backdrop-filter: blur(4px);box-shadow: 0 0 10px var(--teal);}
+.bg-pattern-dark .bg-glass{background-color: transparent;border: 2px solid rgba(255, 255, 255, 0.5);backdrop-filter: blur(4px);box-shadow: 0 0 10px var(--teal);}
+.bg-glass{background-color: transparent;border: 2px solid rgba(255, 255, 255, 0.75);backdrop-filter: blur(4px);box-shadow: 0 0 10px var(--teal);}
 
 html{height: 100%;}
 body{display: flex;flex-flow: column;height: 100%;}
@@ -84,9 +86,14 @@ footer{margin-top: auto;}
 .form-control-row{border-radius: 10px;overflow: hidden;}
 .form-control-col{flex-grow: 1;flex-basis: 0;}
 
-input.form-control,input.form-control:focus,
-select.form-select,select.form-select:focus{padding: 18px 20px;font-size: 16px;font-weight: 300;background-color: var(--dark-grey);color: var(--antique-white);border-radius: 0;box-shadow: none;border: 0;}
-input.form-control::placeholder{color: var(--antique-white);}
+.book-form-wrapper input.form-control,.book-form-wrapper input.form-control:focus,
+.book-form-wrapper select.form-select,.book-form-wrapper select.form-select:focus{padding: 18px 20px;font-size: 16px;font-weight: 300;background-color: var(--dark-grey);color: var(--antique-white);border-radius: 0;box-shadow: none;border: 0;}
+.book-form-wrapper input.form-control::placeholder{color: var(--antique-white);}
+
+input.form-control, input.form-control:focus{background: var(--antique-white);color: var(--dark-grey);width: 100%;height: 46px;border-radius: 8px;font-size: 18px;font-weight: 500;outline: none;border: none;box-shadow: none;}
+textarea.form-control, textarea.form-control:focus{background: var(--antique-white);color: var(--dark-grey);width: 100%;height: 114px;border-radius: 8px;font-size: 18px;font-weight: 500;resize: none;outline: none;border: none;box-shadow: none;}
+input.form-control::placeholder{color: var(--grey);}
+textarea.form-control::placeholder{color: var(--grey);}
 
 .form-control-col .btn{min-width: 100%;height: 60px;color: var(--dark-grey);background: var(--teal);border: 2px solid var(--teal);border-radius: 0;}
 .form-control-col .btn:hover{background: var(--dark-grey)!important;color: var(--antique-white)!important;}
