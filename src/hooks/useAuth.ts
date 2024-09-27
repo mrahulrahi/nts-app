@@ -4,9 +4,9 @@ import { useRouter } from 'next/navigation';
 const useAuth = () => {
     const router = useRouter();
     const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
-    const [user, setUser] = useState<{
+    const [user, setUser] = useState<{  
         username: any; id: string; role: string 
-} | null>(null);
+    } | null>(null);
 
     useEffect(() => {
         const token = localStorage.getItem('authToken');
@@ -47,6 +47,13 @@ const useAuth = () => {
                     id: data.user.id,
                     role: data.user.role
                 });
+
+                // Redirect based on user role
+                if (data.user.role === 'admin') {
+                    router.push('/admin');
+                } else {
+                    router.push(`/${data.user.username}`);
+                }
             } else {
                 const errorData = await response.json();
                 alert(errorData.message);

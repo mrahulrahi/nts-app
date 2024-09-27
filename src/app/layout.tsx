@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${montserrat.variable} ${alkatra.variable}`}>
         {showHeaderFooter && <Header />}
-        {children}
+        <main className="flex-grow-1">{children}</main>
         {showHeaderFooter && <Footer />}
         <ImportBsJS />
         <ImportAOS />

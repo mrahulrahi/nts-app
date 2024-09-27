@@ -70,7 +70,7 @@ p:last-child{margin-bottom:0;}
 
 html{height: 100%;}
 body{display: flex;flex-flow: column;height: 100%;}
-footer{margin-top: auto;}
+body > main{flex-grow: 1;}
 
 /* =================core css ends here================= */
 
