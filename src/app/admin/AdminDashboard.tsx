@@ -1,7 +1,7 @@
 // src/app/admin/AdminDashboard.tsx
 'use client';
 import { useState, useEffect } from 'react';
-import { notFound } from 'next/navigation'; // Ensure correct import for new `app` directory
+import { notFound, useParams } from 'next/navigation'; // Ensure correct import for new `app` directory
 import useAuth from '../../hooks/useAuth';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -29,10 +29,16 @@ const AdminDashboard = () => {
   }, [isAuthenticated]);
 
   if (loading) {
-    <Loading />// Show a loading indicator while checking authentication
+    return <Loading /> // Show a loading indicator while checking authentication
   }
+
+  // Check if the user has the 'admin' role
+  if (!isAuthenticated || !user?.role?.includes('admin')) {
+    return notFound(); // Redirect to not found page if user is not an admin
+  }
+
   return (
-    isAuthenticated && user?.role === 'admin' ? (
+    isAuthenticated ? (
       <>
         <div className="adminDashboard">
           <nav className={`sidebar ${sidebarOpen ? 'open' : ''}`}>

@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter, useParams, notFound } from 'next/navigation';
 import Image from 'next/image';
 import useAuth from '../../hooks/useAuth'; // Adjust the import path as necessary
