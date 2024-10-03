@@ -1,20 +1,13 @@
 // src/app/admin/AdminDashboard.tsx
 'use client';
 import { useState, useEffect } from 'react';
-import { notFound, useParams } from 'next/navigation'; // Ensure correct import for new `app` directory
+import { notFound } from 'next/navigation'; // Ensure correct import for new `app` directory
 import useAuth from '../../hooks/useAuth';
 import Image from 'next/image';
 import Link from 'next/link';
 import Loading from '../loading';
-import {
-  Navbar, Container, Nav, Card, Row, Col, Table,
-  Button, Form, InputGroup, ProgressBar
-} from 'react-bootstrap';
-import {
-  FaPlane, FaHotel, FaHome, FaBuilding, FaUsers,
-  FaChartLine, FaCalendarAlt, FaCog, FaSearch,
-  FaBars
-} from 'react-icons/fa';
+import { Row, Col } from 'react-bootstrap';
+import { FaPlane, FaHotel, FaHome, FaBuilding, FaUsers, FaChartLine, FaCalendarAlt, FaBars } from 'react-icons/fa';
 
 
 const AdminDashboard = () => {
@@ -100,52 +93,96 @@ const AdminDashboard = () => {
             </header>
 
             <div className="content-container py-4">
-              <Container>
-                <Row className="mb-4">
-                  <Col md={6} lg={3} className="mb-4">
-                    <Card className="h-100">
-                      <Card.Body>
-                        <Card.Title>Total Bookings</Card.Title>
-                        <Card.Text className="display-4">1,234</Card.Text>
-                        <ProgressBar now={75} label={`75%`} className="mt-2" />
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col md={6} lg={3} className="mb-4">
-                    <Card className="h-100">
-                      <Card.Body>
-                        <Card.Title>Properties Listed</Card.Title>
-                        <Card.Text className="display-4">567</Card.Text>
-                        <ProgressBar now={60} label={`60%`} className="mt-2" />
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col md={6} lg={3} className="mb-4">
-                    <Card className="h-100">
-                      <Card.Body>
-                        <Card.Title>Total Revenue</Card.Title>
-                        <Card.Text className="display-4">$89,234</Card.Text>
-                        <ProgressBar now={80} label={`80%`} className="mt-2" />
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col md={6} lg={3} className="mb-4">
-                    <Card className="h-100">
-                      <Card.Body>
-                        <Card.Title>Active Users</Card.Title>
-                        <Card.Text className="display-4">5,678</Card.Text>
-                        <ProgressBar now={65} label={`65%`} className="mt-2" />
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </Row>
+              <div className="container">
+                <div className="row g-4">
+                  <div className="col-md-6 col-lg-3">
+                    <div className="card h-100">
+                      <div className="card-header"><h5>Total Bookings</h5></div>
+                      <div className="card-body">
+                        <p className="display-4">1,234</p>
+                        <div className="progress mt-2">
+                          <div className="progress-bar" role="progressbar" style={{ width: '75%' }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>75%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-lg-3">
+                    <div className="card h-100">
+                      <div className="card-header"><h5>Properties Listed</h5></div>
+                      <div className="card-body">
+                        <p className="display-4">567</p>
+                        <div className="progress mt-2">
+                          <div className="progress-bar" role="progressbar" style={{ width: '60%' }} aria-valuenow={60} aria-valuemin={0} aria-valuemax={100}>60%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-lg-3">
+                    <div className="card h-100">
+                      <div className="card-header"><h5>Total Revenue</h5></div>
+                      <div className="card-body">
+                        <p className="display-4">$89,234</p>
+                        <div className="progress mt-2">
+                          <div className="progress-bar" role="progressbar" style={{ width: '80%' }} aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>80%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-lg-3">
+                    <div className="card h-100">
+                      <div className="card-header"><h5>Active Users</h5></div>
+                      <div className="card-body">
+                        <p className="display-4">5,678</p>
+                        <div className="progress mt-2">
+                          <div className="progress-bar" role="progressbar" style={{ width: '65%' }} aria-valuenow={65} aria-valuemin={0} aria-valuemax={100}>65%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-                <Row className="mb-4">
-                  <Col lg={8} className="mb-4">
-                    <Card>
-                      <Card.Header>Recent Bookings</Card.Header>
-                      <Card.Body>
-                        <Table striped bordered hover responsive>
+                  <div className="col-md-3 col-sm-6">
+                    <div className="card h-100">
+                      <div className="card-header"><h5>Total Users</h5></div>
+                      <div className="card-body">
+                        <p className="card-text display-4">1,234</p>
+                        <p className="card-text text-success"><i className="bi bi-arrow-up"></i> 5.3%</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6">
+                    <div className="card h-100">
+                      <div className="card-header"><h5>Active Bookings</h5></div>
+                      <div className="card-body">
+                        <p className="card-text display-4">56</p>
+                        <p className="card-text text-danger"><i className="bi bi-arrow-down"></i> 2.1%</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6">
+                    <div className="card h-100">
+                      <div className="card-header"><h5>Total Properties</h5></div>
+                      <div className="card-body">
+                        <p className="card-text display-4">789</p>
+                        <p className="card-text text-success"><i className="bi bi-arrow-up"></i> 3.7%</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6">
+                    <div className="card h-100">
+                      <div className="card-header"><h5>Revenue</h5></div>
+                      <div className="card-body">
+                        <p className="card-text display-4">$52K</p>
+                        <p className="card-text text-success"><i className="bi bi-arrow-up"></i> 7.2%</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="col-lg-8">
+                    <div className="card">
+                      <div className="card-header"><h5>Recent Bookings</h5></div>
+                      <div className="card-body">
+                        <table className="table table-striped table-bordered table-dark table-responsive">
                           <thead>
                             <tr>
                               <th>ID</th>
@@ -190,130 +227,88 @@ const AdminDashboard = () => {
                               <td><span className="badge bg-danger">Cancelled</span></td>
                             </tr>
                           </tbody>
-                        </Table>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col lg={4} className="mb-4">
-                    <Card className="h-100">
-                      <Card.Header>Quick Actions</Card.Header>
-                      <Card.Body>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4">
+                    <div className="card">
+                      <div className="card-header"><h5>Quick Actions</h5></div>
+                      <div className="card-body">
                         <div className="d-grid gap-2">
-                          <Button variant="primary" size="lg">
+                          <div className="btn btn-primary btn-lg">
                             <FaPlane className="me-2" /> Add New Tour
-                          </Button>
-                          <Button variant="secondary" size="lg">
+                          </div>
+                          <div className="btn btn-secondary btn-lg">
                             <FaHome className="me-2" /> List New Property
-                          </Button>
-                          <Button variant="info" size="lg">
+                          </div>
+                          <div className="btn btn-info btn-lg">
                             <FaUsers className="me-2" /> Manage Users
-                          </Button>
-                          <Button variant="warning" size="lg">
+                          </div>
+                          <div className="btn btn-warning btn-lg">
                             <FaChartLine className="me-2" /> View Reports
-                          </Button>
+                          </div>
                         </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </Row>
+                      </div>
+                    </div>
+                  </div>
 
-                <Row className="mb-4">
-                  <Col md={6} className="mb-4">
-                    <Card>
-                      <Card.Header>Tour & Travels Overview</Card.Header>
-                      <Card.Body>
-                        <Row>
-                          <Col xs={6} className="mb-3">
+                  <div className="col-md-6">
+                    <div className="card" >
+                      <div className="card-header"><h5>Tour & Travels Overview</h5></div>
+                      <div className="card-body">
+                        <div className="row g-3">
+                          <div className="col-xs-6">
                             <h5><FaPlane className="me-2" /> Active Tours</h5>
                             <p className="h3">24</p>
-                          </Col>
-                          <Col xs={6} className="mb-3">
+                          </div>
+                          <div className="col-xs-6">
                             <h5><FaHotel className="me-2" /> Hotel Partners</h5>
                             <p className="h3">89</p>
-                          </Col>
-                          <Col xs={6} className="mb-3">
+                            </div>
+                          <div className="col-xs-6">
                             <h5><FaCalendarAlt className="me-2" /> Upcoming Tours</h5>
                             <p className="h3">12</p>
-                          </Col>
-                          <Col xs={6} className="mb-3">
+                          </div>
+                          <div className="col-xs-6">
                             <h5><FaUsers className="me-2" /> Tour Guides</h5>
                             <p className="h3">45</p>
-                          </Col>
-                        </Row>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col md={6} className="mb-4">
-                    <Card>
-                      <Card.Header>Property & Real Estate Overview</Card.Header>
-                      <Card.Body>
-                        <Row>
-                          <Col xs={6} className="mb-3">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="card">
+                      <div className="card-header"><h5>Property & Real Estate Overview</h5></div>
+                      <div className="card-body">
+                        <div className="row g-3">
+                          <div className="col-xs-6">   
                             <h5><FaHome className="me-2" /> Listed Properties</h5>
                             <p className="h3">567</p>
-                          </Col>
-                          <Col xs={6} className="mb-3">
+                          </div>
+                            <div className="col-xs-6">
                             <h5><FaBuilding className="me-2" /> Property Types</h5>
                             <p className="h3">8</p>
-                          </Col>
-                          <Col xs={6} className="mb-3">
+                          </div>
+                              <div className="col-xs-6">
                             <h5><FaUsers className="me-2" /> Active Agents</h5>
                             <p className="h3">34</p>
-                          </Col>
-                          <Col xs={6} className="mb-3">
+                          </div>
+                          <div className="col-xs-6">
                             <h5><FaCalendarAlt className="me-2" /> Scheduled Viewings</h5>
                             <p className="h3">28</p>
-                          </Col>
-                        </Row>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </Row>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-                <div className="row g-4 mb-4">
-                  <div className="col-md-3 col-sm-6">
-                    <div className="statCard card h-100">
-                      <div className="card-body">
-                        <h5 className="card-title">Total Users</h5>
-                        <p className="card-text display-4">1,234</p>
-                        <p className="card-text text-success"><i className="bi bi-arrow-up"></i> 5.3%</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3 col-sm-6">
-                    <div className="statCard card h-100">
-                      <div className="card-body">
-                        <h5 className="card-title">Active Bookings</h5>
-                        <p className="card-text display-4">56</p>
-                        <p className="card-text text-danger"><i className="bi bi-arrow-down"></i> 2.1%</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3 col-sm-6">
-                    <div className="statCard card h-100">
-                      <div className="card-body">
-                        <h5 className="card-title">Total Properties</h5>
-                        <p className="card-text display-4">789</p>
-                        <p className="card-text text-success"><i className="bi bi-arrow-up"></i> 3.7%</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3 col-sm-6">
-                    <div className="statCard card h-100">
-                      <div className="card-body">
-                        <h5 className="card-title">Revenue</h5>
-                        <p className="card-text display-4">$52K</p>
-                        <p className="card-text text-success"><i className="bi bi-arrow-up"></i> 7.2%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="row g-4">
                   <div className="col-lg-8">
-                    <div className="chartCard card">
+                    <div className="card">
+                      <div className="card-header"><h5>Bookings Overview</h5></div>
                       <div className="card-body">
-                        <h5 className="card-title">Bookings Overview</h5>
+
                         <div className="chart">
                           {/* Placeholder for chart */}
                           <Image src="/placeholder.svg?height=300&width=600" alt="Bookings Chart" className="img-fluid" width={4000} height={4000} quality={100} />
@@ -323,8 +318,8 @@ const AdminDashboard = () => {
                   </div>
                   <div className="col-lg-4">
                     <div className="accordion-flushrecentActivityCard card">
+                      <div className="card-header"><h5>Recent Activity</h5></div>
                       <div className="card-body">
-                        <h5 className="card-title">Recent Activity</h5>
                         <ul className="list-unstyled">
                           <li className="mb-3">
                             <strong>John Doe</strong> made a new booking
@@ -347,10 +342,10 @@ const AdminDashboard = () => {
                     </div>
                   </div>
                 </div>
-              </Container>
+              </div>
             </div>
-          </main>
-        </div>
+          </main >
+        </div >
       </>
     ) : (
       notFound()

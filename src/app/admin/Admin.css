@@ -19,13 +19,11 @@
 .sidebarToggle {display: none;background: none;border: none;color: #e0e0e0;font-size: 1.5rem;}
 .userMenu {display: flex;align-items: center;gap: 1rem;}
 .avatar {width: 40px;height: 40px;border-radius: 50%;}
-.statCard,
-.chartCard,
-.recentActivityCard {background-color: #3a3a3a;border: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
-.statCard .card-title,
-.chartCard .card-title,
-.recentActivityCard .card-title {color: #c2a57b;}
+
 .chart {background-color: #2d2d2d;border-radius: 5px;padding: 1rem;}
+
+.card {background-color: #3a3a3a;border: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);color: var(--white);}
+.card-header h5{color: #c2a57b;margin-bottom: 0;}
 
 @media (max-width: 991.98px) {
   .sidebar {position: fixed;top: 0;left: 0;height: 100%;z-index: 1000;transform: translateX(-100%);}

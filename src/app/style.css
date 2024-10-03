@@ -53,7 +53,6 @@ p:last-child{margin-bottom:0;}
 .btn-dark:hover,.btn-dark:active { color: var(--dark-grey)!important;background-color: var(--white)!important;border-color: var(--dark-grey)!important;}
 
 .btn.btn-block{min-width: 100%;}
-.btn+.btn {margin-left: 25px;}
 .bottom-btn-box{margin-top: 40px;}
 
 .bg-dark-grey{background: var(--dark-grey);color: var(--white);}
