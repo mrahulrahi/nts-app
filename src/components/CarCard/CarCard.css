@@ -5,11 +5,11 @@
 
 .car-card-row {width: 100%;background: var(--teal);margin-bottom: 10px;}
 .car-card-col svg {color: var(--dark-grey);font-size: 20px;font-weight: 600;}
-.car-card-col {width: 33.33%;padding: 10px;background: var(--teal);font-size: 14px;font-weight: 700;border-left: 2px solid var(--dark-grey);}
+.car-card-col {width: 33.33%;padding: 10px;background: var(--antique-white);font-size: 14px;font-weight: 700;border-left: 2px solid var(--dark-grey);}
 .car-card-col:last-child {border-right: 2px solid var(--dark-grey);}
 
 .car-card-content{margin-bottom: 10px;}
-.car-card-content h4{width: 60%;height: 65px;padding: 15px;background: var(--teal);color: var(--dark-grey);font-size: 28px;font-weight: 700;line-height: 1.2;border-left: 2px solid var(--dark-grey);margin-bottom: 0;}
-.btn-2 {width: 40%;height: 65px;padding: 18px 10px;background: var(--antique-white);color: var(--dark-grey);font-size: 20px;font-weight: 700;line-height: 1.2;border-left: 2px solid var(--dark-grey);border-right: 2px solid var(--dark-grey);font-family: var(--font-montserrat);}
+.car-card-content h4{width: 60%;height: 65px;padding: 15px;background: var(--antique-white);color: var(--dark-grey);font-size: 28px;font-weight: 700;line-height: 1.2;border-left: 2px solid var(--dark-grey);margin-bottom: 0;}
+.btn-2 {width: 40%;height: 65px;padding: 18px 10px;background: var(--teal);color: var(--dark-grey);font-size: 20px;font-weight: 700;line-height: 1.2;border-left: 2px solid var(--dark-grey);border-right: 2px solid var(--dark-grey);font-family: var(--font-montserrat);}
 .btn-2:hover{color: var(--antique-white);background: var(--dark-grey);border-color: var(--dark-grey);}
 .car-card-note{color: var(--white);font-size: 12px;padding: 5px;background:  rgba(255, 255, 255, 0.2);}

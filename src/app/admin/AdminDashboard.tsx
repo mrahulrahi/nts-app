@@ -95,7 +95,7 @@ const AdminDashboard = () => {
             <div className="content-container py-4">
               <div className="container">
                 <div className="row g-4">
-                  <div className="col-md-6 col-lg-3">
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
                     <div className="card h-100">
                       <div className="card-header"><h5>Total Bookings</h5></div>
                       <div className="card-body">
@@ -106,7 +106,7 @@ const AdminDashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-6 col-lg-3">
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
                     <div className="card h-100">
                       <div className="card-header"><h5>Properties Listed</h5></div>
                       <div className="card-body">
@@ -117,7 +117,7 @@ const AdminDashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-6 col-lg-3">
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
                     <div className="card h-100">
                       <div className="card-header"><h5>Total Revenue</h5></div>
                       <div className="card-body">
@@ -128,7 +128,7 @@ const AdminDashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-6 col-lg-3">
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
                     <div className="card h-100">
                       <div className="card-header"><h5>Active Users</h5></div>
                       <div className="card-body">
@@ -140,7 +140,7 @@ const AdminDashboard = () => {
                     </div>
                   </div>
 
-                  <div className="col-md-3 col-sm-6">
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
                     <div className="card h-100">
                       <div className="card-header"><h5>Total Users</h5></div>
                       <div className="card-body">
@@ -149,7 +149,7 @@ const AdminDashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3 col-sm-6">
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
                     <div className="card h-100">
                       <div className="card-header"><h5>Active Bookings</h5></div>
                       <div className="card-body">
@@ -158,7 +158,7 @@ const AdminDashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3 col-sm-6">
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
                     <div className="card h-100">
                       <div className="card-header"><h5>Total Properties</h5></div>
                       <div className="card-body">
@@ -167,7 +167,7 @@ const AdminDashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3 col-sm-6">
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
                     <div className="card h-100">
                       <div className="card-header"><h5>Revenue</h5></div>
                       <div className="card-body">
@@ -258,20 +258,20 @@ const AdminDashboard = () => {
                       <div className="card-header"><h5>Tour & Travels Overview</h5></div>
                       <div className="card-body">
                         <div className="row g-3">
-                          <div className="col-xs-6">
-                            <h5><FaPlane className="me-2" /> Active Tours</h5>
+                          <div className="col-sm-6">
+                            <h6><FaPlane className="me-2" /> Active Tours</h6>
                             <p className="h3">24</p>
                           </div>
-                          <div className="col-xs-6">
-                            <h5><FaHotel className="me-2" /> Hotel Partners</h5>
+                          <div className="col-sm-6">
+                            <h6><FaHotel className="me-2" /> Hotel Partners</h6>
                             <p className="h3">89</p>
                             </div>
-                          <div className="col-xs-6">
-                            <h5><FaCalendarAlt className="me-2" /> Upcoming Tours</h5>
+                          <div className="col-sm-6">
+                            <h6><FaCalendarAlt className="me-2" /> Upcoming Tours</h6>
                             <p className="h3">12</p>
                           </div>
-                          <div className="col-xs-6">
-                            <h5><FaUsers className="me-2" /> Tour Guides</h5>
+                          <div className="col-sm-6">
+                            <h6><FaUsers className="me-2" /> Tour Guides</h6>
                             <p className="h3">45</p>
                           </div>
                         </div>
@@ -283,20 +283,20 @@ const AdminDashboard = () => {
                       <div className="card-header"><h5>Property & Real Estate Overview</h5></div>
                       <div className="card-body">
                         <div className="row g-3">
-                          <div className="col-xs-6">   
-                            <h5><FaHome className="me-2" /> Listed Properties</h5>
+                          <div className="col-sm-6">   
+                            <h6><FaHome className="me-2" /> Listed Properties</h6>
                             <p className="h3">567</p>
                           </div>
-                            <div className="col-xs-6">
-                            <h5><FaBuilding className="me-2" /> Property Types</h5>
+                            <div className="col-sm-6">
+                            <h6><FaBuilding className="me-2" /> Property Types</h6>
                             <p className="h3">8</p>
                           </div>
-                              <div className="col-xs-6">
-                            <h5><FaUsers className="me-2" /> Active Agents</h5>
+                              <div className="col-sm-6">
+                            <h6><FaUsers className="me-2" /> Active Agents</h6>
                             <p className="h3">34</p>
                           </div>
-                          <div className="col-xs-6">
-                            <h5><FaCalendarAlt className="me-2" /> Scheduled Viewings</h5>
+                          <div className="col-sm-6">
+                            <h6><FaCalendarAlt className="me-2" /> Scheduled Viewings</h6>
                             <p className="h3">28</p>
                           </div>
                         </div>
