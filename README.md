@@ -6,7 +6,7 @@ A brief description of your Next.js project.
 
 ### Prerequisites
 
-- Node.js (version x.x.x)
+- Node.js (version 14 or higher)
 - npm or yarn
 
 ### Installation

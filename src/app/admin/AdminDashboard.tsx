@@ -177,57 +177,58 @@ const AdminDashboard = () => {
                     </div>
                   </div>
 
-
                   <div className="col-lg-8">
                     <div className="card">
                       <div className="card-header"><h5>Recent Bookings</h5></div>
                       <div className="card-body">
-                        <table className="table table-striped table-bordered table-dark table-responsive">
-                          <thead>
-                            <tr>
-                              <th>ID</th>
-                              <th>Customer</th>
-                              <th>Service</th>
-                              <th>Date</th>
-                              <th>Amount</th>
-                              <th>Status</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>1</td>
-                              <td>John Doe</td>
-                              <td>Tour Package</td>
-                              <td>2023-06-15</td>
-                              <td>$1,200</td>
-                              <td><span className="badge bg-success">Confirmed</span></td>
-                            </tr>
-                            <tr>
-                              <td>2</td>
-                              <td>Jane Smith</td>
-                              <td>Property Viewing</td>
-                              <td>2023-06-14</td>
-                              <td>$50</td>
-                              <td><span className="badge bg-warning">Pending</span></td>
-                            </tr>
-                            <tr>
-                              <td>3</td>
-                              <td>Bob Johnson</td>
-                              <td>Hotel Booking</td>
-                              <td>2023-06-13</td>
-                              <td>$500</td>
-                              <td><span className="badge bg-info">In Progress</span></td>
-                            </tr>
-                            <tr>
-                              <td>4</td>
-                              <td>Alice Brown</td>
-                              <td>Property Purchase</td>
-                              <td>2023-06-12</td>
-                              <td>$250,000</td>
-                              <td><span className="badge bg-danger">Cancelled</span></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <div className="table-responsive">
+                          <table className="table table-striped table-bordered table-dark table-responsive">
+                            <thead>
+                              <tr>
+                                <th>ID</th>
+                                <th>Customer</th>
+                                <th>Service</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>Tour Package</td>
+                                <td>2023-06-15</td>
+                                <td>$1,200</td>
+                                <td><span className="badge bg-success">Confirmed</span></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Jane Smith</td>
+                                <td>Property Viewing</td>
+                                <td>2023-06-14</td>
+                                <td>$50</td>
+                                <td><span className="badge bg-warning">Pending</span></td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>Bob Johnson</td>
+                                <td>Hotel Booking</td>
+                                <td>2023-06-13</td>
+                                <td>$500</td>
+                                <td><span className="badge bg-info">In Progress</span></td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>Alice Brown</td>
+                                <td>Property Purchase</td>
+                                <td>2023-06-12</td>
+                                <td>$250,000</td>
+                                <td><span className="badge bg-danger">Cancelled</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -265,7 +266,7 @@ const AdminDashboard = () => {
                           <div className="col-sm-6">
                             <h6><FaHotel className="me-2" /> Hotel Partners</h6>
                             <p className="h3">89</p>
-                            </div>
+                          </div>
                           <div className="col-sm-6">
                             <h6><FaCalendarAlt className="me-2" /> Upcoming Tours</h6>
                             <p className="h3">12</p>
@@ -283,15 +284,15 @@ const AdminDashboard = () => {
                       <div className="card-header"><h5>Property & Real Estate Overview</h5></div>
                       <div className="card-body">
                         <div className="row g-3">
-                          <div className="col-sm-6">   
+                          <div className="col-sm-6">
                             <h6><FaHome className="me-2" /> Listed Properties</h6>
                             <p className="h3">567</p>
                           </div>
-                            <div className="col-sm-6">
+                          <div className="col-sm-6">
                             <h6><FaBuilding className="me-2" /> Property Types</h6>
                             <p className="h3">8</p>
                           </div>
-                              <div className="col-sm-6">
+                          <div className="col-sm-6">
                             <h6><FaUsers className="me-2" /> Active Agents</h6>
                             <p className="h3">34</p>
                           </div>
@@ -311,7 +312,7 @@ const AdminDashboard = () => {
 
                         <div className="chart">
                           {/* Placeholder for chart */}
-                          <Image src="/placeholder.svg?height=300&width=600" alt="Bookings Chart" className="img-fluid" width={4000} height={4000} quality={100} />
+                          <Image src="/images/image-1.jpeg" alt="Bookings Chart" className="img-fluid" width={4000} height={4000} quality={100} />
                         </div>
                       </div>
                     </div>
