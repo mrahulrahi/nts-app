@@ -8,6 +8,7 @@ import Link from 'next/link';
 import Loading from '../loading';
 import { Row, Col } from 'react-bootstrap';
 import { FaPlane, FaHotel, FaHome, FaBuilding, FaUsers, FaChartLine, FaCalendarAlt, FaBars } from 'react-icons/fa';
+import { IoCalendarOutline, IoHomeOutline, IoLogInOutline, IoPeopleOutline, IoSettingsOutline, IoSpeedometerOutline, IoStatsChartOutline } from 'react-icons/io5';
 
 
 const AdminDashboard = () => {
@@ -52,35 +53,35 @@ const AdminDashboard = () => {
             <ul className="nav flex-column">
               <li className="nav-item">
                 <Link href="/admin/dashboard" className="nav-link active">
-                  <i className="bi bi-speedometer2 me-2"></i> Dashboard
+                <IoSpeedometerOutline /> Dashboard
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/admin/users" className="nav-link">
-                  <i className="bi bi-people me-2"></i> Users
+                <IoPeopleOutline /> Users
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/admin/bookings" className="nav-link">
-                  <i className="bi bi-calendar-check me-2"></i> Bookings
+                <IoCalendarOutline /> Bookings
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/admin/properties" className="nav-link">
-                  <i className="bi bi-house-door me-2"></i> Properties
+                <IoHomeOutline /> Properties
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/admin/reports" className="nav-link">
-                  <i className="bi bi-graph-up me-2"></i> Reports
+                <IoStatsChartOutline /> Reports
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/admin/settings" className="nav-link">
-                  <i className="bi bi-gear me-2"></i> Settings
+                <IoSettingsOutline />Settings
                 </Link>
               </li>
-              <li className="nav-item">   <button className="nav-link" onClick={logout}>Logout</button></li>
+              <li className="nav-item">   <button className="nav-link" onClick={logout}> <IoLogInOutline /> Logout</button></li>
             </ul>
           </nav>
 
