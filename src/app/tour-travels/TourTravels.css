@@ -11,6 +11,9 @@
 .car-card-list{width: calc(100% +30px);margin-left: -15px;margin-bottom: -30px;}
 .car-card-item{width: 33.33%;padding: 0 15px;margin-bottom: 30px;}
 
+.property-card-list{width: calc(100% + 30px);margin: 0 -15px;margin-bottom: -20px;}
+.property-card-item{width: 50%;padding: 0 15px;margin-bottom: 30px;}
+
 @media (max-width:1199.98px){
 .service-card-item{width: 33.33%;flex-grow: 1;}
 .feature-card-item{width: 50%;}
@@ -22,6 +25,7 @@
 @media (max-width:767.98px){
 .feature-card-item{width: 100%;}
 .car-card-item{width: 100%;}
+.property-card-item{width: 100%;}
 }
 @media (max-width:575.98px){
 .service-card-item{width: 100%;}

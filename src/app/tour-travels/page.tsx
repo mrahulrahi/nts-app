@@ -6,8 +6,8 @@ import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import FeatureCard from '../../components/FeatureCard/FeatureCard';
 import TypeCard from '../../components/TypeCard/TypeCard';
 import CarCard from '../../components/CarCard/CarCard';
-import ImageTextBlock from '../../components/ImageTextBlock/ImageTextBlock';
 import CTABlock from '../../components/CTABlock/CTABlock';
+import PropertyCard from '@/src/components/PropertyCard/PropertyCard';
 
 const TourTravelsPage = () => {
   const [selectedCarType, setSelectedCarType] = useState<string | null>(null);
@@ -38,6 +38,11 @@ const TourTravelsPage = () => {
     { imgUrl: "/images/suv.png", title: "SUV" },
     { imgUrl: "/images/sedan.png", title: "Sedan" },
     { imgUrl: "/images/hatchback.png", title: "Hatchback" },
+    { imgUrl: "/images/house.png", title: "Villa" },
+    { imgUrl: "/images/buy-house.png", title: "Commercial" },
+    { imgUrl: "/images/sell-house.png", title: "House" },
+    { imgUrl: "/images/buy-plot.png", title: "Flat" },
+    { imgUrl: "/images/sell-plot.png", title: "Plot" },
   ];
 
   const carCards = [
@@ -50,12 +55,19 @@ const TourTravelsPage = () => {
     { imgUrl: "/images/ertiga.webp", title: "Ertiga", type: "MPV", capacity: "6 + 1", airCondition: "AC" },
   ];
 
+  const propertyCards = [
+    { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 1", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 60000 },
+    { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 2", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 70000 },
+    { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 3", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 80000 },
+    { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 4", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 90000 },
+  ]
+
   const ctaData = {
     cardBG: "dark-grey",
     cardHeading: "Book on Call / Whatsapp",
     cardPara: "Discover seamless travel with our tour and travel services, offering a range of comfortable vehicles to suit your journey. Whether it's a local rental, airport transfer, or an outstation trip, we provide reliable and affordable solutions for all your travel needs. Book now and experience a hassle-free ride with professional drivers and 24/7 support!",
     cardFirstHeading: "Book on call",
-    cardFirstPara: "Our advisors are just a phone call away. On average, we answer calls <strong>within 90 seconds.</strong> Lines open 24/7.",
+    cardFirstPara: "Our advisors are just a phone call away. On average, we answer calls within 90 seconds. Lines open 24/7.",
     cardFirstLink: "+91 8881 888339",
     cardFirstUrl: "tel:+918881888339",
     cardSecondHeading: "Book on whatsapp",
@@ -96,7 +108,7 @@ const TourTravelsPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-            <div className="type-card-list-wrapper scrollbar-hidden" data-aos="fade-up">
+              <div className="type-card-list-wrapper scrollbar-hidden" data-aos="fade-up">
                 <div className="type-card-list d-flex flex-wrap justify-content-center">
                   <div className="type-card-item">
                     <div className="type-card-box w-100 h-100 d-flex align-items-center justify-content-center">
@@ -139,19 +151,25 @@ const TourTravelsPage = () => {
         </div>
       </div>
 
+
       <div className="content-container bg-pattern-dark">
         <div className="container">
           <div className="row" data-aos="fade-up">
             <div className="col-md-12">
-              <ImageTextBlock imgUrl='/images/service-img-1.jpg'>
-                <h4>Tour & Travels</h4>
-                <h5>Book Your Car</h5>
-                <p>Discover the world with Imagine Group &apos s bespoke tour and travel services. We craft personalized itineraries that turn every journey into an unforgettable adventure, ensuring a seamless experience from start to finish.</p>
-              </ImageTextBlock>
+              <div className="heading text-center">
+                <h3>Available Tour</h3>
+              </div>
+
+              <div className="property-card-list d-flex flex-wrap mt-5">
+                {propertyCards.map((card) => <div key={card.title} className="property-card-item" data-aos="fade-up">
+                  <PropertyCard card={card} />
+                </div>)}
+              </div>
             </div>
           </div>
         </div>
       </div>
+
 
       <div className="content-container bg-pattern-light">
         <div className="container">

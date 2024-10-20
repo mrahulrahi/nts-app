@@ -8,8 +8,7 @@ const Footer = () => {
     const links = [
         { 'path': '/', 'label': 'Home' },
         { 'path': '/about', 'label': 'About' },
-        { 'path': '/tour-travels', 'label': 'Tour & Travels' },
-        { 'path': '/properties', 'label': 'Properties' },
+        { 'path': '/tour-travels', 'label': 'Blog' },
         { 'path': '/contact', 'label': 'Contact' },
     ]
 
