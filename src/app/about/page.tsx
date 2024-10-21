@@ -5,22 +5,35 @@ import TeamCard from '../../components/TeamCard/TeamCard'
 import TextCard from '../../components/TextCard/TextCard'
 import CareerForm from '../../components/CareerForm/CareerForm'
 import type { Metadata } from "next";
+import ServiceCard from '@/src/components/ServiceCard/ServiceCard'
 
 export const metadata: Metadata = {
-  title: "IG - About",
-  description: "About the company",
+    title: "IG - About",
+    description: "About the company",
 };
 
 
 const AboutPage = () => {
+    const serviceCards = [
+        { imgUrl: "/images/local.png", title: "Local Rentals" },
+        { imgUrl: "/images/oneway.png", title: "OneWay Drops" },
+        { imgUrl: "/images/twoway.png", title: "Round Trips" },
+        { imgUrl: "/images/airport.png", title: "Airport Transfers" },
+        { imgUrl: "/images/railway-station.png", title: "Railway Station Transfers" },
+        { imgUrl: "/images/bus-stand.png", title: "Bus Stand Transfers" },
+        { imgUrl: "/images/event.png", title: "Event Booking" },
+        { imgUrl: "/images/office.png", title: "For Office Use" },
+    ];
+
     const teamCards = [
-        { imgUrl: "/images/team-img-1.jpg", name: "Anuj Maurya", jobPost: "Founder", Links: { facebook: "https://www.facebook.com/anujmauryaa", instagram: "https://www.instagram.com/anujmauryaa"}},
+        { imgUrl: "/images/team-img-1.jpg", name: "Anuj Maurya", jobPost: "Founder", Links: { facebook: "https://www.facebook.com/anujmauryaa", instagram: "https://www.instagram.com/anujmauryaa" } },
         { imgUrl: "/images/team-img-2.png", name: "Kalpana Maurya", jobPost: "CEO" },
         { imgUrl: "/images/team-img-3.png", name: "Komal Rathor", jobPost: "Chief Manager" },
         { imgUrl: "/images/team-img-4.png", name: "Yogendra Singh", jobPost: "CFO" },
         { imgUrl: "/images/team-img-5.jpg", name: "Rahul Maurya", jobPost: "Web Dev", Links: { linkedin: "https://www.linkedin.com/in/mrahulrahi/" } },
         { imgUrl: "/images/team-img-6.png", name: "Priyanka Tiwari", jobPost: "Assistant" },
     ]
+
 
     return (
         <>
@@ -50,6 +63,25 @@ const AboutPage = () => {
                                 <h3>Mission & Vision</h3>
                             </div>
                             <TextCard />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="content-container bg-pattern-dark">
+                <div className="container">
+                    <div className="row" data-aos="fade-up">
+                        <div className="col-md-12">
+                            <div className="heading text-center">
+                                <h3>Our Services</h3>
+                            </div>
+                            <div className="service-card-list d-flex flex-wrap">
+                                {serviceCards.map((card) => (
+                                    <div key={card.title} className="service-card-item">
+                                        <ServiceCard card={card} />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

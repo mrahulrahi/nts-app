@@ -1,4 +1,5 @@
 'use client'
+import { useState } from 'react';
 import BlogCard from "../components/BlogCard/BlogCard";
 import Hero from "../components/Hero/Hero";
 import ImageTextBlock from '../components/ImageTextBlock/ImageTextBlock'
@@ -10,8 +11,54 @@ import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import TypeCard from "../components/TypeCard/TypeCard";
+import CarCard from "../components/CarCard/CarCard";
+import PropertyCard from "../components/PropertyCard/PropertyCard";
+import FeatureCard from '../components/FeatureCard/FeatureCard';
 
 export default function Home() {
+
+  const [selectedCarType, setSelectedCarType] = useState<string | null>(null);
+
+  const typeCards = [
+    { imgUrl: "/images/luxury.png", title: "Luxury" },
+    { imgUrl: "/images/mpv.png", title: "MPV" },
+    { imgUrl: "/images/suv.png", title: "SUV" },
+    { imgUrl: "/images/sedan.png", title: "Sedan" },
+    { imgUrl: "/images/hatchback.png", title: "Hatchback" },
+    { imgUrl: "/images/house.png", title: "Villa" },
+    { imgUrl: "/images/buy-house.png", title: "Commercial" },
+    { imgUrl: "/images/sell-house.png", title: "House" },
+    { imgUrl: "/images/buy-plot.png", title: "Flat" },
+    { imgUrl: "/images/sell-plot.png", title: "Plot" },
+  ];
+
+  const featureCards = [
+    { imgUrl: "/images/whyus-1.png", title: "Reasonable Prices" },
+    { imgUrl: "/images/whyus-2.png", title: "Clean & Comfortable Cabs" },
+    { imgUrl: "/images/whyus-3.png", title: "Simple & Convenient Booking" },
+    { imgUrl: "/images/whyus-4.png", title: "Doorstep Pickup" },
+    { imgUrl: "/images/whyus-5.png", title: "Experienced & Polite Drivers" },
+    { imgUrl: "/images/whyus-6.png", title: "No Hidden Charges" },
+  ];
+
+  const carCards = [
+    { imgUrl: "/images/xuv300.webp", title: "XUV 300", type: "SUV", capacity: "4 + 1", airCondition: "AC" },
+    { imgUrl: "/images/innova.webp", title: "Innova", type: "MPV", capacity: "6 + 1", airCondition: "AC" },
+    { imgUrl: "/images/dzire.webp", title: "Dzire", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
+    { imgUrl: "/images/fortuner.webp", title: "Fortuner", type: "SUV", capacity: "6 + 1", airCondition: "AC" },
+    { imgUrl: "/images/zest.avif", title: "Zest", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
+    { imgUrl: "/images/indigo.webp", title: "Indigo", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
+    { imgUrl: "/images/ertiga.webp", title: "Ertiga", type: "MPV", capacity: "6 + 1", airCondition: "AC" },
+  ];
+
+  const propertyCards = [
+    { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 1", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 60000 },
+    { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 2", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 70000 },
+    { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 3", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 80000 },
+    { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 4", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 90000 },
+  ]
+
   const testimonialCards = [
     { name: "B. K. Singh", title: "Dist. Commanded Homegaurd", body: "Imagine Group made our vacation dreams a reality! Their attention to detail and personalized itinerary ensured we had an unforgettable experience. Highly recommended!" },
     { name: "Sanju Singh", title: "Folk Singer", body: "Finding the perfect home was a breeze thanks to Imagine Group. Their knowledgeable team guided us every step of the way, making the process smooth and stress-free." },
@@ -57,9 +104,120 @@ export default function Home() {
   };
 
 
+  // Filter the carCards based on the selected car type
+  const filteredCarCards = selectedCarType
+    ? carCards.filter(car => car.type === selectedCarType)
+    : carCards; // Show all cars if no type is selected
+
   return (
     <main>
       <Hero />
+
+      <div className="book-form-wrapper w-100 mt-5" data-aos="fade-up">
+        <div className="form-control-row d-flex flex-wrap">
+          <div className="form-control-col"><input type="text" className="form-control" placeholder="Pickup Location" /></div>
+          <div className="form-control-col"><input type="text" className="form-control" placeholder="Drop Location" /></div>
+          <div className="form-control-col"><input type="date" className="form-control" placeholder="Pickup Date" /></div>
+          <div className="form-control-col">
+            <select className="form-select">
+              <option selected>Select Car type</option>
+              {typeCards.map((typeCard) => (
+                <option key={typeCard.title} value={typeCard.title}>
+                  {typeCard.title}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="form-control-col"><button className="btn btn-default" type="button">Book Now</button></div>
+        </div>
+      </div>
+
+
+      <div className="content-container py-0">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="type-card-list-wrapper scrollbar-hidden" data-aos="fade-up">
+                <div className="type-card-list d-flex">
+                  <div className="type-card-item">
+                    <div className="type-card-box w-100 h-100 d-flex align-items-center justify-content-center">
+                      <div className="type-card-title text-uppercase">Cars Types</div>
+                    </div>
+                  </div>
+                  {typeCards.map((card) => (
+                    <div key={card.title} className="type-card-item" onClick={() => setSelectedCarType(card.title)}>
+                      <TypeCard card={card} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="content-container bg-pattern-light">
+        <div className="container">
+          <div className="row" data-aos="fade-up">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>Available Cars</h3>
+              </div>
+
+              <div className="car-card-list d-flex flex-wrap mt-5">
+                {filteredCarCards.length > 0 ? (
+                  filteredCarCards.map((card) => (
+                    <div key={card.title} className="car-card-item" data-aos="fade-up">
+                      <CarCard card={card} />
+                    </div>
+                  ))
+                ) : (
+                  <p className="text-center">No cars available for the selected type.</p>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="content-container bg-pattern-dark">
+        <div className="container">
+          <div className="row" data-aos="fade-up">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>Available Tour</h3>
+              </div>
+
+              <div className="property-card-list d-flex flex-wrap mt-5">
+                {propertyCards.map((card) => <div key={card.title} className="property-card-item" data-aos="fade-up">
+                  <PropertyCard card={card} />
+                </div>)}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="content-container bg-pattern-light">
+        <div className="container">
+          <div className="row" data-aos="fade-up">
+            <div className="col-md-12">
+              <div className="heading text-center">
+                <h3>Why Us?</h3>
+              </div>
+              <div className="feature-card-list d-flex flex-wrap">
+                {featureCards.map((card) => (
+                  <div key={card.title} className="feature-card-item">
+                    <FeatureCard card={card} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="content-container bg-pattern-dark">
         <div className="container">

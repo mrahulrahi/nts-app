@@ -54,7 +54,7 @@ const Header = () => {
     const links = [
         { path: '/', label: 'Home' },
         { path: '/about', label: 'About' },
-        { path: '/tour-travels', label: 'Blog' },
+        { path: '/blog', label: 'Blog' },
         { path: '/contact', label: 'Contact' },
     ];
 
