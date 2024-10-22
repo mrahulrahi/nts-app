@@ -1,0 +1,35 @@
+.destination-card-list{width: calc(100% + 24px);margin-left: -12px;margin-bottom: -24px;}
+.destination-card-item{width: 33.33%;padding: 0 12px;margin-bottom: 24px;}
+
+.destination-card-box{width: 100%;height: 100%;flex-flow:column;gap: 30px;padding: 10px;border-radius:16px;}
+.destination-card-img{width: 100%;border-radius: 12px;position: relative;padding-bottom: 50%;}
+.destination-card-img img{width:100%;height:100%;object-fit: cover;position: absolute;top: 0;left: 0;}
+.destination-card-content{padding: 0 15px 15px;font-size: 14px;color: var(--white);}
+.destination-card-content h6{color: var(--white);font-size:14px;font-weight: 500;line-height: 1.2;margin-bottom: 10px;}
+.destination-card-content h4{font-size:24px;font-weight: 600;line-height: 1.2;margin-bottom: 10px;}
+.destination-card-content p{display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;  overflow: hidden;}
+
+
+
+@media (min-width: 992px) {
+    .destination-card-item:nth-child(1), .destination-card-item:nth-child(2) {width: 100%;}
+    .destination-card-item:nth-child(1) .destination-card-box,.destination-card-item:nth-child(2) .destination-card-box{padding: 0;}
+    .destination-card-item:nth-child(1) .destination-card-img,.destination-card-item:nth-child(2) .destination-card-img{width:45%;height: 100%;padding-bottom: 0;}
+    .destination-card-item:nth-child(1) .destination-card-img img,.destination-card-item:nth-child(2) .destination-card-img img{position: static;}
+    .destination-card-item:nth-child(1) .destination-card-content,.destination-card-item:nth-child(2) .destination-card-content{width: calc(55% - 30px);padding: 30px;}
+    .destination-card-item:nth-child(1) .destination-card-content h6,.destination-card-item:nth-child(2) .destination-card-content h6{color: var(--antique-white);font-size: 20px;font-weight: 600;}
+    .destination-card-item:nth-child(1) .destination-card-content h4,.destination-card-item:nth-child(2) .destination-card-content h4{color: var(--teal);font-size:32px;font-weight: 700;}
+    
+    .destination-card-item:nth-child(1) .destination-card-box{flex-flow: row;}
+    .destination-card-item:nth-child(2) .destination-card-box{flex-flow: row-reverse;}
+    .destination-card-item:nth-child(1) .destination-card-content{text-align:right;}
+}
+
+@media (max-width: 991.98px) {
+    .destination-card-item{width: 50%;}
+}
+
+@media (max-width: 767.98px) {
+    .destination-card-item{width: 100%;}
+}
+

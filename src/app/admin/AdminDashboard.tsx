@@ -313,7 +313,7 @@ const AdminDashboard = () => {
 
                         <div className="chart">
                           {/* Placeholder for chart */}
-                          <Image src="/images/image-1.jpeg" alt="Bookings Chart" className="img-fluid" width={4000} height={4000} quality={100} />
+                          <Image src="/images/image-1.jpg" alt="Bookings Chart" className="img-fluid" width={4000} height={4000} quality={100} />
                         </div>
                       </div>
                     </div>

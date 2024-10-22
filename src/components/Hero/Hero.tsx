@@ -49,12 +49,6 @@ const Hero = () => {
 
                             <SwiperSlide>
                                 <div className="hero-bg">
-                                    <Image src="/images/swiper-img-1.jpg" alt="" width={4000} height={4000} quality={100} />
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <div className="hero-bg">
                                     <Image src="/images/swiper-img-2.jpeg" alt="" width={4000} height={4000} quality={100} />
                                 </div>
                             </SwiperSlide>
@@ -70,12 +64,7 @@ const Hero = () => {
                                     <Image src="/images/swiper-img-4.jpeg" alt="" width={4000} height={4000} quality={100} />
                                 </div>
                             </SwiperSlide>
-
-                            <SwiperSlide>
-                                <div className="hero-bg">
-                                    <Image src="/images/swiper-img-5.jpeg" alt="" width={4000} height={4000} quality={100} />
-                                </div>
-                            </SwiperSlide>
+                            
                         </Swiper>
                     </div>
 
@@ -106,17 +95,8 @@ const Hero = () => {
                                     >
 
                                         <SwiperSlide>
-                                            <div className="hero-content flex flex-column justify-content-center text-uppercase">
-                                                <h5>#01</h5>
-                                                <h1>imagine</h1>
-                                                <h3>group</h3>
-                                                <hr />
-                                            </div>
-                                        </SwiperSlide>
-
-                                        <SwiperSlide>
                                             <div className="hero-content h-100 flex flex-column justify-content-center text-uppercase">
-                                                <h5>#02</h5>
+                                                <h5>#01</h5>
                                                 <h1>book</h1>
                                                 <h3>your car</h3>
                                                 <hr />
@@ -125,7 +105,7 @@ const Hero = () => {
 
                                         <SwiperSlide>
                                             <div className="hero-content h-100 flex flex-column justify-content-center text-uppercase">
-                                                <h5>#03</h5>
+                                                <h5>#02</h5>
                                                 <h1>travel</h1>
                                                 <h3>with us</h3>
                                                 <hr />
@@ -134,18 +114,9 @@ const Hero = () => {
 
                                         <SwiperSlide>
                                             <div className="hero-content h-100 flex flex-column justify-content-center text-uppercase">
-                                                <h5>#04</h5>
-                                                <h1>invest</h1>
-                                                <h3>in property</h3>
-                                                <hr />
-                                            </div>
-                                        </SwiperSlide>
-
-                                        <SwiperSlide>
-                                            <div className="hero-content h-100 flex flex-column justify-content-center text-uppercase">
-                                                <h5>#05</h5>
-                                                <h1>buy</h1>
-                                                <h3>your dream house</h3>
+                                                <h5>#03</h5>
+                                                <h1>Explore</h1>
+                                                <h3>the world</h3>
                                                 <hr />
                                             </div>
                                         </SwiperSlide>
@@ -164,18 +135,18 @@ const Hero = () => {
                 </div>
                 <div className="hero-right p-5">
                     <div className="book-form-wrapper w-100 mt-5 position-relative z-3" data-aos="fade-up">
-                        <h3>Your Journey Begins Here</h3>
+                        <h3 className="text-white">Your Journey Begins Here</h3>
 
-                        <ul className="nav nav-tabs" id="myTab" role="tablist">
-                            <li className="nav-item w-50" role="presentation">
-                                <button className="nav-link w-100 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Car Rental</button>
+                        <ul className="book-form-nav d-flex align-items-center gap-2" id="myTab" role="tablist">
+                            <li className="bfn-item w-50" role="presentation">
+                                <button className="bfn-link w-100 active" id="car-tab" data-bs-toggle="tab" data-bs-target="#car-tab-pane" type="button" role="tab" aria-controls="car-tab-pane" aria-selected="true">Car Rental</button>
                             </li>
-                            <li className="nav-item w-50" role="presentation">
-                                <button className="nav-link w-100" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Tour & Travels</button>
+                            <li className="bfn-item w-50" role="presentation">
+                                <button className="bfn-link w-100" id="tour-tab" data-bs-toggle="tab" data-bs-target="#tour-tab-pane" type="button" role="tab" aria-controls="tour-tab-pane" aria-selected="false">Tour & Travels</button>
                             </li>
                         </ul>
                         <div className="tab-content mt-4" id="myTabContent">
-                            <div className="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabIndex={0}>
+                            <div className="tab-pane fade show active" id="car-tab-pane" role="tabpanel" aria-labelledby="car-tab" tabIndex={0}>
                                 <div className="form-control-row d-flex flex-wrap gap-3">
                                     <div className="form-control-col"><input type="text" className="form-control" placeholder="Pickup Location" /></div>
                                     <div className="form-control-col"><input type="text" className="form-control" placeholder="Drop Location" /></div>
@@ -193,14 +164,14 @@ const Hero = () => {
                                     <div className="form-control-col"><button className="btn btn-default" type="button">Book Now</button></div>
                                 </div>
                             </div>
-                            <div className="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabIndex={0}>
+                            <div className="tab-pane fade" id="tour-tab-pane" role="tabpanel" aria-labelledby="tour-tab" tabIndex={0}>
                                 <div className="form-control-row d-flex flex-wrap gap-3">
-                                    <div className="form-control-col"><input type="text" className="form-control" placeholder="Pickup Location" /></div>
-                                    <div className="form-control-col"><input type="text" className="form-control" placeholder="Drop Location" /></div>
-                                    <div className="form-control-col"><input type="date" className="form-control" placeholder="Pickup Date" /></div>
+                                    <div className="form-control-col"><input type="text" className="form-control" placeholder="Destination" /></div>
+                                    <div className="form-control-col"><input type="date" className="form-control" placeholder="Departure Date" /></div>
+                                    <div className="form-control-col"><input type="date" className="form-control" placeholder="Return Date" /></div>
                                     <div className="form-control-col">
                                         <select className="form-select">
-                                            <option selected>Select Car type</option>
+                                            <option selected>Select Tour type</option>
                                             {typeCards.map((typeCard) => (
                                                 <option key={typeCard.title} value={typeCard.title}>
                                                     {typeCard.title}
