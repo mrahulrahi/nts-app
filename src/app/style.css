@@ -82,11 +82,11 @@ body > main{flex-grow: 1;}
 
 .type-card-list-wrapper{margin-top: -50px;position: relative;z-index: 99;}
 
-.form-control-row{border-radius: 10px;overflow: hidden;}
-.form-control-col{flex-grow: 1;flex-basis: 0;}
+
+.form-control-col{width: calc(50% - 12px);flex-grow: 1;}
 
 .book-form-wrapper input.form-control,.book-form-wrapper input.form-control:focus,
-.book-form-wrapper select.form-select,.book-form-wrapper select.form-select:focus{height: 60px;;padding: 18px 20px;font-size: 16px;font-weight: 300;background-color: var(--dark-grey);color: var(--antique-white);border-radius: 0;box-shadow: none;border: 0;}
+.book-form-wrapper select.form-select,.book-form-wrapper select.form-select:focus{height: 60px;padding: 18px 20px;font-size: 16px;font-weight: 300;background-color: var(--dark-grey);color: var(--antique-white);box-shadow: none;border: 0;}
 .book-form-wrapper input.form-control::placeholder{color: var(--antique-white);}
 
 input.form-control, input.form-control:focus{background: var(--antique-white);color: var(--dark-grey);width: 100%;padding: 8px 20px;border-radius: 8px;font-size: 18px;font-weight: 500;line-height: 1;outline: none;border: none;box-shadow: none;}
@@ -94,7 +94,7 @@ textarea.form-control, textarea.form-control:focus{background: var(--antique-whi
 input.form-control::placeholder{color: var(--grey);}
 textarea.form-control::placeholder{color: var(--grey);}
 
-.form-control-col .btn{min-width: 100%;height: 60px;color: var(--dark-grey);background: var(--teal);border: 2px solid var(--teal);border-radius: 0;}
+.form-control-col .btn{min-width: 100%;height: 60px;color: var(--dark-grey);background: var(--teal);border: 2px solid var(--teal);}
 .form-control-col .btn:hover{background: var(--dark-grey)!important;color: var(--antique-white)!important;}
 
 .scrollbar-hidden::-webkit-scrollbar{display: none;}
