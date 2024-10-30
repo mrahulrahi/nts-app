@@ -153,7 +153,7 @@ const Hero = () => {
                                     <div className="form-control-col"><input type="date" className="form-control" placeholder="Pickup Date" /></div>
                                     <div className="form-control-col">
                                         <select className="form-select">
-                                            <option selected>Select Car type</option>
+                                            <option>Select Car type</option>
                                             {typeCards.map((typeCard) => (
                                                 <option key={typeCard.title} value={typeCard.title}>
                                                     {typeCard.title}
@@ -171,7 +171,7 @@ const Hero = () => {
                                     <div className="form-control-col"><input type="date" className="form-control" placeholder="Return Date" /></div>
                                     <div className="form-control-col">
                                         <select className="form-select">
-                                            <option selected>Select Tour type</option>
+                                            <option>Select Tour type</option>
                                             {typeCards.map((typeCard) => (
                                                 <option key={typeCard.title} value={typeCard.title}>
                                                     {typeCard.title}
@@ -183,11 +183,8 @@ const Hero = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-
             </div>
         </>
     )

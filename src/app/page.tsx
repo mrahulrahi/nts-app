@@ -5,15 +5,12 @@ import WorkCard from '../components/WorkCard/WorkCard'
 import DestinationCard from "../components/DestinationCard/DestinationCard";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import CTABlock from "../components/CTABlock/CTABlock";
+import FeatureCard from '../components/FeatureCard/FeatureCard';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-
-
-import FeatureCard from '../components/FeatureCard/FeatureCard';
-import { Card } from "react-bootstrap";
 
 export default function Home() {
 
@@ -36,8 +33,8 @@ export default function Home() {
   ]
 
   const destinationCards = [
-    { imgUrl: "/images/service-img-1.jpg", title: "Tour & Travels", subTitle: "Book Your Car", body: "Discover the world with Imagine Group's bespoke tour and travel services. We craft personalized itineraries that turn every journey into an unforgettable adventure, ensuring a seamless experience from start to finish.", pageLink: "./tour-travels" },
-    { imgUrl: "/images/service-img-2.jpg", title: "Property", subTitle: "Buy & Sell Property", body: "Find your ideal property with ease through Imagine Group. Our expert team offers a curated selection of homes and investment opportunities, guiding you to make informed decisions and secure the perfect space for your needs.", pageLink: "./properties" },
+    { imgUrl: "/images/image-1.jpg", title: "Tour & Travels", subTitle: "Book Your Car", body: "Discover the world with Imagine Group's bespoke tour and travel services. We craft personalized itineraries that turn every journey into an unforgettable adventure, ensuring a seamless experience from start to finish.", pageLink: "./tour-travels" },
+    { imgUrl: "/images/image-1.jpg", title: "Property", subTitle: "Buy & Sell Property", body: "Find your ideal property with ease through Imagine Group. Our expert team offers a curated selection of homes and investment opportunities, guiding you to make informed decisions and secure the perfect space for your needs.", pageLink: "./properties" },
     { imgUrl: "/images/blog-img-1.jpg", title: "Web Design", subTitle: "Trending", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
     { imgUrl: "/images/blog-img-2.jpg", title: "App Design", subTitle: "Trending", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
     { imgUrl: "/images/blog-img-3.jpg", title: "Graphic Design", subTitle: "Trending", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
