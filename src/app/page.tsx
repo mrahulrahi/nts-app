@@ -33,11 +33,10 @@ export default function Home() {
   ]
 
   const destinationCards = [
-    { imgUrl: "/images/image-1.jpg", title: "Tour & Travels", subTitle: "Book Your Car", body: "Discover the world with Imagine Group's bespoke tour and travel services. We craft personalized itineraries that turn every journey into an unforgettable adventure, ensuring a seamless experience from start to finish.", pageLink: "./tour-travels" },
-    { imgUrl: "/images/image-1.jpg", title: "Property", subTitle: "Buy & Sell Property", body: "Find your ideal property with ease through Imagine Group. Our expert team offers a curated selection of homes and investment opportunities, guiding you to make informed decisions and secure the perfect space for your needs.", pageLink: "./properties" },
-    { imgUrl: "/images/blog-img-1.jpg", title: "Web Design", subTitle: "Trending", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
-    { imgUrl: "/images/blog-img-2.jpg", title: "App Design", subTitle: "Trending", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
-    { imgUrl: "/images/blog-img-3.jpg", title: "Graphic Design", subTitle: "Trending", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
+    { imgUrl: "/images/blog-img-1.jpg", title: "Goa", subTitle: "Beaches", body: "A popular destination for tourists, both Indian and foreign, Goa is known for its beaches, warm weather, and welcoming people.", pageLink: "./tour-travels" },
+    { imgUrl: "/images/blog-img-2.jpg", title: "Jammu and Kashmir", subTitle: "Mountains", body: "A beautiful destination with green valleys, cool breezes, and gentle streams." },
+    { imgUrl: "/images/blog-img-3.jpg", title: "Delhi", subTitle: "Capital", body: "The capital of India, Delhi is a popular tourist destination with many historical monuments, museums, markets, and malls." },
+    { imgUrl: "/images/image-1.jpg", title: "Agra", subTitle: "7 wonders", body: "Home to the Taj Mahal, one of the seven wonders of the world, Agra is a popular tourist destination on the banks of the Yamuna River." },
   ]
 
   const hiwCards = [

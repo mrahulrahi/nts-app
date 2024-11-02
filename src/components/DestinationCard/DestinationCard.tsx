@@ -22,7 +22,7 @@ const DestinationCard = ({ card }: Card) => {
                 <div className="destination-card-img overflow-hidden">
                     <Image src={imgUrl} alt={`${title} image`} width={4000} height={4000} quality={100} />
                 </div>
-                <div className="destination-card-content d-flex flex-column">
+                <div className="destination-card-content d-flex flex-column flex-grow-1">
                     <h6>{subTitle}</h6>
                     <h4>{title}</h4>
                     <p>{body}</p>

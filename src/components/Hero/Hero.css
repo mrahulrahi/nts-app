@@ -1,10 +1,10 @@
-.hero-container{min-height: 100dvh;position: relative;}
-.hero-left{width: 40%;height: 100%;min-height: 100dvh;padding: 180px 0;}
+.hero-container{min-height: 100dvh;position: relative;padding: 180px 0;}
+.hero-bg-left{width: 40%;height: 100%;min-height: 100dvh;}
 .hero-bg-outer{width: 100%;height: 100%;position: absolute;top: 0;left: 0;right: 0;bottom: 0;}
 .hero-bg-outer .swiper .swiper-slide{height: auto;}
 .hero-bg{width: 100%;height: 100%;}
 .hero-bg img{width: 100%;height: 100%;object-fit: cover;}
-.hero-bg::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:2;background:  linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%), rgba(0,0,0,0.5) 100%;}
+.hero-bg-outer::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:2;background:  linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%), rgba(0,0,0,0.5) 100%;}
 .hero-content{color: var(--antique-white);}
 .hero-content h5 {font-size: 30px;font-weight: 600;line-height: 1.2;color: var(--teal);}
 .hero-content h1 {font-size: 80px;font-weight:700;line-height:1;}
@@ -19,8 +19,7 @@
 .hero-content-outer .swiper .swiper-slide .hero-content{transform: translateY(20px);opacity: 0;}
 .hero-content-outer .swiper .swiper-slide.swiper-slide-active .hero-content{transform: translateY(0);opacity: 1;}
 
-.hero-right{width: 60%;background-image: url(/images/swiper-img-1.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;position: relative;}
-.hero-right::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:2;background:  linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%), rgba(0,0,0,0.5) 100%;}
+.hero-bg-right{width: 60%;background-image: url(/images/swiper-img-1.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;position: relative;}
 
 .book-form-nav{background: var(--teal);padding: 4px;border-radius: 10px;}
 .bfn-link{border-radius: 10px;background: transparent;border: 0;padding:6px 16px;}
@@ -37,8 +36,8 @@
 }
 
 @media(max-width:767.98px){
-    .hero-left{width: 100%;}
-    .hero-right{width: 100%;}
+    .hero-bg-left{width: 100%;}
+    .hero-bg-right{width: 100%;}
 }
 
 @media(max-width:575.98px){
