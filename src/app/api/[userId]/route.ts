@@ -23,13 +23,14 @@ export async function GET(
   }
 }
 
-export async function PUT(req: NextRequest, { params }: { params: { userId: string } }) {
+export async function PUT(req: NextRequest, { params }: { params: Promise<{ userId: string }> }) {
   try {
     const { fullName, email, phone, address } = await req.json();
+    const { userId } = await params; // Extract userId from resolved params
     await connectToDatabase();
 
     const user = await User.findOneAndUpdate(
-      { username: params.userId },
+      { username: userId },
       { fullName, email, phone, address },
       { new: true }
     ).select('-password'); // Exclude password field
