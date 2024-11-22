@@ -2,11 +2,15 @@ import { NextRequest, NextResponse } from 'next/server';
 import { connectToDatabase } from '../../../lib/db';
 import User from '../../../models/User';
 
-export async function GET(req: NextRequest, { params }: { params: { userId: string } }) {
+export async function GET(
+  request: Request,
+  { params }: { params: Promise<{ userId: string }> }
+) {
+  const { userId } = await params; // Extract userId from resolved params
   try {
     await connectToDatabase();
 
-    const user = await User.findOne({ username: params.userId }).select('-password'); // Exclude password field
+    const user = await User.findOne({ username: userId }).select('-password'); // Use userId for the query
 
     if (!user) {
       return NextResponse.json({ message: 'User not found' }, { status: 404 });
