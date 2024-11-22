@@ -1,9 +1,9 @@
 .text-card-list{width: calc(100% + 40px);margin: 0 -20px;margin-bottom: -40px;}
 .text-card-item{width: 33.33%;padding: 0 20px;margin-bottom: 40px;}
 .text-card-heading {width: 140px;height: 35px;text-align: center;margin: -20px -20px 20px 0;font-size: 20px;font-weight: 700;border-top: 0;border-right: 0;font-family: var(--font-montserrat);}
-.text-card-box {position: relative;;width: 100%;padding: 20px;font-size: 100%;border-radius: 16px 0;backdrop-filter: blur(1px);}
-.text-card-item:nth-child(3n + 1) .text-card-heading {background-color: var(--gold);color: var(--black);}
-.text-card-item:nth-child(3n + 2) .text-card-heading {background-color: var(--black);color: var(--white);}
+.text-card-box {position: relative;;width: 100%;padding: 20px;font-size: 100%;border-radius: 16px 0;}
+.text-card-item:nth-child(3n + 1) .text-card-heading {background-color: var(--grey);color: var(--black);}
+.text-card-item:nth-child(3n + 2) .text-card-heading {background-color: var(--gold);color: var(--black);}
 .text-card-item:nth-child(3n + 3) .text-card-heading {background-color: var(--white);color: var(--black);}
 
 @media (max-width:1199.98px){

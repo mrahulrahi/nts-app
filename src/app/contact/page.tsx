@@ -15,12 +15,12 @@ const ContactPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 mx-auto">
-                            <div className="contact-head" data-aos="fade-up">
+                            <div className="contact-head" data-aos="fade-up" suppressHydrationWarning>
                                 <h3>CONTACT</h3>
                                 <h1>GET IN TOUCH</h1>
                             </div>
                             <div className="contact-body d-flex flex-wrap justify-content-between">
-                                <div className="contact-body-left d-flex align-items-end" data-aos="fade-up">
+                                <div className="contact-body-left d-flex align-items-end" data-aos="fade-up" suppressHydrationWarning>
                                     <form className="contact-form">
                                         <div className="row g-3">
                                             <div className="col-6">
@@ -45,7 +45,7 @@ const ContactPage = () => {
                                     </form>
                                 </div>
 
-                                <div className="contact-body-right" data-aos="fade-up">
+                                <div className="contact-body-right" data-aos="fade-up" suppressHydrationWarning>
                                     <div className="contact-details-box">
                                         <h4>Let&apos;s talk!</h4>
                                         <div className="contact-details-row d-flex">
@@ -86,7 +86,7 @@ const ContactPage = () => {
 
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="contact-gmap-canvas" data-aos="fade-in">
+                            <div className="contact-gmap-canvas" data-aos="fade-in" suppressHydrationWarning>
                                 <iframe width="100%" height="300" id="gmap_canvas"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.4519880543903!2d80.98884681531288!3d26.889146967576703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399959205b897b3b%3A0x385a5519bc060254!2sImagine%20group!5e0!3m2!1sen!2sin!4v1676302436631!5m2!1sen!2sin"
                                     loading="lazy" referrerPolicy="no-referrer-when-downgrade" frameBorder="0" scrolling="no" marginHeight={0}

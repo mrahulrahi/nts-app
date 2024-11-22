@@ -46,7 +46,7 @@ export default function Home() {
   ]
 
   const ctaData = {
-    cardBG: "dark-grey",
+    cardBG: "dark",
     cardHeading: "Book on Call / Whatsapp",
     cardPara: "Discover seamless travel with our tour and travel services, offering a range of comfortable vehicles to suit your journey. Whether it's a local rental, airport transfer, or an outstation trip, we provide reliable and affordable solutions for all your travel needs. Book now and experience a hassle-free ride with professional drivers and 24/7 support!",
     cardFirstHeading: "Book on call",
@@ -66,7 +66,7 @@ export default function Home() {
 
       <div className="content-container">
         <div className="container">
-          <div className="row" data-aos="fade-up">
+          <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">
               <ImageTextBlock imgUrl='/images/about-img.jpg'>
                 <h4>About Us</h4>
@@ -81,7 +81,7 @@ export default function Home() {
 
       <div className="content-container">
         <div className="container">
-          <div className="row" data-aos="fade-up">
+          <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>Why Us?</h3>
@@ -100,7 +100,7 @@ export default function Home() {
 
       <div className="content-container">
         <div className="container">
-          <div className="row" data-aos="fade-up">
+          <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>Popular Destination</h3>
@@ -118,7 +118,7 @@ export default function Home() {
 
       <div className="content-container">
         <div className="container">
-          <div className="row" data-aos="fade-up">
+          <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>How We Work ?</h3>
@@ -137,7 +137,7 @@ export default function Home() {
 
       <div className="content-container overflow-hidden">
         <div className="container">
-          <div className="row" data-aos="fade-up">
+          <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>Testimonials</h3>

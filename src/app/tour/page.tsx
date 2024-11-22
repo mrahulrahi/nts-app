@@ -51,7 +51,7 @@ const TourPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="type-card-list-wrapper scrollbar-hidden" data-aos="fade-up">
+              <div className="type-card-list-wrapper scrollbar-hidden" data-aos="fade-up" suppressHydrationWarning>
                 <div className="type-card-list d-flex">
                   <div className="type-card-item">
                     <div className="type-card-box w-100 h-100 d-flex align-items-center justify-content-center">
@@ -73,7 +73,7 @@ const TourPage = () => {
 
       <div className="content-container">
         <div className="container">
-          <div className="row" data-aos="fade-up">
+          <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">
               <div className="heading text-center">
                 <h3>Available Tour</h3>
@@ -82,7 +82,7 @@ const TourPage = () => {
               <div className="property-card-list d-flex flex-wrap mt-5">
                 {filteredTourCards.length > 0 ? (
                   filteredTourCards.map((card) => (
-                    <div key={card.title} className="property-card-item" data-aos="fade-up">
+                    <div key={card.title} className="property-card-item" data-aos="fade-up" suppressHydrationWarning>
                       <TourCard card={card} />
                     </div>
                   ))

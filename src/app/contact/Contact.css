@@ -9,7 +9,7 @@
 .contact-form{width: 100%;border-radius: 1em;}
 
 .contact-body-right{width: 50%;padding-left: 10%;}
-.contact-details-box{background: var(--black);padding: 40px 30px;border-radius: 10px;border: 2px solid var(--grey);}
+.contact-details-box{background: var(--black);padding: 40px 30px;border-radius: 10px;border: 2px solid rgba(255, 255, 255, 0.5);}
 .contact-details-box h4{color: var(--grey);font-size: 40px;font-weight: 600;line-height: 1.2;}
 .contact-details-row{gap: 20px;}
 .contact-details-row:not(:last-child){margin-bottom: 20px;}

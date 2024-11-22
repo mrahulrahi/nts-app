@@ -75,7 +75,7 @@ const Hero = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-4">
-                            <div className="hero-content-outer position-relative z-3" data-aos="fade-up">
+                            <div className="hero-content-outer position-relative z-3" data-aos="fade-up" suppressHydrationWarning>
                                 <Swiper
                                     modules={[Navigation, Pagination, EffectFade, Autoplay, Thumbs]}
                                     slidesPerView={1}
@@ -128,7 +128,7 @@ const Hero = () => {
                         </div>
 
                         <div className="col-md-7 offset-md-1">
-                            <div className="book-form-wrapper w-100 position-relative z-3" data-aos="fade-up">
+                            <div className="book-form-wrapper w-100 position-relative z-3" data-aos="fade-up" suppressHydrationWarning>
                                 <h3 className="text-white">Your Journey Begins Here</h3>
 
                                 <ul className="book-form-nav d-flex align-items-center gap-2" id="myTab" role="tablist">

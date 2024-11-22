@@ -17,7 +17,7 @@ const Banner = ({ heading, subheading, children }: Banner) => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9">
-                            <div className="banner-content position-relative z-3" data-aos="fade-up">
+                            <div className="banner-content position-relative z-3" data-aos="fade-up" suppressHydrationWarning>
                                 <h1>{heading}</h1>
                                 <h3>{subheading}</h3>
                             </div>

@@ -41,7 +41,7 @@ const AboutPage = () => {
 
             <div className="content-container">
                 <div className="container">
-                    <div className="row" data-aos="fade-up">
+                    <div className="row" data-aos="fade-up" suppressHydrationWarning>
                         <div className="col-md-12">
                             <ImageTextBlock imgUrl='/images/about-img.jpg'>
                                 <h4>Our Story</h4>
@@ -57,7 +57,7 @@ const AboutPage = () => {
 
             <div className="content-container">
                 <div className="container">
-                    <div className="row" data-aos="fade-up">
+                    <div className="row" data-aos="fade-up" suppressHydrationWarning>
                         <div className="col-md-12">
                             <div className="heading text-center">
                                 <h3>Mission & Vision</h3>
@@ -70,7 +70,7 @@ const AboutPage = () => {
 
             <div className="content-container">
                 <div className="container">
-                    <div className="row" data-aos="fade-up">
+                    <div className="row" data-aos="fade-up" suppressHydrationWarning>
                         <div className="col-md-12">
                             <div className="heading text-center">
                                 <h3>Our Services</h3>
@@ -89,7 +89,7 @@ const AboutPage = () => {
 
             <div className="content-container">
                 <div className="container">
-                    <div className="row" data-aos="fade-up">
+                    <div className="row" data-aos="fade-up" suppressHydrationWarning>
                         <div className="col-md-12">
                             <div className="heading text-center">
                                 <h3>Our Team</h3>
@@ -106,7 +106,7 @@ const AboutPage = () => {
 
             <div className="content-container">
                 <div className="container">
-                    <div className="row" data-aos="fade-up">
+                    <div className="row" data-aos="fade-up" suppressHydrationWarning>
                         <div className="col-md-12">
                             <div className="heading text-center">
                                 <h3>Careers</h3>

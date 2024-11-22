@@ -52,7 +52,7 @@ const SigninPage = () => {
                     <Image src="/images/swiper-img-1.jpg" alt="" width={4000} height={4000} quality={100} />
                 </div>
                 <div className="container position-relative z-3">
-                    <div className="row" data-aos="fade-up">
+                    <div className="row" data-aos="fade-up" suppressHydrationWarning>
                         <div className="col-md-12">
                             <div className="member-content-box d-flex flex-column justify-content-center bg-glass mx-auto position-relative">
                                 <div className="member-head d-flex align-items-end justify-content-between mb-4">
