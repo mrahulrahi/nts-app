@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const ContactPage = () => {
     return (
         <>
-            <div className="contact-container bg-pattern-dark">
+            <div className="contact-container">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 mx-auto">

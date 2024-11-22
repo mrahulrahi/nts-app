@@ -24,7 +24,7 @@ export default function UserProfile() {
     useEffect(() => {
         if (isAuthenticated && user?.username === params.userId) {
             // Fetch user details
-            fetch(`/api/${user.username}`)
+            fetch(`/api/${user?.username}`)
                 .then(response => response.json())
                 .then(data => {
                     setUserDetails(data);
@@ -88,7 +88,7 @@ export default function UserProfile() {
     return (
         isAuthenticated && user?.username === params.userId ? (
             <>
-                <div className="content-container bg-pattern-dark">
+                <div className="content-container">
                     <div className="adminProfile container-fluid pt-5 position-relative z-3">
                         <div className="row">
                             <div className="col-lg-3 col-md-4">

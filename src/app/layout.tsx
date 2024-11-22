@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${alkatra.variable}`}>
+      <body className={` bg-pattern-dark ${montserrat.variable} ${alkatra.variable}`}>
         {showHeaderFooter && <Header />}
         <main className="flex-grow-1">{children}</main>
         {showHeaderFooter && <Footer />}

@@ -2,7 +2,7 @@ import './TextCard.css'
 
 const TextCard = () => {
     return (
-        <div className="text-card-list d-flex flex-wrap py-5">
+        <div className="text-card-list d-flex flex-wrap">
         <div className="text-card-item">
             <div className="text-card-box w-100 h-100 d-flex flex-column bg-glass">
                 <div className="text-card-heading ms-auto">Mission</div>

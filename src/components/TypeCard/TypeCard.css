@@ -1,4 +1,4 @@
-.type-card-box {min-width: 160px;background: var(--dark-grey);color: var(--antique-white);border-radius: 16px;}
+.type-card-box {min-width: 160px;background: var(--black);color: var(--grey);border-radius: 16px;}
 .type-card-title {padding: 45px 30px;font-size: 32px;font-weight: 700;line-height: 1.6;}
 .type-card-img {width: 114px;height: 114px;padding-top: 20px;}
 .type-card-img img{width: 100%;height: 100%;object-fit: contain;}

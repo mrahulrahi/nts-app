@@ -39,7 +39,7 @@ const AboutPage = () => {
         <>
             <Banner heading="About Us" subheading="Know Us" />
 
-            <div className="content-container bg-pattern-dark">
+            <div className="content-container">
                 <div className="container">
                     <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
@@ -55,7 +55,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="content-container bg-pattern-light">
+            <div className="content-container">
                 <div className="container">
                     <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
@@ -68,7 +68,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="content-container bg-pattern-dark">
+            <div className="content-container">
                 <div className="container">
                     <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
@@ -87,7 +87,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="content-container bg-pattern-dark">
+            <div className="content-container">
                 <div className="container">
                     <div className="row" data-aos="fade-up">
                         <div className="col-md-12">
@@ -104,7 +104,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="content-container bg-pattern-light">
+            <div className="content-container">
                 <div className="container">
                     <div className="row" data-aos="fade-up">
                         <div className="col-md-12">

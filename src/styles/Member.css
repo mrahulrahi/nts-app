@@ -9,7 +9,7 @@
 .member-bg::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:2;background:  linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%), rgba(0,0,0,0.5) 100%;}
 
 .member-content-box{max-width: 450px;padding: 32px 40px;border-radius: 20px;}
-.member-content-box .img-container{padding:25px;background: var(--dark-grey);margin-top: -100%;width: 120px;height: 120px;border-radius: 50%;border: 1px solid var(--white);}
+.member-content-box .img-container{padding:25px;background: var(--black);margin-top: -100%;width: 120px;height: 120px;border-radius: 50%;border: 1px solid var(--white);}
 .member-content-box .img-container img{width: 100%;height: 100%;object-fit: contain;}
 .member-content-box h3 {font-family: var(--font-alkatra);font-size: 30px;line-height: 1;color: var(--white);text-align: center;margin-bottom: 0;}
 
@@ -23,7 +23,7 @@
 .member-forget label input {margin-right: 3px;}
 .member-forget a {color: var(--white);text-decoration: none;font-weight: 600;}
 .member-forget a:hover {text-decoration: underline;}
-.btn-white {width: 100%;height: 40px; border-radius: 40px;background-color: rgb(255, 255,255, 1);border: none;outline: none;cursor: pointer;font-size: 16px;font-weight: 600;transition: all 0.4s ease;}
+.btn-white {width: 100%;height: 40px; border-radius: 40px;background-color: rgb(255, 255,255, 1);border: none;outline: none;cursor: pointer;font-size: 16px;font-weight: 600;transition: all 0.4s ease;color: var(--black);}
 .btn-white:hover {background-color: rgb(255, 255,255, 0.5);}
 .member-bottom {font-size: 0.9rem;color: var(--white);text-align: center;margin: 25px 0 10px;}
 .member-bottom p a {text-decoration: none;color: var(--white);font-weight: 600;}
