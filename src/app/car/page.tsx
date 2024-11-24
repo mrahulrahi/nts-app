@@ -12,16 +12,12 @@ import CarCard from "../../components/CarCard/CarCard";
 // };
 
 const typeCards = [
+  { imgUrl: "/images/luxury.png", title: "All" },
   { imgUrl: "/images/luxury.png", title: "Luxury" },
   { imgUrl: "/images/mpv.png", title: "MPV" },
   { imgUrl: "/images/suv.png", title: "SUV" },
   { imgUrl: "/images/sedan.png", title: "Sedan" },
   { imgUrl: "/images/hatchback.png", title: "Hatchback" },
-  { imgUrl: "/images/house.png", title: "Villa" },
-  { imgUrl: "/images/buy-house.png", title: "Commercial" },
-  { imgUrl: "/images/sell-house.png", title: "House" },
-  { imgUrl: "/images/buy-plot.png", title: "Flat" },
-  { imgUrl: "/images/sell-plot.png", title: "Plot" },
 ];
 
 const carCards = [
@@ -42,7 +38,9 @@ const CarPage = () => {
   const [selectedCarType, setSelectedCarType] = useState<string | null>(null);
 
     // Filter the carCards based on the selected car type
-    const filteredCarCards = selectedCarType
+    const filteredCarCards = selectedCarType === "All"
+    ? carCards // Show all cars if "All" is selected
+    : selectedCarType
     ? carCards.filter(car => car.type === selectedCarType)
     : carCards; // Show all cars if no type is selected
 
@@ -54,7 +52,7 @@ const CarPage = () => {
       <div className="content-container py-0">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-10 mx-auto">
               <div className="type-card-list-wrapper scrollbar-hidden" data-aos="fade-up" suppressHydrationWarning>
                 <div className="type-card-list d-flex">
                   <div className="type-card-item">

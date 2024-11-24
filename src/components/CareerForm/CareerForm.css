@@ -1,4 +1,4 @@
-.career-wrapper{width: 100%;width: 100%;border-radius:16px;background: var(--black);padding: 30px;}
+.career-wrapper{width: 100%;width: 100%;padding: 30px;border-radius:16px;}
 .career-left{width: 50%;padding-right: 10%;color:var(--grey);}
 .career-left h3{font-size:48px;}
 .career-right{width: 50%;}

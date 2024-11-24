@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'aos/dist/aos.css';
 import ImportBsJS from "./importBsJS";
 import ImportAOS from './importAOS';
-import { Alkatra, Montserrat } from 'next/font/google';
+import { Montserrat, DM_Sans } from 'next/font/google';
 import "./style.css";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
@@ -16,11 +16,11 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
-const alkatra = Alkatra({
+const dmSans = DM_Sans({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-alkatra',
+  variable: '--font-dm-sans',
 });
 
 // export const metadata = {
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en">
-      <body className={` bg-pattern-dark ${montserrat.variable} ${alkatra.variable}`}>
+      <body className={` bg-pattern-dark ${montserrat.variable} ${dmSans.variable}`}>
         {showHeaderFooter && <Header />}
         <main className="flex-grow-1">{children}</main>
         {showHeaderFooter && <Footer />}

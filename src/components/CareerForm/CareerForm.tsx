@@ -2,7 +2,7 @@ import './CareerForm.css'
 
 const CareerForm = () => {
   return (
-    <div className="career-wrapper d-flex flex-wrap">
+    <div className="career-wrapper d-flex flex-wrap bg-dark">
       <div className="career-left">
         <h3>Join Our Team</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam nihil praesentium vitae nesciunt voluptate perferendis tempore recusandae cumque ut.</p>

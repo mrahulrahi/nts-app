@@ -24,13 +24,27 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="footer-content d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                                <div className="footer-title">IMAGINE GROUP</div>
-                                <ul className="social-links d-flex justify-content-center">
-                                    <li><a href="https://facebook.com/imaginegindia"><FaFacebookF /></a></li>
-                                    <li><a href="https://twitter.com/imaginegroupig"><FaXTwitter /></a></li>
-                                    <li><a href="https://instagram.com/imaginegroupig"><FaInstagram /></a></li>
-                                    <li><a href="https://wa.me/+918881888339"><FaWhatsapp /></a></li>
-                                </ul>
+                                <div className="footer-content-left">
+                                    <div className="footer-title">NTS</div>
+                                    <p>NTS is your one-stop solution for car rentals and exciting tour packages. Explore the world with us!</p>
+                                </div>
+
+                                <div className="footer-content-right">
+                                    <h6 className="fw-bold text-uppercase mb-2">Contact Us</h6>
+                                    <ul className="d-flex flex-column gap-1 mb-2">
+                                        <li><p>123 Travel Street, Cityville, Country</p></li>
+                                        <li><p> Phone: <a href="">+1 234 567 890</a></p></li>
+                                        <li><p>Email: <a href="">info@travelwheels.com</a></p></li>
+                                    </ul>
+
+                                    <ul className="social-links d-flex">
+                                        <li><a href="https://facebook.com/imaginegindia"><FaFacebookF /></a></li>
+                                        <li><a href="https://twitter.com/imaginegroupig"><FaXTwitter /></a></li>
+                                        <li><a href="https://instagram.com/imaginegroupig"><FaInstagram /></a></li>
+                                        <li><a href="https://wa.me/+918881888339"><FaWhatsapp /></a></li>
+                                    </ul>
+                                </div>
+
                             </div>
 
                             <div className="footer-nav">

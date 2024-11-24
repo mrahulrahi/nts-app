@@ -18,7 +18,7 @@ const DestinationCard = ({ card }: Card) => {
 
     return (
         <>
-            <div className="destination-card-box d-flex bg-glass">
+            <div className="destination-card-box d-flex bg-dark">
                 <div className="destination-card-img overflow-hidden">
                     <Image src={imgUrl} alt={`${title} image`} width={4000} height={4000} quality={100} />
                 </div>

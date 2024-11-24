@@ -39,7 +39,7 @@ const AboutPage = () => {
         <>
             <Banner heading="About Us" subheading="Know Us" />
 
-            <div className="content-container">
+            <div className="content-container pb-0">
                 <div className="container">
                     <div className="row" data-aos="fade-up" suppressHydrationWarning>
                         <div className="col-md-12">
@@ -55,7 +55,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="content-container">
+            <div className="content-container pb-0">
                 <div className="container">
                     <div className="row" data-aos="fade-up" suppressHydrationWarning>
                         <div className="col-md-12">
@@ -68,7 +68,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="content-container">
+            <div className="content-container pb-0">
                 <div className="container">
                     <div className="row" data-aos="fade-up" suppressHydrationWarning>
                         <div className="col-md-12">
@@ -87,7 +87,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="content-container">
+            <div className="content-container pb-0">
                 <div className="container">
                     <div className="row" data-aos="fade-up" suppressHydrationWarning>
                         <div className="col-md-12">
@@ -111,7 +111,6 @@ const AboutPage = () => {
                             <div className="heading text-center">
                                 <h3>Careers</h3>
                             </div>
-
                             <CareerForm />
                         </div>
                     </div>

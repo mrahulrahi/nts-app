@@ -64,7 +64,7 @@ export default function Home() {
     <main>
       <Hero />
 
-      <div className="content-container">
+      <div className="content-container pb-0">
         <div className="container">
           <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">
@@ -79,7 +79,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="content-container">
+      <div className="content-container pb-0">
         <div className="container">
           <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="content-container">
+      <div className="content-container pb-0">
         <div className="container">
           <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">
@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="content-container">
+      <div className="content-container pb-0">
         <div className="container">
           <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">
@@ -135,7 +135,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="content-container overflow-hidden">
+      <div className="content-container overflow-hidden pb-0">
         <div className="container">
           <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">

@@ -32,7 +32,7 @@ const CTABlock: React.FC<CTABlockProps> = ({ card }) => {
         cardSecondUrl,
     } = card;
 
-    const getBackgroundClass = (bg: string) => `bg-${bg} p-5 rounded-5`;
+    const getBackgroundClass = (bg: string) => `bg-${bg} p-4 p-sm-5 rounded-5`;
 
     return (
         <div className={getBackgroundClass(cardBG)}>

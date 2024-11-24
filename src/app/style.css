@@ -16,10 +16,9 @@ ul{list-style:none;}
 a:focus,input:focus,textarea:focus,*:focus{outline:0!important;}
 /* =================reset css ends here================= */
 /* =================core css starts here================= */
-body{font-family: var(--font-alkatra);font-size:16px;font-weight:400;line-height:1.5;color: inherit;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background: var(--grey);}
+body{font-family: var(--font-dm-sans);font-size:16px;font-weight:400;line-height:1.5;color: inherit;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background: var(--grey);}
 .container{width:100%;max-width:1320px;}
 .content-container{padding: 120px 0;}
-.content-container + .content-container{padding-top: 0;}
 a,input,button{display:inline-block;text-decoration:none;color:inherit;outline:none;transition:all 0.2s ease-in;-webkit-transition:all 0.2s ease-in;}
 a img{border:0px none;}
 a:hover{outline:none;color:var(--gold);text-decoration:none;}
@@ -55,11 +54,11 @@ p:last-child{margin-bottom:0;}
 .btn.btn-block{min-width: 100%;}
 .bottom-btn-box{margin-top: 40px;}
 
-.bg-dark{background-color: var(--black)!important;color: var(--white)!important;}
+.bg-dark{background-color: var(--black)!important;color: var(--white)!important;box-shadow: 0 0 10px var(--gold);}
 .bg-grey{background-color: var(--grey)!important;color: var(--black)!important;}
 .bg-pattern-dark{background-image: url(/images/bg-pattern-light.svg);position: relative;background-color: var(--black);color: var(--white);}
 .bg-pattern-dark > .container{position: relative;z-index: 9;}
-.bg-glass{background: var(---gradient-1);border: 2px solid rgba(255, 255, 255, 0.5);backdrop-filter: blur(4px);box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);}
+.bg-glass{background: var(---gradient-1);border: 2px solid rgba(255, 255, 255, 0.5);backdrop-filter: blur(4px);}
 
 html{height: 100%;}
 body{display: flex;flex-flow: column;height: 100%;}
@@ -105,10 +104,6 @@ textarea.form-control::placeholder{color: var(--black);}
 
 .feature-card-list{width: calc(100% + 30px);margin-left: -15px;margin-bottom: -30px;}
 .feature-card-item{width: 33.33%;padding: 0 15px;margin-bottom: 30px;}
-
-.type-card-list-wrapper{width: 100%;overflow-x: scroll;}
-.type-card-list {width: 100%;min-width: 1080px;gap: 20px;}
-.type-card-item{max-width: 15%;}
 
 .car-card-list{width: calc(100% +30px);margin-left: -15px;margin-bottom: -30px;}
 .car-card-item{width: 33.33%;padding: 0 15px;margin-bottom: 30px;}

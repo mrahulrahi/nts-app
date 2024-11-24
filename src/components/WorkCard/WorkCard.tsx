@@ -16,7 +16,7 @@ const WorkCard = ({ card, index }: Card) => {
     const { imgUrl, title, body } = card;
 
     return (
-        <div className="work-card-box w-100 h-100 d-flex flex-column position-relative">
+        <div className="work-card-box w-100 h-100 d-flex flex-column position-relative bg-dark">
              <span className="work-card-count">{index + 1}</span>
             <div className="work-card-img"><Image src={imgUrl} alt={`${title} image`} width={4000} height={4000} quality={100} /></div>
             <div className="work-card-text">

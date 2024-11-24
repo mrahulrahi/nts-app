@@ -13,16 +13,12 @@ import TourCard from "../../components/TourCard/TourCard";
 
 
 const typeCards = [
-  { imgUrl: "/images/luxury.png", title: "Luxury" },
-  { imgUrl: "/images/mpv.png", title: "MPV" },
-  { imgUrl: "/images/suv.png", title: "SUV" },
-  { imgUrl: "/images/sedan.png", title: "Sedan" },
-  { imgUrl: "/images/hatchback.png", title: "Hatchback" },
-  { imgUrl: "/images/house.png", title: "Villa" },
-  { imgUrl: "/images/buy-house.png", title: "Commercial" },
-  { imgUrl: "/images/sell-house.png", title: "House" },
-  { imgUrl: "/images/buy-plot.png", title: "Flat" },
-  { imgUrl: "/images/sell-plot.png", title: "Plot" },
+  { imgUrl: "/images/house.png", title: "All Tours" },
+  { imgUrl: "/images/house.png", title: "Sightseeing" },
+  { imgUrl: "/images/buy-house.png", title: "Adventure" },
+  { imgUrl: "/images/sell-house.png", title: "Historical" },
+  { imgUrl: "/images/buy-plot.png", title: "Group Tours" },
+  { imgUrl: "/images/sell-plot.png", title: "Family Tours" },
 ];
 
 const tourCards = [
@@ -50,7 +46,7 @@ const TourPage = () => {
       <div className="content-container py-0">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-10 mx-auto">
               <div className="type-card-list-wrapper scrollbar-hidden" data-aos="fade-up" suppressHydrationWarning>
                 <div className="type-card-list d-flex">
                   <div className="type-card-item">
