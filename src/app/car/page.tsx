@@ -21,13 +21,13 @@ const typeCards = [
 ];
 
 const carCards = [
-  { imgUrl: "/images/xuv300.webp", title: "XUV 300", type: "SUV", capacity: "4 + 1", airCondition: "AC" },
-  { imgUrl: "/images/innova.webp", title: "Innova", type: "MPV", capacity: "6 + 1", airCondition: "AC" },
-  { imgUrl: "/images/dzire.webp", title: "Dzire", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
-  { imgUrl: "/images/fortuner.webp", title: "Fortuner", type: "SUV", capacity: "6 + 1", airCondition: "AC" },
-  { imgUrl: "/images/zest.avif", title: "Zest", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
-  { imgUrl: "/images/indigo.webp", title: "Indigo", type: "Sedan", capacity: "4 + 1", airCondition: "AC" },
-  { imgUrl: "/images/ertiga.webp", title: "Ertiga", type: "MPV", capacity: "6 + 1", airCondition: "AC" },
+  { imgUrl: "/images/xuv300.webp", title: "XUV 300", type: "SUV", capacity: "4 + 1", rate: 12 },
+  { imgUrl: "/images/innova.webp", title: "Innova", type: "MPV", capacity: "6 + 1", rate: 15 },
+  { imgUrl: "/images/dzire.webp", title: "Dzire", type: "Sedan", capacity: "4 + 1", rate: 11 },
+  { imgUrl: "/images/fortuner.webp", title: "Fortuner", type: "SUV", capacity: "6 + 1", rate: 20 },
+  { imgUrl: "/images/zest.avif", title: "Zest", type: "Sedan", capacity: "4 + 1", rate: 10 },
+  { imgUrl: "/images/indigo.webp", title: "Indigo", type: "Sedan", capacity: "4 + 1", rate: 10 },
+  { imgUrl: "/images/ertiga.webp", title: "Ertiga", type: "MPV", capacity: "6 + 1", rate: 15 },
 ];
 
 

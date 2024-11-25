@@ -17,17 +17,17 @@ const typeCards = [
   { imgUrl: "/images/house.png", title: "Sightseeing" },
   { imgUrl: "/images/buy-house.png", title: "Adventure" },
   { imgUrl: "/images/sell-house.png", title: "Historical" },
-  { imgUrl: "/images/buy-plot.png", title: "Group Tours" },
-  { imgUrl: "/images/sell-plot.png", title: "Family Tours" },
+  { imgUrl: "/images/buy-plot.png", title: "Mountains" },
+  { imgUrl: "/images/sell-plot.png", title: "Beaches" },
 ];
 
 const tourCards = [
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 1", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 60000 },
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 2", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 70000 },
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 3", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 80000 },
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 4", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 90000 },
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 5", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 100000 },
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Property 6", body: "One of the most vibrant cities you can visit - a trip no one should miss!", price: 110000 },
+  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Goa ", body: "3 Days - 2 Nights", price: 60000, location: "Palolem Beach, Baga Beach, Calangute", seat: 6, distance: 200, type: "Beaches"   },
+  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Jammu  & Kashmir", body: "5 Days - 4 Nights", price: 70000, location: "Gulmarg, Lake", seat: 10, distance: 350, type: "Mountains"   },
+  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Kerala", body: "6 Days - 5 Nights", price: 80000, location: "Alappuzha, Kochi", seat: 6, distance: 600, type: "Beaches"   },
+  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Mumbai", body: "4 Days - 3 Nights", price: 90000, location: "Marine Drive, Gateway of India", seat: 3, distance:450, type: "City"   },
+  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Pune", body: "2 Days - 1 Nights", price: 100000, location: "Shani Shingnapur, Sinhagad Fort", seat: 3, distance: 500, type: "Hill Station"   },
+  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Shimla", body: "7 Days - 6 Nights", price: 110000, location: "Mall Road, Kufri", seat: 3, distance: 250, type: "Hill Station"   },
 ]
 
 
@@ -36,10 +36,12 @@ const TourPage = () => {
 
   const [selectedTourType, setSelectedTourType] = useState<string | null>(null);
 
-  // Filter the carCards based on the selected car type
-  const filteredTourCards = selectedTourType
-    ? tourCards.filter(tour => tour.title === selectedTourType)
-    : tourCards; // Show all cars if no type is selected
+    // Filter the tourCards based on the selected tour type
+    const filteredTourCards = selectedTourType === "All Tours"
+    ? tourCards // Show all tours if "All Tours" is selected
+    : selectedTourType
+    ? tourCards.filter(tour => tour.type === selectedTourType)
+    : tourCards; // Show all tours if no type is selected
 
   return (
     <>

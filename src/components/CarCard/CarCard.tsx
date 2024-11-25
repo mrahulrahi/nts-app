@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import './CarCard.css'
-import { FaCar, FaUsers, FaSnowflake } from "react-icons/fa";
+import { FaCar, FaUsers, FaIndianRupeeSign } from 'react-icons/fa6';
 
 interface Card {
     card: CardProp;
@@ -11,11 +11,11 @@ interface CardProp {
     title: string;
     type: string;
     capacity: string;
-    airCondition: string;
+    rate: number;
 }
 
 const CarCard = ({ card }: Card) => {
-    const { imgUrl, title, type, capacity, airCondition } = card;
+    const { imgUrl, title, type, capacity, rate } = card;
 
     return (
         <div className="car-card-box w-100 h-100">
@@ -26,7 +26,7 @@ const CarCard = ({ card }: Card) => {
             <div className="car-card-row d-flex">
                 <div className="car-card-col d-flex align-items-center justify-content-between"><FaCar />{type}</div>
                 <div className="car-card-col d-flex align-items-center justify-content-between"><FaUsers />{capacity}</div>
-                <div className="car-card-col d-flex align-items-center justify-content-between"><FaSnowflake />{airCondition}</div>
+                <div className="car-card-col d-flex align-items-center justify-content-between"><FaIndianRupeeSign />{rate} /Km</div>
             </div>
 
             <div className="car-card-content d-flex text-center">

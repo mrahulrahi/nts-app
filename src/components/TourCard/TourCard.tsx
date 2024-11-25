@@ -7,10 +7,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { IoBed } from "react-icons/io5";
-import { MdSpaceDashboard } from "react-icons/md";
-import { FaMapLocationDot, FaBath } from "react-icons/fa6";
+import { MdChair, MdTour } from "react-icons/md";
+import { FaMapLocationDot } from "react-icons/fa6";
 import { FaRupeeSign } from 'react-icons/fa';
+import { BiTrip } from 'react-icons/bi';
 
 interface Card {
     card: CardProp;
@@ -21,11 +21,15 @@ interface CardProp {
     title: string;
     body: string;
     price: number;
+    location: string;
+    seat: number;
+    distance: number;
+    type: string;
 }
 
 
 const TourCard = ({ card }: Card) => {
-    const { imgUrl, title, body, price } = card
+    const { imgUrl, title, body, price, location, seat, distance, type } = card
 
     return (
         <div className="tour-card-box w-100 h-100">
@@ -77,10 +81,10 @@ const TourCard = ({ card }: Card) => {
                     </div>
 
                     <div className="tour-card-row d-flex flex-wrap rounded-2 overflow-hidden">
-                        <div className="tour-card-col d-flex align-items-center justify-content-between w-100 "><FaMapLocationDot /><address>123 Main Street, <br /> Anytown, USA 12345</address></div>
-                        <div className="tour-card-col d-flex align-items-center justify-content-between"><IoBed /> 3</div>
-                        <div className="tour-card-col d-flex align-items-center justify-content-between"><FaBath />2</div>
-                        <div className="tour-card-col d-flex align-items-center justify-content-between"><MdSpaceDashboard />2,000sqft</div>
+                        <div className="tour-card-col d-flex align-items-center justify-content-between w-100 "><FaMapLocationDot /><address>{location}</address></div>
+                        <div className="tour-card-col d-flex align-items-center justify-content-between"><MdChair />{seat} Seats</div>
+                        <div className="tour-card-col d-flex align-items-center justify-content-between"><BiTrip />{distance} km</div>
+                        <div className="tour-card-col d-flex align-items-center justify-content-between"><MdTour />{type}</div>
                     </div>
                     <p>{body}</p>
                 </div>
