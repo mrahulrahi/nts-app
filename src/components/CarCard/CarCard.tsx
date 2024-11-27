@@ -18,7 +18,7 @@ const CarCard = ({ card }: Card) => {
     const { imgUrl, title, type, capacity, rate } = card;
 
     return (
-        <div className="car-card-box w-100 h-100">
+        <div className="car-card-box w-100 h-100 bg-dark">
             <div className="car-card-img-box">
                 <div className="car-card-img overflow-hidden"><Image src={imgUrl} alt={`${title} image`} width={4000} height={4000} quality={100} /></div>
             </div>

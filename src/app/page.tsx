@@ -61,7 +61,7 @@ export default function Home() {
 
 
   return (
-    <main>
+    <>
       <Hero />
 
       <div className="content-container pb-0">
@@ -185,6 +185,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }

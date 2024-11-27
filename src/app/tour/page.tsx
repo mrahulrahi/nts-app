@@ -5,6 +5,7 @@ import './Tour.css';
 import Banner from "../../components/Banner/Banner";
 import TypeCard from "../../components/TypeCard/TypeCard";
 import TourCard from "../../components/TourCard/TourCard";
+import CTABlock from '@/src/components/CTABlock/CTABlock';
 
 // export const metadata: Metadata = {
 //   title: "Tour",
@@ -30,7 +31,19 @@ const tourCards = [
   { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Shimla", body: "7 Days - 6 Nights", price: 110000, location: "Mall Road, Kufri", seat: 3, distance: 250, type: "Hill Station"   },
 ]
 
-
+const ctaData = {
+  cardBG: "dark",
+  cardHeading: "Book on Call / Whatsapp",
+  cardPara: "Discover seamless travel with our tour and travel services, offering a range of comfortable vehicles to suit your journey. Whether it's a local rental, airport transfer, or an outstation trip, we provide reliable and affordable solutions for all your travel needs. Book now and experience a hassle-free ride with professional drivers and 24/7 support!",
+  cardFirstHeading: "Book on call",
+  cardFirstPara: "Our advisors are just a phone call away. On average, we answer calls within 90 seconds. Lines open 24/7.",
+  cardFirstLink: "+91 8881 888339",
+  cardFirstUrl: "tel:+918881888339",
+  cardSecondHeading: "Book on whatsapp",
+  cardSecondPara: "Book your ride easily on WhatsApp! Just send us your details, and we'll arrange your vehicle in no time. Fast, simple, and convenient – your next journey is just a message away!",
+  cardSecondLink: "Start chat",
+  cardSecondUrl: "https://api.whatsapp.com/send/?phone=%2B918881888339&text&type=phone_number&app_absent=0",
+};
 
 const TourPage = () => {
 
@@ -95,6 +108,15 @@ const TourPage = () => {
         </div>
       </div>
 
+      <div className="content-container full-width-cta-container ">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-10 mx-auto">
+              <CTABlock card={ctaData} />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

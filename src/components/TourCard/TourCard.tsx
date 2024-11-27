@@ -32,7 +32,7 @@ const TourCard = ({ card }: Card) => {
     const { imgUrl, title, body, price, location, seat, distance, type } = card
 
     return (
-        <div className="tour-card-box w-100 h-100">
+        <div className="tour-card-box w-100 h-100 bg-dark">
 
             <Swiper
                 modules={[Pagination, Navigation]}
