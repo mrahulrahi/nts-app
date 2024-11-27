@@ -1,5 +1,5 @@
 .type-card-list-wrapper{width: 100%;overflow-x: scroll;}
-.type-card-list {width: 100%;gap: 20px;}
+.type-card-list {width: 100%;gap: 20px;min-width: min-content;}
 .type-card-item{max-width: 15%;}
 .type-card-box {min-width: 160px;background: var(--black);color: var(--grey);border-radius: 16px;cursor: pointer;}
 .type-card-title {padding: 45px 30px;font-size: 32px;font-weight: 700;line-height: 1.6;}

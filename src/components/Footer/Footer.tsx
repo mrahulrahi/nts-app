@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link'
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import './Footer.css'
 import { FaFacebookF, FaXTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa6";
@@ -25,7 +26,7 @@ const Footer = () => {
                         <div className="col-lg-12">
                             <div className="footer-content d-flex flex-column flex-sm-row align-items-center justify-content-between">
                                 <div className="footer-content-left">
-                                    <div className="footer-title">NTS</div>
+                                    <div className="footer-logo"><Image src="/images/logo.png" alt="logo" width={400} height={400} quality={100} /></div>
                                     <p>NTS is your one-stop solution for car rentals and exciting tour packages. Explore the world with us!</p>
                                 </div>
 

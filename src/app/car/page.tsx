@@ -84,7 +84,7 @@ const CarPage = () => {
         </div>
       </div>
 
-      <div className="content-container">
+      <div className="content-container pb-0">
         <div className="container">
           <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">

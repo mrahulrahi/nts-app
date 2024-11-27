@@ -35,7 +35,7 @@ const CTABlock: React.FC<CTABlockProps> = ({ card }) => {
     const getBackgroundClass = (bg: string) => `bg-${bg} p-4 p-sm-5 rounded-5`;
 
     return (
-        <div className={getBackgroundClass(cardBG)}>
+        <div className={getBackgroundClass(cardBG)} data-aos="fade-up" suppressHydrationWarning>
             <div className="row">
                 <div className="col-lg-12">
                     <div className="heading d-flex flex-column">

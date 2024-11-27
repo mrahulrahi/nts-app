@@ -65,9 +65,8 @@ const Header = () => {
             <nav className="navbar navbar-expand-xl">
                 <div className="container">
                     <div className="nav-inside d-flex flex-wrap align-items-center justify-content-between">
-                        <Link className="navbar-logo-area d-flex align-items-center" href="/">
-                            <div className="navbar-logo"><Image src="/images/logo.png" alt="logo" width={4000} height={4000} quality={100} /></div>
-                            <div className="navbar-title">IMAGINE <br /> GROUP</div>
+                        <Link className="navbar-logo d-flex align-items-center" href="/">
+                           <Image src="/images/logo.png" alt="logo" width={400} height={400} quality={100} />
                         </Link>
 
                         <div className={`collapse navbar-collapse justify-content-center ${isOpen ? 'show' : ''}`} id="mainNav" ref={navbarRef}>
