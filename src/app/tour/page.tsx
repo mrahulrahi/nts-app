@@ -14,21 +14,21 @@ import CTABlock from '@/src/components/CTABlock/CTABlock';
 
 
 const typeCards = [
-  { imgUrl: "/images/house.png", title: "All Tours" },
-  { imgUrl: "/images/house.png", title: "Sightseeing" },
-  { imgUrl: "/images/buy-house.png", title: "Adventure" },
-  { imgUrl: "/images/sell-house.png", title: "Historical" },
-  { imgUrl: "/images/buy-plot.png", title: "Mountains" },
-  { imgUrl: "/images/sell-plot.png", title: "Beaches" },
+  { imgUrl: "/images/all-tours.png", title: "All Tours" },
+  { imgUrl: "/images/religions.png", title: "Religious" },
+  { imgUrl: "/images/adventure.png", title: "Adventure" },
+  { imgUrl: "/images/historical.png", title: "Historical" },
+  { imgUrl: "/images/mountains.png", title: "Mountains" },
+  { imgUrl: "/images/beaches.png", title: "Beaches" },
 ];
 
 const tourCards = [
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Goa ", body: "3 Days - 2 Nights", price: 60000, location: "Palolem Beach, Baga Beach, Calangute", seat: 6, distance: 200, type: "Beaches"   },
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Jammu  & Kashmir", body: "5 Days - 4 Nights", price: 70000, location: "Gulmarg, Lake", seat: 10, distance: 350, type: "Mountains"   },
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Kerala", body: "6 Days - 5 Nights", price: 80000, location: "Alappuzha, Kochi", seat: 6, distance: 600, type: "Beaches"   },
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Mumbai", body: "4 Days - 3 Nights", price: 90000, location: "Marine Drive, Gateway of India", seat: 3, distance:450, type: "City"   },
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Pune", body: "2 Days - 1 Nights", price: 100000, location: "Shani Shingnapur, Sinhagad Fort", seat: 3, distance: 500, type: "Hill Station"   },
-  { imgUrl: ["/images/house-img-1.jpg", "/images/house-img-2.jpg", "/images/house-img-3.jpg", "/images/house-img-4.jpg", "/images/house-img-5.jpg"], title: "Shimla", body: "7 Days - 6 Nights", price: 110000, location: "Mall Road, Kufri", seat: 3, distance: 250, type: "Hill Station"   },
+  { imgUrl: "/images/place-img-1.jpg", title: "Goa ", body: "3 Days - 2 Nights", price: 60000, location: "Palolem Beach, Baga Beach, Calangute", seat: 6, distance: 200, type: "Beaches"   },
+  { imgUrl: "/images/place-img-2.jpg", title: "Jammu  & Kashmir", body: "5 Days - 4 Nights", price: 70000, location: "Gulmarg, Lake", seat: 10, distance: 350, type: "Mountains"   },
+  { imgUrl: "/images/place-img-1.jpg", title: "Kerala", body: "6 Days - 5 Nights", price: 80000, location: "Alappuzha, Kochi", seat: 6, distance: 600, type: "Beaches"   },
+  { imgUrl: "/images/place-img-2.jpg", title: "Mumbai", body: "4 Days - 3 Nights", price: 90000, location: "Marine Drive, Gateway of India", seat: 3, distance:450, type: "City"   },
+  { imgUrl: "/images/place-img-1.jpg", title: "Pune", body: "2 Days - 1 Nights", price: 100000, location: "Shani Shingnapur, Sinhagad Fort", seat: 3, distance: 500, type: "Hill Station"   },
+  { imgUrl: "/images/place-img-2.jpg", title: "Shimla", body: "7 Days - 6 Nights", price: 110000, location: "Mall Road, Kufri", seat: 3, distance: 250, type: "Hill Station"   },
 ]
 
 const ctaData = {
@@ -58,7 +58,7 @@ const TourPage = () => {
 
   return (
     <>
-      <Banner heading="Tours" subheading="Something interesting"></Banner>
+      <Banner heading="Tours" subheading="Explore the best tours in India"></Banner>
 
       <div className="content-container py-0">
         <div className="container">
@@ -92,10 +92,10 @@ const TourPage = () => {
                 <h3>Available Tour</h3>
               </div>
 
-              <div className="property-card-list d-flex flex-wrap mt-5">
+              <div className="tour-card-list d-flex flex-wrap mt-5">
                 {filteredTourCards.length > 0 ? (
                   filteredTourCards.map((card) => (
-                    <div key={card.title} className="property-card-item" data-aos="fade-up" suppressHydrationWarning>
+                    <div key={card.title} className="tour-card-item" data-aos="fade-up" suppressHydrationWarning>
                       <TourCard card={card} />
                     </div>
                   ))

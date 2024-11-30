@@ -108,8 +108,8 @@ textarea.form-control::placeholder{color: var(--black);}
 .car-card-list{width: calc(100% +30px);margin-left: -15px;margin-bottom: -30px;}
 .car-card-item{width: 33.33%;padding: 0 15px;margin-bottom: 30px;}
 
-.property-card-list{width: calc(100% + 30px);margin: 0 -15px;margin-bottom: -20px;}
-.property-card-item{width: 50%;padding: 0 15px;margin-bottom: 30px;}
+.tour-card-list{width: calc(100% + 30px);margin: 0 -15px;margin-bottom: -20px;}
+.tour-card-item{width: 33.33%;padding: 0 15px;margin-bottom: 30px;}
 
 @media (max-width:1199.98px){
 .container{width: calc(100% - 15px);}
@@ -123,13 +123,14 @@ textarea.form-control::placeholder{color: var(--black);}
 .form-control-col{width: calc(50% - 10px);flex-basis: auto;}
 
 .car-card-item{width: 50%;}
+.tour-card-item{width: 50%;}
 }
 
 @media (max-width: 767.98px) {
 .work-card-item{width: 100%;}
 .feature-card-item{width: 100%;}
 .car-card-item{width: 100%;}
-.property-card-item{width: 100%;}
+.tour-card-item{width: 100%;}
 }
 
 @media(max-width:575.98px){

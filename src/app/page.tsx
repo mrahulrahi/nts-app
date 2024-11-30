@@ -33,10 +33,10 @@ export default function Home() {
   ]
 
   const destinationCards = [
-    { imgUrl: "/images/blog-img-1.jpg", title: "Goa", subTitle: "Beaches", body: "A popular destination for tourists, both Indian and foreign, Goa is known for its beaches, warm weather, and welcoming people.", pageLink: "./tour-travels" },
-    { imgUrl: "/images/blog-img-2.jpg", title: "Jammu and Kashmir", subTitle: "Mountains", body: "A beautiful destination with green valleys, cool breezes, and gentle streams." },
-    { imgUrl: "/images/blog-img-3.jpg", title: "Delhi", subTitle: "Capital", body: "The capital of India, Delhi is a popular tourist destination with many historical monuments, museums, markets, and malls." },
-    { imgUrl: "/images/image-1.jpg", title: "Agra", subTitle: "7 wonders", body: "Home to the Taj Mahal, one of the seven wonders of the world, Agra is a popular tourist destination on the banks of the Yamuna River." },
+    { imgUrl: "/images/place-img-1.jpg", title: "Goa", subTitle: "Beaches", body: "A popular destination for tourists, both Indian and foreign, Goa is known for its beaches, warm weather, and welcoming people.", pageLink: "./tour-travels" },
+    { imgUrl: "/images/place-img-2.jpg", title: "Jammu and Kashmir", subTitle: "Mountains", body: "A beautiful destination with green valleys, cool breezes, and gentle streams." },
+    { imgUrl: "/images/place-img-3.jpg", title: "Delhi", subTitle: "Capital", body: "The capital of India, Delhi is a popular tourist destination with many historical monuments, museums, markets, and malls." },
+    { imgUrl: "/images/place-img-4.jpg", title: "Agra", subTitle: "7 wonders", body: "Home to the Taj Mahal, one of the seven wonders of the world, Agra is a popular tourist destination on the banks of the Yamuna River." },
   ]
 
   const hiwCards = [

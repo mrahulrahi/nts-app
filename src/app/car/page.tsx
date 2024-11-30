@@ -13,7 +13,7 @@ import CTABlock from '@/src/components/CTABlock/CTABlock';
 // };
 
 const typeCards = [
-  { imgUrl: "/images/luxury.png", title: "All" },
+  { imgUrl: "/images/all-cars.png", title: "All" },
   { imgUrl: "/images/luxury.png", title: "Luxury" },
   { imgUrl: "/images/mpv.png", title: "MPV" },
   { imgUrl: "/images/suv.png", title: "SUV" },
@@ -58,7 +58,7 @@ const CarPage = () => {
 
   return (
     <>
-      <Banner heading="Cars" subheading="Something interesting"></Banner>
+      <Banner heading="Cars" subheading="Explore the best cars in India"></Banner>
 
       
       <div className="content-container py-0">
