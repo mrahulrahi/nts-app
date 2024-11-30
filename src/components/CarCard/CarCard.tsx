@@ -23,17 +23,19 @@ const CarCard = ({ card }: Card) => {
                 <div className="car-card-img overflow-hidden"><Image src={imgUrl} alt={`${title} image`} width={4000} height={4000} quality={100} /></div>
             </div>
 
-            <div className="car-card-row d-flex">
-                <div className="car-card-col d-flex align-items-center justify-content-between"><FaCar />{type}</div>
-                <div className="car-card-col d-flex align-items-center justify-content-between"><FaUsers />{capacity}</div>
-                <div className="car-card-col d-flex align-items-center justify-content-between"><FaIndianRupeeSign />{rate} /Km</div>
+            <div className="car-card-info">
+                <div className="car-card-row d-flex align-items-center justify-content-between">
+                    <div className="car-card-col d-flex align-items-center justify-content-between"><FaCar />{type}</div>
+                    <div className="car-card-col d-flex align-items-center justify-content-between"><FaUsers />{capacity}</div>
+                    <div className="car-card-col d-flex align-items-center justify-content-between"><FaIndianRupeeSign />{rate} /Km</div>
+                </div>
+
+                <div className="car-card-content d-flex align-items-center justify-content-between text-center">
+                    <h4>{title}</h4>
+                    <a href="#book" className="btn-2 text-center">Book Now</a>
+                </div>
             </div>
 
-            <div className="car-card-content d-flex text-center">
-                <h4>{title}</h4>
-                <a href="#book" className="btn-2 text-center">Book Now</a>
-            </div>
-            
             <div className="car-card-note d-flex align-items-center justify-content-center gap-2">
                 <span className="fw-semibold">Note :</span> For car booking price check the rate list.
             </div>

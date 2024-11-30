@@ -7,7 +7,7 @@
 
 
 .tcc-row{margin-bottom: 20px;}
-.tour-card-row {width: 100%;background: var(--grey);color: var(--black);margin-bottom: 20px;border: 2px solid var(--black);}
+.tour-card-row {width: 100%;background: var(--grey);color: var(--black);margin-bottom: 15px;border: 2px solid var(--black);}
 .tour-card-col svg {color: var(--black);font-size: 20px;font-weight: 600;}
 .tour-card-col {width: 33.33%;padding: 10px;background: var(--grey);font-size: 14px;font-weight: 700;}
 .tour-card-col:nth-child(1){border-bottom: 2px solid var(--black);}

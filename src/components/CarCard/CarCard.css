@@ -1,15 +1,14 @@
-.car-card-box{border-radius: 16px;overflow: hidden;}
+.car-card-box{border-radius: 12px;overflow: hidden;}
 .car-card-img-box{padding: 10px;}
-.car-card-img{width: 100%;aspect-ratio: 16/9;border-radius: 16px;}
+.car-card-img{width: 100%;aspect-ratio: 16/9;border-radius: 12px;}
 .car-card-img img{width: 100%;height: 100%;object-fit: cover;}
 
+.car-card-info{margin: 0 4px;border-radius: 8px;overflow: hidden;}
 .car-card-row {width: 100%;margin-bottom: 4px;}
 .car-card-col svg {color: var(--white);font-size: 20px;font-weight: 600;}
-.car-card-col {width: 33.33%;padding: 10px;background: rgba(255, 255, 255, 0.2);font-size: 14px;font-weight: 700;color: var(--white);border-left: 2px solid var(--black);}
-.car-card-col:last-child {border-right: 2px solid var(--black);}
+.car-card-col {width: calc(33.33% - 2px);padding: 10px;background: rgba(255, 255, 255, 0.2);font-size: 14px;font-weight: 700;color: var(--white);}
 
-.car-card-content{margin-bottom: 4px;}
-.car-card-content h4{width: 60%;height: 60px;padding: 15px;background: rgba(255, 255, 255, 0.2);color: var(--white);font-size: 28px;font-weight: 700;line-height: 1;border-left: 2px solid var(--black);margin-bottom: 0;}
-.btn-2 {width: 40%;height: 60px;padding: 20px 10px;background: var(--gold);color: var(--black);font-size: 20px;font-weight: 700;line-height: 1;border-left: 2px solid var(--black);border-right: 2px solid var(--black);font-family: var(--font-montserrat);}
+.car-card-content h4{width: calc(60% - 2px);height: 60px;padding: 15px;background: rgba(255, 255, 255, 0.2);color: var(--white);font-size: 28px;font-weight: 700;line-height: 1;margin-bottom: 0;}
+.btn-2 {width: calc(40% - 2px);height: 60px;padding: 20px 10px;background: var(--gold);color: var(--black);font-size: 20px;font-weight: 700;line-height: 1;font-family: var(--font-montserrat);}
 .btn-2:hover{color: var(--gold);background: var(--black);border-color: var(--black);}
-.car-card-note{color: var(--white);font-size: 12px;padding: 5px;background:  rgba(255, 255, 255, 0.2);}
+.car-card-note{color: var(--white);font-size: 12px;padding: 5px;background:  rgba(255, 255, 255, 0.2);border-radius: 8px;margin: 4px;}

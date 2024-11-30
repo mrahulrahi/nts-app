@@ -23,12 +23,12 @@ const typeCards = [
 ];
 
 const tourCards = [
-  { imgUrl: "/images/place-img-1.jpg", title: "Goa ", duration: "3 Days - 2 Nights", price: 6000, location: "Palolem Beach, Baga Beach, Calangute", seat: 6, distance: 200, type: "Beaches"   },
-  { imgUrl: "/images/place-img-2.jpg", title: "Jammu  & Kashmir", duration: "5 Days - 4 Nights", price: 7000, location: "Gulmarg, Lake", seat: 10, distance: 350, type: "Mountains"   },
-  { imgUrl: "/images/place-img-1.jpg", title: "Kerala", duration: "6 Days - 5 Nights", price: 8000, location: "Alappuzha, Kochi", seat: 6, distance: 600, type: "Beaches"   },
-  { imgUrl: "/images/place-img-2.jpg", title: "Mumbai", duration: "4 Days - 3 Nights", price: 9000, location: "Marine Drive, Gateway of India", seat: 3, distance:450, type: "City"   },
-  { imgUrl: "/images/place-img-1.jpg", title: "Pune", duration: "2 Days - 1 Nights", price: 10000, location: "Shani Shingnapur, Sinhagad Fort", seat: 3, distance: 500, type: "Hill Station"   },
-  { imgUrl: "/images/place-img-2.jpg", title: "Shimla", duration: "7 Days - 6 Nights", price: 11000, location: "Mall Road, Kufri", seat: 3, distance: 250, type: "Hill Station"   },
+  { imgUrl: "https://images.pexels.com/photos/863985/pexels-photo-863985.jpeg", title: "Goa ", duration: "3 Days - 2 Nights", price: 6000, location: "Palolem Beach, Baga Beach, Calangute", seat: 6, distance: 200, type: "Beaches"   },
+  { imgUrl: "https://images.pexels.com/photos/14374647/pexels-photo-14374647.jpeg", title: "Jammu  & Kashmir", duration: "5 Days - 4 Nights", price: 7000, location: "Gulmarg, Lake", seat: 10, distance: 350, type: "Mountains"   },
+  { imgUrl: "https://images.pexels.com/photos/14844301/pexels-photo-14844301.jpeg", title: "Kerala", duration: "6 Days - 5 Nights", price: 8000, location: "Alappuzha, Kochi", seat: 6, distance: 600, type: "Beaches"   },
+  { imgUrl: "https://images.pexels.com/photos/5414582/pexels-photo-5414582.jpeg", title: "Mumbai", duration: "4 Days - 3 Nights", price: 9000, location: "Marine Drive, Gateway of India", seat: 3, distance:450, type: "City"   },
+  { imgUrl: "https://images.pexels.com/photos/14441811/pexels-photo-14441811.jpeg", title: "Pune", duration: "2 Days - 1 Nights", price: 10000, location: "Shani Shingnapur, Sinhagad Fort", seat: 3, distance: 500, type: "Hill Station"   },
+  { imgUrl: "https://images.pexels.com/photos/3574440/pexels-photo-3574440.jpeg", title: "Shimla", duration: "7 Days - 6 Nights", price: 11000, location: "Mall Road, Kufri", seat: 3, distance: 250, type: "Hill Station"   },
 ]
 
 const ctaData = {
