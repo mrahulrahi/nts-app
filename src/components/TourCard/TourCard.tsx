@@ -13,7 +13,7 @@ interface Card {
 interface CardProp {
     imgUrl: string;
     title: string;
-    body: string;
+    duration: string;
     price: number;
     location: string;
     seat: number;
@@ -23,7 +23,7 @@ interface CardProp {
 
 
 const TourCard = ({ card }: Card) => {
-    const { imgUrl, title, body, price, location, seat, distance, type } = card
+    const { imgUrl, title, duration, price, location, seat, distance, type } = card
 
     return (
         <div className="tour-card-box w-100 h-100 d-flex flex-column bg-dark">
@@ -31,7 +31,7 @@ const TourCard = ({ card }: Card) => {
                 <div className="tour-card-img">
                     <Image src={imgUrl} alt="" width={4000} height={4000} quality={100} />
                 </div>
-                <div className="tour-price d-flex align-items-center justify-content-center gap-2"><FaRupeeSign />{price * 30}</div>
+                <div className="tour-img-bottom d-flex align-items-center justify-content-center gap-2">{duration}</div>
             </div>
 
             <div className="tour-card-content flex-grow-1 d-flex flex-column">
@@ -46,7 +46,7 @@ const TourCard = ({ card }: Card) => {
                         <div className="tour-card-col d-flex align-items-center justify-content-between"><BiTrip />{distance} km</div>
                         <div className="tour-card-col d-flex align-items-center justify-content-between"><MdTour />{type}</div>
                     </div>
-                    <p>{body}</p>
+                    <div className="tour-price d-flex align-items-center gap-1 ms-auto fw-bold"><FaRupeeSign />{price * 30}</div>
                 </div>
             </div>
         </div >

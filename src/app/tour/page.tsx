@@ -23,12 +23,12 @@ const typeCards = [
 ];
 
 const tourCards = [
-  { imgUrl: "/images/place-img-1.jpg", title: "Goa ", body: "3 Days - 2 Nights", price: 60000, location: "Palolem Beach, Baga Beach, Calangute", seat: 6, distance: 200, type: "Beaches"   },
-  { imgUrl: "/images/place-img-2.jpg", title: "Jammu  & Kashmir", body: "5 Days - 4 Nights", price: 70000, location: "Gulmarg, Lake", seat: 10, distance: 350, type: "Mountains"   },
-  { imgUrl: "/images/place-img-1.jpg", title: "Kerala", body: "6 Days - 5 Nights", price: 80000, location: "Alappuzha, Kochi", seat: 6, distance: 600, type: "Beaches"   },
-  { imgUrl: "/images/place-img-2.jpg", title: "Mumbai", body: "4 Days - 3 Nights", price: 90000, location: "Marine Drive, Gateway of India", seat: 3, distance:450, type: "City"   },
-  { imgUrl: "/images/place-img-1.jpg", title: "Pune", body: "2 Days - 1 Nights", price: 100000, location: "Shani Shingnapur, Sinhagad Fort", seat: 3, distance: 500, type: "Hill Station"   },
-  { imgUrl: "/images/place-img-2.jpg", title: "Shimla", body: "7 Days - 6 Nights", price: 110000, location: "Mall Road, Kufri", seat: 3, distance: 250, type: "Hill Station"   },
+  { imgUrl: "/images/place-img-1.jpg", title: "Goa ", duration: "3 Days - 2 Nights", price: 6000, location: "Palolem Beach, Baga Beach, Calangute", seat: 6, distance: 200, type: "Beaches"   },
+  { imgUrl: "/images/place-img-2.jpg", title: "Jammu  & Kashmir", duration: "5 Days - 4 Nights", price: 7000, location: "Gulmarg, Lake", seat: 10, distance: 350, type: "Mountains"   },
+  { imgUrl: "/images/place-img-1.jpg", title: "Kerala", duration: "6 Days - 5 Nights", price: 8000, location: "Alappuzha, Kochi", seat: 6, distance: 600, type: "Beaches"   },
+  { imgUrl: "/images/place-img-2.jpg", title: "Mumbai", duration: "4 Days - 3 Nights", price: 9000, location: "Marine Drive, Gateway of India", seat: 3, distance:450, type: "City"   },
+  { imgUrl: "/images/place-img-1.jpg", title: "Pune", duration: "2 Days - 1 Nights", price: 10000, location: "Shani Shingnapur, Sinhagad Fort", seat: 3, distance: 500, type: "Hill Station"   },
+  { imgUrl: "/images/place-img-2.jpg", title: "Shimla", duration: "7 Days - 6 Nights", price: 11000, location: "Mall Road, Kufri", seat: 3, distance: 250, type: "Hill Station"   },
 ]
 
 const ctaData = {

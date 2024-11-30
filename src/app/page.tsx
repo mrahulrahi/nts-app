@@ -33,10 +33,13 @@ export default function Home() {
   ]
 
   const destinationCards = [
-    { imgUrl: "/images/place-img-1.jpg", title: "Goa", subTitle: "Beaches", body: "A popular destination for tourists, both Indian and foreign, Goa is known for its beaches, warm weather, and welcoming people.", pageLink: "./tour-travels" },
-    { imgUrl: "/images/place-img-2.jpg", title: "Jammu and Kashmir", subTitle: "Mountains", body: "A beautiful destination with green valleys, cool breezes, and gentle streams." },
-    { imgUrl: "/images/place-img-3.jpg", title: "Delhi", subTitle: "Capital", body: "The capital of India, Delhi is a popular tourist destination with many historical monuments, museums, markets, and malls." },
-    { imgUrl: "/images/place-img-4.jpg", title: "Agra", subTitle: "7 wonders", body: "Home to the Taj Mahal, one of the seven wonders of the world, Agra is a popular tourist destination on the banks of the Yamuna River." },
+    { imgUrl: "https://images.pexels.com/photos/784879/pexels-photo-784879.jpeg", title: "Jaipur", subTitle: "Pink City", body: "Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color.", pageLink: "./tour-travels" },
+    { imgUrl: "https://images.pexels.com/photos/1433052/pexels-photo-1433052.jpeg", title: "Goa", subTitle: "Beaches", body: "A popular destination for tourists, both Indian and foreign, Goa is known for its beaches, warm weather, and welcoming people.", pageLink: "./tour-travels" },
+    { imgUrl: "https://images.pexels.com/photos/2862204/pexels-photo-2862204.jpeg", title: "Jammu and Kashmir", subTitle: "Mountains", body: "A beautiful destination with green valleys, cool breezes, and gentle streams." },
+    { imgUrl: "https://images.pexels.com/photos/2261678/pexels-photo-2261678.jpeg", title: "Delhi", subTitle: "Capital", body: "The capital of India, Delhi is a popular tourist destination with many historical monuments, museums, markets, and malls." },
+    { imgUrl: "https://images.pexels.com/photos/5608221/pexels-photo-5608221.jpeg", title: "Agra", subTitle: "7 wonders", body: "Home to the Taj Mahal, one of the seven wonders of the world, Agra is a popular tourist destination on the banks of the Yamuna River." },
+    { imgUrl: "https://images.pexels.com/photos/7195782/pexels-photo-7195782.jpeg?", title: "Udaipur", subTitle: "City of Lakes", body: "Udaipur, formerly the capital of the Mewar Kingdom, is a city in the western Indian state of Rajasthan. Founded by Maharana Udai Singh II in 1559, it’s set around a series of artificial lakes and is known for its lavish royal residences." },
+   
   ]
 
   const hiwCards = [
