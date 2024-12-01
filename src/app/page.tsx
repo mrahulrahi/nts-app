@@ -125,7 +125,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="content-container pb-0">
+      <div className="content-container pb-4 overflow-hidden">
         <div className="container">
           <div className="row" data-aos="fade-up" suppressHydrationWarning>
             <div className="col-md-12">
