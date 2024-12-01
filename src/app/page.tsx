@@ -10,6 +10,7 @@ import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { useEffect, useState } from "react";
 
 
 export default function Home() {
@@ -62,6 +63,29 @@ export default function Home() {
     cardSecondUrl: "https://api.whatsapp.com/send/?phone=%2B918881888339&text&type=phone_number&app_absent=0",
   };
 
+  
+  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+
+  useEffect(() => {
+      let timeoutId : NodeJS.Timeout;
+      
+      const handleResize = () => {
+          clearTimeout(timeoutId);
+          
+          // Add a small delay to avoid too frequent updates during resize
+          timeoutId = setTimeout(() => {
+              setWindowWidth(window.innerWidth);
+          }, 250);
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+          window.removeEventListener('resize', handleResize);
+          clearTimeout(timeoutId);
+      };
+  }, []);
+
 
   return (
     <>
@@ -108,12 +132,24 @@ export default function Home() {
               <div className="heading text-center">
                 <h3>Popular Destination</h3>
               </div>
-              <div className="destination-card-list d-flex flex-wrap">
-                {destinationCards.map(card => <div key={card.title} className="destination-card-item">
-                  <DestinationCard card={card} />
+              {windowWidth >= 992 ? (
+                <div className="destination-card-list d-flex flex-wrap" suppressHydrationWarning>
+                  {Array.from({length: windowWidth >= 1200 ? 6 : 4}).map((_, index) => <div key={index} className="destination-card-item" suppressHydrationWarning>
+                  <DestinationCard card={destinationCards[index]} />
                 </div>
                 )}
-              </div>
+                </div>
+                
+              ) : (
+                <Swiper 
+                  slidesPerView={'auto'}
+                  className="destination-card-list d-flex flex-wrap overflow-visible"
+                  suppressHydrationWarning>
+                    {destinationCards.map(card => <SwiperSlide key={card.title} className="destination-card-item" suppressHydrationWarning>
+                      <DestinationCard card={card} />
+                  </SwiperSlide>)}
+                </Swiper>
+              )}
             </div>
           </div>
         </div>

@@ -6,15 +6,27 @@ import useAuth from '../../hooks/useAuth';
 import Image from 'next/image';
 import Link from 'next/link';
 import Loading from '../loading';
-import { Row, Col } from 'react-bootstrap';
 import { FaPlane, FaHotel, FaHome, FaBuilding, FaUsers, FaChartLine, FaCalendarAlt, FaBars } from 'react-icons/fa';
 import { IoCalendarOutline, IoHomeOutline, IoLogInOutline, IoPeopleOutline, IoSettingsOutline, IoSpeedometerOutline, IoStatsChartOutline } from 'react-icons/io5';
+import { AddModal } from '../../components/AddModal/AddModal';
+
+
 
 
 const AdminDashboard = () => {
   const { isAuthenticated, logout, user } = useAuth();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [loading, setLoading] = useState(true); // State to manage loading
+  const [showModal, setshowModal] = useState(false);
+
+  const [title, setTitle] = useState('');
+  const [distance, setDistance] = useState('');
+  const [price, setPrice] = useState('');
+  const [image, setImage] = useState('');
+  const [location, setLocation] = useState('');
+  const [duration, setDuration] = useState('');
+  const [seat, setSeat] = useState('');
+  const [type, setType] = useState('');
 
   useEffect(() => {
     if (isAuthenticated !== undefined) {
@@ -30,6 +42,38 @@ const AdminDashboard = () => {
   if (!isAuthenticated || !user?.role?.includes('admin')) {
     return notFound(); // Redirect to not found page if user is not an admin
   }
+
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+    const formData = {
+      img: image, // Add logic to handle images if needed
+      title: title,
+      duration: duration,
+      price: price,
+      location: location,
+      seat: seat,
+      distance: distance,
+      type: type,
+    };
+
+    const response = await fetch('/api/admin/tours', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      const newTour = await response.json();
+      console.log('Tour created:', newTour);
+      // Optionally, close the modal and refresh the list of tours
+    } else {
+      console.error('Error creating tour:', await response.json());
+    }
+  };
+
+
 
   return (
     isAuthenticated ? (
@@ -53,32 +97,32 @@ const AdminDashboard = () => {
             <ul className="nav flex-column">
               <li className="nav-item">
                 <Link href="/admin/dashboard" className="nav-link active">
-                <IoSpeedometerOutline /> Dashboard
+                  <IoSpeedometerOutline /> Dashboard
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/admin/users" className="nav-link">
-                <IoPeopleOutline /> Users
+                  <IoPeopleOutline /> Users
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/admin/bookings" className="nav-link">
-                <IoCalendarOutline /> Bookings
+                  <IoCalendarOutline /> Bookings
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/admin/properties" className="nav-link">
-                <IoHomeOutline /> Properties
+                  <IoHomeOutline /> Properties
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/admin/reports" className="nav-link">
-                <IoStatsChartOutline /> Reports
+                  <IoStatsChartOutline /> Reports
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/admin/settings" className="nav-link">
-                <IoSettingsOutline />Settings
+                  <IoSettingsOutline />Settings
                 </Link>
               </li>
               <li className="nav-item">   <button className="nav-link" onClick={logout}> <IoLogInOutline /> Logout</button></li>
@@ -238,9 +282,9 @@ const AdminDashboard = () => {
                       <div className="card-header"><h5>Quick Actions</h5></div>
                       <div className="card-body">
                         <div className="d-grid gap-2">
-                          <div className="btn btn-primary btn-lg">
+                          <button className="btn btn-primary btn-lg" onClick={() => { setshowModal((prev) => !prev); }} >
                             <FaPlane className="me-2" /> Add New Tour
-                          </div>
+                          </button>
                           <div className="btn btn-secondary btn-lg">
                             <FaHome className="me-2" /> List New Property
                           </div>
@@ -312,7 +356,6 @@ const AdminDashboard = () => {
                       <div className="card-body">
 
                         <div className="chart">
-                          {/* Placeholder for chart */}
                           <Image src="/images/image-1.jpg" alt="Bookings Chart" className="img-fluid" width={4000} height={4000} quality={100} />
                         </div>
                       </div>
@@ -348,6 +391,66 @@ const AdminDashboard = () => {
             </div>
           </main >
         </div >
+
+
+        <AddModal title='Add New Tour' buttonText='Add' closeButtonText='Close' shouldShow={showModal} onRequestClose={() => { setshowModal((prev) => !prev); }} onSubmit={handleSubmit}>
+
+          <div className="row g-3">
+            <div className="col-md-6">
+              <div className="form-group">
+                <label htmlFor="category" className="form-label">Category Type</label>
+                <select className="form-select" id="category" onChange={(e) => setType(e.target.value)}>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="form-group">
+                <label htmlFor="title" className="form-label">Title</label>
+                <input type="text" className="form-control" id="title" required onChange={(e) => setTitle(e.target.value)} />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="form-group">
+                <label htmlFor="distance" className="form-label">Distance</label>
+                <input type="number" className="form-control" id="distance" required onChange={(e) => setDistance(e.target.value)} />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="form-group">
+                <label htmlFor="price" className="form-label">Price</label>
+                <input type="number" className="form-control" id="price" required onChange={(e) => setPrice(e.target.value)} />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="form-group">
+                <label htmlFor="image" className="form-label">Image</label>
+                <input type="text" className="form-control" id="image" onChange={(e) => setImage(e.target.value)} />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="form-group">
+                <label htmlFor="location" className="form-label">Location</label>
+                <input type="text" className="form-control" id="location" required onChange={(e) => setLocation(e.target.value)} />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="form-group">
+                <label htmlFor="duration" className="form-label">Duration</label>
+                <input type="text" className="form-control" id="duration" required onChange={(e) => setDuration(e.target.value)} />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="form-group">
+                <label htmlFor="seat" className="form-label">Seat</label>
+                <input type="number" className="form-control" id="seat" required onChange={(e) => setSeat(e.target.value)} />
+              </div>
+            </div>
+          </div>
+
+        </AddModal>
       </>
     ) : (
       notFound()

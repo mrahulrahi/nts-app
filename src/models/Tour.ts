@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 
 const TourSchema = new mongoose.Schema({
-    images: [String],
+    img: String,
     title: String,
-    body: String,
+    duration: String,
     price: Number,
     location: String,
     seat: Number,

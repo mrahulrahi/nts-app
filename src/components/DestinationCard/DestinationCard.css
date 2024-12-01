@@ -8,10 +8,17 @@
 .destination-card-content h6{font-size:14px;font-weight: 600;line-height: 1.2;margin-bottom: 10px;color: var(--grey);}
 .destination-card-content h4{font-size:24px;font-weight: 700;line-height: 1.2;margin-bottom: 10px;color: var(--gold);}
 .destination-card-content p{display: -webkit-box;line-clamp: 3;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;}
+.destination-card-item:first-child {width: 75%;}
 
+
+
+@media( max-width: 1199.98px){
+    .destination-card-item:first-child {width: 100%;}
+    .destination-card-item{width: 33.33%;}
+}
 
 @media (min-width: 992px) {
-    .destination-card-item:first-child {width: 75%;}
+
     .destination-card-item:first-child .destination-card-box{flex-flow: row-reverse;min-height: 350px;}
     .destination-card-item:first-child .destination-card-img{width:45%;height: 100%;padding-bottom: 0;}
     .destination-card-item:first-child .destination-card-content{width: calc(55% - 30px);padding: 20px;}
@@ -20,7 +27,9 @@
 }
 
 @media (max-width: 991.98px) {
-    .destination-card-item{width: 50%;}
+    .destination-card-list{width: calc(100% + 20px);margin-left: -10px;}
+
+    .destination-card-item.swiper-slide{height: auto;width: calc(100vw - 40px);max-width: 350px;padding: 0 10px;}
 }
 
 @media (max-width: 767.98px) {
