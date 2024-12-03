@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import './DestinationCard.css'
+import './PlaceCard.css'
 
 interface Card {
     card: CardProp;
@@ -13,7 +13,7 @@ interface CardProp {
     pageLink?: string;
 }
 
-const DestinationCard = ({ card }: Card) => {
+const PlaceCard = ({ card }: Card) => {
     const { imgUrl, title, subTitle, body, pageLink } = card;
 
     return (
@@ -36,4 +36,4 @@ const DestinationCard = ({ card }: Card) => {
     )
 }
 
-export default DestinationCard
+export default PlaceCard

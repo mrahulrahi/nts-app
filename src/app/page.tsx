@@ -2,7 +2,7 @@
 import Hero from "../components/Hero/Hero";
 import ImageTextBlock from '../components/ImageTextBlock/ImageTextBlock'
 import WorkCard from '../components/WorkCard/WorkCard'
-import DestinationCard from "../components/DestinationCard/DestinationCard";
+import PlaceCard from "../components/PlaceCard/PlaceCard";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import CTABlock from "../components/CTABlock/CTABlock";
 import FeatureCard from '../components/FeatureCard/FeatureCard';
@@ -33,7 +33,7 @@ export default function Home() {
     { name: "Parmatma Maurya", title: "Doctor", body: "Imagine Group made buying our new home an enjoyable experience. Their expertise and personalized approach were invaluable throughout the entire process." },
   ]
 
-  const destinationCards = [
+  const placeCards = [
     { imgUrl: "https://images.pexels.com/photos/784879/pexels-photo-784879.jpeg", title: "Jaipur", subTitle: "Pink City", body: "Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color.", pageLink: "./tour-travels" },
     { imgUrl: "https://images.pexels.com/photos/1433052/pexels-photo-1433052.jpeg", title: "Goa", subTitle: "Beaches", body: "A popular destination for tourists, both Indian and foreign, Goa is known for its beaches, warm weather, and welcoming people.", pageLink: "./tour-travels" },
     { imgUrl: "https://images.pexels.com/photos/2862204/pexels-photo-2862204.jpeg", title: "Jammu and Kashmir", subTitle: "Mountains", body: "A beautiful destination with green valleys, cool breezes, and gentle streams." },
@@ -135,7 +135,7 @@ export default function Home() {
               {windowWidth >= 992 ? (
                 <div className="destination-card-list d-flex flex-wrap" suppressHydrationWarning>
                   {Array.from({length: windowWidth >= 1200 ? 6 : 4}).map((_, index) => <div key={index} className="destination-card-item" suppressHydrationWarning>
-                  <DestinationCard card={destinationCards[index]} />
+                  <PlaceCard card={placeCards[index]} />
                 </div>
                 )}
                 </div>
@@ -145,8 +145,8 @@ export default function Home() {
                   slidesPerView={'auto'}
                   className="destination-card-list d-flex flex-wrap overflow-visible"
                   suppressHydrationWarning>
-                    {destinationCards.map(card => <SwiperSlide key={card.title} className="destination-card-item" suppressHydrationWarning>
-                      <DestinationCard card={card} />
+                    {placeCards.map(card => <SwiperSlide key={card.title} className="destination-card-item" suppressHydrationWarning>
+                      <PlaceCard card={card} />
                   </SwiperSlide>)}
                 </Swiper>
               )}
